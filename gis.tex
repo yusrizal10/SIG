@@ -274,9 +274,26 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 {Pendahuluan\\ definisi}
 \input{chapter/definisi.tex}
 
+\chapter[Bangun Ruang]
+{Pengantar\\ Bangun Ruang}
+\input{chapter/BangunRuang.tex}
+
+\chapter[Diagram Kartesius]
+{Pengantar\\ Kartesius}
+\input{chapter/kartesius.tex}
+
+\chapter[Benua]
+{Pengantar\\ benua}
+\input{chapter/benua.tex}
+
+
 \chapter[Sejarah Bumi]
 {Pengantar\\ Sejarah Bumi}
 \input{chapter/SejarahBumi.tex}
+
+\chapter[Garis Khatulistiwa]
+{Pengantar\\ Garis Khatulistiwa}
+\input{chapter/khatulistiwa.tex}
 
 
 \chapter[Kordinat Indonesia]
@@ -289,255 +306,11 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% optional prologue or prologues
-% \chapter{Chapter Title}
-% \prologue{<text>}{<author attribution>}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Edited Book: Author and Affiliation
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% After \chapter{Chapter Title}, you can
-% enter the author name and embed the affiliation with
-% \chapterauthors{(author name, or names)
-% \chapteraffil{(affiliation or affiliations)}
-% }    
-
-% For instance:
-% \chapter{Chapter Title}
-% \chapterauthors{G. Alvarez and R. K. Watts
-% \chapteraffil{Carnegie Mellon University, Pittsburgh, Pennsylvania}
-
-% For separate affiliations you can use \affilmark{(number)} after
-% the name of a particular author and before the matching affiliation:
-
-% For instance:
-% \chapter{Chapter Title}
-% \chapterauthors{George Smeal, Ph.D.\affilmark{1}, Sally Smith,
-% M.D.\affilmark{2}, and Stanley Kubrick\affilmark{1}
-% \chapteraffil{\affilmark{1}AT\&T Bell Laboratories
-% Murray Hill, New Jersey\\
-% \affilmark{2}Harvard Medical School,
-% Boston, Massachusetts}
-% }
-
-%%%%%%%%%%%%%%%%%%%%%%%
-
-%% short version of section head, or one without \\ supplied in sq. brackets.
-
-% \section[Introduction and fugue]{Introduction\\ and fugue}
-% \subsection[This is the subsection]{This is the\\ subsection}
-% \subsubsection{This is the subsubsection}
-% \paragraph{This is the paragraph}
-
-% \begin{chapreferences}{widest label}
-% \bibitem{<label>}Reference
-% \end{chapreferences}
-
-% optional chapter bibliography using BibTeX,
-% must also have \usepackage{chapterbib} before \begin{document}
-% Must use root file with \include{chap1}, \include{chap2} form.
-%\bibliographystyle{plain}
-%\bibliography{<your .bib file name>}
-
-% optional appendix at the end of a chapter:
-% \chapappendix{<chap appendix title>}
-% \chapappendix{} % no title
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% End Matter >>>>>>>>>>>>>>>>>>
-
-% \appendix{<optional title for appendix at end of book>}
-% \appendix{} % appendix without title
-
-% \begin{references}{<widest label>}
-% \bibitem{sampref}Here is reference.
-% \end{references}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional Problem Sets: Can use this at the end of each chapter or at end
-%% of book
-
-% \begin{problems}
-% \prob
-% text
-
-% \prob
-% text
-
-% \subprob
-% text
-
-% \subprob
-% text
-
-% \prob
-% text
-% \end{problems}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Optional Exercises: Can use this at the end of each chapter or at end
-%% of book
-
-% \begin{exercises}
-% \exer
-% text
-
-% \exer
-% text
-
-% \subexer
-% text
-
-% \subexer
-% text
-
-% \exer
-% text
-% \end{exercises}
 
 \bibliographystyle{IEEEtran}
-\bibliography{aku,SejarahBumi,koordinatindo,definisi,longlat}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% INDEX: Use only one index command set:
+\bibliography{aku,SejarahBumi,koordinatindo,definisi,longlat,BangunRuang,kartesius,benua,khatulistiwa}
 
-%% 1) The default LaTeX Index
+
 \printindex
-
-%% 2) For Topic index and Author index:
-
-% \usepackage{multind}
-% \makeindex{topic}
-% \makeindex{authors}
-% \begin{document}
-% ...
-% add index terms to your book, ie,
-% \index{topic}{A term to go to the topic index}
-% \index{authors}{Put this author in the author index}
-
-%% (these are Wiley commands)
-%\multiprintindex{topic}{Topic index}
-%\multiprintindex{authors}{Author index}
-
 \end{document}
 
-%%%%%%% Demo of section head containing sample macro:
-%% To get a macro to expand correctly in a section head, with upper and
-%% lower case math, put the definition and set the box 
-%% before \begin{document}, so that when it appears in the 
-%% table of contents it will also work:
-
-\newcommand{\VT}[1]{\ensuremath{{V_{T#1}}}}
-
-%% use a box to expand the macro before we put it into the section head:
-
-\newbox\sectsavebox
-\setbox\sectsavebox=\hbox{\boldmath\VT{xyz}}
-
-%%%%%%%%%%%%%%%%% End Demo
-
-
-Other commands, and notes on usage:
-
------
-Possible section head levels:
-\section{Introduction}
-\subsection{This is subsection}
-\subsubsection{This is subsubsection}
-\paragraph{This is the paragraph}
-
------
-Tables:
- Remember to use \centering for a small table and to start the table
- with \hline, use \hline underneath the column headers and at the end of 
- the table, i.e.,
-
-\begin{table}[h]
-\caption{Small Table}
-\centering
-\begin{tabular}{ccc}
-\hline
-one&two&three\\
-\hline
-C&D&E\\
-\hline
-\end{tabular}
-\end{table}
-
-For a table that expands to the width of the page, write
-
-\begin{table}
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcc}
-\hline
-....
-\end{tabular*}
-%% Sample table notes:
-\begin{tablenotes}
-$^a$Refs.~19 and 20.
-
-$^b\kappa, \lambda>1$.
-\end{tablenotes}
-\end{table}
-
------
-Algorithm.
-Maintains same fonts as text (as opposed to verbatim which uses fixed
-width fonts). Space at beginning of line will be maintained if you
-use \ at beginning of line.
-
-\begin{algorithm}
-{\bf state\_transition algorithm} $\{$
-\        for each neuron $j\in\{0,1,\ldots,M-1\}$
-\        $\{$   
-\            calculate the weighted sum $S_j$ using Eq. (6);
-\            if ($S_j>t_j$)
-\                    $\{$turn ON neuron; $Y_1=+1\}$   
-\            else if ($S_j<t_j$)
-\                    $\{$turn OFF neuron; $Y_1=-1\}$   
-\            else
-\                    $\{$no change in neuron state; $y_j$ remains %
-unchanged;$\}$ .
-\        $\}$   
-$\}$   
-\end{algorithm}
-
------
-Sample quote:
-\begin{quote}
-quotation...
-\end{quote}
-
------
-Listing samples
-
-\begin{enumerate}
-\item
-This is the first item in the numbered list.
-
-\item
-This is the second item in the numbered list.
-\end{enumerate}
-
-\begin{itemize}
-\item
-This is the first item in the itemized list.
-
-\item
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-\end{itemize}
-
-\begin{itemize}
-\item[]
-This is the first item in the itemized list.
-
-\item[]
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-\end{itemize}
-
-%% Index commands
-Author and Topic Indices, See docs.pdf and w-bksamp.pdf
