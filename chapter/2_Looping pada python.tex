@@ -3,6 +3,24 @@ Perulangan dalam bahasa pemrograman berfungsi untuk memerintahkan komputer melak
 \subsection{While dan For}
 Perulangan while disebut dengan uncounted loop (perulangan yang tak terhitung), sementara perulangan for disebut dengan counted loop (perulangan yang terhitung). Perbedaannya adalah ada statement while, biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal. Sedangkan pada statement for, memiliki ciri berupa inisialisasi perulangan dilakukan diawal statement dan perulangan tersebut akan berhenti ketika syarat/ kondisi yang telah ditentukan terpenuhi\cite{santoso2009bahasa}.
 
+\subsection{Perintah Break, Continue dan Pass Perintah Break}
+\subsubsection{Perintah Break}
+Perintah break dipakai untuk menghentikan proses berjalannya iterasi atau perulangan pada statement for atau while\cite{arfian2012rekayasa}. Statement yang berada di bawah break tidak akan di eksekusi dan program akan keluar dari proses looping.  
+Contoh break : 
+\begin{equation}
+>>> x = 1     
+>>> while x < 5:     
+...    if x == 3:     
+...      break     
+...    print x     
+...    x = x+1                                                                                                                    
+... else:          
+print "Loop sdh selesai dikrjkn"   
+ ...     
+1    
+2 
+\end{equation}
+
 \subsubsection(While Loop)
 Perintah While pada pyton biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal\cite{santoso2009bahasa}. Alur prosesnya adalah ketika sebuah program dijalankan dan kemudian menemukan sebuah kondisi dimana menggunakan loop atau perulangan while, jika kondisi true maka statment itu akan dieksekusi kemudian akan di cek lagi kondisinya. Setelah selesai statmentnya masih true dieksekusi lalu akan mengecek lagi kondisinya dan terus seperti itu, dan jika false statementntya maka akan keluar dari perulangan dan akan melanjutkan ke program selanjutnya.
 
@@ -10,8 +28,10 @@ Perintah While pada pyton biasanya memiliki ciri berupa pengecekan kondisi dan p
 FOR Loop dipakai untuk melakukan perulangan atau iterasi mencapai batas atau jarak yang telah ditentukan/cite{santoso2009bahasa}.
 
 Kegunaan
-1.    Ketika ingin pergi ke item urutan tertentu seperti pada list atau string
-2.    Ketika ingin melakukan perulangan kode beberapa kali
+\begin{enumerate}
+\item Ketika ingin pergi ke item urutan tertentu seperti pada list atau string
+\item Ketika ingin melakukan perulangan kode beberapa kali
+\end{enumerate}
 For interaksi_var in ururan
 Statements
 Print(“bukan bagian perulangan”) 
