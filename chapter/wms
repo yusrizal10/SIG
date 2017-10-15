@@ -30,3 +30,9 @@ jadi makin sedikit waktu yang seluruh habis di memproduksi sebuah peta .Bagaiman
 kunci masalah permintaan .Pertama , kami menghadirkan metode untuk menghitung tingkat 2d bobot beban distribusi peta lingkup .
 Kedua , node beban kemampuan yang dievaluasi .Kemudian , penulis hadirmetode menurut untuk membelah seluruh.
 Kertas ini juga membahas algoritma kinerja pelaksanaan .
+
+   Pengenalan Peta map Service (WM)s menghasilkan peta secara spasial direferensikan data dari informasi geografis secara dinamis. 
+Standar internasional ini mendefinisikan sebuah "peta" untuk menjadi penggambaran tentang informasi geografis 
+sebagai file gambar digital cocok untuk ditampilkan pada layar komputer. Peta tidak data itu sendiri. 
+Wms-dihasilkan maps umumnya diterjemahkan dalam format bergambar seperti PNG,GIF atau JPEG,atau kadang-kadang sebagai
+elemen-elemen grafis berbasis vektor dalam Scalable Vector Grafis (SVG) atau Komputer Web Metafile Grafis (WebCGM format).
