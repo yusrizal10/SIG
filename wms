@@ -31,3 +31,10 @@
   year={2004},
   organization={Ieee}
 }
+
+@article{open2006opengis,
+  title={OpenGIS Web Map Service version 1.3. 0},
+  author={Open Geospatial Consortium and others},
+  year={2006},
+  publisher={Open Geospatial Consortium (OGC)}
+}
