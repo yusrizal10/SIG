@@ -42,3 +42,20 @@ basis data adalah sistem manajemen basis data yang dinamai dBASE. Shapefile tert
 *.fbn dan *.fbx – File yang menyimpan spatial index dari feature shapefile yang read-only (optional) 
 *.ain dan *.aih – File yang menyimpan index atribut dari field yang aktif dalam sebuah tabel (optional) 
 *.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional).
+
+\subsection{contoh penggunaan kodingan shapefile}
+read.shapefile (form.name) read.shp
+(shp.name) read.shx (shx.name)
+read.dbf (dbf.name, sundulan = FALSE)
+write.shapefile (shapefile, out.name, arcgis = FALSE) write.shp (shp,
+out.name) write.shx (SHX, out.name)
+write.dbf (DBF, out.name, arcgis = FALSE) calc.header
+(shapefile) add.xy (shapefile)
+
+bentuk file
+scaleXY (shapefile, scale.factor)
+convert.to.shapefile (shpTable, attTable, bidang, jenis) convert.to.simple
+(shp)
+change.id (shpTable, newFieldAsVector) dp (poin,
+toleransi)
+
