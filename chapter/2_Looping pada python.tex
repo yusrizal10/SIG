@@ -34,7 +34,7 @@ for(int i = l; i <= 100; i++){
 
 Jika program tersebut dijalankan, maka hasilnya akan menampilkan angka-angka ganjil saja, hal ini disebabkan karena saat nilai i merupakan angka genap, maka statement continue akan membuat program tidak menampilkan angka genap.
 
-\subsection{Perintah Pass}
+\subsubsection{Perintah Pass}
 Sebenarnya perintah pass tidak memiliki fungsi yang sangat penting. Dan bahkan sangat jarang digunakan oleh programmer. Jadi perintah pass ini sebenarnya hanya mengisi kekosongan saja, agar program tidak eror nantinya. 
 \begin{equation}
 for i in range (5) :
@@ -48,8 +48,19 @@ Jadi seperti yang sudah dikatakan sebelumnya, perintah pass ini memiliki fungsi 
 \subsection{Nested Loop}
 Nested Loop (Perulangan Bertingkat) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
 
-\subsubsection(While Loop)
+\subsection(While Loop)
 Perintah While pada pyton biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal\cite{santoso2009bahasa}. Alur prosesnya adalah ketika sebuah program dijalankan dan kemudian menemukan sebuah kondisi dimana menggunakan loop atau perulangan while, jika kondisi true maka statment itu akan dieksekusi kemudian akan di cek lagi kondisinya. Setelah selesai statmentnya masih true dieksekusi lalu akan mengecek lagi kondisinya dan terus seperti itu, dan jika false statementntya maka akan keluar dari perulangan dan akan melanjutkan ke program selanjutnya.
+
+\subsection{Perulangan do-while}
+Perulangan do-while merupakan perulangan yang  mirip dengan perulangan while namun perbedaannya\cite{arfian2012rekayasa}, pada perulangan do-whiile, maka minimal instruksi akan dijalnkan sekali. Contoh statement do-while:
+\begin{equation}
+int jumlah = 100;
+do{
+    System.out.println(jumlah);
+    jumlah++; // naikkan jumlah
+}while(jumlah <= 10);
+\end{equation}
+Jika program itu dijalankan, maka akan menghasilkan keluaran 100,  yang artinya walaupun kondisinya salah, namun minimal isi instruksi akan dijalankan sekali, hal ini disebabkan karena proses do-while berbeda dengan while,  yang dimana do-while pertama melakukan instruksi setelah itu baru mengecek kondisi, sedangkan while pertama mengecek kondisi baru melakukan instruksi. 
 
 \subsection{Perulangan (for loop)}
 FOR Loop dipakai untuk melakukan perulangan atau iterasi mencapai batas atau jarak yang telah ditentukan/cite{santoso2009bahasa}.
