@@ -1,0 +1,44 @@
+% Tugas 2 Kelompok 4
+% Akbar Pambudi Utomo (1154094)
+% Julham Ramadhana (1154069)
+% Andi Wadi Afriandyka (1154113)
+% Andi Nurfadillah Ali ()
+% Hanna Theresia Siregar ()
+% Pebridayanti Hasibuan ()
+
+
+\section{Shapefile}
+\subsection{Pengertian Shapefile}
+Shapefile ArcView memiliki format data tersendiri yang disebut dengan shapefiles. 
+Shapefiles adalah format data yang menyimpan lokasi geometrik dan informasi atribut dari suatu feature geografis. 
+Pada umumnya kita hanya butuh satu file kerja seperti file Microsoft Worl dengan extension file *.doc, 
+akan tetapi shapefile memiliki perbedaan, yaitu bahwa satu shapefile memiliki beberapa file yang saling berkaitan satu sama lainnya. 
+Beberapa file ini memiliki extension yang 42 berbeda-beda yang disimpan dalam workspace yang sama.
+Catatan : tiga file extension pertama adalah bagian file extension yang harus ada dalam sebuah shapefile, file extension berikutnya sifatnya optional.
+Fitur geografis di shapefile dapat ditunjukkan oleh titik, garis, atau poligon (area). Ruang kerja yang berisi shapefile
+mungkin juga berisi table dBase, yang dapat menyimpan atribut tambahan yang dapat digabungkan ke fitur shapefile.
+Semua file yang memiliki ektensi seperti file .txt, .asc, .csv atau tab muncul di ArcCatalog sebagai file text secara default.
+Akan tetapi, pada kotak dialog Opsi Kita dapat memilih tipe file mana yang harus direpresentasikan sebagai file
+teks dan seharusnya tidak ditampilkan di pohon Catalog. Ketika file teks berisi nilai koma dan tab-delimited,
+kita bisa melihat isi file di tampilan table ArcCatalog dan menggabungkannya ke dalam fitur geografis. file teks bisa juga kita hapus, tetapi isinya hanya bisa dibaca di ArcCatalog.
+"Shapefile" adalah seperangkat file komputer yang digunakan untuk menyimpan informasi geografis (mis., Batas saluran sensus) 
+dan tabel atribut yang terkait dengan informasi geografis (mis., Perumahan sensus dan karakteristik demografis). Shapefiles dapat 
+dimanipulasi menggunakan sistem informasi geografis (SIG); ArcView 8.3 (ESRI, Redlands, CA) digunakan dalam proyek ini. 
+Paket pajak shapefile diperoleh dari kantor penilai pajak Fulton dan Gwinnett County. Shapefile ini mengandung poligon yang sesuai 
+dengan lokasi dan dimensi setiap paket tanah kena pajak di county. Alamat setiap paket disimpan dalam tabel atributnya.
+
+\subsection{Struktur Data Shapefile}
+Geodatabase adalah struktur data yang kuat dan canggih. selain topologi yang anda dapatkan secara 
+gratis, area dan sekeliling area yang digambarkan dengan fitur linier. Namun, ESRI juga mendukung 
+struktur data yang jauh lebih rumit: shapefile. sebuah shapefile dapat menggabungkan dua elemen 
+penting yang dimiliki oleh geodatabase(komponen geografis dan database atribut) Perangkat lunak 
+basis data adalah sistem manajemen basis data yang dinamai dBASE. 
+
+\subsection{Daftar beberapa file extension}
+*.shp - File yang menyimpan feature geometri (diperlukan dalam sebuah shapefile) 
+*.shx - File yang menyimpan index dari feature geometri (diperlukan dalam sebuah shapefile) 
+*.dbf - File dBASE yang menyimpan informasi atribut dari suatu feature (diperlukan dalam sebuah shapefile) 
+*.sbn dan *.sbx – File yang menyimpan spatial index dari feature (optional) 
+*.fbn dan *.fbx – File yang menyimpan spatial index dari feature shapefile yang read-only (optional) 
+*.ain dan *.aih – File yang menyimpan index atribut dari field yang aktif dalam sebuah tabel (optional) 
+*.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional).
