@@ -1,0 +1,13 @@
+%leafletjs
+%kelompok 2 D4 TI-2D
+%Cahya Kurniawan 1154038      
+%Doni Saputra 11540030   
+%Ika Syam Setiawati 1154053     
+%Silvy Dharma Febryana 1154112
+%Widi damayanti 1154062
+
+
+
+\section{sejarah leafletjs}
+Leaflet adalah JavaScript Library terkemuka yang berifat opensource untuk membangun peta interaktif yang Mobile friendly. Dengan ukuran hanya sekitar 38 KB, ia memiliki semua fitur pemetaan yang dibutuhkan sebagian besar pengembang.
+Kelebihannya karena opensource lebih mudah dikembangkan oleh peneliti selanjutnya dan mudah untuk mengadaptasi teknologi baru pada GIS. Pada penerapannya SIG memerlukan data spasial yaitu data yang merujuk kepada posisi sebuah objek dalam bentuk koordinat dalam ruang bumi.
