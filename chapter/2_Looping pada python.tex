@@ -47,6 +47,45 @@ Jadi seperti yang sudah dikatakan sebelumnya, perintah pass ini memiliki fungsi 
 
 \subsection{Nested Loop}
 Nested Loop (Perulangan Bertingkat) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
+\subsubsection{Contoh Penggunaan Nested Loop}
+Format nested loop (for di dalam for)
+\begin{equation}
+For iterasi_var_1 in urutan_1:
+	Statements_untuk_perulangan_for_yang_di_luar
+...
+For iterasi_var_1 in urutan_2:
+	Statements_untuk_perulangan_for_yang_di_dalam
+...
+Statements_untuk_perulangan_for_yang_di_luar
+...
+\end{equation}
+
+Format nested loop (while di dalam while)
+\begin{equation}
+While expressions:
+	Statements_untuk_perulangan_while_yang_di_dalam
+...
+Statements_untuk_perulangan_whle_yang_di_luar
+...
+\end{equation}
+
+Contoh :
+\begin{equation}
+X = int(input(“Masukkan jumlah bariss: “))
+For i in range (x) :
+	For j in range(i+1):
+		Print(“*”, end=””)
+	Print()
+\end{equation}
+Saat di Run Module maka :
+Masukkan jumlah bariss: 5 (inputkan 5)
+*
+**
+***
+****
+***** 
+Muncul 5 baris isi bintang
+
 
 \subsection(While Loop)
 Perintah While pada pyton biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal\cite{santoso2009bahasa}. Alur prosesnya adalah ketika sebuah program dijalankan dan kemudian menemukan sebuah kondisi dimana menggunakan loop atau perulangan while, jika kondisi true maka statment itu akan dieksekusi kemudian akan di cek lagi kondisinya. Setelah selesai statmentnya masih true dieksekusi lalu akan mengecek lagi kondisinya dan terus seperti itu, dan jika false statementntya maka akan keluar dari perulangan dan akan melanjutkan ke program selanjutnya.
