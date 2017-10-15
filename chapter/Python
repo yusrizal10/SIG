@@ -3,7 +3,7 @@
 %Eka Pratama Putra        1154023
 %Deni Braja Astrajingga   1154066
 %Shinta Amelia            1154047     
-%Luqman Nurfajri
+%Luqman Nurfajri	  1154054
 %Yoshi Ricowandi Nababan
 %Copyright (c) 2017 Copyright Holder All Rights Reserved.
 
@@ -37,7 +37,12 @@
       3 Desember 2008 dalam periode pengujian yang panjang. Maka, dengan banyak fitur utamanya yang telah dikirim kembali ke Python 2.6 
       yang cocok ke untuk kembali belakang dan menjadi versi 2.7. 
       
-      
+  \section {Fitur dan filosofi}
+	Python adalah bahasa pemrograman multi-paradigma: maksudnya pemrograman berorientasi objek dan pemrograman terstruktur 
+	yang didukung sepenuhnya, dan ada berbagai fitur bahasa yang mendukung pemrograman fungsional dan pemrograman berorientasi-aspek
+	(termasuk metaprogramming dan metode sihir). Banyak model lain yang didukung dengan menggunakan ekstensi, termasuk disain 
+	oleh kontrak dan pemrograman logika. 
+
       
       
       
