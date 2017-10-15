@@ -16,3 +16,10 @@ di dalam tata ruang data tersebut data vektor itu adalah panjang untuk menciptak
 setiap sub-rectangle dikirim ke sebuah wmssub-maps node untuk menghasilkan sekumpulan peta yang dihasilkan merekontruksi
 dengan semuanya sub-maps.Semua sub-maps dihasilkan di paralel,jadi makin sedikit waktu seluruh yang habis memproduksi
 sebuah peta.
+
+   Web Map Service (WMS) memberikan informasi kepada pengguna internet oleh tata ruang peta gambar.Umumnya,
+yang tersimpan di dalam tata ruang data tersebut data vektor .Itu adalah panjang ayub untuk 
+menciptakan data vektor peta gambar dari .Biaya untuk mengurangi waktu , maka kami memanfaatkan linux cluster .
+Ketika peta diminta, itu adalah suatu koordinat lingkup didefinisikan dengan xmin persegi panjang,ymin,xmax, 
+ymax harus dispesifikasikan .Kami merancang beban keseimbangan menurut algoritma untuk membagi permintaan ke dalam 
+beberapa sub-rectangles .
