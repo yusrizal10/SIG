@@ -21,3 +21,13 @@
   year={2004},
   organization={Ieee}
 }
+
+@inproceedings{wang2004load,
+  title={A load balance algorithm for WMS [Web Map Service]},
+  author={Wang, Pancheng and Yang, Chongjun and Yu, Zhanfu and Ren, Yingchao},
+  booktitle={Geoscience and Remote Sensing Symposium, 2004. IGARSS'04. Proceedings. 2004 IEEE International},
+  volume={5},
+  pages={2920--2922},
+  year={2004},
+  organization={Ieee}
+}
