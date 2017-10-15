@@ -1,13 +1,14 @@
 %python
 %kelompok 1 D4 TI-2A
 %Eka Pratama Putra        1154023
-%Deni Braja Astrajingga   
-%Shinta Amelia  1154047     
+%Deni Braja Astrajingga   1154066
+%Shinta Amelia            1154047     
 %Luqman Nurfajri
 %Yoshi Ricowandi Nababan
 %Copyright (c) 2017 Copyright Holder All Rights Reserved.
 
 \section{pengertian python}
+     
       Menurut beberapa  programmer yang menggunakan bahasa pemrograman python ini, Python merupakan salah satu bahasa pemrograman 
       yang dinamis dan mempunyai sistem manajemen memori yang otomatis Seperti bahasa pemrograman yang dinamis lainnya, Python 
       biasanya digunakan melalui script atau kode-kode meskipun bahasa pemrograman ini lebih banyak dimanfaatkan untuk yang umumnya
@@ -15,9 +16,29 @@
       dari pengembang-pengembang software atau perangkat lunak dan juga Bahasa Pemrograman Python ini dapat digunakan di berbagai 
       sistem operasi.
       
-      Sejarah bahasa pemrograman Python dimulai pada awal 1990 dan diciptakan oleh Guido Van Rossum di Stichting Mathematish Centrum (CWI)
-      Belanda yang merupakan kelanjutan dari bahasa pemrograman ABC.Rilis terakhir Python dari CWI adalah versi 1.2 pada tahun 1995. Kemudian
-      Guido melanjutkan Python pada Corporation for National Research (CNRI) di Virginia. Python versi 1.6 merupakan versi terakhir yang
-      dikembangkan oleh CNRI. Pada tahun 2000, Guido dan pengembang Python berpindah ke BeOpen.com dan hanya merilis satu versi yakni 2.0.
-      Kemudian Guido pindah lagi ke Digital Creations.
+ \section {sejarah python}
+ 
+      Dalam sebuah artikel oleh Guido van Rossum (berbahasa inggris) yang di terjemahkan menyebutkan bahwa sejarah bahasa pemrograman 
+      Python dimulai pada awal 1990 dan diciptakan oleh Guido Van Rossum di Stichting Mathematish Centrum (CWI) Belanda yang merupakan 
+      kelanjutan dari bahasa pemrograman ABC.Rilis terakhir Python dari CWI adalah versi 1.2 pada tahun 1995. Kemudian Guido melanjutkan 
+      Python pada Corporation for National Research (CNRI) di Virginia. Python versi 1.6 merupakan versi terakhir yang dikembangkan oleh 
+      CNRI. Pada tahun 2000, Guido dan pengembang Python berpindah ke BeOpen.com dan hanya merilis satu versi yakni 2.0. Kemudian 
+      Guido pindah lagi ke Digital Creations.
 
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/Guido.PNG}}
+	\caption{Guido van Rossum pencipta Python}
+	\label{Guido}
+	\end{figure}
+      
+      Gambar \ref{Guido} merupakan foto dari Guido van Rossum yang merupakan pencipta dari python
+      
+      Python 3.0 yang juga disebut Python 3000 atau py3k dirilis untuk pertama kali yang tidak efisien, dengan dirilisnya pada tanggal 
+      3 Desember 2008 dalam periode pengujian yang panjang. Maka, dengan banyak fitur utamanya yang telah dikirim kembali ke Python 2.6 
+      yang cocok ke untuk kembali belakang dan menjadi versi 2.7. 
+      
+      
+      
+      
+      
+      
