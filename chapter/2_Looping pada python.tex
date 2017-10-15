@@ -5,7 +5,8 @@ Perulangan while disebut dengan uncounted loop (perulangan yang tak terhitung), 
 
 \subsection{Perintah Break, Continue dan Pass Perintah Break}
 \subsubsection{Perintah Break}
-Perintah break dipakai untuk menghentikan proses berjalannya iterasi atau perulangan pada statement for atau while\cite{arfian2012rekayasa}. Statement yang berada di bawah break tidak akan di eksekusi dan program akan keluar dari proses looping.  
+Perintah break dipakai untuk menghentikan proses berjalannya iterasi atau perulangan pada statement for atau while\cite{arfian2012rekayasa}.Dan semua kode setelah pernyataan break akan segera diabaikan. Pernyataan break ini dapat kita gunakan pada pengulangan while dan for.
+Statement yang berada di bawah break tidak akan di eksekusi dan program akan keluar dari proses looping.  
 Contoh break : 
 \begin{equation}
 >>> x = 1     
@@ -22,7 +23,8 @@ print "Loop sdh selesai dikrjkn"
 \end{equation}
 
 \subsubsection{Perintah Continue}
-Perintah continue dapat dipakai untuk meloncati sebuah perulangan, maksudnya adalah intruksi yang seharusnya dapat dilewati, hal ini berarti instruksi tidak akan dijalankan\cite{arfian2012rekayasa}. Misal:
+Perintah continue dapat dipakai untuk meloncati sebuah perulangan, maksudnya adalah intruksi yang seharusnya dapat dilewati, hal ini berarti instruksi tidak akan dijalankan\cite{arfian2012rekayasa}. pernyataan continue akan dilakukan pengulangan mulai dari awal lagi. Dan mengabaikan semua kode yang tersisa pada loop untuk menuju keawal loop lagi.
+Misal:
 \begin(equation}
 for(int i = l; i <= 100; i++){
     if(i % 2 == 0){
@@ -35,7 +37,7 @@ for(int i = l; i <= 100; i++){
 Jika program tersebut dijalankan, maka hasilnya akan menampilkan angka-angka ganjil saja, hal ini disebabkan karena saat nilai i merupakan angka genap, maka statement continue akan membuat program tidak menampilkan angka genap.
 
 \subsubsection{Perintah Pass}
-Sebenarnya perintah pass tidak memiliki fungsi yang sangat penting. Dan bahkan sangat jarang digunakan oleh programmer. Jadi perintah pass ini sebenarnya hanya mengisi kekosongan saja, agar program tidak eror nantinya. 
+Sebenarnya perintah pass tidak memiliki fungsi yang sangat penting. Dan bahkan sangat jarang digunakan oleh programmer. Jadi perintah pass ini sebenarnya hanya mengisi kekosongan saja, agar program tidak eror nantinya.perintah pass akan Menyebabkan program tidak melakukan tindakan. Digunakan untuk mengabaikan sesuatu statement perulangan, pengkodisian, class dan fungsi yang belum di definisikan badan programnya agar tidak terjadi error.
 \begin{equation}
 for i in range (5) :
     if i == 5 :
