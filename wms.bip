@@ -1,0 +1,39 @@
+%buat referensinya
+
+@article{wenjue2004implementation,
+  title={Implementation of OGC web map service based on web service},
+  author={Wenjue, Jia and Yumin, Chen and Jianya, Gong},
+  journal={Geo-spatial Information Science},
+  volume={7},
+  number={2},
+  pages={148--152},
+  year={2004},
+  publisher={Taylor \& Francis}
+}
+
+
+@inproceedings{wang2004load,
+  title={A load balance algorithm for WMS [Web Map Service]},
+  author={Wang, Pancheng and Yang, Chongjun and Yu, Zhanfu and Ren, Yingchao},
+  booktitle={Geoscience and Remote Sensing Symposium, 2004. IGARSS'04. Proceedings. 2004 IEEE International},
+  volume={5},
+  pages={2920--2922},
+  year={2004},
+  organization={Ieee}
+}
+
+@inproceedings{wang2004load,
+  title={A load balance algorithm for WMS [Web Map Service]},
+  author={Wang, Pancheng and Yang, Chongjun and Yu, Zhanfu and Ren, Yingchao},
+  booktitle={Geoscience and Remote Sensing Symposium, 2004. IGARSS'04. Proceedings. 2004 IEEE International},
+  volume={5},
+  pages={2920--2922},
+  year={2004},
+  organization={Ieee}
+}
+
+@article{open2006opengis,
+  title={OpenGIS Web Map Service version 1.3. 0},
+  author={Open Geospatial Consortium and others},
+  year={2006},
+  publisher={Open Geospatial Consortium (OGC)}
