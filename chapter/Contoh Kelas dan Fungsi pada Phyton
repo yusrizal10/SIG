@@ -1,0 +1,35 @@
+Class adalah sebuah spesifikasi yang jika diinstansiasi akan menghasilkan sebuah
+objek dan merupakan inti dari pengembangan dan desain berorientasi objek. Class
+menggambarkan keadaan (atribut/properti) suatu sistem, sekaligus menawarkan layanan
+untuk memanipulasi keadaan tersebut (metoda/fungsi).
+Class memiliki tiga area pokok :
+1. Nama (dan stereotype)
+2. Atribut
+3. Method (operasi)
+Atribut dan metoda dapat memiliki salah satu sifat berikut :
+• Private(-), tidak dapat dipanggil dari luar class yang bersangkutan
+• Protected(#), hanya dapat dipanggil oleh class yang bersangkutan dan anak-anak yang
+mewarisinya
+• Public(+), dapat dipanggil oleh siapa saja
+
+Hubungan Antar Class
+1. Asosiasi, yaitu hubungan statis antar class. Umumnya menggambarkan class yang
+memiliki atribut berupa class lain, atau class yang harus mengetahui eksistensi
+class lain. Panah navigability menunjukkan arah query antar class.
+Lambang :
+2. Agregasi, yaitu hubungan yang menyatakan bagian (“terdiri atas..”) atau biasa
+disebut relasi mempunyai sebuah.
+Lambang :
+3. Composition, yaitu sebuah kelas tidak bisa berdiri sendiri dan harus merupakan
+bagian dari class yang lain, maka class tersebut memiliki relasi composition.
+Lambang :
+4. Dependency, yaitu hubungan yang menunjukan operasi pada suatu kelas yang
+menggunakan class yang lain.
+Lambang :
+5. Generalisasi / Pewarisan, yaitu hubungan hirarkis antar class. Class dapat
+diturunkan dari class lain dan mewarisi semua atribut dan metoda class asalnya
+dan menambahkan fungsionalitas baru, sehingga ia disebut anak dari class yang
+diwarisinya.
+Lambang
+
+
