@@ -33,3 +33,142 @@ diwarisinya.
 Lambang
 
 
+FUNGSI-FUNGSI UMUM
+FUNGSI STRING
+Fungsi string digunakan memanipulasi string untuk berbagai macam kebutuhan. Disini
+akan dibahas beberapa fungsi string yang sering digunakan dalam membuat program
+aplikasi web.
+AddSlashes
+Digunakan untuk menambahkan karakter backslash ( \ ) pada suatu string. Hal ini
+penting digunakan pada query string untuk database, misalkan pada MySQL. Beberapa
+karakter yang akan ditambahkan tanda backslahses adalah karakter tanda petik satu ( ‘ ),
+karakter petik dua ( “ ), backslash ( \ ) dan karakter NULL.
+Sintaks:
+addslashes(string)
+StripSlashes
+Digunakan untuk menghilangkan karakter backslash ( \ ) pada suatu string.
+Sintaks:
+string stripslashes(string)
+Crypt
+Digunakan untuk meng-encrypt dengan metode DES suatu string. Fungsi ini sering
+digunakan untuk mengacak string password sebelum disimpan dalam database. Dalam
+penggunaan fungsi crypt ini dapat ditambahkan parameter string ‘salt’. Parameter ‘salt’
+ini ditambahkan untuk menentukan basis pengacakan. ‘Salt’ string terdiri atas 2
+karakter. Jika ‘salt’ string tidak ditambahkan pada fungsi crypt maka PHP akan
+menentukan sendiri ‘salt’ string tersebut secara acak.
+Sintaks:
+crypt(string [ , salt ] )
+Echo
+Digunakan untuk mencetak isi suatu string atau argumen.
+Sintaks:
+echo( string argumen1, string argumen2 , ….)
+Explode
+Digunakan untuk memecah-mecah suatu string berdasarkan tanda pemisah tertentu dan
+memasukkan hasilnya kedalam suatu variable array.
+Sintaks:
+explode(string pemisah , string [, int limit] )
+Contoh:
+$namahari = “minggu senin selasa rabu kamis jumat sabtu”;
+$hari = explode(“ ”, $namahari);
+
+Implode
+Kegunaan fungsi ini adalah kebalikan daripada fungsi explode. Fungsi implode
+digunakan untuk menghasilkan suatu string dari masing-masing elemen suatu array.
+String yang dihasilkan tersebut dipisahkan oleh suatu string telah yang ditentukan
+sebelumnya.
+Sintaks:
+implode(string pemisah , array)
+Strip_Tags
+Digunakan untuk menghilangkan kode-kode tag HTML pada suatu string.
+Sintaks:
+striptags(string [, string tags yang tidak dihilangkan] )
+StrLen
+Digunakan untuk menghitung jumlah karakter suatu string.
+Sintaks:
+strlen(string)
+StrPos
+Digunakan untuk mencari posisi pertama suatu sub string pada suatu string. Fungsi ini
+biasanya digunakan untuk mencari suatu sub string didalam suatu string.
+Sintaks:
+strlen(string , sub string)
+Str_Repeat
+Digunakan untuk mengulang isi suatu string.
+Sintaks:
+str_repeat(string , int jumlah perulangan)
+StrToLower
+Digunakan untuk merubah suatu string menjadi huruf kecil (lowercase).
+Sintaks:
+strtolower(string)
+StrToUpper
+Digunakan untuk merubah suatu string menjadi huruf besar (uppercase)
+Sintaks:
+strtoupper(string)
+SubStr
+Digunakan untuk mengambil suatu sub string dengan panjang tertentu dari suatu string pada
+posisi tertentu pula.
+Sintaks:
+
+substr(string, int posisi , int posisi)
+Contoh:
+substr(“abcdefg”,0,3); // mengasilkan string “abc”
+substr(“abcdefg”,3,2); // menghasilkan string “de”
+SubStr_Count
+Digunakan untuk menghitung jumlah sub string dalam suatu string
+Sintaks:
+substr_count( string , string substring)
+Contoh:
+substr_count(“This is a test”,”is”); // menghasilkan nilai 2
+UCFirst
+Digunakan untuk mengganti karakter pertama pada suatu string menjadi huruf besar.
+Sintaks:
+ucfirst(string)
+UCWords
+Digunakan untuk mengganti karakter pertama pada setiap kata dalam suatu string
+menjadi huruf besar.
+Sintaks:
+ucwords(string)
+FUNGSI DATE
+Digunakan untuk mengambil tanggal dan jam. Hasil dari fungsi ini adalah sebuah string
+yang berisi tanggal/jam sesuai dengan format yang diinginkan. Format yang dikenal
+dalam fungsi date ini adalah sebagai berikut:
+ a - "am" or "pm"
+ A - "AM" or "PM"
+ B - Swatch Internet time
+ d - day of the month, 2 digits with leading zeros; i.e. "01" to "31"
+ D - day of the week, textual, 3 letters; i.e. "Fri"
+ F - month, textual, long; i.e. "January"
+ g - hour, 12-hour format without leading zeros; i.e. "1" to "12"
+ G - hour, 24-hour format without leading zeros; i.e. "0" to "23"
+ h - hour, 12-hour format; i.e. "01" to "12"
+ H - hour, 24-hour format; i.e. "00" to "23"
+ i - minutes; i.e. "00" to "59"
+ I (capital i) - "1" if Daylight Savings Time, "0" otherwise.
+ j - day of the month without leading zeros; i.e. "1" to "31"
+ l (lowercase 'L') - day of the week, textual, long; i.e. "Friday"
+ 
+ 
+ 
+ L - boolean for whether it is a leap year; i.e. "0" or "1"
+ m - month; i.e. "01" to "12"
+ M - month, textual, 3 letters; i.e. "Jan"
+ n - month without leading zeros; i.e. "1" to "12"
+ s - seconds; i.e. "00" to "59"
+ S - English ordinal suffix, textual, 2 characters; i.e. "th", "nd"
+ t - number of days in the given month; i.e. "28" to "31"
+ T - Timezone setting of this machine; i.e. "MDT"
+ U - seconds since the epoch
+ w - day of the week, numeric, i.e. "0" (Sunday) to "6" (Saturday)
+ Y - year, 4 digits; i.e. "1999"
+ y - year, 2 digits; i.e. "99"
+ z - day of the year; i.e. "0" to "365"
+ Z - timezone offset in seconds (i.e. "-43200" to "43200")
+Sintaks:
+date(string format)
+Contoh:
+date(“Y-m-d”); // menghasilkan “2001-07-28”
+date(“l, j F Y”); // menghasilkan “Saturday, 28 July 2001”
+date(“H:i:s”); // menghasilkan “20:15:07”
+FUNGSI MAIL
+Digunakan untuk mengirimkan e-mail ke alamat e-mail tertentu.
+Sintaks:
+mail(string tujuan , string subject , string isi [, string
