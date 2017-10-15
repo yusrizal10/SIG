@@ -23,3 +23,10 @@ menciptakan data vektor peta gambar dari .Biaya untuk mengurangi waktu , maka ka
 Ketika peta diminta, itu adalah suatu koordinat lingkup didefinisikan dengan xmin persegi panjang,ymin,xmax, 
 ymax harus dispesifikasikan .Kami merancang beban keseimbangan menurut algoritma untuk membagi permintaan ke dalam 
 beberapa sub-rectangles .
+
+   Setiap sub-rectangle dikirim ke sebuah wms sub-maps node untuk menghasilkan sekumpulan .
+Peta yang dihasilkan akan merekonstruksi dengan semuanya ini sub-maps .Semua ini sub-maps dihasilkan di paralel, 
+jadi makin sedikit waktu yang seluruh habis di memproduksi sebuah peta .Bagaimana untuk membagi menurut adalah 
+kunci masalah permintaan .Pertama , kami menghadirkan metode untuk menghitung tingkat 2d bobot beban distribusi peta lingkup .
+Kedua , node beban kemampuan yang dievaluasi .Kemudian , penulis hadirmetode menurut untuk membelah seluruh.
+Kertas ini juga membahas algoritma kinerja pelaksanaan .
