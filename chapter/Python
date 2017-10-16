@@ -46,7 +46,7 @@
 	Bahasa memiliki fungsi peta (), reduce () dan filter (), lengkap untuk daftar, kamus, dan set, serta ekspresi generator. 
 	Perpustakaan standar memiliki dua modul (itertool dan functools) yang mengimplementasikan alat fungsional yang dipinjam 
 	dari Haskell dan Standard ML.
-	
+
    \section {instalasi python untuk windows}
 
 	di sini penulis artikel menunjukkan instalasi software python yang akan
@@ -108,6 +108,7 @@
 	
 	instalasi \ref {selesai} software telah selesai dan software python siap digunakan
 
+   
       
       
       
