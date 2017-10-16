@@ -31,14 +31,12 @@ Daftar
 tupel
 Kamus
 
-
 Variabel pada Python memiliki beberapa aturan seperti :
 •	Case Sensitive : penggunaan huruf besar dan huruf kecil yang dibedakan.
 •	Harus dimulai dengan underscore (_) atau huruf biasa, setelah itu dapat diikuti dengan huruf, angka atau underscore (_).
 •	Tidak boleh mengandung karakter special seperti !,@,\#,\$ dan lainnya.
 •	Hanya dapat menggunakan suatu variable setelah kita memberikan nilai ke dalamnya atau telah dilakukan assignment.
 •	Setiap variable akan menyimpan referensi ke suatu objek dalam memory.\cite{santoso2009bahasa}
-
 
 Variabel adalah sebuah nama yang selalu menunjukkan nilai tertentu. Dalam bahasa pemrograman Python, untuk membentuk sebuah variabel itu cukup hanya memberi nama pada nilai yang akan dibuat. Ini disebut dengan Assignment.
 Contoh : 
@@ -54,6 +52,7 @@ contoh lainnya:
 >>> print b
 4.0
 \end{equation}
+
 Tulisan b = 2 artinya kita memberi nilai pada variabel b dengan angka 2 yang bertipe integer
 (bilangan bulat). Statemen berikutnya adalah melakukan operasi perkalian b ∗ 2.0 lalu hasilnya
 disimpan pada variabel yang sama yaitu variabel b. Dengan demikian nilai b yang lama
@@ -174,3 +173,34 @@ Misalkan sebuah data pribadi berisi nama, alamat, umur, tempat lahir, tanggal la
 	\end{figure}
 
 Pada Gambar 2.2 \ref{tipedatabilangan} terlihat input/output pada tipe data bilangan dengan hasil yang berbeda tipe bilangannya yaitu tipe integer (bilangan bulat) atau float (bilangan berkoma).\cite{irfani2016bahan}
+
+\subsusection{Memberikan nilai ke dalam variable}
+Lakukan inisiasi variabel atau konstanta dari permasalahan berikut! Menjumlahkan hasil dari total harga pada saat konsumen membeli beberapa barang.
+
+Langkah 1: Inisiasi Persoalan 
+Variabel/ konstanta input :  
+kode_barang, nama_barang, harga_satuan_barang, 
+jumlah_per_barang_beli, total_harga_per_transaksi = 0 
+Proses :  harga_beli_per_barang = harga_satuan_barang * jumlah_per_barang_beli 
+total_harga_per_transaksi=harga_beli_per_barang + total_harga_per_transaksi
+Output :  total_harga_per_transaksi
+
+Langkah 2: Menetapkan Tipe Data 
+kd_brg, nama_brg bertipe data string 
+jum_brg bertipe data integer harga_satuan, harga_beli, total_hrg_brg bertipe data float 
+
+Langkah 3 : Kode program
+\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.50\textwidth]{figures/code.png}
+	\caption{kode program}
+	\label{code}
+	\end{figure}
+  
+\subsubsection{Mencetak nilai dalam variable} 
+Mencetak nilai dalam sebuah variabel menggunakan pernyataan print, perhatikan 
+contoh berikut ini. 
+\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.25\textwidth]{figures/konversi.png}
+	\caption{Tampilan Contoh Konversi Tipe Data String dan Integer}
+	\label{Tipe Data String dan Integer}
+	\end{figure}
