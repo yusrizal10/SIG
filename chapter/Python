@@ -42,6 +42,10 @@
 	yang didukung sepenuhnya, dan ada berbagai fitur bahasa yang mendukung pemrograman fungsional dan pemrograman berorientasi-aspek
 	(termasuk metaprogramming dan metode sihir). Banyak model lain yang didukung dengan menggunakan ekstensi, termasuk disain 
 	oleh kontrak dan pemrograman logika. 
+	Desain Python hanya menawarkan dukungan yang terbatas untuk pemrograman fungsional dalam tradisi Lisp. 
+	Bahasa memiliki fungsi peta (), reduce () dan filter (), lengkap untuk daftar, kamus, dan set, serta ekspresi generator. 
+	Perpustakaan standar memiliki dua modul (itertool dan functools) yang mengimplementasikan alat fungsional yang dipinjam 
+	dari Haskell dan Standard ML.
 
       
       
