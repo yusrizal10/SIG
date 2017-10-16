@@ -46,6 +46,67 @@
 	Bahasa memiliki fungsi peta (), reduce () dan filter (), lengkap untuk daftar, kamus, dan set, serta ekspresi generator. 
 	Perpustakaan standar memiliki dua modul (itertool dan functools) yang mengimplementasikan alat fungsional yang dipinjam 
 	dari Haskell dan Standard ML.
+	
+   \section {instalasi python untuk windows}
+
+	di sini penulis artikel menunjukkan instalasi software python yang akan
+	digunakan untuk sql injection. Pada dasarnya proses instalasi python tidak jauh berbeda dengan instalasi software pada umumnya
+	berikut adalah langkah-langkah instalasi python:
+
+	1. Langkah pertama adalah klik ganda pada file instalasi python.exe
+	kemudian run
+
+	2. pilih install for all user kemudian tekan Next. karena tujuannya
+	agar aplikasi bisa digunakan oleh setiap user yang ada di pc.
+	termasuk guest sekalipun.
+			
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/awal.PNG}}
+	\caption{tampilan awal instalasi}
+	\label{awal}
+	\end{figure}
+	
+	gambar \ref {awal} merupakan tampilan awal instalasi app python
+	
+	3. pilih folder tempat instalasi python
+	
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/folder.PNG}}
+	\caption{pilih folder tempat instalasi}
+	\label{folder}
+	\end{figure}
+	
+	gambar \ref {folder} tampilan untuk memilih folder instalasi
+
+	4. klik next lagi untuk melanjutkan pemasangan
+
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/komponen.PNG}}
+	\caption{komponen yang akan di install}
+	\label{komponen}
+	\end{figure}
+	
+	gambar \ref {komponen} merupakan tampilan komponen instalasi python
+
+	5. tunggu proses instalasi python beberapa saat
+	
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/proses.PNG}}
+	\caption{tampilan proses instalasi}
+	\label{proses}
+	\end{figure}
+	
+	gambar \ref {proses} merupakan tampilan proses instalasi
+
+	6. jika proses instalasi selesai, klik tombol finish
+	
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/selesai.PNG}}
+	\caption{tampilan akhir instalasi}
+	\label{selesai}
+	\end{figure}
+	
+	instalasi \ref {selesai} software telah selesai dan software python siap digunakan
 
       
       
