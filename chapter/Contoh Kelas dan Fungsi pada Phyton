@@ -38,6 +38,10 @@ FUNGSI STRING
 Fungsi string digunakan memanipulasi string untuk berbagai macam kebutuhan. Disini
 akan dibahas beberapa fungsi string yang sering digunakan dalam membuat program
 aplikasi web.
+
+\section Fungsi
+Dalam menulis program, tentunya kita akan /& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali, dengan beberapa nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kembali kode yang ingin dipanggil ulang tersebut. Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
+Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain, biasanya digunakan istilah function. 
 AddSlashes
 Digunakan untuk menambahkan karakter backslash ( \ ) pada suatu string. Hal ini
 penting digunakan pada query string untuk database, misalkan pada MySQL. Beberapa
@@ -172,3 +176,10 @@ FUNGSI MAIL
 Digunakan untuk mengirimkan e-mail ke alamat e-mail tertentu.
 Sintaks:
 mail(string tujuan , string subject , string isi [, string
+
+\subsection Fungsi
+Dalam menulis program, tentunya kita akan /& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali,
+dengan beberapa nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kembali kode yang ingin dipanggil ulang tersebut. 
+Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
+Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain,
+biasanya digunakan istilah function. 
