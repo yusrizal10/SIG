@@ -2,6 +2,15 @@
 Data Spasial Sistem Informasi Geografis (SIG) model data yang akan digunakan dari bentuk dunia nyata harus dapat diimplementasikan ke dalam basisdata. Data ini dimasukkan ke dalam komputer yang nantinya memanipulasi objek dasar yang memiliki atribut geometri (entity spasial/entity geografis) 
 (Prahasta, 2002a). Data spasial pada dasarnya dapat disimpulkan bahwa data spasial merupakan suatu entitas data dalam Sistem Informasi Geografis (SIG) yang dapat dikelola, dianalisa dan dapat memetakan informasi objek keruangan beserta data-data atributnya serta dapat disimpan di dalam database yang dapat ditampilkan kedalam suatu sistem tertentu sehingga dapat mendukung dalam pengambilan keputusan. 
 
+\subsection{ABSTRAK}
+Diagram  Voronoi merupakan konsep interdisipliner yang telah diterapkan pada berbagai bidang. Dalam sistem informasi geografis (GIS), kemampuan yang ada untuk menghasilkan diagram Voronoi biasanya fokus pada hal biasa (tidak berbobot) titik fitur/point (tidak linear atau area). Untuk integrasi yang lebih baik dari model diagram Voronoi dan GIS, pendekatan berbasis raster dikembangkan, dan dilaksanakan mulus sebagai perpanjangan ArcGIS menggunakan ArcObjects. Dalam tulisan ini, metodologi dan pelaksanaan ekstensi dijelaskan, dan contoh yang disediakan untuk fitur titik(point), line, dan poligon. Keuntungan dan keterbatasan ekstensi juga dibahas. Ekstensi memiliki beberapa fitur berikut: 
+\begin{enumerate}
+\(1) bekerja untuk titik, garis, dan fitur vektor poligon; 
+\(2) dapat menghasilkan kedua diagram Voronoi biasa dan multiplicatively tertimbang dalam format vektor; 
+\(3) dapat menetapkan atribut non-spasial fitur input ke Voronoi sel melalui bergabung spasial;
+\(4) dapat menghasilkan biasa atau Euclidean dataset raster jarak tertimbang untuk aplikasi pemodelan spasial. Hasil dapat dengan mudah dikombinasikan dengan GIS dataset lain untuk mendukung analisis spasial berbasis vektor dan pemodelan spasial berbasis raster.
+
+
 \subsection{Model data Vektor pada Geographics Information System GIS}
 Vektor  pada GIS mampu melakukan penempatan, menampilkan data spasial bahkan menyimpan datanya yang menggunakan titik-titik, garis-garis dan juga poligon yang dilengkapi dengan artibut-artibutnya. Bentuk-bentuk dasar representasi dari data spasial ini di dalam sistem model data vektor dapat didefinisikan oleh sistem koordinat kartesian dua dimensi (X,Y). Dimana di dalam model data spasial vektor, garis-garis atau kurva (busur atau arcs) adalah berupa sekumpulan titik-titik terurut yang saling berhubungan (Prahasta, 2002a). 
 
@@ -17,10 +26,6 @@ Pada gambar \ref{point} dijelaskan bahwa gambar point/titik data vektor GIS seba
 Maka artikel :
 	Dalam sebuah artikel dari husein yang menyebutkan bahwa  GIS merupakan pemahaman dari
 	Geography, Information dan System \cite{widiatmoko2009aplikasi}.
-
-\subsection{Contoh Proses Data Geospatial}
-data disimpan Misalnya dalam spesies berikut kejadian analisis akan yang digunakan untuk menggambarkan geospasial pengolahan data dalam sistem kepler.Tujuannya adalah untuk menemukan berbagai spesies baris ini dari a yang di dalam persimpangan dari lambung cembung baris ini dari spesies b dan spesies c.Kejadian datasets kami beranggapan bahwa al ( point data ) disimpan dalam tiga format-format antara lain :
-spesies sebuah dalam sebuah flat file, spesies b data disimpan dan dikelola oleh sql server 2000 dan spesies c data disimpan dan dikelola oleh oracle 10g dengan kemampuan tata ruang. Kami lebih lanjut berasumsi bahwa ketiga datasets layanan web tersebut dapat diakses melalui yang mengembalikan sebuah gml representasi dari data.
 
 \section{contoh perancangan sistem (GEOGRAPHICS INFORMATION SYSTEM) dengan menggunakan Point}
 Pada Point dapat menampung SHP yang bertipe Point.
