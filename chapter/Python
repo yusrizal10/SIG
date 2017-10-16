@@ -108,7 +108,22 @@
 	
 	instalasi \ref {selesai} software telah selesai dan software python siap digunakan
 
-   
+   	Pemrograman Dalam Bahasa Python
+	Program adalah urut-urutan instruksi untuk menjalankan suatu komputasi. Komputasi dapat berupa matemasis, seperti
+	pencarian bilangan prima, persamaan kuadrat, atau yang lainnya. Akan tetapi juga dapat berupa
+	pencarian dan penggantian teks dalam dokumen. Instruksi atau perintah atau statement
+	pada masing-masing bahasa pemrograman dapat berbeda, namun beberapa instruksi dasar
+	secara prinsip hampir disemua bahasa pemrograman sama, seperti :
+	1. Input
+	mengambil data dari keyboard, mouse, file, atau dari device lain.
+	2. Output
+	menampilkan data pada tampilan monitor atau pada device lain.
+	3. Math
+	melakukan operasi dasar matematika seperti penambahan dan perkalian.
+	4. Conditional
+	pemilihan suatu ondisi dan mengeksekusi sesuatu dengan statement selajutnya.
+	5. Repitisi
+	Operasi perulangan.
       
       
       
