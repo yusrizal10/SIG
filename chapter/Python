@@ -108,7 +108,7 @@
 	
 	instalasi \ref {selesai} software telah selesai dan software python siap digunakan
 
-   	Pemrograman Dalam Bahasa Python
+   	\section Pemrograman Dalam Bahasa Python
 	Program adalah urut-urutan instruksi untuk menjalankan suatu komputasi. Komputasi dapat berupa matemasis, seperti
 	pencarian bilangan prima, persamaan kuadrat, atau yang lainnya. Akan tetapi juga dapat berupa
 	pencarian dan penggantian teks dalam dokumen. Instruksi atau perintah atau statement
@@ -124,7 +124,26 @@
 	pemilihan suatu ondisi dan mengeksekusi sesuatu dengan statement selajutnya.
 	5. Repitisi
 	Operasi perulangan.
-      
-      
+      	Masih banyak hal lain yang belum tercakup diatas, namun program-program bagaimanapun kompleksnya pasti akan terdiri
+      	kumpulan intruksi-intruksi di atas.
+	Pemrograman merupakan proses yang kompleks yang memungkinkan terjadi kesalahan.
+	Berbagai macam kesalahan dapat terjadi dalam pemrograman dinamakan bug. Sedangkan proses pencarian kesalahan dinamakan
+	debugging. Dalam pemrograman, kesalahan dapat dibagi menjadi tiga macam, yakni kesalahan sintaks (syntax error), kesalahan run-time (run-time error)
+	dan kesalahan dalam pemrograman dapat menjadikan pencarian kesalahan lebih cepat.
+	1. Kesalahan Sintaks
+	   Python hanya dapat dieksekusi jika dan hanya jika program tersebut sintaksnya telah sepenuhnya benar.
+	   jika tidak, maka proses akan berhenti dan memberi pesan kesalahan. Sintaks menunjukkan struktur program dan aturannya.
+	   Sintaks dalam bahasa Indonesia bisa diumpamakan sebuah kalimat yang harus diawali dengan huruf besar dan 
+	   diakhiri dengan titik. Bila terjadi kesalahan sintaks dalam bahasa, maka beberapa pembacac tidak akan begitu mempermasalahkan, tetapi Python
+	   tidak demikian. Python harus ditulis dengan benar tanpa ada satupun kesalahan sintaks.
+	2. Kesalahan Run-time
+	   Kesalahan tipe kedua adalah kesalahan run-time. Disebut demikian karena kesalahan ini tidak akan muncul sebelum program dijalankan.
+	   Kesalahan ini juga sering disebut exception karena kesalahan ini biasanya menunjukkan sesuatu yang ganjil (dan tidak benar) terjadi.
+	3. Kesalahan Logika 
+	   Kesalahan tipe ketiga adalah kesalahan logika atau semantik. Jika terjadi kesalahan tipe ini, program akan tetap berjalan dengan sukses tanpa 
+	   pesan kesalahan, namun tidak menjalankan program dengan benar atau tidak menjalankan program sesuai dengan
+	   maksud yang diinginkan pemrogram.
+	   
+	
       
       
