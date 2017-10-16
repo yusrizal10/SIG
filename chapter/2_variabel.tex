@@ -53,6 +53,42 @@ contoh lainnya:
 4.0
 \end{equation}
 
+ke suatu object dalam memory. Untuk lebih jelasnya
+dapat kita lihat contoh berikut ini :
+\begin{equation}
+>>> a = 2
+>>> b = 3
+>>> a,b = b,a
+>>> a
+3
+>>> b
+2
+>>>
+\end{equation}
+
+Beberapa bentuk if adalah sebagai berikut :
+\begin{equation}
+a. if tunggal
+if x == 1:
+print ‘x bernilai 1’
+b. if dengan else
+if x == 1:
+print ‘x bernilai 1’
+else:
+print ‘x tidak bernilai 1’
+c. if dengan pilihan if lainnya
+if x == 1:
+print ‘x bernilai 1’
+elif x == 2:
+print ‘x bernilai 2’
+else:
+print ‘x tidak bernilai 1 atau 2’
+d. if didalam if
+if x == 1:
+if y == 1:
+print ‘x dan y bernilai 1’
+\end{equation}
+
 Tulisan b = 2 artinya kita memberi nilai pada variabel b dengan angka 2 yang bertipe integer
 (bilangan bulat). Statemen berikutnya adalah melakukan operasi perkalian b ∗ 2.0 lalu hasilnya
 disimpan pada variabel yang sama yaitu variabel b. Dengan demikian nilai b yang lama
