@@ -17,5 +17,6 @@
   contoh : var map = new OpenLayers.Map(“map”, options);
   Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers. 
   
- 
+\subsection{Base Layers}
+ Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang dapat diaktifkan setiap saat. Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang ada dalam peta. Base Layer atau bukan, hal ini ditentukan oleh property isBaseLayer pada layer. Kebanyakan Layer raster memiliki Properti isBaseLayer yang diset dengan true secara default. Ini bisa diganti pada layer option. Base layers selalu ditampilkan dibawah overlay layers
 
