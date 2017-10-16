@@ -35,32 +35,32 @@ basis data adalah sistem manajemen basis data yang dinamai dBASE. Shapefile tert
 
 \subsection{Daftar beberapa file extension}
 \begin{enumerate}
-    \item *.shp - File yang menyimpan feature geometri (diperlukan dalam sebuah shapefile) 
-    \item *.shx - File yang menyimpan index dari feature geometri (diperlukan dalam sebuah shapefile) 
-    \item *.dbf - File dBASE yang menyimpan informasi atribut dari suatu feature (diperlukan dalam sebuah shapefile) 
-    \item *.sbn dan *.sbx – File yang menyimpan spatial index dari feature (optional) 
-    \item *.fbn dan *.fbx – File yang menyimpan spatial index dari feature shapefile yang read-only (optional) 
-    \item *.ain dan *.aih – File yang menyimpan index atribut dari field yang aktif dalam sebuah tabel (optional) 
-    \item *.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional).
+    \item 1.shp - File yang menyimpan feature geometri (diperlukan dalam sebuah shapefile) 
+    \item 2.shx - File yang menyimpan index dari feature geometri (diperlukan dalam sebuah shapefile) 
+    \item 3.dbf - File dBASE yang menyimpan informasi atribut dari suatu feature (diperlukan dalam sebuah shapefile) 
+    \item 4.sbn dan *.sbx – File yang menyimpan spatial index dari feature (optional) 
+    \item 5.fbn dan *.fbx – File yang menyimpan spatial index dari feature shapefile yang read-only (optional) 
+    \item 6.ain dan *.aih – File yang menyimpan index atribut dari field yang aktif dalam sebuah tabel (optional) 
+    \item 7.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional).
 \end{enumerate}
 \subsubsection{Contoh penggunaan extension shapefile}
 \begin{enumerate}
-    \item read.shapefile (form.name) 
-    \item read.shp (shp.name) 
-    \item read.shx (shx.name)
-    \item read.dbf (dbf.name, sundulan = FALSE)
-    \item write.shapefile (shapefile, out.name, arcgis = FALSE) 
-    \item write.shp (shp, out.name) 
-    \item write.shx (SHX, out.name)
-    \item write.dbf (DBF, out.name, arcgis = FALSE) 
-    \item calc.header (shapefile) 
-    \item add.xy (shapefile)
+    \item 1. read.shapefile (form.name) 
+    \item 2. read.shp (shp.name) 
+    \item 3. read.shx (shx.name)
+    \item 4. read.dbf (dbf.name, sundulan = FALSE)
+    \item 5. write.shapefile (shapefile, out.name, arcgis = FALSE) 
+    \item 6. write.shp (shp, out.name) 
+    \item 7. write.shx (SHX, out.name)
+    \item 8. write.dbf (DBF, out.name, arcgis = FALSE) 
+    \item 9. calc.header (shapefile) 
+    \item 10. add.xy (shapefile)
 \end{enumerate}
 \subsubsubsection{Bentuk file}
 \begin{itemize}
-    \item scaleXY (shapefile, scale.factor)
-    \item convert.to.shapefile (shpTable, attTable, bidang, jenis) 
-    \item convert.to.simple (shp)
-    \item change.id (shpTable, newFieldAsVector) 
-    \item dp (poin, toleransi)
+    \item *.scaleXY (shapefile, scale.factor)
+    \item *.convert.to.shapefile (shpTable, attTable, bidang, jenis) 
+    \item *.convert.to.simple (shp)
+    \item *.change.id (shpTable, newFieldAsVector) 
+    \item *.dp (poin, toleransi)
 \end{itemize}
