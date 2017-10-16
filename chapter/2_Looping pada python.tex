@@ -241,6 +241,35 @@ Lalu, setelah perintah diatas dijalankan (run) maka akan tampil bilangan seperti
     \caption{hasil penggunaan range}
     \label{2_range}
     \end{figure}
+    
+\subsubsection{Contoh penggunaan range(nilai_awal,nilai_akhir)}
+Berikut ini adalah contoh penggunaan range untuk menampilkan dari bilangan tertentu sampai bilangan tertentu dan menghitung banyaknya bilangan serta menghitung jumlah seluruh bilangan yang ada.
+\begin{equation}
+awal=int(input('Set Nilai Awal = '))
+akhir=int(input('Set Nilai Akhir = '))
+
+count=0
+summ=0
+
+print('Bilangan antara \%d dan \%d ' \%(awal,akhir))
+
+for i in range(awal,akhir+1) :
+	print(i, end=' ')
+	count=count+1
+	summ=summ+i
+
+print('Bilangan di atas ada \%d bilangan' \%count)
+print('Jumlah semua bilangan adalah \%d' \%summ)
+\end{equation}
+
+Setelah perintah diatas dijalankan (run) maka akan tampil bilangan seperti ini :
+\ref{2_range2}
+
+\begin{figure}[ht]
+    \centerline{\includegraphics[width=1\textwidth]{figures/2_range2.JPG}}
+    \caption{hasil penggunaan range}
+    \label{2_range2}
+    \end{figure}
 
 \subsection{for loop with else}
 For loop bisa memiliki blok else yang opsional juga. Bagian lain dijalankan jika item urutan digunakan dalam lingkaran for loop .
