@@ -64,3 +64,25 @@ basis data adalah sistem manajemen basis data yang dinamai dBASE. Shapefile tert
     \item *.change.id (shpTable, newFieldAsVector) 
     \item *.dp (poin, toleransi)
 \end{itemize}
+
+\subsection{Komponen Teknis}
+Komponen yang ada pada sebuah aplikasi GIS
+mempunyai fungsi utama untuk membaca dan menulis
+data spasial, baik yang tersimpan dalam sebuah
+shapefile (*.shp) atau tersimpan ke dalam sebuah
+database (Eddy 2006).
+Dalam MapServer yang sudah berjalan ada beberapa
+Komponen utama yang digunakan secara peneuh untuk
+menjalankan Aplikasi GIS untuk menangani data
+spasial baik yang tersimpan dalam sebuah flat file atau
+juga dalam DBMS yaitu :
+1. SHAPELIB
+Shapelib merupakan library yang ditulis
+menggunakan bahasa pemrograman C yang
+digunakan untuk melakukan proses read terhadap
+Shapefile (*.shp) yang sudah didefinisikan ESRI
+(Environmental System Research Institute).
+Format dalam shapefile umum digunakan untuk
+menyimpan data vector simple (tanpa topologi)
+dengan atribut, shapefile merupakan format data
+default yang digunakan dalam GIS.
