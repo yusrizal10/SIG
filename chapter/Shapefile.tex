@@ -4,7 +4,7 @@
 % Andi Wadi Afriandyka (1154113)
 % Andi Nurfadillah Ali ()
 % Hanna Theresia Siregar ()
-% Pebridayanti Hasibuan ()
+% Pebridayanti Hasibuan (1154118)
 
 
 \section{Shapefile}
@@ -52,6 +52,7 @@ out.name) write.shx (SHX, out.name)
 write.dbf (DBF, out.name, arcgis = FALSE) calc.header
 (shapefile) add.xy (shapefile)
 
+
 bentuk file
 scaleXY (shapefile, scale.factor)
 convert.to.shapefile (shpTable, attTable, bidang, jenis) convert.to.simple
@@ -59,3 +60,5 @@ convert.to.shapefile (shpTable, attTable, bidang, jenis) convert.to.simple
 change.id (shpTable, newFieldAsVector) dp (poin,
 toleransi)
 
+\subsecion (pengertian shapefile)
+Shapefile ESRI atau biasa disebut shapefila adalah format data geospasial yang umum untuk perangkat lunak sistem informasi geografis, dengan pengertian bahwa shape merupakan properti intrinsik utama untuk sistem visual manusia. manusia lebih sering mengasosialisasikan objek dengan bentuknya ketimbang elemen lainnya (warna misalnya), pada umumnya, citra yang dibentuk oleh mata merupakan citra dwimatra (2 dimensi), sedangkan objek yang dilihat umumnya berbentuk trimatra (3 dimensi). informasi bentuk objek dapat diekstansi dari citra pada permulaan pra-pengolahan dan segmentasi citra. salah satu tantangan utama pada komputer vision adalah merepresentasikan bentuk, atau aspek-aspek penting dari bentuk.
