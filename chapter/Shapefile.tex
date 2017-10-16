@@ -26,39 +26,41 @@ dan tabel atribut yang terkait dengan informasi geografis (mis., Perumahan sensu
 dimanipulasi menggunakan sistem informasi geografis (SIG); ArcView 8.3 (ESRI, Redlands, CA) digunakan dalam proyek ini. 
 Paket pajak shapefile diperoleh dari kantor penilai pajak Fulton dan Gwinnett County. Shapefile ini mengandung poligon yang sesuai 
 dengan lokasi dan dimensi setiap paket tanah kena pajak di county. Alamat setiap paket disimpan dalam tabel atributnya.
+Shapefile ESRI atau biasa disebut shapefila adalah format data geospasial yang umum untuk perangkat lunak sistem informasi geografis, dengan pengertian bahwa shape merupakan properti intrinsik utama untuk sistem visual manusia. manusia lebih sering mengasosialisasikan objek dengan bentuknya ketimbang elemen lainnya (warna misalnya), pada umumnya, citra yang dibentuk oleh mata merupakan citra dwimatra (2 dimensi), sedangkan objek yang dilihat umumnya berbentuk trimatra (3 dimensi). informasi bentuk objek dapat diekstansi dari citra pada permulaan pra-pengolahan dan segmentasi citra. salah satu tantangan utama pada komputer vision adalah merepresentasikan bentuk, atau aspek-aspek penting dari bentuk.
 
 \subsection{Struktur Data Shapefile}
-Geodatabase adalah struktur data yang kuat dan canggih. selain topologi yang anda dapatkan secara 
-gratis, area dan sekeliling area yang digambarkan dengan fitur linier. Namun, ESRI juga mendukung 
-struktur data yang jauh lebih rumit: shapefile. sebuah shapefile dapat menggabungkan dua elemen 
-penting yang dimiliki oleh geodatabase(komponen geografis dan database atribut) Perangkat lunak 
-basis data adalah sistem manajemen basis data yang dinamai dBASE. Shapefile tertentu dibatasi hanya untuk mewakili satu dari jenis berikut: titik, multipoint, polyLines, atau poligon dengan titik. masing-masing titik memiliki catatan database relasional. Jika sejumlah titik dianggap objek yang sama, maka objek tersebut hanya memiliki satu record di tabel atribut. seperti pada geodatabases, polylines dapat disusun dari satu atau lebih jalur terhubung ataupun terputus-putus. Namun, jalur diperbolehkan untuk disusun hanya dari segmen garis lurus.
+Geodatabase adalah struktur data yang kuat dan canggih. selain topologi yang anda dapatkan secara gratis, area dan sekeliling area yang
+digambarkan dengan fitur linier. Namun, ESRI juga mendukung struktur data yang jauh lebih rumit: shapefile. sebuah shapefile dapat menggabungkan dua elemen penting yang dimiliki oleh geodatabase(komponen geografis dan database atribut) Perangkat lunak 
+basis data adalah sistem manajemen basis data yang dinamai dBASE. Shapefile tertentu dibatasi hanya untuk mewakili satu dari jenis berikut: titik, multipoint, polyLines, atau poligon dengan titik. masing-masing titik memiliki catatan database relasional. Jika sejumlah titik dianggap objek yang sama, maka objek tersebut hanya memiliki satu record di tabel atribut. seperti pada geodatabases, polylines dapat disusun dari satu atau lebih jalur terhubung ataupun terputus-putus. Namun, jalur diperbolehkan untuk disusun hanya dari segmen garis lurus. Poligon dalam shapefile memiliki kemiripan dengan poligon basis geodata, namun tidak ada topologi yang ada dan tidak ada yang dapat diciptakan. setiap poligon berdiri sendiri. Hal ini digambarkan secara lengkap oleh satu entitas linier: urutan segmen yang dimulai di satu lokasi geografis dan kembali ke lokasi tersebut. mungkin ada poligon yang berdekatan atau tidak. poligon lain mungkin tumpang tindih.
 
 \subsection{Daftar beberapa file extension}
-*.shp - File yang menyimpan feature geometri (diperlukan dalam sebuah shapefile) 
-*.shx - File yang menyimpan index dari feature geometri (diperlukan dalam sebuah shapefile) 
-*.dbf - File dBASE yang menyimpan informasi atribut dari suatu feature (diperlukan dalam sebuah shapefile) 
-*.sbn dan *.sbx – File yang menyimpan spatial index dari feature (optional) 
-*.fbn dan *.fbx – File yang menyimpan spatial index dari feature shapefile yang read-only (optional) 
-*.ain dan *.aih – File yang menyimpan index atribut dari field yang aktif dalam sebuah tabel (optional) 
-*.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional).
-
-\subsection{contoh penggunaan kodingan shapefile}
-read.shapefile (form.name) read.shp
-(shp.name) read.shx (shx.name)
-read.dbf (dbf.name, sundulan = FALSE)
-write.shapefile (shapefile, out.name, arcgis = FALSE) write.shp (shp,
-out.name) write.shx (SHX, out.name)
-write.dbf (DBF, out.name, arcgis = FALSE) calc.header
-(shapefile) add.xy (shapefile)
-
-
-bentuk file
-scaleXY (shapefile, scale.factor)
-convert.to.shapefile (shpTable, attTable, bidang, jenis) convert.to.simple
-(shp)
-change.id (shpTable, newFieldAsVector) dp (poin,
-toleransi)
-
-\subsecion (pengertian shapefile)
-Shapefile ESRI atau biasa disebut shapefila adalah format data geospasial yang umum untuk perangkat lunak sistem informasi geografis, dengan pengertian bahwa shape merupakan properti intrinsik utama untuk sistem visual manusia. manusia lebih sering mengasosialisasikan objek dengan bentuknya ketimbang elemen lainnya (warna misalnya), pada umumnya, citra yang dibentuk oleh mata merupakan citra dwimatra (2 dimensi), sedangkan objek yang dilihat umumnya berbentuk trimatra (3 dimensi). informasi bentuk objek dapat diekstansi dari citra pada permulaan pra-pengolahan dan segmentasi citra. salah satu tantangan utama pada komputer vision adalah merepresentasikan bentuk, atau aspek-aspek penting dari bentuk.
+\begin{enumerate}
+    \item *.shp - File yang menyimpan feature geometri (diperlukan dalam sebuah shapefile) 
+    \item *.shx - File yang menyimpan index dari feature geometri (diperlukan dalam sebuah shapefile) 
+    \item *.dbf - File dBASE yang menyimpan informasi atribut dari suatu feature (diperlukan dalam sebuah shapefile) 
+    \item *.sbn dan *.sbx – File yang menyimpan spatial index dari feature (optional) 
+    \item *.fbn dan *.fbx – File yang menyimpan spatial index dari feature shapefile yang read-only (optional) 
+    \item *.ain dan *.aih – File yang menyimpan index atribut dari field yang aktif dalam sebuah tabel (optional) 
+    \item *.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional).
+\end{enumerate}
+\subsubsection{Contoh penggunaan extension shapefile}
+\begin{enumerate}
+    \item read.shapefile (form.name) 
+    \item read.shp (shp.name) 
+    \item read.shx (shx.name)
+    \item read.dbf (dbf.name, sundulan = FALSE)
+    \item write.shapefile (shapefile, out.name, arcgis = FALSE) 
+    \item write.shp (shp, out.name) 
+    \item write.shx (SHX, out.name)
+    \item write.dbf (DBF, out.name, arcgis = FALSE) 
+    \item calc.header (shapefile) 
+    \item add.xy (shapefile)
+\end{enumerate}
+\subsubsubsection{Bentuk file}
+\begin{itemize}
+    \item scaleXY (shapefile, scale.factor)
+    \item convert.to.shapefile (shpTable, attTable, bidang, jenis) 
+    \item convert.to.simple (shp)
+    \item change.id (shpTable, newFieldAsVector) 
+    \item dp (poin, toleransi)
+\end{itemize}
