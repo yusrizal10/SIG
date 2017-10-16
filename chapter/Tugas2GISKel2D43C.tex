@@ -24,18 +24,74 @@ informasi yang berasosiasi satu sama lain.
 
 \section{Data Vektor Line}
 \subsection{Pengertian}
-Line merupakan bahasa Inggris dari garis. Garis adalah bentuk geometri liniar yang
+  Line merupakan bahasa Inggris dari garis. Garis adalah bentuk geometri liniar yang
  menghubungkan dua titik atau lebih dan biasanya digunakan untuk mempresentasikan
  object berdimensi satu. batas object geometri polygon juga merupakan sebuah garis-garis,
  begitu pula dengan jaringan listrik, jaringan komunikasi, jaringan air minum, saluran buangan,
  dan utility lain yang dapat dipresentasikan sebagai object dengan bentuk geometri garis.
  Hal itu pula yang akan bergantung pada skala peta yang menjadi sumbernya atau skala
  representasi akhirnya.
- Garis bisa digunakan untuk menunjukkan route suatu perjalanan atau menggambarkan boundary. 
+  Garis bisa digunakan untuk menunjukkan route suatu perjalanan atau menggambarkan boundary. 
  Poligon bisa digunakan untuk menggambarkan sebuah danau atau sebuah Negara pada peta dunia. 
  Dalam format vektor, bumi direpresentasikan sebagai suatu mosaik dari garis (arc/line), 
  poligon (daerah yang dibatasi oleh garis yang berawal dan berakhir pada titik yang sama), 
  titik/ point (node yang mempunyai label), dan nodes (merupakan titik perpotongan antara dua baris).
+  Seperti telah diuraikan sebelumnya, data vektor terbentuk dari tiga jenis geometri yakni 
+ titik (point), garis (line), dan area (polygon). 
+ Oleh karena itu, objek-objek di permukaan bumi perlu divisualisasikan 
+ dalam ketiga geometri tersebut agar bisa diproses dengan GIS. 
+ Contoh visualisasi dunia nyata menjadi elemen gambar ketiga geometri tersebut antara lain landmark dan fasilitas sebagai titik, 
+ jalan dan sungai sebagai garis, dan daerah administrasi tertentu sebagai area. 
+ Berikut ini penjelasan lebih dalam mengenai ketiga entitas geometri tersebut.
+ 
+ \subsubsection{titik (point)}
+  meliputi semua objek grafis atau geografis yang dikaitkan dengan pasangan koordinat (x,y). 
+  Selain memuat informasi koordinat, data  titik juga bisa saja merupakan suatu simbol yang memiliki 
+  keterkaitan dengan informasi lain.  Satu buah objek titik memiliki satu baris dalam tabel atribut. 
+  Karakteristik-karakteristik dari titik ini dijelaskan oleh kolom-kolom yang dibentuk pada tabel atribut.
+  
+  \subsubsection{Garis (line)}
+  merupakan semua unsur-unsur linier yang dibangun dengan menggunakan segmen-segmen garis lurus yang 
+  dibentuk oleh dua titik koordinat atau lebih (Burrough, 1994). 
+  Entitas garis yang paling sederhana memerlukan ruang untuk menyimpan titik awal dan titik akhir (dua pasangan koordinat x,y) 
+  berserta informasi lain mengenai simbol yang digunakan untuk merepresentasikannya. 
+  Garis tunggal yang terbentuk dari titik awal dan titik akhir saja disebut sebagai line. 
+  Sedangkan garis bersegmen banyak yang terbentuk dari banyak titik (vertex) disebut polyline. 
+  Dalam GIS, baik line maupun polyline dianggap sebagai suatu entitas yang sama yakni polyline. 
+  Setiap satu entitas polyline memiliki satu baris dalam tabel atribut. 
+  Karakteristik dari entitas ini disimpan dalam kolom-kolom tabel atribut. 
+  
+  \subsubsection{Area (polygon)}
+  merupakan suatu objek tertutup yang memiliki luasan. Polygon dapat direpresentasikan dengan 
+  berbagai cara di dalam model data vektor. Karena kebanyakan peta tematik yang digunakan dalam GIS berurusan dengan polygon,
+  metode-metode representasi dan pemanipulasian entity ini banyak mendapat perhatian. 
+  Seperti halnya titik dan polyline, satu objek poligon juga diwakili oleh satu baris pada tabel atribut. 
+  Poligon biasanya digunakan untuk merepresentasikan objek dunia nyata yang memiliki luasan seperti 
+  wilayah administrasi, danau, guna lahan, jenis tanah, dan sebagainya
+ 
+ \subsubsection{Kelebihan dan Kekurangan Data Vektor Line}
+ Kelebihan
+ a. Memerlukan ruang atau tempat menyimpan yang lebih sedikit di computer.
+ b. Satu layer dapat dikaitkan dengan atau mengunakan atribut sehingga dapat menghemat ruang penyimpanan secara keseluruhan.
+ c. Dengan banyak atribut yang banyak dikandung oleh satu layer, banyak peta tematik lain yang dapat dihasilkan sebagai peta turunannya.
+ d. Hubungan topologi dan network dapat dilakukan dengan mudah.
+ e. Memiliki resolusi spasial yang tinggi.
+ f. Representasi grafis data spasialnya sangat mirip dengan peta garis buatan tangan manusia.
+ g. Memiliki batas-batas yang teliti, tegas dan jelas sehingga sangat baik untuk 
+    pembuatan peta-peta administrasi dan persil tanah milik.
+ h. Transformasi koordinat dan proyeksi tidak sulit dilakukan. 
+ 
+ Kekurangan
+ a. Memiliki struktur data yang kompleks.
+ b. Datanya tidak mudah untuk dimanipulasi.
+ c. Pengguna tidak mudah berkreasi untuk membuat programnya sendiri untuk memenuhi kebutuhan aplikasinya. 
+    Hal ini disebabkan oleh struktur data vector yang lebih kompleks dan prosedur fungsi dan analisisnya 
+    memerlukan kemampuan tinggi karena lebih sulit. 
+    Pengguna harus membeli system perangkat lunaknya karena teknologinya masih mahal. Prosedurnyapun terkadang lebih sulit.
+ d. Karena proses keseluruhan untuk mendapatkannya lebih lama, peta vector seringkali mengalami out of date atau kadaluarsa.
+ e. Memerlukan perangkat keras dan perangkat lunak yang lebih mahal.
+ f. Overlay beberapa layers vector secara simultan memerlukan waktu yang relative lama.
+ 
  \section{Raster}
  \subsection{Pengertian}
 Data raster (juga dikenal sebagai data grid) mewakili tipe keempat dari fitur: permukaan. 
@@ -46,3 +102,33 @@ data spektral, dan gambar.Raster dataset adalah intrinsik untuk analisis spasial
 Analisis data seperti ekstraksi kemiringan dan aspek dari Digital Elevation Models terjadi dengan dataset raster.
 Pemodelan hidrologi spasial seperti ekstraksi daerah aliran sungai dan jalur aliran juga menggunakan sistem berbasis raster.
 Data spektral menyajikan citra udara atau satelit yang kemudian sering digunakan untuk memperoleh informasi geologi vegetasi dengan mengklasifikasikan tanda tangan spektral dari setiap jenis fitur.
+
+\subsubsection{Kelebihan dan Kekurangan Raster}
+ Kelebihan
+ a. Memiliki struktur data yang sederhana
+ b. Mudah dimanipulasi dengan menggunakan fungsi-fungsi matematis sederhana
+ c. Teknologi yang digunakan cukup murah dan tidak begitu kompleks sehingga pengguna dapat 
+    membuat sendiri program aplikasi yang mengunakan citra raster.
+ d. Compatible dengan citra-citra satelit penginderaan jauh dan semua image hasil scanning data spasial.
+ e. Overlay dan kombinasi data raster dengan data inderaja mudah dilakukan
+ f. Memiliki kemampuan-kemampuan permodelan dan analisis spasial tingkat lanjut
+ g. Metode untuk mendapatkan citra raster lebih mudah
+ h. Gambarab permukaan bumi dalam bentuk citra raster yang didapat dari radar atau satelit penginderaan jauh selalu lebih actual dari       pada bentuk vektornya
+ i. Prosedur untuk memperoleh data dalam bentuk raster lebih mudah, sederhana dan murah.
+ j. Harga system perangkat lunak aplikasinya cenderung lebih murah.
+ 
+ Kekurangan
+ a. Secara umum memerlukan ruang atau tempat menyimpan (disk) yang besar dalam computer, 
+    banyak terjadi redudacy data baik untuk setiap layer-nya maupun secara keseluruhan.
+ b. Penggunaan sel atau ukuran grid yang lebiih besar untuk menghemat ruang penyimpanan akan 
+    menyebabkan kehilangan informasi dan ketelitian.
+ c. Sebuah citra raster hanya mengandung satu tematik saja sehingga sulit digabungkan 
+    dengan atribut-atribut lainnya dalam satu layer.
+ d. Tampilan atau representasi dan akurasi posisi sangat bergantung pada ukuran pikselnya (resolusi spasial).
+ e. Sering mengalami kesalahan dalam menggambarkan bentuk dan garis batas suatu objek, 
+    sangat bergantung pada resolusi spasial dan toleransi yang diberikan.
+ f. Transformasi koordinat dan proyeksi lebih sulit dilakukan
+ g. Sangat sulit untuk merepresentasikan hubungan topologi (juga network).
+ h. Metode untuk mendapatkan format data vector melalui proses yang lama, cukup melelahkan dan relative mahal.
+ 
+ 
