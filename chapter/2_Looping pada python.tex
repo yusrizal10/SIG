@@ -201,6 +201,21 @@ python while.py
 \end{equation}
 
 \subsection{Range}
+\subsubsection{Fungsi range()}
+Jika ingin melakukan perulangan dengan sejumlah yang diinginkan, fungsi built-in range sangat membantu. Fungsi tersebut menghasilkan sejumlah indeks dari nilai yang telah ditentukan. 
+Contohnya :
+\begin{equation}
+>>> range(15)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+Ataupun sebagian angka yang diinginkan. Contohnya :
+>>> range (8, 15)
+[8, 9, 10, 11, 12, 13, 14]
+>>> range(0,9,3)
+[0, 3, 6]
+>>> range(0, 20, 3)
+[0, 3, 6, 9, 12, 15, 18]
+\end{equation}
+ Contoh tersebut menunjukan kelipatan dari suatu interval bilangan yang mempunyai sintaks range(<nilai-awal>, <nilai-akhir>, <kelipatan-angka>).
 \subsubsection{Contoh penggunaan range(nilai_awal,nilai_akhir,pencacah)}
 Berikut ini contoh penggunaan range untuk menampilkan bilangan dari 1 – 100 dengan penambahan/pencacah 1 dengan menambahkan end=’ ’ agar bilangan tampil secara horizontal tidak pindah baris ke bawah
 \begin{equation}
