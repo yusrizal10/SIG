@@ -47,6 +47,19 @@ for i in range (5) :
 
 Jadi seperti yang sudah dikatakan sebelumnya, perintah pass ini memiliki fungsi untuk mengisi kekosongan dari sebuah penyeleksian ataupun perulangan.
 
+ \subsubsection{Perintah return}
+Perintah return dapat menghentikan suatu proses dari fungsi sebelum mengakhiri fungsi tersebut. Alasan menggunakan perintah return adalah jika menemui sebuah kesalahan kondisi, yang berarti nilai suatu fungsi tersebut mengembalikan nilai null (kosong) : 
+import math
+\begin{equation}
+def print_log (x):
+  if x <= 0 :
+    print x, 
+\"Bilangan lebih sama dengan 0\"  
+  return  
+hasil = math.log (x) 
+ print \"Hasil log dari\", x, \"adalah\", hasil 
+ \begin{equation}
+
 \subsection{Nested Loop}
 Nested Loop (Perulangan Bertingkat) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
 \subsubsection{Contoh Penggunaan Nested Loop}
@@ -138,8 +151,6 @@ python for.py
 8
 9
 \end{equation}
-
-
 
 
 \subsection{While Loop}
