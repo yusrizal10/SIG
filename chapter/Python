@@ -1,5 +1,5 @@
 %python
-%kelompok 1 D4 TI-2A
+%kelompok 1 D4 TI-3A
 %Eka Pratama Putra        1154023
 %Deni Braja Astrajingga   1154066
 %Shinta Amelia            1154047     
@@ -144,6 +144,10 @@
 	   pesan kesalahan, namun tidak menjalankan program dengan benar atau tidak menjalankan program sesuai dengan
 	   maksud yang diinginkan pemrogram.
 	   
+	\section {methods}
+	Metode pada objek adalah fungsi yang melekat pada kelas objek; Contoh sintaks.Metode (argument) adalah untuk metode dan fungsi normal, 
+	yang sintaksis untuk Class. Method (contoh, argument). Metode Python memiliki selfparameter yang akurat untuk mengakses data contoh, 
+	berbeda dengan diri tersirat pada beberapa bahasa pemrograman berorientasi objek lainnya (misalnya Java, C ++ atau Ruby). 
 	
       
       
