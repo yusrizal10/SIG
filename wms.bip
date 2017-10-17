@@ -57,3 +57,13 @@
   year={2013},
   publisher={Elsevier}
 }
+
+@article{blower2013web, 
+  title={A Web Map Service implementation for the visualization of multidimensional gridded environmental data}, 
+  author={Blower, Jonathan D and Gemmell, AL and Griffiths, Guy H and Haines, Keith and Santokhee, Adityarajsingh and Yang, Xiaoyu}, 
+  journal={Environmental Modelling \& Software}, 
+  volume={47}, 
+  pages={218--224}, 
+  year={2013}, 
+  publisher={Elsevier} 
+}
