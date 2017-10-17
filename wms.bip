@@ -73,3 +73,13 @@
   author={Ariyanto, Dony},
   year={2009}
 }
+
+
+@inproceedings{yamamoto2009focus+,
+  title={Focus+ glue+ context: An improved fisheye approach for web map services},
+  author={Yamamoto, Daisuke and Ozeki, Shotaro and Takahashi, Naohisa},
+  booktitle={Proceedings of the 17th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems},
+  pages={101--110},
+  year={2009},
+  organization={ACM}
+}
