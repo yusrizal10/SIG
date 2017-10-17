@@ -67,3 +67,9 @@
   year={2013}, 
   publisher={Elsevier} 
 }
+
+@article{ariyanto2009integration,
+  title={The Integration of Spatial Data WMS and KML Format with Google Maps in Bakosurtanal WebGIS.},
+  author={Ariyanto, Dony},
+  year={2009}
+}
