@@ -37,8 +37,13 @@ sebagai file gambar digital cocok untuk ditampilkan pada layar komputer. Peta ti
 Wms-dihasilkan maps umumnya diterjemahkan dalam format bergambar seperti PNG,GIF atau JPEG,atau kadang-kadang sebagai
 elemen-elemen grafis berbasis vektor dalam Scalable Vector Grafis (SVG) atau Komputer Web Metafile Grafis (WebCGM format).
 
-   WMS pelaksanaannya dengan Membuka Geospatial Konsorsium Peta Web Service (WMS menentukan spesifikasi) untuk gridded multidimensi data lingkungan. WMS dapat membaca data dalam jumlah besar format data ilmiah umum - khususnya format NetCDF 
-dengan perubahan iklim dan konvensi Perkiraan kemudian efisien menghasilkan gambar peta di ribuan mengkoordinir sistem referensi.Ia dirancang untuk memerlukan konfigurasi minimal dari administrator sistem pada saat digunakan dengan alat bantu klien yang sesuai, menyediakan pengguna akhir dengan cara interaktif untuk memvisualisasikan data tanpa perlu mendownload 
-file besar atau menafsirkan meta data kompleks. 
+   WMS pelaksanaannya dengan Membuka Geospatial Konsorsium Peta Web Service (WMS menentukan spesifikasi) untuk gridded multidimensi data lingkungan. WMS dapat membaca data dalam jumlah besar format data ilmiah umum - khususnya format NetCDF dengan perubahan iklim dan konvensi Perkiraan kemudian efisien menghasilkan gambar peta di ribuan mengkoordinir sistem referensi. Ia dirancang untuk memerlukan konfigurasi minimal dari administrator sistem pada saat digunakan dengan alat bantu klien yang sesuai, menyediakan pengguna akhir dengan cara interaktif untuk memvisualisasikan data tanpa perlu mendownload file besar atau menafsirkan meta data kompleks. 
+
+Data WMS biasanya digunakan untuk membandingkan data yang sudah kita buat dengan data yang dibuat oleh pihak lain, atau juga sering kali digunakan sebagai pelengkap dalam pembuatan peta.
+
+Interoperability antara WM dan grid data lingkungan
+
+Dalam WMS, unit penting informasi merupakan lapisan. Setiap lapisan dapat ditampilkan dalam jumlah Gaya, setiap dikaitkan dengan sebuah legenda. Lapisan mungkin yang dapat ditampilkan atau non-yang dapat ditampilkan dan bisa diatur hierarchically. Tiga operasi utama dapat dilakukan oleh klien WM menentukan standar: Permintaan GetCapabilities dokumen XML berisi metadata tersedia pada lapisan dan kemampuan layanan lain; permintaan GetMap gambar peta animasi atau sesuai dengan pilihan pengguna Layer, Style, sejauh geografis dan resolusi dan permintaan GetFeatureInfo informasi lebih lanjut tentang lokasi geografis tertentu, yang diwakili oleh piksel tertentu dalam gambar peta.
+
 
 
