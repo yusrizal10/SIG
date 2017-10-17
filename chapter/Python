@@ -4,7 +4,7 @@
 %Deni Braja Astrajingga   1154066
 %Shinta Amelia            1154047     
 %Luqman Nurfajri	  1154054
-%Yoshi Ricowandi Nababan
+%Yoshi Ricowandi Nababan  1154125	
 %Copyright (c) 2017 Copyright Holder All Rights Reserved.
 
 \section{pengertian python}
@@ -164,5 +164,12 @@
 	yang sintaksis untuk Class. Method (contoh, argument). Metode Python memiliki selfparameter yang akurat untuk mengakses data contoh, 
 	berbeda dengan diri tersirat pada beberapa bahasa pemrograman berorientasi objek lainnya (misalnya Java, C ++ atau Ruby). 
 	
-      
+      	\section {typing}
+	Python menggunakan bebek mengetik dan telah mengetikkan benda tapi nama variabel untyped. Ketik kendala tidak diperiksa pada waktu kompilasi; Sebaliknya, operasi pada objek mungkin gagal, menandakan bahwa
+	Benda yang diberikan bukan tipe yang sesuai. Meski dengan ketahasiaan mengetik, Python sangat kuat diketik, melarang operasi yang tidak didefinisikan dengan baik (misalnya, menambahkan nomor ke a
+	string) daripada diam-diam mencoba untuk memahami mereka. Python memungkinkan pemrogram untuk menentukan jenis mereka sendiri menggunakan kelas, yang paling sering
+	digunakan untuk pemrograman berorientasi objek. Contoh kelas baru dibuat dengan menelepon kelas (misalnya, SpamClass () atau EggsClass ()), dan kelasnya sendiri
+	contoh tipe metaclass (sendiri merupakan contoh dari dirinya sendiri), memungkinkan metaprogramming andreflection. Sebelum versi 3.0, Python memiliki dua jenis kelas: & quot; old-style & quot; dan & quot; gaya baru & quot;. [42] Gaya lama
+	kelas dieliminasi dengan Python 3.0, membuat semua kelas bergaya baru. Dalam versi antara 2.2 dan 3.0, kedua jenis kelas bisa digunakan. Sintaks dari kedua gaya adalah sama, yaitu
+	Perbedaannya adalah apakah objek kelas diwarisi dari, secara langsung atau tidak langsung (semua gaya baru kelas mewarisi dari objek dan merupakan contoh tipe).
       
