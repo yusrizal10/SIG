@@ -183,3 +183,20 @@ dengan beberapa nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kem
 Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
 Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain,
 biasanya digunakan istilah function. 
+
+Beberapa hal yang perlu diperhatikan terkait dengan penggunaan fungsi : 
+\subsection Deklarasi fungsi, di gunakan kata kunci def, berguna untuk membuat obyek fungsi dan selanjutnya melakukan assignment
+obyek fungsi tersebut dengan sebuah nama. 
+\subsection Pada istilah passing parameter by reference dan passing parameter by value, maka bahasa pemrograman Python melakukan 
+passing parameter by assignment. 
+\subsection Seperti pada variable, kita tidak perlu mendeklarasikan tipenya terlebih dahulu sehingga parameter pada fungsi bisa 
+digunakan untuk berbagai tipe obyek yang sesuai.
+Bentuk umum :
+def fungsi(argumen1, argumen2, ..., argumen n):
+Statement1
+...
+Statement n 
+return returnvariable 
+Keterangan : 
+Fungsi diawali dengan kata kunci def, diikuti nama fungsi, boleh diikuti parameter formal yang ditulis dalam tanda kurung, dan 
+deklarasi fungsi ditutup dengan tanda titik dua (:).
