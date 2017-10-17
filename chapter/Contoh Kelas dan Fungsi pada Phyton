@@ -200,3 +200,11 @@ return returnvariable
 Keterangan : 
 Fungsi diawali dengan kata kunci def, diikuti nama fungsi, boleh diikuti parameter formal yang ditulis dalam tanda kurung, dan 
 deklarasi fungsi ditutup dengan tanda titik dua (:).
+
+\subsection INTERPRETER PYTHON
+Bahasa pemrograman Python dilengkapi dengan suatu fasilitas seperti shell di Linux, sehingga memungkinkan kita untuk mencoba 
+penggunaan Python secara interaktif. Lokasi instalasi Python secara default pada distribusi Linux terletak di /usr/ bin/python.
+
+Untuk menjalankannya, dapat kita tuliskan python pada konsole Linux pengguna. $ python Apabila Python telah terinstalasi, 
+maka pengguna akan mendapatkan tampilan : Python 2.4.3 (#1, May 24 2008, 13:47:28) [GCC 4.1.2 20070626 (Red Hat 4.1.2-14)] on 
+Type “help”, “copyright”, “credits” or “license” for more information.
