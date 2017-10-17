@@ -292,6 +292,21 @@ Setelah perintah diatas dijalankan (run) maka akan tampil bilangan seperti ini :
     \caption{hasil penggunaan range}
     \label{2_range2}
     \end{figure}
+    
+\subsubsection{Contoh penggunaan range(nilai_akhir)}
+Ini adalah contoh penggunaan range untuk menampilkan bilangan dari 0 – 100 dengan menambahkan end=’ ’ agar bilangan tampil secara horizontal tidak pindah baris ke bawah
+\begin{equation}
+for i in range(101):
+	print(i,end=' ')
+\end{equation}
+Disini nilai akhir menggunakan operator < bukan ≤ jadi untuk menampilkan sampai angka 100 nilai akhir harus dibuat menjadi 101. Dan setelah perintah diatas dijalankan (run) maka akan tampil hasil seperti berikut ini :
+\ref{2_range3}
+
+\begin{figure}[ht]
+    \centerline{\includegraphics[width=1\textwidth]{figures/2_range3.JPG}}
+    \caption{hasil penggunaan range}
+    \label{2_range3}
+    \end{figure}
 
 \subsection{for loop with else}
 For loop bisa memiliki blok else yang opsional juga. Bagian lain dijalankan jika item urutan digunakan dalam lingkaran for loop .
