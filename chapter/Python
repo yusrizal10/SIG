@@ -37,6 +37,21 @@
       3 Desember 2008 dalam periode pengujian yang panjang. Maka, dengan banyak fitur utamanya yang telah dikirim kembali ke Python 2.6 
       yang cocok ke untuk kembali belakang dan menjadi versi 2.7. 
       
+\section {Indentation}
+      Dalam penulisan bahasa pemrograman Python, setiap perintah yang masih dalam satu kesatuan diberikan tambahan spasi dari 
+      perintah yang ada diatasnya, bukan kurung kurawal atau kata kunci, untuk membatasi blok. Hal ini di sebut juga aturan off-side. 
+      Peningkatan indentasi datang setelah perintah tertentu. penurunan identation menandakan akhir blok perintah sebelumnya.
+
+      Contoh perintah bahasa pemrograman python yaitu :
+      Perintah perulangan
+      while x < 10: 
+      	   while y < 10: 
+		print y, 
+		y = y + 1 
+	   print x,
+	   x = x + 1
+
+      
   \section {Fitur dan filosofi}
 	Python adalah bahasa pemrograman multi-paradigma: maksudnya pemrograman berorientasi objek dan pemrograman terstruktur 
 	yang didukung sepenuhnya, dan ada berbagai fitur bahasa yang mendukung pemrograman fungsional dan pemrograman berorientasi-aspek
@@ -45,7 +60,7 @@
 	Desain Python hanya menawarkan dukungan yang terbatas untuk pemrograman fungsional dalam tradisi Lisp. 
 	Bahasa memiliki fungsi peta (), reduce () dan filter (), lengkap untuk daftar, kamus, dan set, serta ekspresi generator. 
 	Perpustakaan standar memiliki dua modul (itertool dan functools) yang mengimplementasikan alat fungsional yang dipinjam 
-	dari Haskell dan Standard ML.
+	dari Haskell dan Standard ML. \cite {van2007python}.
 
    \section {instalasi python untuk windows}
 
