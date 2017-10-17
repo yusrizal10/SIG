@@ -18,9 +18,23 @@
   Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers. 
   
 \subsection{Base Layers}
- Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang dapat diaktifkan setiap saat. Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang ada dalam peta. Base Layer atau bukan, hal ini ditentukan oleh property isBaseLayer pada layer. Kebanyakan Layer raster memiliki Properti isBaseLayer yang diset dengan true secara default. Ini bisa diganti pada layer option. Base layers selalu ditampilkan dibawah overlay layers.
+ Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang dapat diaktifkan setiap saat.
+ Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang ada dalam peta. 
+ Base Layer atau bukan, hal ini ditentukan oleh property isBaseLayer pada layer. Kebanyakan Layer raster memiliki Properti isBaseLayer yang diset dengan true secara default. 
+ Ini bisa diganti pada layer option. Base layers selalu ditampilkan dibawah overlay layers.
 
 \subsection{Non Base Layers}
-Non base layers, terkadang disebut juga sebagaioverlay, adalah merupakan Base Layers alternative. Non-base layer yang banyak dapat diaktifkan setiap saat. Layer ini tidak memegang control untuk zoom level dari peta, tetapi dapat diaktifkan atau di nonaktifkan pada skala yang tepat dengan min/max scale/parameter resolusi, sehingga hanya dapat diaktifkan pada level tertentu.
+Non base layers, terkadang disebut juga sebagaioverlay, adalah merupakan Base Layers alternative. Non-base layer yang banyak dapat diaktifkan setiap saat. Layer ini tidak memegang control untuk zoom level dari peta,
+tetapi dapat diaktifkan atau di nonaktifkan pada skala yang tepat dengan min/max scale/parameter resolusi, sehingga hanya dapat diaktifkan pada level tertentu.
 
+\subsection {Raster Layers}
+Raster layer adalah layer bayangan. Layer ini biasanya adalah merupakan fixed projection yang tidak dapat dirubah pada client side.
 
+\subsection {Google}
+Layer yang digunakan untuk data Google Maps paa OpenLayer. Untuk informasi API, dapat dilihan pada Google Layer Api Docs. 
+Contoh penggunaanya dapat dilihat pada contoh penggunaan Spherical Mercator.
+Jika kita ingin untuk menumpang tindihkan(overlay) layer dasar Google Maps dengan data lain, kita harus berinteraksi dengan layer Google Maps pada koordinat proyeksi.
+Kita apat membaca selengkapnya pada proyeksi Spherical Mercator dan berbagai layer komersial yang dipergunakan di dalam dokumentasi Spherical Mercator.
+Class Google Layer di design untuk dipertunakan hanya sebagai base layer.
+
+\subsection {}
