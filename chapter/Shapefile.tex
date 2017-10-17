@@ -78,6 +78,77 @@ Masalah dimana shapefiles sangat rentan adalah mungkin ada potongan tumpang tind
     \item *.dp (poin, toleransi)
 \end{itemize}
 
+\subsection{Contoh Script Shapefile}
+
+## Not run: 
+
+#Read entire shapefile 
+shapefile <- read.shapefile("links") 
+
+#Write entire shapefile 
+write.shapefile(shapefile, "temp", T) 
+
+#Read shp, shx, or dbf file 
+dbf <- read.dbf("links.dbf") 
+
+#Write shp, shx, or dbf file 
+write.dbf(dbf, "links.dbf", T) 
+
+#Calculate header (to clean up GeoMedia shapefile exports) 
+shapefile <- calc.header(shapefile) 
+
+#Add the X and Y coordinates to the dbf list of the shapefile list object 
+shapefile <- add.xy(shapefile)
+
+#Scale the shapefile by scale.factor 
+shapefile <- scaleXY(shapefile, scale.factor) 
+
+#Samples of using the convert.to.shapefile function to write out simple shapefiles 
+#from basic R data.frames 
+
+#Point 
+dd <- data.frame(Id=c(1,2),X=c(3,5),Y=c(9,6)) 
+ddTable <- data.frame(Id=c(1,2),Name=c("Item1","Item2")) 
+ddShapefile <- convert.to.shapefile(dd, ddTable, "Id", 1) 
+write.shapefile(ddShapefile, "c:/test", arcgis=T) 
+
+#PolyLine 
+dd <- data.frame(Id=c(1,1,1,2,2,2),X=c(3,5,8,6,7,8),Y=c(9,8,3,6,7,4)) 
+ddTable <- data.frame(Id=c(1,2),Name=c("Item1","Item2")) 
+ddShapefile <- convert.to.shapefile(dd, ddTable, "Id", 3) 
+write.shapefile(ddShapefile, "c:/test", arcgis=T) 
+
+#Polygon 
+dd <- data.frame(Id=c(1,1,1,1,2,2,2,2),X=c(3,5,8,3,6,7,8,6),Y=c(9,8,3,9,6,7,4,6)) 
+ddTable <- data.frame(Id=c(1,2),Name=c("Item1","Item2")) 
+ddShapefile <- convert.to.shapefile(dd, ddTable, "Id", 5) 
+write.shapefile(ddShapefile, "c:/test", arcgis=T)
+
+#Convert to list of shapes 
+ddAsList <- by(dd,dd$Id, function(x) x) 
+
+#Convert to data.frame 
+dd <- do.call(rbind, ddAsList) 
+
+#Read in shp file and convert to simple format 
+shpTest <- read.shp("c:/test.shp") 
+simpleShpFormat <- convert.to.simple(shpTest) 
+simpleShpFormat <- change.id(simpleShpFormat, c("a","b")) 
+simpleAsList <- by(simpleShpFormat, simpleShpFormat[,1], function(x) x) 
+backToShape <- convert.to.shapefile(simpleShpFormat, 
+data.frame(index=c("a","b")), "index", 5) 
+write.shapefile(backToShape, "c:/test", arcgis=T) 
+
+#Polyline simplification with dp algorithm 
+x <- c(5,3,4,1,8,9,10,11)
+ y <- c(6,4,2,1,1,5,2,3) 
+points <- list(x=x,y=y) 
+plot(points, type="l") 
+simpleLine <- dp(points, 2) 
+lines(simpleLine, type="l", col="blue") 
+
+## End(Not run)
+
 \subsection{Komponen Teknis}
 Komponen yang ada pada sebuah aplikasi GIS
 mempunyai fungsi utama untuk membaca dan menulis
