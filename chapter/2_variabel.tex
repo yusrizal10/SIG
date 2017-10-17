@@ -18,7 +18,9 @@ Variabel merupakan entitas yang memiliki nilai dan nilai tersebut berbeda satu d
 Hal ini berarti ketika anda membuat variabel maka anda memesan beberapa ruang di memori. 
 Variabel bisa digunakan untuk menyimpan bilangan bulat, desimal juga karakter.
 Python sangat mementingkan indentasi, sehingga kita perlu melakukan indentasi secara konsisten. 
-Indentitas tersebut dipermudah dengan menggunakan tombol Tab dan dimulai dari kolom pertama untuk setiap blok baru.\cite{santoso2009bahasa}
+Indentitas tersebut dipermudah dengan menggunakan tombol Tab dan dimulai dari kolom pertama untuk setiap blok baru.
+
+Ada 2 cara untuk membuat variabel. Cara yang pertama yaitu variabel langsung dengan nilai disebut dengan inisialisasi. Sedangkan cara yang kedua dengan memasukkan nilai pada variabel yang biasa disebut penempatan.\cite{santoso2009bahasa}
 
 Variabel python tidak perlu deklarasi eksplisit untuk memesan ruang memori. Deklarasi tersebut terjadi secara otomatis ketika menetapkan nilai ke variabel.
 Tanda sama (=) digunakan untuk memberikan nilai pada variabel.
@@ -192,6 +194,35 @@ Selain itu, juga dapat memberikan sebuah nilai untuk beberapa variabel.
 1
 >>>r
 1
+\end{equation}
+
+Selain itu, kita dapat memberikan beberapa nilai untuk beberapa variabel (disebut multiple assignment).
+
+\begin{equation}
+>>>x, y, z = 1, 2, 'belajar Python'
+>>>x
+1
+>>>y
+2
+>>>z
+'belajar Python'
+\end{equation}
+
+Bentuk lain dari contoh di atas, kita bisa menggunakan tanda kurung-buka kurung-tutup.
+
+\begin{equation}
+>>>(x, y, z) = (1, 2, 'belajar Python')
+Cara di atas, dapat juga kita gunakan untuk pertukaran nilai variabel.
+>>>(x, y) = (10, 20)
+>>>x
+10
+>>>y
+20
+>>>(x, y) = (y, x)
+>>>x
+20
+>>>y
+10
 \end{equation}
 
 \subsubsection{Penempatan variable pada yang semestinya}
