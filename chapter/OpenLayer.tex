@@ -20,8 +20,8 @@
   OpenLayers “Classes”
   Ditulis menggunakan gaya klasik yang fungsi-fungsinya ditulis dengan dengan huruf besar pada awal syntax.
   contohnya : var map = new OpenLayers.Map(“map”, options);
-  Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers.
-
+  Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers. 
+  
 \subsection{Base Layers}
  Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang dapat diaktifkan setiap saat.
  Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang ada dalam peta. 
@@ -29,9 +29,8 @@
  Ini bisa diganti pada layer option. Base layers selalu ditampilkan dibawah overlay layers.
 
 \subsection{Non Base Layers}
-Non base layers, terkadang disebut juga sebagaioverlay, adalah merupakan Base Layers alternative.
-Non-base layer yang banyak dapat diaktifkan setiap saat. Layer ini tidak memegang control untuk zoom level dari peta, 
-tapi dapat diaktifkan atau di nonaktifkan pada skala yang tepat dengan min/max scale/parameter resolusi, sehingga hanya dapat diaktifkan pada level tertentu.
+Non base layers, terkadang disebut juga sebagaioverlay, adalah merupakan Base Layers alternative. Non-base layer yang banyak dapat diaktifkan setiap saat.
+Layer ini tidak memegang control untuk zoom level dari peta, tapi dapat diaktifkan atau di nonaktifkan pada skala yang tepat dengan min/max scale/parameter resolusi, sehingga hanya dapat diaktifkan pada level tertentu.
 
 \subsection {Raster Layers}
 Raster layer adalah layer bayangan. Layer ini merupakan fixed projection yang tidak dapat dirubah pada client side.
@@ -57,4 +56,16 @@ Lapisan MapServer seing dapat menyebankan peta yang tampaknya bekerja, tetapi ma
 Dalam menggunakan WMS kita harus memilika alas an yang kuat dibandingkan dengan menggunakan MapServer.
 Jika kita menggunakan layer MapServer, dan peta sedang diulang beberapa kali, ini menunjukkan bahwa kita belum melakukan konfigurasi dengan peda dan masih dalam proyeksi yang berbda.
 openLayer tidak dapat membaca informasi dari MAPFILE, dan harus dikonfigurasi secara explicit.\\
+
+\subsection {Overlay layer}
+Merupakan lapisan yang memiliki sumberdata dalam format selain citra. Ini termasuk subclass dari kedua layer Marker dan layer Vector.
+
+\subsection {Boxes}
+boxes lebih baik untuk mengimplementasikan fungsi dengan vector layer dan polygon geometric dengan mempertahankan untuk kompatibilitas mundur.
+
+\subsection {GML}
+GML layer merupakam subclass dari vector layer yang berguna untuk membaca data dan menampilkannya. 
+Contoh :
+var layer = new OpenLayers.Layer.GML(“GML”, “gml/polygon.xml”)
+map.addLayer(layer);
 \end{document}
