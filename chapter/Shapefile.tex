@@ -3,7 +3,7 @@
 % Julham Ramadhana (1154069)
 % Andi Wadi Afriandyka (1154113)
 % Andi Nurfadillah Ali ()
-% Hanna Theresia Siregar ()
+% Hanna Theresia Siregar (1154009)
 % Pebridayanti Hasibuan (1154118)
 
 
@@ -92,3 +92,33 @@ Format dalam shapefile umum digunakan untuk
 menyimpan data vector simple (tanpa topologi)
 dengan atribut, shapefile merupakan format data
 default yang digunakan dalam GIS.
+
+\section{Deskripsi Teknis Shapefile}
+SDE, ARC / INFO, PC ARC / INFO, Data Otomasi Kit (DAK ™ ), dan ArcCAD ® 
+Perangkat lunak menyediakan penerjemah data form-to-coverage, dan ARC / INFO juga menyediakan a 
+penerjemah coverage-to-shape. Untuk pertukaran dengan format data lainnya, shapefile 
+spesifikasi diterbitkan dalam makalah ini. Aliran data lainnya, seperti yang berasal dari global 
+receiver positioning system (GPS), juga dapat disimpan sebagai shapefile atau X, Y event tables. 
+
+\section{Mengapa Harus menggunakan Shapefile}
+Sebuah shapefile menyimpan geometri nontopologis dan informasi atribut untuk ruang 
+fitur dalam kumpulan data Geometri untuk fitur disimpan sebagai bentuk yang terdiri dari satu set 
+koordinat vektor 
+Karena shapefile tidak memiliki overhead pengolahan dari struktur data topologi, 
+mereka memiliki kelebihan dibandingkan sumber data lain seperti kecepatan dan edit gambar yang lebih cepat 
+kemampuan. Shapefiles menangani fitur tunggal yang tumpang tindih atau tidak bersebelahan. Mereka 
+Juga biasanya membutuhkan lebih sedikit ruang disk dan lebih mudah dibaca dan ditulis. 
+Shapefiles dapat mendukung fitur titik, garis, dan area. Fitur area direpresentasikan sebagai 
+loop tertutup, poligon digital ganda. Atribut disimpan dalam file format dBASE ® . 
+Setiap record atribut memiliki hubungan satu lawan satu dengan catatan bentuk yang terkait
+
+\section{Shapefile dapat dibuat dengan 4 Metode Umum}
+Ekspor Shapefiles dapat dibuat dengan mengekspor sumber data ke shapefile
+ARC / INFO® , PC ARC / INFO®, Spasial Database Engine ™ (SDE ™ ), ArcView® GIS,
+atau perangkat lunak Business MAP ™ .
+Digitize Shapefiles dapat dibuat secara langsung dengan mendigitalkan bentuk menggunakan ArcView GIS
+alat pembuatan fitur
+Pemrograman Menggunakan Avenue ™ (ArcView GIS), MapObjects ™ , ARC Macro
+Bahasa (AML ™ ) (ARC / INFO), atau Simple Macro Language (SML ™ )
+(PC ARC / INFO) perangkat lunak, Anda dapat membuat shapefile dalam program Anda.
+Menulis langsung ke spesifikasi shapefile dengan membuat sebuah program. 
