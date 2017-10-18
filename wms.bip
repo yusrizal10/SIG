@@ -74,7 +74,6 @@
   year={2009}
 }
 
-
 @inproceedings{yamamoto2009focus+,
   title={Focus+ glue+ context: An improved fisheye approach for web map services},
   author={Yamamoto, Daisuke and Ozeki, Shotaro and Takahashi, Naohisa},
@@ -83,3 +82,12 @@
   year={2009},
   organization={ACM}
 }
+
+@article{priyanta5aplikasi,
+  title={Aplikasi Mobile WEB Map Service Pada Mobile Device Dengan SVGT},
+  author={Priyanta, Sigit and Imanuddin, Ghulam and Prilistya, Suci Karunia},
+  journal={IJCCS (Indonesian Journal of Computing and Cybernetics Systems)},
+  volume={5},
+  number={1}
+}
+
