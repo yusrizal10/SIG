@@ -195,6 +195,20 @@ Bahasa (AML ™ ) (ARC / INFO), atau Simple Macro Language (SML ™ )
 (PC ARC / INFO) perangkat lunak, Anda dapat membuat shapefile dalam program Anda.
 Menulis langsung ke spesifikasi shapefile dengan membuat sebuah program. 
 
+\subsection{Jenis Numerik pada Shapefile}
+Sebuah shapefile menyimpan bilangan bulat dan bilangan presisi ganda. Sisa dokumen ini 
+akan mengacu pada jenis berikut: 
+Integer: Signed 32-bit integer (4 byte) 
+Ganda: Signed 64-bit IEEE presisi ganda floating point nomor (8 byte) 
+Nomor titik terapung harus berupa nilai numerik. Ketidakterbatasan positif, tak terhingga negatif, dan 
+Nilai No-a-Number (NaN) tidak diperbolehkan dalam shapefile. Meski begitu, shapefiles 
+dukung konsep nilai "tidak ada data", namun saat ini hanya digunakan untuk pengukuran. 
+Setiap bilangan floating point lebih kecil dari -10 38 dianggap oleh shapefile reader 
+mewakili nilai "tidak ada data". 
+Bagian pertama di bawah ini menjelaskan struktur umum dan susunan shapefile. 
+Bagian kedua menjelaskan isi rekaman untuk setiap jenis bentuk yang didukung dalam 
+shapefile 
+
 \subsection{Pengertian Shapefile}
 	Shapefile adalah format non topologi yang secara efisien dan sederhana serta berfungsi sebagai wadah untuk penyimpan lokasi geometric dan juga atribut informasi dari data geografis. Dan untuk melakukan suatu penambahan shapefile, maka kita dapat menggunakan python dan plugin pyshp. Shapefile merupakan file yang dapat menyimpan data vector dalam arcview. Yang mana, Shapefile inilah yang kemudian diolah serta dianalisis dalam berbagai pekerjaan spasial dengan sebuah arcview. Maka saat ditampilkan dalam suatu lembar view, maka shapefile  akan menjadi sebagai sebuah theme.
 
