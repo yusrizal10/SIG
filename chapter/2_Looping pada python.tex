@@ -6,11 +6,11 @@ Struktur Dasar Loops adalah sebagai berikut :
 1) Menginisialisasi kontrol.
 	a) Kontrol - biasanya sebuah variabel yang menentukan apakah perulangan dijalankan atau tidak. 
 2) Menguji kontrol terhadap kondisi berhenti .
-3) Mengeksekusi body perulangan (bagian yang akan diulang) .
+3) Mengeksekusi body perulangan \(bagian yang akan diulang\) .
 4) Memperbarui nilai kontrol.
 
 \subsection{While dan For}
-Perulangan while disebut dengan uncounted loop (perulangan yang tak terhitung), sementara perulangan for disebut dengan counted loop (perulangan yang terhitung). Perbedaannya adalah ada statement while, biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal. Sedangkan pada statement for, memiliki ciri berupa inisialisasi perulangan dilakukan diawal statement dan perulangan tersebut akan berhenti ketika syarat/ kondisi yang telah ditentukan terpenuhi\cite{santoso2009bahasa}.
+Perulangan while disebut dengan uncounted loop \(perulangan yang tak terhitung\), sementara perulangan for disebut dengan counted loop \(perulangan yang terhitung\). Perbedaannya adalah ada statement while, biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal. Sedangkan pada statement for, memiliki ciri berupa inisialisasi perulangan dilakukan diawal statement dan perulangan tersebut akan berhenti ketika syarat/ kondisi yang telah ditentukan terpenuhi\cite{santoso2009bahasa}.
 
 \subsection{Perintah Break, Continue dan Pass Perintah Break}
 \subsubsection{Perintah Break}
@@ -57,7 +57,7 @@ for i in range (5) :
 Jadi seperti yang sudah dikatakan sebelumnya, perintah pass ini memiliki fungsi untuk mengisi kekosongan dari sebuah penyeleksian ataupun perulangan.
 
  \subsubsection{Perintah return}
-Perintah return dapat menghentikan suatu proses dari fungsi sebelum mengakhiri fungsi tersebut. Alasan menggunakan perintah return adalah jika menemui sebuah kesalahan kondisi, yang berarti nilai suatu fungsi tersebut mengembalikan nilai null (kosong) : 
+Perintah return dapat menghentikan suatu proses dari fungsi sebelum mengakhiri fungsi tersebut. Alasan menggunakan perintah return adalah jika menemui sebuah kesalahan kondisi, yang berarti nilai suatu fungsi tersebut mengembalikan nilai null \(kosong\) : 
 import math
 \begin{equation}
 def print_log (x):
@@ -69,10 +69,10 @@ hasil = math.log (x)
  print \"Hasil log dari\", x, \"adalah\", hasil 
  \end{equation}
  
- Fungsi print_log() mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
+ Fungsi print_log\(\) mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
 
 \subsection{Nested Loop}
-Nested Loop (Perulangan Bertingkat) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
+Nested Loop \(Perulangan Bertingkat\) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
 \subsubsection{Contoh Penggunaan Nested Loop}
 Format nested loop \(for di dalam for\)
 \begin{equation}
@@ -113,7 +113,7 @@ Masukkan jumlah bariss: 5 \(inputkan 5\)
 Muncul 5 baris isi bintang
 
 \subsubsection{Nested Loop for Nested Data}
-Disini kita memiliki list data dari murid-murid. Jadi, setiap murid memiliki nama yang dipasangkan dengan list subyek(mata pelajaran) yang mereka ambil. Dan akan mencetak setiap nama murid, dan jumlah dari subyek (mata pelajaran) yang mereka ambil
+Disini kita memiliki list data dari murid-murid. Jadi, setiap murid memiliki nama yang dipasangkan dengan list subyek\(mata pelajaran\) yang mereka ambil. Dan akan mencetak setiap nama murid, dan jumlah dari subyek \(mata pelajaran\) yang mereka ambil
 \begin{equation}
 students = [
     ("John", ["TIK", "IPS"]),
