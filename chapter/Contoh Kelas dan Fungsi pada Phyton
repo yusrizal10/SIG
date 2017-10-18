@@ -1,3 +1,4 @@
+\section Class
 Class adalah sebuah spesifikasi yang jika diinstansiasi akan menghasilkan sebuah
 objek dan merupakan inti dari pengembangan dan desain berorientasi objek. Class
 menggambarkan keadaan (atribut/properti) suatu sistem, sekaligus menawarkan layanan
@@ -33,11 +34,7 @@ diwarisinya.
 Lambang
 
 
-FUNGSI-FUNGSI UMUM
-FUNGSI STRING
-Fungsi string digunakan memanipulasi string untuk berbagai macam kebutuhan. Disini
-akan dibahas beberapa fungsi string yang sering digunakan dalam membuat program
-aplikasi web.
+
 
 \section Fungsi
 Dalam menulis program, tentunya kita akan /& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali, dengan beberapa nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kembali kode yang ingin dipanggil ulang tersebut. Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
@@ -131,6 +128,12 @@ Digunakan untuk mengganti karakter pertama pada setiap kata dalam suatu string
 menjadi huruf besar.
 Sintaks:
 ucwords(string)
+
+\subsection FUNGSI-FUNGSI UMUM
+FUNGSI STRING
+Fungsi string digunakan memanipulasi string untuk berbagai macam kebutuhan. Disini
+akan dibahas beberapa fungsi string yang sering digunakan dalam membuat program
+aplikasi web.
 FUNGSI DATE
 Digunakan untuk mengambil tanggal dan jam. Hasil dari fungsi ini adalah sebuah string
 yang berisi tanggal/jam sesuai dengan format yang diinginkan. Format yang dikenal
