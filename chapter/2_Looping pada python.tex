@@ -58,14 +58,14 @@ def print_log (x):
   return  
 hasil = math.log (x) 
  print \"Hasil log dari\", x, \"adalah\", hasil 
- \begin{equation}
+ \end{equation}
  
  Fungsi print_log() mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
 
 \subsection{Nested Loop}
 Nested Loop (Perulangan Bertingkat) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
 \subsubsection{Contoh Penggunaan Nested Loop}
-Format nested loop (for di dalam for)
+Format nested loop \(for di dalam for\)
 \begin{equation}
 For iterasi_var_1 in urutan_1:
 	Statements_untuk_perulangan_for_yang_di_luar
@@ -77,7 +77,7 @@ Statements_untuk_perulangan_for_yang_di_luar
 ...
 \end{equation}
 
-Format nested loop (while di dalam while)
+Format nested loop \(while di dalam while\)
 \begin{equation}
 While expressions:
 	Statements_untuk_perulangan_while_yang_di_dalam
@@ -95,7 +95,7 @@ For i in range (x) :
 	Print()
 \end{equation}
 Saat di Run Module maka :
-Masukkan jumlah bariss: 5 (inputkan 5)
+Masukkan jumlah bariss: 5 \(inputkan 5\)
 *
 **
 ***
@@ -104,7 +104,7 @@ Masukkan jumlah bariss: 5 (inputkan 5)
 Muncul 5 baris isi bintang
 
 
-\subsection(While Loop)
+\subsection{While Loop}
 Perintah While pada pyton biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal\cite{santoso2009bahasa}. Alur prosesnya adalah ketika sebuah program dijalankan dan kemudian menemukan sebuah kondisi dimana menggunakan loop atau perulangan while, jika kondisi true maka statment itu akan dieksekusi kemudian akan di cek lagi kondisinya. Setelah selesai statmentnya masih true dieksekusi lalu akan mengecek lagi kondisinya dan terus seperti itu, dan jika false statementntya maka akan keluar dari perulangan dan akan melanjutkan ke program selanjutnya.
 
 \subsection{Perulangan do-while}
@@ -118,7 +118,7 @@ do{
 \end{equation}
 Jika program itu dijalankan, maka akan menghasilkan keluaran 100,  yang artinya walaupun kondisinya salah, namun minimal isi instruksi akan dijalankan sekali, hal ini disebabkan karena proses do-while berbeda dengan while,  yang dimana do-while pertama melakukan instruksi setelah itu baru mengecek kondisi, sedangkan while pertama mengecek kondisi baru melakukan instruksi. 
 
-\subsection{Perulangan (for loop)}
+\subsection{Perulangan \(for loop\)}
 FOR Loop dipakai untuk melakukan perulangan atau iterasi mencapai batas atau jarak yang telah ditentukan/cite{santoso2009bahasa}.
 
 Kegunaan
@@ -131,7 +131,7 @@ Statements
 Print(“bukan bagian perulangan”) 
 
 \subsection{For Loop}
-Perulangan for disebut juga counted loop (perulangan yang terhitung)
+Perulangan for disebut juga counted loop \(perulangan yang terhitung\)
 Pengulangan for digunakan untuk pengulangan dengan muatan yang banyak\cite{van2007python}.
 keistimewaan perulanga pada for adalah , perulangan dapat di hentikan pada saat kondisi tertentu. pada python, statemen for bekerja mengulang berbagai macam tipe data sekuensial seperti pada list, string dan tuple
 Contohnya Seperti :
@@ -156,7 +156,7 @@ python for.py
 
 
 \subsection{While Loop}
-perulangan while disebut juga uncounted loop (perulangan yang tak terhitung)
+perulangan while disebut juga uncounted loop \(perulangan yang tak terhitung\)
 Pengulangan while biasanya digunakan untuk sesuatu yang ga pasti.
 Contohnya Seperti :
 \begin{equation}
@@ -233,10 +233,19 @@ python while.py
 kondisi for atau while.
 Perintah continue sama  seperti dalam bahasa C, fungsinya untuk melanjutkan statement
 berikutnya dalam kondisi perulangan.
-Pada kondisi perulangan juga diperbolehkan untuk menggunakan kalimat perintah else,
+Pada kondisi perulangan juga diperbolehkan untuk menggunakan kalimat perintah else, yang dijalankan saat kondisi perulangan for tidak memenuhi suatu kondisi atau jika kondisi tersebut mengalami error/false, tetapi bukan pada saat kondisi perulangan dihentikan dengan perintah break. Berikut adalah contohnya:
+\ref{2_bce}
+
+\begin{figure}[ht]
+    \centerline{\includegraphics[width=1\textwidth]{figures/2_bce.JPG}}
+    \caption{}
+    \label{2_bce}
+    \end{figure}
+
+Penjelasannya adalah jika kondisi dalam perulangan for x in range\(2, n\) tidak terpenuhi maka alur perulangannya akan pindah ke ruang lingkup perintah else. 
 
 \subsection{Range}
-\subsubsection{Fungsi range()}
+\subsubsection{Fungsi range\(\)}
 Jika ingin melakukan perulangan dengan sejumlah yang diinginkan, fungsi built-in range sangat membantu. Fungsi tersebut menghasilkan sejumlah indeks dari nilai yang telah ditentukan. 
 Contohnya :
 \begin{equation}
@@ -250,14 +259,14 @@ Ataupun sebagian angka yang diinginkan. Contohnya :
 >>> range(0, 20, 3)
 [0, 3, 6, 9, 12, 15, 18]
 \end{equation}
- Contoh tersebut menunjukan kelipatan dari suatu interval bilangan yang mempunyai sintaks range(<nilai-awal>, <nilai-akhir>, <kelipatan-angka>).
-\subsubsection{Contoh penggunaan range(nilai_awal,nilai_akhir,pencacah)}
+ Contoh tersebut menunjukan kelipatan dari suatu interval bilangan yang mempunyai sintaks range\(<nilai-awal>, <nilai-akhir>, <kelipatan-angka>\).
+\subsubsection{Contoh penggunaan range\(nilai_awal,nilai_akhir,pencacah\)}
 Berikut ini contoh penggunaan range untuk menampilkan bilangan dari 1 – 100 dengan penambahan/pencacah 1 dengan menambahkan end=’ ’ agar bilangan tampil secara horizontal tidak pindah baris ke bawah
 \begin{equation}
 for i in range(1, 101, 1) :
     print(i, end=' ')
 \end{equation}
-Lalu, setelah perintah diatas dijalankan (run) maka akan tampil bilangan seperti berikut ini :
+Lalu, setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seperti berikut ini :
 \ref{2_range}
 
 \begin{figure}[ht]
@@ -266,7 +275,7 @@ Lalu, setelah perintah diatas dijalankan (run) maka akan tampil bilangan seperti
     \label{2_range}
     \end{figure}
     
-\subsubsection{Contoh penggunaan range(nilai_awal,nilai_akhir)}
+\subsubsection{Contoh penggunaan range\(nilai_awal,nilai_akhir\)}
 Berikut ini adalah contoh penggunaan range untuk menampilkan dari bilangan tertentu sampai bilangan tertentu dan menghitung banyaknya bilangan serta menghitung jumlah seluruh bilangan yang ada.
 \begin{equation}
 awal=int(input('Set Nilai Awal = '))
@@ -286,7 +295,7 @@ print('Bilangan di atas ada \%d bilangan' \%count)
 print('Jumlah semua bilangan adalah \%d' \%summ)
 \end{equation}
 
-Setelah perintah diatas dijalankan (run) maka akan tampil bilangan seperti ini :
+Setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seperti ini :
 \ref{2_range2}
 
 \begin{figure}[ht]
@@ -295,13 +304,13 @@ Setelah perintah diatas dijalankan (run) maka akan tampil bilangan seperti ini :
     \label{2_range2}
     \end{figure}
     
-\subsubsection{Contoh penggunaan range(nilai_akhir)}
+\subsubsection{Contoh penggunaan range\(nilai_akhir\)}
 Ini adalah contoh penggunaan range untuk menampilkan bilangan dari 0 – 100 dengan menambahkan end=’ ’ agar bilangan tampil secara horizontal tidak pindah baris ke bawah
 \begin{equation}
 for i in range(101):
 	print(i,end=' ')
 \end{equation}
-Disini nilai akhir menggunakan operator < bukan ≤ jadi untuk menampilkan sampai angka 100 nilai akhir harus dibuat menjadi 101. Dan setelah perintah diatas dijalankan (run) maka akan tampil hasil seperti berikut ini :
+Disini nilai akhir menggunakan operator < bukan ≤ jadi untuk menampilkan sampai angka 100 nilai akhir harus dibuat menjadi 101. Dan setelah perintah diatas dijalankan \(run\) maka akan tampil hasil seperti berikut ini :
 \ref{2_range3}
 
 \begin{figure}[ht]
