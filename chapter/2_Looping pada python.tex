@@ -103,6 +103,25 @@ Masukkan jumlah bariss: 5 \(inputkan 5\)
 ***** 
 Muncul 5 baris isi bintang
 
+\subsubsection{Nested Loop for Nested Data}
+Disini kita memiliki list data dari murid-murid. Jadi, setiap murid memiliki nama yang dipasangkan dengan list subyek(mata pelajaran) yang mereka ambil. Dan akan mencetak setiap nama murid, dan jumlah dari subyek (mata pelajaran) yang mereka ambil
+\begin{equation}
+students = [
+    ("John", ["TIK", "IPS"]),
+    ("Vusi", ["Matematika", "TIK", "IPA"]),
+    ("Jess", ["TIK", "Bahasa Indonesia", "Ekonomi", "Pendidikan Agama Islam"]),
+    ("Sarah", ["Biologi", "Matematika", "Ekonomi", "Kimia"]),
+    ("Zuki", ["Sosiologi", "Ekonomi", "Biologi", "Matematika", "Bahasa Inggris"])]
+
+for (name, subjects) in students:
+    print(name, "takes", len(subjects), "courses")
+\end{equation}
+Lalu, setelah dijalankan (run) maka akan tampil seperti ini:
+John takes 2 courses
+Vusi takes 3 courses
+Jess takes 4 courses
+Sarah takes 4 courses
+Zuki takes 5 courses
 
 \subsection{While Loop}
 Perintah While pada pyton biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal\cite{santoso2009bahasa}. Alur prosesnya adalah ketika sebuah program dijalankan dan kemudian menemukan sebuah kondisi dimana menggunakan loop atau perulangan while, jika kondisi true maka statment itu akan dieksekusi kemudian akan di cek lagi kondisinya. Setelah selesai statmentnya masih true dieksekusi lalu akan mengecek lagi kondisinya dan terus seperti itu, dan jika false statementntya maka akan keluar dari perulangan dan akan melanjutkan ke program selanjutnya.
