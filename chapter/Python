@@ -127,7 +127,7 @@
 	
 	instalasi \ref {selesai} software telah selesai dan software python siap digunakan
 
-   	\section Pemrograman Dalam Bahasa Python
+   	\section {Pemrograman Dalam Bahasa Python}
 	Program adalah urut-urutan instruksi untuk menjalankan suatu komputasi. Komputasi dapat berupa matemasis, seperti
 	pencarian bilangan prima, persamaan kuadrat, atau yang lainnya. Akan tetapi juga dapat berupa
 	pencarian dan penggantian teks dalam dokumen. Instruksi atau perintah atau statement
@@ -185,3 +185,22 @@
 	ia harus berbaring dalam interval (b , 0] ketika b negatif.
 	Python menyediakan fungsi bulat untuk pembulatan pelampung ke bilangan bulat. Versi sebelum 3 digunakan round-away-from-zero: round (0.5) adalah 1.0, round (-0.5) adalah -1.0. [45] Python 3 menggunakan round-to-even: round (1,5) adalah 2.0, round (2.5) adalah 2.0. [46] Desimaltype / class dalam module decimal (sejak versi 2.4) memberikan representasi numerik yang tepat dan beberapa mode pembulatan.
 	Python memungkinkan ekspresi boolean dengan beberapa hubungan kesetaraan dengan cara yang konsisten dengan penggunaan umum dalam matematika. Misalnya, ekspresi a <b <c menguji apakah a kurang dari b dan b kurang dari c. Bahasa yang diturunkan dari C menafsirkan ungkapan ini secara berbeda: di C, ungkapan pertama akan mengevaluasi sebuah <b, menghasilkan 0 atau 1, dan hasilnya kemudian akan dibandingkan dengan c.
+
+	\section {Pernyataan dan Arus Kontrol}
+	Pernyataan Python antara lain :
+	1. Pernyataan if, yang secara kondisional mengeksekusi satu blok kode, bersama dengan yang lain dan elif (kontraksi yang lain-jika).
+	2. Untuk pernyataan, yang mengulangi objek yang berulang-ulang, menangkap setiap elemen ke variabel lokal untuk digunakan oleh blok terlampir.
+	3. Pernyataan sementara, yang mengeksekusi satu blok kode selama kondisinya benar.
+	4. Pernyataan percobaan, yang memungkinkan pengecualian diajukan di blok kode terlampir untuk ditangkap dan ditangani oleh pengecualian; Ini juga memastikan bahwa kode pembersihan di blok akhirnya akan selalu dijalankan terlepas dari bagaimana blok tersebut keluar.
+	5. Pernyataan kelas, yang mengeksekusi satu blok kode dan menempelkan namespace lokal ke kelas, untuk digunakan dalam pemrograman berorientasi objek.
+	6. Pernyataan def, yang mendefinisikan suatu fungsi atau metode.
+	7. Pernyataan dengan (dari Python 2.5), yang menyertakan blok kode di dalam manajer konteks (misalnya, mengakuisisi alock sebelum blok kode dijalankan, dan melepaskan kunci setelahnya).
+	8. Pernyataan kelulusan, yang berfungsi sebagai PDN. Secara sintaktis diperlukan untuk membuat blok kode kosong.
+	9. Pernyataan tegas, digunakan saat melakukan debug untuk memeriksa kondisi yang seharusnya diterapkan.
+	10.Pernyataan hasil, yang mengembalikan nilai dari fungsi generator. Dari Python 2.5, yield juga merupakan operator. Formulir ini digunakan untuk menerapkan coroutines.
+	11.Pernyataan impor, yang digunakan untuk mengimpor modul yang fungsi atau variabelnya dapat digunakan dalam program saat ini.
+	Python tidak mendukung pengoptimalan panggilan ekor atau kelanjutan kelas satu, dan menurut Guido van Rossum, tidak akan pernah. 
+	Namun, dukungan yang lebih baik untuk fungsionalitas mirip coroutine disediakan di 2,5, dengan memperluas generator Python. 
+	Sebelum 2.5, generator adalah pemicu malas; Informasi dilewatkan secara tidak sadar dari generator. Seperti Python 2.5, adalah mungkin 
+	untuk menyampaikan informasi kembali ke fungsi generator, dan seperti pada Python 3.3, informasi dapat melewati beberapa tingkat tumpukan.
+
