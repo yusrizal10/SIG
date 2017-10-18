@@ -1,5 +1,5 @@
-\section Phyton
-\subsection Pengertian Phyton
+\section{Phyton} 
+\subsection{Pengertian Phyton}
 Python merupakan bahasa pemrograman yang
 berorientasi obyek dinamis, dapat digunakan
 untuk bermacam-macam pengembangan perangkat
@@ -25,7 +25,7 @@ Initiatives), sehingga Python bebas digunakan,
 gratis digunakan, bahkan untuk produk-produk
 komersil.
 
-\subsection Contoh Script Phyton
+\subsection{Contoh Script Phyton}
 Seringkali pengguna harus menuliskan ekspresi yang cukup kompleks dan akan digunakan secara berulang di kemudian hari. 
 Untuk keperluan penulisan ekspresi kompleks, kita dapat membuatnya dalam sebuah script yang dibantu dengan adanya teks editor. 
 Penulis menggunakan vi teks editor default yang terdapat pada distro GNU/Linux. Pada contoh berikut ini, 
@@ -36,213 +36,9 @@ Anda dapat melakukan eksekusi script yang telah Anda buat tersebut dengan cara :
 $ python contoh-script-01.py 
 Atau : Memberikan permission x (executable) sehingga script tersebut dapat dijalankan, 
 dengan perintah : $ chmod +x contoh-script-01.py $ ./contoh-script-01.py
-\section Class
-Class adalah sebuah spesifikasi yang jika diinstansiasi akan menghasilkan sebuah
-objek dan merupakan inti dari pengembangan dan desain berorientasi objek. Class
-menggambarkan keadaan (atribut/properti) suatu sistem, sekaligus menawarkan layanan
-untuk memanipulasi keadaan tersebut (metoda/fungsi).
-Class memiliki tiga area pokok :
-1. Nama (dan stereotype)
-2. Atribut
-3. Method (operasi)
-Atribut dan metoda dapat memiliki salah satu sifat berikut :
-• Private(-), tidak dapat dipanggil dari luar class yang bersangkutan
-• Protected(#), hanya dapat dipanggil oleh class yang bersangkutan dan anak-anak yang
-mewarisinya
-• Public(+), dapat dipanggil oleh siapa saja
-
-Hubungan Antar Class
-1. Asosiasi, yaitu hubungan statis antar class. Umumnya menggambarkan class yang
-memiliki atribut berupa class lain, atau class yang harus mengetahui eksistensi
-class lain. Panah navigability menunjukkan arah query antar class.
-Lambang :
-2. Agregasi, yaitu hubungan yang menyatakan bagian (“terdiri atas..”) atau biasa
-disebut relasi mempunyai sebuah.
-Lambang :
-3. Composition, yaitu sebuah kelas tidak bisa berdiri sendiri dan harus merupakan
-bagian dari class yang lain, maka class tersebut memiliki relasi composition.
-Lambang :
-4. Dependency, yaitu hubungan yang menunjukan operasi pada suatu kelas yang
-menggunakan class yang lain.
-Lambang :
-5. Generalisasi / Pewarisan, yaitu hubungan hirarkis antar class. Class dapat
-diturunkan dari class lain dan mewarisi semua atribut dan metoda class asalnya
-dan menambahkan fungsionalitas baru, sehingga ia disebut anak dari class yang
-diwarisinya.
-Lambang
 
 
-
-
-\section Fungsi
-Dalam menulis program, tentunya kita akan /& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali, dengan beberapa nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kembali kode yang ingin dipanggil ulang tersebut. Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
-Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain, biasanya digunakan istilah function. 
-AddSlashes
-Digunakan untuk menambahkan karakter backslash ( \ ) pada suatu string. Hal ini
-penting digunakan pada query string untuk database, misalkan pada MySQL. Beberapa
-karakter yang akan ditambahkan tanda backslahses adalah karakter tanda petik satu ( ‘ ),
-karakter petik dua ( “ ), backslash ( \ ) dan karakter NULL.
-Sintaks:
-addslashes(string)
-StripSlashes
-Digunakan untuk menghilangkan karakter backslash ( \ ) pada suatu string.
-Sintaks:
-string stripslashes(string)
-Crypt
-Digunakan untuk meng-encrypt dengan metode DES suatu string. Fungsi ini sering
-digunakan untuk mengacak string password sebelum disimpan dalam database. Dalam
-penggunaan fungsi crypt ini dapat ditambahkan parameter string ‘salt’. Parameter ‘salt’
-ini ditambahkan untuk menentukan basis pengacakan. ‘Salt’ string terdiri atas 2
-karakter. Jika ‘salt’ string tidak ditambahkan pada fungsi crypt maka PHP akan
-menentukan sendiri ‘salt’ string tersebut secara acak.
-Sintaks:
-crypt(string [ , salt ] )
-Echo
-Digunakan untuk mencetak isi suatu string atau argumen.
-Sintaks:
-echo( string argumen1, string argumen2 , ….)
-Explode
-Digunakan untuk memecah-mecah suatu string berdasarkan tanda pemisah tertentu dan
-memasukkan hasilnya kedalam suatu variable array.
-Sintaks:
-explode(string pemisah , string [, int limit] )
-Contoh:
-$namahari = “minggu senin selasa rabu kamis jumat sabtu”;
-$hari = explode(“ ”, $namahari);
-
-Implode
-Kegunaan fungsi ini adalah kebalikan daripada fungsi explode. Fungsi implode
-digunakan untuk menghasilkan suatu string dari masing-masing elemen suatu array.
-String yang dihasilkan tersebut dipisahkan oleh suatu string telah yang ditentukan
-sebelumnya.
-Sintaks:
-implode(string pemisah , array)
-Strip_Tags
-Digunakan untuk menghilangkan kode-kode tag HTML pada suatu string.
-Sintaks:
-striptags(string [, string tags yang tidak dihilangkan] )
-StrLen
-Digunakan untuk menghitung jumlah karakter suatu string.
-Sintaks:
-strlen(string)
-StrPos
-Digunakan untuk mencari posisi pertama suatu sub string pada suatu string. Fungsi ini
-biasanya digunakan untuk mencari suatu sub string didalam suatu string.
-Sintaks:
-strlen(string , sub string)
-Str_Repeat
-Digunakan untuk mengulang isi suatu string.
-Sintaks:
-str_repeat(string , int jumlah perulangan)
-StrToLower
-Digunakan untuk merubah suatu string menjadi huruf kecil (lowercase).
-Sintaks:
-strtolower(string)
-StrToUpper
-Digunakan untuk merubah suatu string menjadi huruf besar (uppercase)
-Sintaks:
-strtoupper(string)
-SubStr
-Digunakan untuk mengambil suatu sub string dengan panjang tertentu dari suatu string pada
-posisi tertentu pula.
-Sintaks:
-
-substr(string, int posisi , int posisi)
-Contoh:
-substr(“abcdefg”,0,3); // mengasilkan string “abc”
-substr(“abcdefg”,3,2); // menghasilkan string “de”
-SubStr_Count
-Digunakan untuk menghitung jumlah sub string dalam suatu string
-Sintaks:
-substr_count( string , string substring)
-Contoh:
-substr_count(“This is a test”,”is”); // menghasilkan nilai 2
-UCFirst
-Digunakan untuk mengganti karakter pertama pada suatu string menjadi huruf besar.
-Sintaks:
-ucfirst(string)
-UCWords
-Digunakan untuk mengganti karakter pertama pada setiap kata dalam suatu string
-menjadi huruf besar.
-Sintaks:
-ucwords(string)
-
-\subsection FUNGSI-FUNGSI UMUM
-FUNGSI STRING
-Fungsi string digunakan memanipulasi string untuk berbagai macam kebutuhan. Disini
-akan dibahas beberapa fungsi string yang sering digunakan dalam membuat program
-aplikasi web.
-FUNGSI DATE
-Digunakan untuk mengambil tanggal dan jam. Hasil dari fungsi ini adalah sebuah string
-yang berisi tanggal/jam sesuai dengan format yang diinginkan. Format yang dikenal
-dalam fungsi date ini adalah sebagai berikut:
- a - "am" or "pm"
- A - "AM" or "PM"
- B - Swatch Internet time
- d - day of the month, 2 digits with leading zeros; i.e. "01" to "31"
- D - day of the week, textual, 3 letters; i.e. "Fri"
- F - month, textual, long; i.e. "January"
- g - hour, 12-hour format without leading zeros; i.e. "1" to "12"
- G - hour, 24-hour format without leading zeros; i.e. "0" to "23"
- h - hour, 12-hour format; i.e. "01" to "12"
- H - hour, 24-hour format; i.e. "00" to "23"
- i - minutes; i.e. "00" to "59"
- I (capital i) - "1" if Daylight Savings Time, "0" otherwise.
- j - day of the month without leading zeros; i.e. "1" to "31"
- l (lowercase 'L') - day of the week, textual, long; i.e. "Friday"
- 
- 
- 
- L - boolean for whether it is a leap year; i.e. "0" or "1"
- m - month; i.e. "01" to "12"
- M - month, textual, 3 letters; i.e. "Jan"
- n - month without leading zeros; i.e. "1" to "12"
- s - seconds; i.e. "00" to "59"
- S - English ordinal suffix, textual, 2 characters; i.e. "th", "nd"
- t - number of days in the given month; i.e. "28" to "31"
- T - Timezone setting of this machine; i.e. "MDT"
- U - seconds since the epoch
- w - day of the week, numeric, i.e. "0" (Sunday) to "6" (Saturday)
- Y - year, 4 digits; i.e. "1999"
- y - year, 2 digits; i.e. "99"
- z - day of the year; i.e. "0" to "365"
- Z - timezone offset in seconds (i.e. "-43200" to "43200")
-Sintaks:
-date(string format)
-Contoh:
-date(“Y-m-d”); // menghasilkan “2001-07-28”
-date(“l, j F Y”); // menghasilkan “Saturday, 28 July 2001”
-date(“H:i:s”); // menghasilkan “20:15:07”
-FUNGSI MAIL
-Digunakan untuk mengirimkan e-mail ke alamat e-mail tertentu.
-Sintaks:
-mail(string tujuan , string subject , string isi [, string
-
-\subsection Fungsi
-Dalam menulis program, tentunya kita akan /& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali,
-dengan beberapa nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kembali kode yang ingin dipanggil ulang tersebut. 
-Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
-Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain,
-biasanya digunakan istilah function. 
-
-Beberapa hal yang perlu diperhatikan terkait dengan penggunaan fungsi : 
-\subsection Deklarasi fungsi, di gunakan kata kunci def, berguna untuk membuat obyek fungsi dan selanjutnya melakukan assignment
-obyek fungsi tersebut dengan sebuah nama. 
-\subsection Pada istilah passing parameter by reference dan passing parameter by value, maka bahasa pemrograman Python melakukan 
-passing parameter by assignment. 
-\subsection Seperti pada variable, kita tidak perlu mendeklarasikan tipenya terlebih dahulu sehingga parameter pada fungsi bisa 
-digunakan untuk berbagai tipe obyek yang sesuai.
-Bentuk umum :
-def fungsi(argumen1, argumen2, ..., argumen n):
-Statement1
-...
-Statement n 
-return returnvariable 
-Keterangan : 
-Fungsi diawali dengan kata kunci def, diikuti nama fungsi, boleh diikuti parameter formal yang ditulis dalam tanda kurung, dan 
-deklarasi fungsi ditutup dengan tanda titik dua (:).
-
-\subsection INTERPRETER PYTHON
+\subsection{INTERPRETER PYTHON}
 Bahasa pemrograman Python dilengkapi dengan suatu fasilitas seperti shell di Linux, sehingga memungkinkan kita untuk mencoba 
 penggunaan Python secara interaktif. Lokasi instalasi Python secara default pada distribusi Linux terletak di /usr/ bin/python.
 
@@ -293,3 +89,123 @@ fac(10)
 
 Pada contoh diatas, tanda . . . merupakan secondary prompt, biasanya digunakan untuk kondisi atau kelanjutan dari ekspresi 
 sebelumnya. Apabila pengguna telah selesai menggunakan interpreter Python, dapat keluar dengan menekan Ctrl – D.
+
+
+\section{Class}
+\subsection{Pengertian Class}
+Class adalah sebuah spesifikasi yang jika diinstansiasi akan menghasilkan sebuah
+objek dan merupakan inti dari pengembangan dan desain berorientasi objek. Class
+menggambarkan keadaan (atribut/properti) suatu sistem, sekaligus menawarkan layanan
+untuk memanipulasi keadaan tersebut (metoda/fungsi).
+
+\subsection{Area Pokok Class}
+Class memiliki tiga area pokok :
+1. Nama (dan stereotype)
+2. Atribut
+3. Method (operasi)
+Atribut dan metoda dapat memiliki salah satu sifat berikut :
+• Private(-), tidak dapat dipanggil dari luar class yang bersangkutan
+• Protected(#), hanya dapat dipanggil oleh class yang bersangkutan dan anak-anak yang
+mewarisinya
+• Public(+), dapat dipanggil oleh siapa saja
+
+\subsection{Hubungan Antar Class}
+1. Asosiasi, yaitu hubungan statis antar class. Umumnya menggambarkan class yang
+memiliki atribut berupa class lain, atau class yang harus mengetahui eksistensi
+class lain. Panah navigability menunjukkan arah query antar class.
+Lambang :
+2. Agregasi, yaitu hubungan yang menyatakan bagian (“terdiri atas..”) atau biasa
+disebut relasi mempunyai sebuah.
+Lambang :
+3. Composition, yaitu sebuah kelas tidak bisa berdiri sendiri dan harus merupakan
+bagian dari class yang lain, maka class tersebut memiliki relasi composition.
+Lambang :
+4. Dependency, yaitu hubungan yang menunjukan operasi pada suatu kelas yang
+menggunakan class yang lain.
+Lambang :
+5. Generalisasi / Pewarisan, yaitu hubungan hirarkis antar class. Class dapat
+diturunkan dari class lain dan mewarisi semua atribut dan metoda class asalnya
+dan menambahkan fungsionalitas baru, sehingga ia disebut anak dari class yang
+diwarisinya.
+Lambang
+
+
+
+
+\section{Fungsi}
+Dalam menulis program, tentunya kita akan /& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali, dengan beberapa
+nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kembali kode yang ingin dipanggil ulang tersebut. 
+Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
+Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain, 
+biasanya digunakan istilah function. 
+Beberapa hal yang perlu diperhatikan terkait dengan penggunaan fungsi : 
+1. deklarasi fungsi, dikatakan kata kunci def, berguna untuk membuat obyek fungsi dan selanjutnya melakukan assignment obyek fungsi
+tersebut dengan sebuah nama.
+2. Pada istilah parameter y preferences dan passing parameter by value, maka bahasa pemrograman Python melakukan passing parameter
+by assignment.
+3. Seperti pada variabel kita tidak perlu mendeklarasikan tipenya terlebih dahulu sehingga parameter pada fungsi bisa digunakan untuk 
+berbagai tipe obyek yang sesuai.
+Bentuk umum :
+def fungsi(argumen1, argumen2, ..., argumen n):
+ Statement1
+ ...
+ Statement n
+ return returnvariable
+Keterangan :
+Fungsi diawali dengan kata kunci def, diikuti
+nama fungsi, boleh diikuti parameter formal yang
+ditulis dalam tanda kurung, dan deklarasi fungsi ditutup dengan tanda titik dua (:).
+ 
+
+\subsection{FUNGSI-FUNGSI UMUM}
+\subsubsection{FUNGSI STRING}
+Fungsi string digunakan memanipulasi string untuk berbagai macam kebutuhan. Disini
+akan dibahas beberapa fungsi string yang sering digunakan dalam membuat program
+aplikasi web.
+\subsubsection{FUNGSI DATE}
+Digunakan untuk mengambil tanggal dan jam. Hasil dari fungsi ini adalah sebuah string
+yang berisi tanggal/jam sesuai dengan format yang diinginkan. Format yang dikenal
+dalam fungsi date ini adalah sebagai berikut:
+a - "am" or "pm"
+A - "AM" or "PM"
+B - Swatch Internet time
+d - day of the month, 2 digits with leading zeros; i.e. "01" to "31"
+D - day of the week, textual, 3 letters; i.e. "Fri"
+F - month, textual, long; i.e. "January"
+g - hour, 12-hour format without leading zeros; i.e. "1" to "12"
+G - hour, 24-hour format without leading zeros; i.e. "0" to "23"
+h - hour, 12-hour format; i.e. "01" to "12"
+H - hour, 24-hour format; i.e. "00" to "23"
+i - minutes; i.e. "00" to "59"
+I (capital i) - "1" if Daylight Savings Time, "0" otherwise.
+j - day of the month without leading zeros; i.e. "1" to "31"
+l (lowercase 'L') - day of the week, textual, long; i.e. "Friday"
+L - boolean for whether it is a leap year; i.e. "0" or "1"
+m - month; i.e. "01" to "12"
+M - month, textual, 3 letters; i.e. "Jan"
+n - month without leading zeros; i.e. "1" to "12"
+s - seconds; i.e. "00" to "59"
+S - English ordinal suffix, textual, 2 characters; i.e. "th", "nd"
+t - number of days in the given month; i.e. "28" to "31"
+T - Timezone setting of this machine; i.e. "MDT"
+U - seconds since the epoch
+w - day of the week, numeric, i.e. "0" (Sunday) to "6" (Saturday)
+Y - year, 4 digits; i.e. "1999"
+y - year, 2 digits; i.e. "99"
+z - day of the year; i.e. "0" to "365"
+Z - timezone offset in seconds (i.e. "-43200" to "43200")
+Sintaks:
+date(string format)
+Contoh:
+date(“Y-m-d”); // menghasilkan “2001-07-28”
+date(“l, j F Y”); // menghasilkan “Saturday, 28 July 2001”
+date(“H:i:s”); // menghasilkan “20:15:07”
+\subsubsection{FUNGSI MAIL}
+Digunakan untuk mengirimkan e-mail ke alamat e-mail tertentu.
+Sintaks:
+mail(string tujuan , string subject , string isi [, string
+
+
+
+
+
