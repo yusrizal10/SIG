@@ -263,6 +263,29 @@ Traceback (most recent call last):
 File “<stdin>”, line 1, in ?
 \end{equation}
 
+\subsection{Aturan Penulisan Variabel}
+• Nama variabel boleh diawali menggunakan huruf atau garis bawah (_), contoh: nama, _nama, namaKu, nama_variabel.
+• Karakter selanjutnya dapat berupa huruf, garis bawah (_) atau angka, contoh: __nama, n2, nilai1.
+• Karakter pada nama variabel bersifat sensitif (case-sensitif). Artinya huruf besar dan kecil dibedakan. Misalnya, variabel_Ku 	   dan variabel_ku, keduanya adalah variabel yang berbeda.
+• Nama variabel tidak boleh menggunakan kata kunci yang sudah ada dalam python seperti if, while, for, dsb.
+
+\subsection{Menghapus Variabel}
+Ketika sebuah variabel tidak dibutuhkan lagi, maka kita bisa menghapusnya dengan fungsi del().
+Contoh:
+
+\begin{equation}
+>>> nama = "petanikode"
+>>> print nama
+petanikode
+>>> del(nama)
+>>> print nama
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'nama' is not defined
+>>>
+\end{equation}
+
+Pada perintah terakhir, kita akan mandapatkan NameError. Artinya variabel tidak ada di dalam memori alias sudah dihapus.
 
 \subsubsection{Penempatan variable pada yang semestinya}
 Misalkan sebuah data pribadi berisi nama, alamat, umur, tempat lahir, tanggal lahir, indeks prestasi kumulatif akan memberikan 6 (enam) buah variabel dengan tipe datanya.
