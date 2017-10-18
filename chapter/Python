@@ -64,6 +64,10 @@
 
    \section {instalasi python untuk windows}
 
+	Dari sebuah artikel oleh Guido Van Rossum yang telah diterjemahkan, menyatakan bahwa Python Interpreter dan standar library 
+	yang tersebar luas tersedia secara bebas dalam berbagai bentuk source atau bentuk biner untuk semua platform utama dari situs 
+	Python (www.python.org) dan dapat didownload secara gratis. Situs yang sama juga berisi distribusi dan petunjuk ke bergagai 
+	modul, program dan tools Python secara gratis, dan dokumentasi sebagai tambahan. \cite {van1995python}
 	di sini penulis artikel menunjukkan instalasi software python yang akan
 	digunakan untuk sql injection. Pada dasarnya proses instalasi python tidak jauh berbeda dengan instalasi software pada umumnya
 	berikut adalah langkah-langkah instalasi python:
