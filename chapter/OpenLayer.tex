@@ -6,14 +6,76 @@
 %Andi Ikram Maulana_1154065
 %Ilman Mubarik Sidiq_1154114
 
+\documentclass{article}
+\title{OPENLAYER}
+\begin{document}
+\maketitle
+
 \section{deskripsi openlayer}
-  OpenLayers adalah library Javascript murni yang digunakan untuk menampilkan data peta di berbagai web browser, tanpa server side dependencies.
-  OpenLayer mengimplementasikan JavaScript API untuk membangun rich web-based geographic apllications yang menyerupai Google maps dan MSN Virtual Earth APIS.
-  Open Layer adalah Software, yang dibangun oleh komunitas Open Source.
+OpenLayers adalah library Javascript murni yang digunakan untuk menampilkan data peta di berbagai web browser, tanpa server side dependencies.
+OpenLayer mengimplementasikan JavaScript API untuk membangun sebuah rich web-based geographic apllications yang menyerupai Google maps dan MSN Virtual Earth APIS.
+Open Layer adalah Software, yang dibangun oleh komunitas Open Source.
   
+OpenLayers Syntax
+OpenLayers “Classes”
+Ditulis menggunakan gaya klasik yang fungsi-fungsinya ditulis dengan dengan huruf besar pada awal syntax.
+contohnya : var map = new OpenLayers.Map(“map”, options);
+Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers. 
+  
+
   OpenLayers Syntax
   OpenLayers “Classes”
   Ditulis menggunakan gaya klasik yang fungsi-fungsinya ditulis dengan dengan huruf besar pada awal syntax.
   contoh : var map = new OpenLayers.Map(“map”, options);
   Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers.
   Fungsi diatas adalah fungsi prototype dar openlayer. Property yang akan diset dan diakses telah terdukumentasi di bagian API   Dokumentation.
+
+\subsection{Base Layers}
+ Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang dapat diaktifkan setiap saat.
+ Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang ada dalam peta. 
+ Base Layer atau bukan, hal ini ditentukan oleh property isBaseLayer pada layer. Kebanyakan Layer raster memiliki Properti isBaseLayer yang diset dengan true secara default. 
+ Ini bisa diganti pada layer option. Base layers selalu ditampilkan dibawah overlay layers.
+
+\subsection{Non Base Layers}
+Non base layers, terkadang disebut juga sebagaioverlay, adalah merupakan Base Layers alternative. Non-base layer yang banyak dapat diaktifkan setiap saat.
+Layer ini tidak memegang control untuk zoom level dari peta, tapi dapat diaktifkan atau di nonaktifkan pada skala yang tepat dengan min/max scale/parameter resolusi, sehingga hanya dapat diaktifkan pada level tertentu.
+
+\subsection {Raster Layers}
+Raster layer adalah layer bayangan. Layer ini merupakan fixed projection yang tidak dapat dirubah pada client side.
+
+\subsection {Google}
+Layer yang digunakan untuk data Google Maps PAA OpenLayer. Untuk informasi API, dapat dilihan pada Google Layer Api Docs. 
+Contoh penggunaanya dapat dilihat pada contoh penggunaan Spherical Mercator.
+Jika kita ingin untuk menumpang tindihkan (overlay) layer dasar Google Maps dengan data lain, kita harus berinteraksi dengan layer Google Maps pada koordinat proyeksi.
+Kita dapat baca selengkapnya pada proyeksi Spherical Mercator dan berbagai layer komersial yang dipergunakan di dalam dokumentasi Spherical Mercator.
+Class Google Layer di design hanya sebagai base layer.
+
+\textbf{Image} \\
+Sebagai informasi API selengkapnya lihat pada Image Layer API Docs.\\
+\textbf{KaMap} \\
+Sebagai informasi API selengkapnya lihat pada KaMap Layer API Docs.\\
+\textbf{KaMapCache} \\
+Sebagai informasi API selengkapnya lihat pada KaMapCache Layer API Docs.\\
+\textbf{MapGuide} \\
+Sebagai informasi API selengkapnya lihat pada MapGuide Layer API Docs.\\
+\textbf{MapServer} \\
+Ini tidak diperlukan untuk berinteraksi dengan Map Server. Secara umum, lebih disukai daripada Layer MapServer, karena MapServer mengekspos sebagian besar fungsi CGI dala modus WMS.
+Lapisan MapServer seing dapat menyebankan peta yang tampaknya bekerja, tetapi masih bermasalah pada proyeksi atau misconfigurasi seruma lainnya.
+Dalam menggunakan WMS kita harus memilika alas an yang kuat dibandingkan dengan menggunakan MapServer.
+Jika kita menggunakan layer MapServer, dan peta sedang diulang beberapa kali, ini menunjukkan bahwa kita belum melakukan konfigurasi dengan peda dan masih dalam proyeksi yang berbda.
+openLayer tidak dapat membaca informasi dari MAPFILE, dan harus dikonfigurasi secara explicit.\\
+
+\subsection {Overlay layer}
+Merupakan lapisan yang memiliki sumberdata dalam format selain citra. Ini termasuk subclass dari kedua layer Marker dan layer Vector.
+
+\subsection {Boxes}
+boxes lebih baik untuk mengimplementasikan fungsi dengan vector layer dan polygon geometric dengan mempertahankan untuk kompatibilitas mundur.
+
+\subsection {GML}
+GML layer merupakam subclass dari vector layer yang berguna untuk membaca data dan menampilkannya. 
+Contoh :
+var layer = new OpenLayers.Layer.GML(“GML”, “gml/polygon.xml”)
+map.addLayer(layer);
+
+\end{document}
+
