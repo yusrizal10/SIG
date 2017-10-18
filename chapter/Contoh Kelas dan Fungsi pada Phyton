@@ -1,3 +1,28 @@
+\section Pengertian Phyton
+Python merupakan bahasa pemrograman yang
+berorientasi obyek dinamis, dapat digunakan
+untuk bermacam-macam pengembangan perangkat
+lunak http://www.python.org/about/apps. Python
+menyediakan dukungan yang kuat untuk integrasi
+dengan bahasa pemrograman lain dan alat-alat
+bantu lainnya. Python hadir dengan pustakapustaka
+standar yang dapat diperluas serta dapat
+dipelajari hanya dalam beberapa hari. Sudah
+banyak programmer Python yang menyatakan
+bahwa mereka mendapatkan produktivitas yang
+lebih tinggi. Mereka juga merasakan bahwa Python
+meningkatkan kualitas pengembangan karena kode
+sumber yang mereka tulis dapat terus dipelihara.
+Python dapat berjalan di banyak platform / sistem
+operasi seperti Windows, Linux/Unix, Mac OS X,
+OS/2, Amiga, Palm Handhelds dan telepon genggam
+Nokia. Saat ini Python juga telah diporting ke dalam
+mesin virtual Java dan .NET.
+Python didistribusikan dibawah lisensi
+OpenSource yang disetujui OSI (OpenSource
+Initiatives), sehingga Python bebas digunakan,
+gratis digunakan, bahkan untuk produk-produk
+komersil.
 \section Class
 Class adalah sebuah spesifikasi yang jika diinstansiasi akan menghasilkan sebuah
 objek dan merupakan inti dari pengembangan dan desain berorientasi objek. Class
