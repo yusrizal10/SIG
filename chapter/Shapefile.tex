@@ -14,7 +14,7 @@ Shapefiles adalah format data yang menyimpan lokasi geometrik dan informasi atri
 Pada umumnya kita hanya butuh satu file kerja seperti file Microsoft Worl dengan extension file *.doc, 
 akan tetapi shapefile memiliki perbedaan, yaitu bahwa satu shapefile memiliki beberapa file yang saling berkaitan satu sama lainnya. 
 Beberapa file ini memiliki extension yang 42 berbeda-beda yang disimpan dalam workspace yang sama.
-Catatan : tiga file extension pertama adalah bagian file extension yang harus ada dalam sebuah shapefile, file extension berikutnya sifatnya optional.
+Catatan : tiga file extension pertama adalah bagian file extension yang harus ada dalam sebuah shapefile, file extension berikutnya sifatnya optional. \cite{surya2013sistem}
 Fitur geografis di shapefile dapat ditunjukkan oleh titik, garis, atau poligon (area). Ruang kerja yang berisi shapefile
 mungkin juga berisi table dBase, yang dapat menyimpan atribut tambahan yang dapat digabungkan ke fitur shapefile.
 Semua file yang memiliki ektensi seperti file .txt, .asc, .csv atau tab muncul di ArcCatalog sebagai file text secara default.
@@ -48,8 +48,8 @@ Masalah dimana shapefiles sangat rentan adalah mungkin ada potongan tumpang tind
     \item 4.sbn dan *.sbx – File yang menyimpan spatial index dari feature (optional) 
     \item 5.fbn dan *.fbx – File yang menyimpan spatial index dari feature shapefile yang read-only (optional) 
     \item 6.ain dan *.aih – File yang menyimpan index atribut dari field yang aktif dalam sebuah tabel (optional) 
-    \item 7.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional).
-\end{enumerate}
+    \item 7.prj - File yang menyimpan informasi koordinat dari sebuah shapefile, file ini dapat muncul jika kita menggunakan ArcView Projection Utility (optional). \cite{surya2013sistem}
+\end{enumerate} 
 \subsubsection{Contoh penggunaan extension shapefile}
 \begin{enumerate}
     \item 1. read.shapefile (form.name) 
@@ -141,7 +141,7 @@ plot(points, type="l")
 simpleLine <- dp(points, 2) 
 lines(simpleLine, type="l", col="blue") 
 
-## End(Not run)
+## End(Not run) \cite{stabler2006shapefiles}
 
 \subsection{Komponen Teknis}
 Komponen yang ada pada sebuah aplikasi GIS
