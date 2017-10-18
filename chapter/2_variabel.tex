@@ -338,7 +338,18 @@ List adalah sejumlah object yang dipisahkan oleh tanda koma (,) dan diapit oleh 
 5
 \end{equation}
 Jika kita memberikan statemen b = a, maka itu tidak berarti bahwa variabel b terpisah dengan
-variabel a
+variabel a. Di python, statemen seperti itu diartikan hanya sebagai pemberian nama lain
+(alias) kepada variabel a. Artinya, perubahan yang terjadi baik itu di a ataupun di b, maka hasil
+akhir mereka berdua akan sama saja. Setiap perubahan yang terjadi di b akan berdampak di a.
+Untuk meng-copy a secara independen, gunakan statemen c = a[:]. 
+Berikut adalah beberapa contoh lambang atau tanda untuk melengkapi setiap statement pada
+variabel yang ada\ref{operate}.
+\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.25\textwidth]{figures/operate.png}
+	\caption{gambar tanda operasi pada python}
+	\label{operate}
+	\end{figure}
+
 
 
 
