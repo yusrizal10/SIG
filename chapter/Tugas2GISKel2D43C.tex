@@ -26,6 +26,29 @@ Terdapat tiga jenis tipe data vektor yaitu titik, garis, dan polygon. Tipe data 
 biasanya terdapat pada peta. Setiap bagian dari data vektor bisa saja mempunyai 
 informasi yang berasosiasi satu sama lain.
 
+\section{Data Atribut}
+\subsection{pengertian}
+Data atribut merupakan data yang mempresentasikan aspek-aspek deskripsi/penjelasan 
+dari suatu fenomena di permukaan bumi dalam bentuk kata-kata, angka, atau tabel. 
+Data atribut berfungsi untuk menggambarkan gejala topografi karena memiliki aspek deskriptif dan kualitatif. 
+Oleh karena itu, data atribut sangat penting dalam menjelaskan seluruh objek geografi. 
+Contohnya, atribut kualitas tanah terdiri atas status kepemilikian lahan, luas lahan, 
+tingkat kesuburan tanah dan kandungan mineral dalam tanah. 
+Data atribut bisa berupa data kuantitatif (angka) seperti data jumlah penduduk dan dapat berupa data kualitatif (mutu) 
+seperti data tingkat kesuburan tanah.  
+Bentuk-bentuk data atribut:
+-	Data kuantitatif (angka-angka/statistik), contoh: jumlah penduduk
+-	Data kualitatif (kualitas/mutu), contoh: tingkat kesuburan tanah
+
+\subsubsection{Kelebihan dan Kekurangan Data Atribut}
+Kelebihan
+a. Data dapat dimanipulasi 
+b. Dapat mengetahui jenis lokasi peta
+
+Kekurangan
+a. Sulit membedakan gambar dan warna pada peta
+b. Sulit menentukan lokasi
+
 \section{Data Vektor Line}
 \subsection{Pengertian}
   Line merupakan bahasa Inggris dari garis. Garis adalah bentuk geometri liniar yang
@@ -105,7 +128,18 @@ Contoh data kontinyu adalah pengukuran suhu dan elevasi. Ada juga tiga jenis dat
 data spektral, dan gambar.Raster dataset adalah intrinsik untuk analisis spasial yang paling. 
 Analisis data seperti ekstraksi kemiringan dan aspek dari Digital Elevation Models terjadi dengan dataset raster.
 Pemodelan hidrologi spasial seperti ekstraksi daerah aliran sungai dan jalur aliran juga menggunakan sistem berbasis raster.
-Data spektral menyajikan citra udara atau satelit yang kemudian sering digunakan untuk memperoleh informasi geologi vegetasi dengan mengklasifikasikan tanda tangan spektral dari setiap jenis fitur.
+Data spektral menyajikan citra udara atau satelit yang kemudian sering digunakan 
+untuk memperoleh informasi geologi vegetasi dengan mengklasifikasikan tanda tangan spektral dari setiap jenis fitur.
+
+\subsubsection{Karakteristik Raster}
+Resolusi suatu data raster akan merujuk pada ukunan permukaan bumi yang direpresentasikan oleh setiap piksel. 
+Makin kecil ukuran atau luas permukaan bumi yang dapat direpresentasikan oleh setiap pikselnya, makin tinggi resolusi spasialnya.
+Piksel-piksel di dalam zone atau area yang sejenis memiliki nilai (isi piksel atau ID number) yang sama.
+Pada umumnya, lokasi di dalam model data raster, diidentifikasi dengan menggunakan pasangan koordinat kolom dan baris (x,y).
+Nilai yang merepresentasikan suatu piksel dapat dihasilkan dengan cara sampling yang berlainan:
+v  Nilai suatu piksel merupakan nilai rata-rata sampling untuk wilayah yang direpresentasikannya.
+v  Nilai suatu piksel adatah nilai sampling yang berposisi di pusat (atau di tengah) piksel yang bersangkutan.
+v  Nilai suatu pikset adatah nilai sample yang tertetak di sudut-sudut grid.
 
 \subsubsection{Kelebihan dan Kekurangan Raster}
  Kelebihan
