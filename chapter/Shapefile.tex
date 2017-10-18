@@ -245,3 +245,25 @@ Projection Utility (optional).
     \item 6. DATE — 8 bytes; Date berfungsi untuk dapat menyimpan tanggal, waktu ataupun tanggal-waktu dengan contoh format mm/dd/yyy                hh:mm:ss
 \end{enumerate}
 
+\subsection {sistem informasi geografis shapefile}
+dalam sebuah sistem informasi ditampilkan berbagai data seperti shapefile dengan berbagai skala, shapefile adalah format data yang menyimpan lokasi geometrik dan informasi geografis.
+Bentuk geometri yang tersimpan adalah dalam  bentuk koordinat vektor, Format ini adalah format yang dikeluarkan oleh Environmental System Resource Institute (ESRI)
+yang merupakan salah satu vendor SIG terkemuka.
+Format data pada shapefile merupakan format data vektor yang terkenal untuk software Sistem Informasi Geografis (GIS).
+Shapefile adalah format data vektor yang digunakan untuk menyimpan lokasi , bentuk, dan atribut dari fitur geografis. 
+Format data pada SHP disimpan dalam satu set file terkait dan berisi dalam satu kelas fitur 
+Format data pada vektor ini berisi tentang data referensi geografis yang didefinisikan sebagai objek tunggal seperti jalan, sungai, landmark, kode pos
+Data fitur dan atribut akan disimpan dalam satu SHP. Banyak aplikasi yang berbentuk GIS yang bersifat opensource ataupun proprietary dapat bekerja dengan shapefile
+\subsection {spesifikasi shapefile}
+Sesungguhnya shapefile merupakan kumpulan beberapa file dengan tiga ekstensi utama yang mandatory/wajib yaitu shp, shx, dbf serta beberapa tambahan atau optional file yang lain. 
+Satu shapefile dianjurkan dengan nama file yang sama dengan ekstensi yang berbeda, shp (shape format, menyimpan data gambar geometry), shx (shape index format, index dari gambar geometry sehingga memudahkan atau mempercepat proses pencarian), 
+dbf (attribute format, berisi table attribute dari tiap gambar dalam dBas)
+\subsection {format data shapefile}
+Ukuran data pada SHP dan file komponen DBF tidak dapat melebihi 2 GB (231 bit ), sekitar 70 juta fitur titik yang terbaik. 
+Jumlah maksimum fitur untuk  jenis geometri lainnya bervariasi tergantung pada jumlah yang digunakan, panjang maksimum nama field adalah 10 karakter, dan jumlah maksimum dari field adalah 255
+\subsection {pembuatan shapefile}
+Shapefile adalah format data vektor geospatial untuk software GIS yang dikembangakan oleh ESRI (Environmental System Research Institute)
+dengan spesifikasi yang terbuka untuk kepentingan software GIS atau software yang bisa mengolah (input) format data pada SHP antara lain ArcGIS, ArcView, MapInfo, ERDAS, Global Mapper
+
+\end{enumerate}
+
