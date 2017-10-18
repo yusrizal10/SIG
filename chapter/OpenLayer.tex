@@ -77,5 +77,14 @@ Contoh :
 var layer = new OpenLayers.Layer.GML(“GML”, “gml/polygon.xml”)
 map.addLayer(layer);
 
+\subsection {GeoRSS}
+GeoRSS akan  lebih baik menggunakan layer GML dengan SelectFeature Control dibandingkan dengan Layer GeoRSS yang tidak menggunakan layer GML.
+
+\subsection {Markers}
+Markers base layer sangat mudah diaplikasikan dan pemakaian fungsi addMarkers untuk menambah marker pada layer. Makaers hanya mendukung point/ titik.
+
+\subsection {Text}
+Text layer merupakan data-data dengan format Teks dan menampilkan hasilnya sebagai marker yang dapat diklik. Layer teks merupakan subclass dari Marker layer, dan tidak mendukung format garis atau polygon.
+
 \end{document}
 
