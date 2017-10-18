@@ -6,17 +6,17 @@
 %Simon Sorba Manangi(1154019)
 
 \section{Variabel}
-Pada sebagian besar bahasa pemrograman, nama suatu variabel
+Pada sebagian besar dari bahasa pemrograman, nama suatu variabel
 menjelaskan suatu nilai dengan tipe data tertentu 
 dan menempati alamat memory yang pasti.
 Variabel menyimpan data atau nilai yang dilakukan selama program dieksekusi,
-Nilai variabel tersebut dapat diganti-ganti, namun tipe data selalu tetap.
-Tidak demikian dengan python dimana tipe datanya dapat diubah-ubah
+Nilai suatu variabel tersebut dapat diganti-ganti, namun pada tipe data selalu tetap ada.
+Tidak demikian dengan sebuah python dimana tipe datanya dapat diubah-ubah
 secara dinamis\cite{suparno2013komputasi}.
 
-Variabel merupakan entitas yang memiliki nilai dan nilai tersebut berbeda satu dengan yang lain. Variabel mengalokasikan memori untuk menyimpan nilai.
-Hal ini berarti ketika anda membuat variabel maka anda memesan beberapa ruang di memori. 
-Variabel bisa digunakan untuk menyimpan bilangan bulat, desimal juga karakter.
+Variabel merupakan entitas yang memiliki nilai dan nilai tersebut berbeda satu sama yang lain. Variabel mengalokasikan memori untuk menyimpan nilai - nilai nya.
+Hal ini berarti ketika saat anda membuat variabel maka anda memesan beberapa atau sebuah ruang di memori tersebut. 
+Variabel dapat digunakan untuk menyimpan bilangan bulat, desimal juga karakter.
 Python sangat mementingkan indentasi, sehingga kita perlu melakukan indentasi secara konsisten. 
 Indentitas tersebut dipermudah dengan menggunakan tombol Tab dan dimulai dari kolom pertama untuk setiap blok baru.
 
@@ -29,15 +29,51 @@ Variab membutuhkan pengenal atau bisa disebut dengan identifier yg didefinisikan
 6. panjanh maksimal yaitu 32 karakter
 
 Variabel merupakan nama yang menunjukkan nilaitertentu. Dalam Pyton, untuk membentuk variabel cukup memberi nama pada nlai yang kita inginkan. Statement yang melakukan hal tersebut disebut assignment.
+\begin{equation}
 >>> pesan = “Hi, Apa kabar D43A”
->>> n = 19
+>>> n = 20
 >>> pi = 3.14159
-Contoh diatas menunjukkan tiga buah assigment. Contoh pertama memberi nilai “Hi, Apa kabar D43A” pada variabel pesan, kedua memberi nilai 19 pada variabel n, dan ketiga memberi nilai 3.14159 pada variabel pi.\cite{utami2004logika}
+\end{equation}
+Contoh diatas menunjukkan tiga buah assigment. Contoh pertama memberi nilai “Hi, Apa kabar D43A” pada variabel pesan, kedua memberi nilai 20 pada variabel n, dan ketiga memberi sebuah nilai 3.14159 pada variabel pi.\cite{utami2004logika}
+
+Variabel akan memiliki tipe  sesuai dengan nilainya.
+\begin{equation}
+>>>type(mesg)
+<Type ‘string’>
+>>> type (n)
+<type ‘int’>
+>>> type (pi)
+<type ‘float>
+\end{equation}
+
+Nilai variabel dapat tampil dengan perintah print:
+\begin{equation}
+>>> print pesan
+Hi, Apa kabar D43A
+>>> print n
+20
+>>>print pi
+3.14159
+\end{equation}
+
+Akan tetapi, jika pada command-line, maka dapat langsung dipanggil nama variabel tersebut :
+\begin{equation}
+>>> pesan
+Hi, Apa kabar D43A
+\end{equation}
+
+Perintah dari print juga dapat memberi lebih dari satu nilai dalam satu baris:
+\begin{equation}
+>>> print “Nilai dari pi adalah “,pi
+Nilai dari pi adalah 3.14159
+\end{equation}
+
+koma untuk memisahkan nilai dan variabel.\cite{utami2004logika}
 
 Ada 2 cara untuk membuat variabel. Cara yang pertama yaitu variabel langsung dengan nilai disebut dengan inisialisasi. Sedangkan cara yang kedua dengan memasukkan nilai pada variabel yang biasa disebut penempatan.\cite{santoso2009bahasa}
 
-Variabel python tidak perlu deklarasi eksplisit untuk memesan ruang memori. Deklarasi tersebut terjadi secara otomatis ketika menetapkan nilai ke variabel.
-Tanda sama (=) digunakan untuk memberikan nilai pada variabel.
+Variabel python tidak perlu untuk melakukan deklarasi eksplisit untuk memesan ruang memori. Deklarasi tersebut terjadi secara otomatis ketika menetapkan nilai ke variabel nya.
+Tanda sama (=) dapat digunakan untuk memberikan nilai pada variabel.
 
 Operan di sebelah kiri operator =  nama dari variabel dan operan di sebelah kanan operator = nilai yang disimpan dalam variabel
 Python memiliki lima tipe data standar -
@@ -48,11 +84,11 @@ tupel
 Kamus
 
 Variabel pada Python memiliki beberapa aturan seperti :
-•	Case Sensitive : penggunaan huruf besar dan huruf kecil yang dibedakan.
-•	Harus dimulai dengan underscore (_) atau huruf biasa, setelah itu dapat diikuti dengan huruf, angka atau underscore (_).
-•	Tidak boleh mengandung karakter special seperti !,@,\#,\$ dan lainnya.
-•	Hanya dapat menggunakan suatu variable setelah kita memberikan nilai ke dalamnya atau telah dilakukan assignment.
-•	Setiap variable akan menyimpan referensi ke suatu objek dalam memory.\cite{santoso2009bahasa}
+•    Case Sensitive : penggunaan huruf besar dan huruf kecil yang dibedakan.
+•    Harus dimulai dengan underscore (_) atau huruf biasa, setelah itu dapat diikuti dengan huruf, angka atau underscore (_).
+•    Tidak boleh mengandung karakter special seperti !,@,\#,\$ dan lainnya.
+•    Hanya dapat menggunakan suatu variable setelah kita memberikan nilai ke dalamnya atau telah dilakukan assignment.
+•    Setiap variable akan menyimpan referensi ke suatu objek dalam memory.\cite{santoso2009bahasa}
 
 Variabel adalah sebuah nama yang selalu menunjukkan nilai tertentu. Dalam bahasa pemrograman Python, untuk membentuk sebuah variabel itu cukup hanya memberi nama pada nilai yang akan dibuat. Ini disebut dengan Assignment.
 Contoh : 
@@ -61,11 +97,11 @@ Contoh di atas membuktikan bahwa itu adalah sebuah assignment, yang memberi kan 
 
 contoh lainnya:
 \begin{equation}
->>> b = 2 # b bilangan bertipe integer
->>> print b
+>>> c = 2 # c bilangan bertipe integer
+>>> print c
 2
->>> b = b * 2.0 # Sekarang b bilangan bertipe float
->>> print b
+>>> c = c * 2.0 # Sekarang c bilangan bertipe float
+>>> print c
 4.0
 \end{equation}
 
@@ -105,23 +141,22 @@ if y == 1:
 print ‘x dan y bernilai 1’
 \end{equation}
 
-Tulisan b = 2 artinya kita memberi nilai pada variabel b dengan angka 2 yang bertipe integer
-(bilangan bulat). Statemen berikutnya adalah melakukan operasi perkalian b ∗ 2.0 lalu hasilnya
-disimpan pada variabel yang sama yaitu variabel b. Dengan demikian nilai b yang lama
-akan diganti dengan nilai b yang baru, yaitu yang berasal dari operasi yang terakhir.
+Tulisan a = 2 artinya kita memberi nilai pada variabel a dengan angka 2 yang bertipe integer
+(bilangan bulat). Statemen berikutnya adalah melakukan operasi perkalian a ∗ 2.0 lalu hasilnya
+disimpan pada variabel yang sama yaitu variabel a. Dengan demikian nilai a yang lama
+akan diganti dengan nilai a yang baru, yaitu yang berasal dari operasi yang terakhir.
 Sebagai Konsekuensi atau hasil dari operasi yang dirancang atau dibuat tersebut, 
-sekarang variabel b memiliki tipe data float, 
-suatu tipe yang berkaitan dengan bilangan pecahan atau desimal. 
+sekarang variabel a memiliki tipe data float, 
+suatu tipe dapat berkaitan dengan bilangan pecahan atau desimal. 
 Nilai variabel b menghasilkan nilai 4.0 atau empat\ref{pythonvariable}.
 \begin{figure}[ht]
-	\centerline{\includegraphics[width=0.25\textwidth]{figures/pythonvariable.png}
-	\caption{gambar yang menggambarkan keadaan variabel pada python}
-	\label{pythonvariable}
-	\end{figure}
+    \centerline{\includegraphics[width=0.25\textwidth]{figures/pythonvariable.png}
+    \caption{gambar yang menggambarkan keadaan variabel pada python}
+    \label{pythonvariable}
+    \end{figure}
 
-Tanda pagar (#) menyatakan awal dari suatu komentar. Komentar adalah bagian dari
+Tanda dari pagar (#) menyatakan awal dari suatu komentar. Komentar adalah bagian dari
 script/program python yang tidak akan dieksekusi oleh interpreter. 
-
 
 Python mementingkan indentasi, sehingga perlu indentasi yang konsisten. Indentasi dipermudah sesuai penggunaan
 tombol Tab dan dimulai dari kolom pertama untu setiap blok baru. 
@@ -145,14 +180,14 @@ Solusinya, supaya dapat dikelompokan kode-kode yang sering dipanggil ulang dalam
 Selain itu dapat memecah masalah-masalah yang besar  menjadi masalah-masalah yang lebih kecil.
 Dalam C atau bahasa pemrograman lain, biasanya digunakan istilah function.
 
-Kemampuan python dalam mengelola tipe data sangat baik. Untuk mendeklarasikan suatu variabel dilakukan secara langsung tanpa menyebutkan tipe datanya, ini yang membedakan python dengan bahasa lain. Python akan menentukan tipe datanya secara otomatis. Python juga mendukung konversi dan perhitungan antar tipe data dengan ketelitian yang tinggi. Python membagi tipe data ke dalam 2 jenis bilangan (semua tipe yang berhubungan dengan angka murni) dan string. Untuk tipe data dalam rumpun bilangan termasuk didalamnya adalah integer, long, float, oktal, hexadimal dan bilangan kompleks. Hal-hal yang harus diperhatikan :
-•	Untuk bilangan oktal dan hexa masing-masing diawali dengan 0 dan 0x
-•	Untuk bilangan panjang diakhiri menggunakan karakter l atau L
-•	Untuk bilangan float, gunakan e atau E pada eksponensial
-•	Untuk bilangan kompleks dibagi ke menjadi bagian real dan imajiner, dan diakhiri dengan j atau J Operator untuk tipe dalam rumpun bilangan.\cite{utamipemrograman}
+Kemampuan dari python dalam mengelola tipe data sangat baik. Untuk melakukan pendeklarasian suatu variabel dapat dilakukan secara langsung tanpa menyebutkan tipe - tipe data, ini yang membedakan sebuah python dengan bahasa lain. Python akan menentukan tipe-tipe data tersebut secara otomatis. Python juga dapat mendukung konversi dan perhitungan antar semua tipe data tersebut dengan keakuratan yang tinggi. Python membagi sebuah tipe data ke dalam 2 jenis bilangan (semua tipe yang berhubungan dengan angka murni) dan string. Untuk tipe data dalam rumpun bilangan termasuk didalamnya adalah integer, long, float, oktal, hexadimal dan bilangan kompleks. Hal-hal yang harus diperhatikan :
+•    Untuk suatu bilangan oktal dan hexa masing-masing diawali dengan 0 dan 0x
+•    Untuk bilangan panjang diakhiri menggunakan karakter dari l ataupun J
+•    Untuk bilangan float dapat menggunakan e atau E pada eksponensial
+•    Untuk bilangan kompleks dapat dibagi menjadi bagian real dan imajiner, dan diakhiri dengan j atau J Operator untuk tipe dalam rumpun bilangan.\cite{utamipemrograman}
 
-\subsection{Membuat Variabel}
-Variabel atau peubah memiliki pengertian sembarang symbol yang dapat dimuati oleh sembarang himpunan bilangan. Dalam pengertian komputasi sebuah nama yang digunakan untuk menyimpan nilai dengan kapasitas tertentu dan alamat tertentu dalam memori komputer. Variabel merupakan pendaftaran tipe data bagi variabel, konstanta dan parameter yang digunakan sebuah program agar mempunyai alamat penyimpanan dan kapasitas data dalam memori komputer. Dalam membuat variabel hindari spasi dan menggunakan karakter khusus, selain itu juga nama dalam kata cadangan Python (seperti input, eval, if, elif, for, def, dan lain-lain) tidak dapat menjadi variabel.\cite{irfani2016bahan}
+\subsection{Membuat/Peubah Variabel}
+Variabel atau peubah memiliki suatu symbol yang dapat dimuati oleh sembarang himpunan dari bilangan tersebut. Dalam pengertian dari komputasi sebuah nama dapat digunakan untuk menyimpan suatu nilai dengan kapasitas tertentu dan alamat tertentu dalam sebuah memori komputer tersebut. Variabel merupakan pendaftaran dari tipe data bagi variabel itu, konstanta dan parameter sering digunakan untuk sebuah program agar dapat mempunyai alamat penyimpanannya dan kapasitas dari data nya dalam memori komputer. Dalam membuat variabel kita hindari spasi dan dapat menggunakan sebuah karakter khusus, selain itu nama dalam sebuah kata cadangan Python (seperti input, eval, if, elif, for, def, dan lain-lain) tidak dapat menjadi variabel.\cite{irfani2016bahan}
 
 Nama variabel atau disebut juga dengan identifier dalam bahasa pemrograman Python juga dapat berupa kumpulan dari huru (letter) maupun angka (digit) yang dengan cara membedakan huruf kecil dan juga huruf besar, Karakter pertama pada identifier harus berupa huruf dan juga perlu diketahui bahwa penggunaan karakter garis bwah itu juga dapat digunakan.
 Kesalahan sintax akan muncul apabila dalam penamaan sebuah variabel itu tidak sesuai dengan aturan yang ada.
@@ -163,16 +198,16 @@ SyntaxError: invalid syntax
 SyntaxError: invalid syntax
 Baris pertama itu salah, karena pada 876swafm karakter pertamanya itu bukanlah huruf. Pada baris ketiga juga salah karena pada more$ berisi karakter dolar.
 
-Tidak seperti pemrograman pada lainnya, variabel pada Python tidak harus dideklarasikan secara eksplisit. Pendeklarasian variabel terjadi secara otomatis ketika kita memberikan sebuah nilai pada suatu variabel. Tanda sama-dengan (=) digunakan untuk memberikan nilai pada suatu variabel. Operan di sebelah kiri dari tanda (=) adalah nama variabel, sedangkan operan yang sebelah kanan dari tanda (=) adalah nilai yang diberikan pada variabel.\cite{utamipemrograman}
+Tidak seperti pemrograman pada lainnya, variabel pada Python tidak harus dideklarasikan secara eksplisit. Pendeklarasian variabel terjadi secara otomatis ketika kita memberikan sebuah nilai pada suatu variabel. Tanda sama dengan (=) dapat digunakan untuk memberikan value/nilai pada suatu variabel. Operan di sebelah kiri dari tanda (=) adalah nama variabel, sedangkan operan yang sebelah kanan dari tanda (=) adalah nilai yang diberikan pada variabel.\cite{utamipemrograman}
 
 \begin{equation}
 >>>harga = 100
->>>diskon = 25
+>>>diskon = 30
 >>>harga - diskon
-75
+70
 \end{equation}
 
-Pada contoh di atas, 100 dan 25 merupakan nilai yang diberikan pada variabel harga dan diskon. Sedangkan pernyataan harga-diskon akan menghitung selisih antara harga dengan diskon. Variabel juga dapat menyimpan suatu nilai berupa teks (dibaca string).
+Pada contoh di atas tersebut, 100 dan 30 adalah suatu nilai yang diberikan untuk variabel harga dan variabel diskon itu. Sedangkan pernyataan dari harga-diskon akan menghitung selisih antara harga dengan diskon. Variabel juga dapat menyimpan suatu nilai berupa teks (dibaca string).
 
 \begin{equation}
 >>>a = 'sekolah'
@@ -181,7 +216,7 @@ Pada contoh di atas, 100 dan 25 merupakan nilai yang diberikan pada variabel har
 'sekolahdasar'
 \end{equation}
 
-Variabel juga dapat menyimpan dua nilai string atau lebih dengan menggunakan operator (+).
+Variabel juga bisa menyimpan dua nilai string atau lebih dengan menggunakan operator (+).
 
 \begin{equation}
 >>>c = 'Py' + 'thon'
@@ -189,7 +224,7 @@ Variabel juga dapat menyimpan dua nilai string atau lebih dengan menggunakan ope
 'Python'
 \end{equation}
 
-Jika kita telah memberikan nilai pada variabel, kita dapat menggunakan variabel tersebut pada yang lainnya.
+Jika kita telah melakukan penilaian pada variabel, kita dapat menggunakan variabel tersebut pada yang lainnya.
 
 \begin{equation}
 >>>a = 2
@@ -222,10 +257,10 @@ Selain itu, kita dapat memberikan beberapa nilai untuk beberapa variabel (disebu
 'belajar Python'
 \end{equation}
 
-Bentuk lain dari contoh di atas, kita bisa menggunakan tanda kurung-buka kurung-tutup.
+Bentuk lain dari sebuah contoh di atas, kita juga dapat menggunakan tanda kurung-buka atau kurung-tutup.
 
 \begin{equation}
->>>(x, y, z) = (1, 2, 'belajar Python')
+>>>(x, y, z) = (1, 2, 'Belajar Sebuah Python')
 Cara di atas, dapat juga kita gunakan untuk pertukaran nilai variabel.
 >>>(x, y) = (10, 20)
 >>>x
@@ -264,13 +299,13 @@ File “<stdin>”, line 1, in ?
 \end{equation}
 
 \subsection{Aturan Penulisan Variabel}
-• Nama variabel boleh diawali menggunakan huruf atau garis bawah (_), contoh: nama, _nama, namaKu, nama_variabel.
-• Karakter selanjutnya dapat berupa huruf, garis bawah (_) atau angka, contoh: __nama, n2, nilai1.
-• Karakter pada nama variabel bersifat sensitif (case-sensitif). Artinya huruf besar dan kecil dibedakan. Misalnya, variabel_Ku 	   dan variabel_ku, keduanya adalah variabel yang berbeda.
+• Nama variabel bisa diawali dengan menggunakan huruf atau garis bawah (_), contoh: nama, _nama, namaKu, nama_variabel.
+• Karakter selanjutnya dapat menggunakan berupa huruf, garis bawah (_) atau angka, contoh: __nama, n2, nilai1.
+• Karakter pada nama variabel bersifat sensitif (case-sensitif). Artinya huruf besar dan kecil dibedakan. Misalnya, variabel_Kita dan variabel_kita, keduanya adalah variabel yang berbeda.
 • Nama variabel tidak boleh menggunakan kata kunci yang sudah ada dalam python seperti if, while, for, dsb.
 
 \subsection{Menghapus Variabel}
-Ketika sebuah variabel tidak dibutuhkan lagi, maka kita bisa menghapusnya dengan fungsi del().
+Ketika sebuah atau suatu variabel tidak dibutuhkan lagi, maka kita bisa menghapusnya dengan fungsi del().
 Contoh:
 
 \begin{equation}
@@ -285,72 +320,70 @@ NameError: name 'nama' is not defined
 >>>
 \end{equation}
 
-Pada perintah terakhir, kita akan mandapatkan NameError. Artinya variabel tidak ada di dalam memori alias sudah dihapus.
+Pada perintah terakhir, kita akan mandapatkan NameError. Artinya variabel tidak terdapat di dalam memori alias sudah dihapus.
 
 \subsubsection{Penempatan variable pada yang semestinya}
-Misalkan sebuah data pribadi berisi nama, alamat, umur, tempat lahir, tanggal lahir, indeks prestasi kumulatif akan memberikan 6 (enam) buah variabel dengan tipe datanya.
+Misalkan sebuah data pribadi dapat berisi nama, alamat, umur, tempat lahir, tanggal lahir, indeks prestasi kumulatif akan memberikan 6 (enam) buah variabel tipe datanya.
 \begin{figure}[ht]
-	\centerline{\includegraphics[width=1\textwidth]{figures/tipedatastring.png}}
-	\caption{Tampilan Contoh Input/Output Tipe Data String}
-	\label{tipedatastring}
-	\end{figure}
+    \centerline{\includegraphics[width=1\textwidth]{figures/tipedatastring.png}}
+    \caption{Tampilan Contoh Input/Output Tipe Data String}
+    \label{tipedatastring}
+    \end{figure}
 
 \begin{figure}[ht]
-	\centerline{\includegraphics[width=1\textwidth]{figures/tipedatabilangan.png}}
-	\caption{Tampilan Contoh Input/ Output Tipe Data Bilangan}
-	\label{tipedatabilangan}
-	\end{figure}
+    \centerline{\includegraphics[width=1\textwidth]{figures/tipedatabilangan.png}}
+    \caption{Tampilan Contoh Input/ Output Tipe Data Bilangan}
+    \label{tipedatabilangan}
+    \end{figure}
 
-Pada Gambar 2.2 \ref{tipedatabilangan} terlihat input/output pada tipe data bilangan dengan hasil yang berbeda tipe bilangannya yaitu tipe integer (bilangan bulat) atau float (bilangan berkoma).\cite{irfani2016bahan}
+Pada Gambar 2.2 \ref{tipedatabilangan} terlihat input/output pada tipe data bilangan dengan hasil yang berbeda tipe bilangan yaitu tipe dari integer (bilangan bulat) atau float (bilangan berkoma).\cite{irfani2016bahan}
 
 \subsusection{Memberikan nilai ke dalam variable}
-Lakukan inisiasi variabel atau konstanta dari permasalahan berikut! Menjumlahkan hasil dari total harga pada saat konsumen membeli beberapa barang.
+Lakukan konstanta dari permasalahan berikut! Menjumlahkan hasil dari total harga pada saat konsumen membeli beberapa barang.
 
 Langkah 1: Inisiasi Persoalan 
 Variabel/ konstanta input :  
 kode_barang, nama_barang, harga_satuan_barang, 
-jumlah_per_barang_beli, total_harga_per_transaksi = 0 
-Proses :  harga_beli_per_barang = harga_satuan_barang * jumlah_per_barang_beli 
-total_harga_per_transaksi=harga_beli_per_barang + total_harga_per_transaksi
-Output :  total_harga_per_transaksi
+jumlah_barang_beli, total_harga_transaksi = 0 
+Proses :  harga_beli_barang = harga_satuan_barang * jumlah_barang_beli 
+total_harga_transaksi = harga_beli_barang + total_harga_transaksi
+Output :  total_harga_transaksi
 
 Langkah 2: Menetapkan Tipe Data 
 kd_brg, nama_brg bertipe data string 
-jum_brg bertipe data integer harga_satuan, harga_beli, total_hrg_brg bertipe data float 
+jum_brg merupakan tipe data integer harga_satuan, harga_beli, total_hrg_brg bertipe data float 
 
 Langkah 3 : Kode program
 \begin{figure}[ht]
-	\centerline{\includegraphics[width=0.50\textwidth]{figures/code.png}
-	\caption{kode program}
-	\label{code}
-	\end{figure}
+    \centerline{\includegraphics[width=0.50\textwidth]{figures/code.png}
+    \caption{kode program}
+    \label{code}
+    \end{figure}
   
 \subsubsection{Mencetak nilai dalam variable} 
-Mencetak nilai dalam sebuah variabel menggunakan pernyataan print, perhatikan 
+Mencetak nilai dari sebuah variabel menggunakan pernyataan print, perhatikan 
 contoh berikut ini. 
 \begin{figure}[ht]
-	\centerline{\includegraphics[width=0.25\textwidth]{figures/konversi.png}
-	\caption{Tampilan Contoh Konversi Tipe Data String dan Integer}
-	\label{Tipe Data String dan Integer}
-	\end{figure}
+    \centerline{\includegraphics[width=0.25\textwidth]{figures/konversi.png}
+    \caption{Tampilan Contoh Konversi Tipe Data String dan Integer}
+    \label{Tipe Data String dan Integer}
+    \end{figure}
 
 \subsection{Bilangan integer dan float}
-Seperti telah disinggung bahwa python mengenal bilangan bertipe integer dan float. 
-Perbedaan tipe bilangan ini bisa jadi berpotensi menimbulkan masalah. 
+Perbedaan tipe bilangan ini bisa dapat jadi potensi menimbulkan masalah. 
 Ini contohnya
 \begin{equation}
 >>> 1/2 # bilangan integer dibagi bilangan integer
-0 # tentu saja ini keliru, mestinya 0.5
+0 # tentu saja kita ini keliru, mestinya 0.5
 >>> 1/2.0 # bilangan integer dibagi bilangan float
 0.5 # kali ini hasilnya tepat
 \end{equation}
 
-
 \subsection{List}
-List adalah sejumlah object yang dipisahkan oleh tanda koma (,) dan diapit oleh kurung siku
+List adalah sejumlah atau suatu object yang dipisahkan oleh tanda koma (,) dan diapit oleh kurung siku
 ([ ]). Begini contohnya:
 \begin{equation}
->>> a = [1.0, 2.0, 3.0] # cara membuat list
+>>> a = [1.0, 2.0, 3.0] # membuat list
 >>> a.append(4.0) # tambahkan 4.0 kedalam list
 >>> print a
 [1.0, 2.0, 3.0, 4.0]
@@ -360,20 +393,15 @@ List adalah sejumlah object yang dipisahkan oleh tanda koma (,) dan diapit oleh 
 >>> print len(a) # menentukan panjang list
 5
 \end{equation}
-Jika kita memberikan statemen b = a, maka itu tidak berarti bahwa variabel b terpisah dengan
-variabel a. Di python, statemen seperti itu diartikan hanya sebagai pemberian nama lain
+Jika kita memberikan suatu statemen c = b, maka itu tidak berarti bahwa variabel c terpisah dengan
+variabel a. Di python, statemen tersebut dapat diartikan hanya sebagai pemberian nama lain
 (alias) kepada variabel a. Artinya, perubahan yang terjadi baik itu di a ataupun di b, maka hasil
-akhir mereka berdua akan sama saja. Setiap perubahan yang terjadi di b akan berdampak di a.
-Untuk meng-copy a secara independen, gunakan statemen c = a[:]. 
+akhir mereka berdua akan sama saja. Setiap perubahan terjadi di c akan berdampak di b.
+Untuk meng-copy a secara independen, gunakan statemen d = a[:]. 
 Berikut adalah beberapa contoh lambang atau tanda untuk melengkapi setiap statement pada
 variabel yang ada\ref{operate}.
 \begin{figure}[ht]
-	\centerline{\includegraphics[width=0.25\textwidth]{figures/operate.png}
-	\caption{gambar tanda operasi pada python}
-	\label{operate}
-	\end{figure}
-
-
-
-
-
+    \centerline{\includegraphics[width=0.25\textwidth]{figures/operate.png}
+    \caption{gambar tanda operasi pada python}
+    \label{operate}
+    \end{figure}
