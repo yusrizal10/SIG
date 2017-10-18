@@ -1,16 +1,7 @@
 \section{Perulangan Pada Python}
 Perulangan dalam bahasa pemrograman berfungsi untuk memerintahkan komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perulangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
-
-\subsection{Struktur Dasar Perulangan}
-Struktur Dasar Loops adalah sebagai berikut :
-1) Menginisialisasi kontrol.
-	a) Kontrol - biasanya sebuah variabel yang menentukan apakah perulangan dijalankan atau tidak. 
-2) Menguji kontrol terhadap kondisi berhenti .
-3) Mengeksekusi body perulangan \(bagian yang akan diulang\) .
-4) Memperbarui nilai kontrol.
-
 \subsection{While dan For}
-Perulangan while disebut dengan uncounted loop \(perulangan yang tak terhitung\), sementara perulangan for disebut dengan counted loop \(perulangan yang terhitung\). Perbedaannya adalah ada statement while, biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal. Sedangkan pada statement for, memiliki ciri berupa inisialisasi perulangan dilakukan diawal statement dan perulangan tersebut akan berhenti ketika syarat/ kondisi yang telah ditentukan terpenuhi\cite{santoso2009bahasa}.
+Perulangan while disebut dengan uncounted loop (perulangan yang tak terhitung), sementara perulangan for disebut dengan counted loop (perulangan yang terhitung). Perbedaannya adalah ada statement while, biasanya memiliki ciri berupa pengecekan kondisi dan perulangan dilakukan diawal. Sedangkan pada statement for, memiliki ciri berupa inisialisasi perulangan dilakukan diawal statement dan perulangan tersebut akan berhenti ketika syarat/ kondisi yang telah ditentukan terpenuhi\cite{santoso2009bahasa}.
 
 \subsection{Perintah Break, Continue dan Pass Perintah Break}
 \subsubsection{Perintah Break}
@@ -57,7 +48,7 @@ for i in range (5) :
 Jadi seperti yang sudah dikatakan sebelumnya, perintah pass ini memiliki fungsi untuk mengisi kekosongan dari sebuah penyeleksian ataupun perulangan.
 
  \subsubsection{Perintah return}
-Perintah return dapat menghentikan suatu proses dari fungsi sebelum mengakhiri fungsi tersebut. Alasan menggunakan perintah return adalah jika menemui sebuah kesalahan kondisi, yang berarti nilai suatu fungsi tersebut mengembalikan nilai null \(kosong\) : 
+Perintah return dapat menghentikan suatu proses dari fungsi sebelum mengakhiri fungsi tersebut. Alasan menggunakan perintah return adalah jika menemui sebuah kesalahan kondisi, yang berarti nilai suatu fungsi tersebut mengembalikan nilai null (kosong) : 
 import math
 \begin{equation}
 def print_log (x):
@@ -69,10 +60,71 @@ hasil = math.log (x)
  print \"Hasil log dari\", x, \"adalah\", hasil 
  \end{equation}
  
- Fungsi print_log\(\) mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
+ Fungsi print_log() mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
+
+ \subsubsection{Rekursif}
+
+Telah disebutkan sebelumnya, bahwa kita dapat memanggil suatu fungsi di dalam fungsi lainnya, dan Anda telah melihat beberapa contoh - contohnya. Kita juga dapat memanggil fungsi itu sendiri yang kemudian di kenal dengan istilah rekursif. Mungkin sekilas hal itu tidak memberi alasan mengapa rekursif ini adalah hal yang baik, tetapi akan berubah menjadi program yang menarik.Sebagai contohnya, lihat 
+fungsi berikut :
+
+\begin{equation}
+def hitung_mundur (x):
+
+if x == 0 :
+
+print "Sudah nol koq!"
+
+else :
+
+print x
+
+hitung_mundur (x-1)
+ \end{equation}
+ 
+fungsi diatas menampilkan program hitung mundur dari nilai parameter x yang diberikan, parameter tersebut seharusnya sebuah bilangan integer yang positif, dan jika nilai x sama dengan 0 akan menampilkan string yang memberitahu bahwa nilai x adalah 0.Kalau tidak nol(0) maka akan memanggil fungsi itu sendiri dan memberi nilai x-1 sebagai parameternya.
+
+Prosesnya adalah sebagai berikut, jika kita memanggil fungsi tersebut dengan nilai 3, maka nilai 3 akan di check apabila bukan nol (0) maka akan di cetak, dan memanggil fungsi itu sendiri dengan parameter 3-1, yaitu nilai 2, kemudian nilai 2 akan di periksa apakah nilai 2 sama dengan 0, jika bukan maka akan di cetak, dan memanggil fungsi tersebut dengan nilai parameter 1, di check kembali bila bukan
+nol (0) maka akan akan memberikan parameter x-1 ke fungsi itu sendiri, setelah itu maka fungsi tersebut di beri paramater 0 maka string "Sudah nol koq!" dicetak, kemudian kembali lagi ke fungsi sebelumnya dengan nilai 1, kembali ke nilai 2,kembali ke nilai 3.
+Jadi tampilan hasilnya akan seperti berikut.
+
+3
+
+2
+
+1
+
+Sudah nol koq!
+
+Hal ini akan berbeda jika perintah print diletakkan setelah pemanggilan fungsi rekursif itu sendiri. Misalnya :
+\begin{equation}
+def hitung_maju(x):
+
+if x == 0 :
+
+print "Sudah nol, Mulai!"
+
+else :
+
+ \end{equation}
+ \begin{equation}
+hitung_maju (x-1)
+
+print x
+
+maka tampilannya akan menjadi :
+ \end{equation}
+Sudah nol, Mulai!
+
+1
+
+2
+
+3
+
+ 
 
 \subsection{Nested Loop}
-Nested Loop \(Perulangan Bertingkat\) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
+Nested Loop (Perulangan Bertingkat) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
 \subsubsection{Contoh Penggunaan Nested Loop}
 Format nested loop \(for di dalam for\)
 \begin{equation}
@@ -113,7 +165,7 @@ Masukkan jumlah bariss: 5 \(inputkan 5\)
 Muncul 5 baris isi bintang
 
 \subsubsection{Nested Loop for Nested Data}
-Disini kita memiliki list data dari murid-murid. Jadi, setiap murid memiliki nama yang dipasangkan dengan list subyek\(mata pelajaran\) yang mereka ambil. Dan akan mencetak setiap nama murid, dan jumlah dari subyek \(mata pelajaran\) yang mereka ambil
+Disini kita memiliki list data dari murid-murid. Jadi, setiap murid memiliki nama yang dipasangkan dengan list subyek(mata pelajaran) yang mereka ambil. Dan akan mencetak setiap nama murid, dan jumlah dari subyek (mata pelajaran) yang mereka ambil
 \begin{equation}
 students = [
     ("John", ["TIK", "IPS"]),
@@ -378,9 +430,6 @@ Jika else statement digunakan dengan loop sementara, pernyataan yang lain dijala
 
 \subsection{Middle-test loop}
 Middle-test loop adalah sebuah perulangan yang akan mengeksekusi pada beberapa bagian body, kemudian akan melakukan pengujian exit berarti menguji dalam kondisi exit, lalu kemungkinan akan mengeksekusi beberapa bagian body lainnya. Disini dapat menggunakan while dan break secara bersama-sama. Terkadang kita membutuhkan looping dengan pengujian di tengah daripada pengujian di atas maupun di akhir.
-
-\subsection{Post-test loop}
-Post-test loop adalah sebuah perulangan yang akan mengeksekusi bagian akhir body atau menempatkan pengujian akhirnya menjadi hal terakhir pada body. 
 
 \subsection{Penjelasan Penggunaan For Loop}
 For loop secara tradisional digunakan saat Anda memiliki blok kode yang ingin Anda ulangi beberapa kali. Python untuk pernyataan iterates atas anggota urutan dalam urutan, mengeksekusi blok setiap waktu. Kontras untuk pernyataan dengan loop '' while '', digunakan bila suatu kondisi perlu diperiksa setiap iterasi, atau untuk mengulang blok kode selamanya.
