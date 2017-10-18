@@ -61,7 +61,7 @@ tipe data yang digunakan merupaka tipe data point yang terdapat koordinat real, 
 
 
 \subsection{MongoDB}
-	MongoDB merupakan sebuah DBMS non relasional yang berorientasi dokumen dan bersifat open source yang ditulis dalam C++.  MongoDB dikembangkan oleh perusahaan 10gen. Sebuah basis data pada MongoDB berisi satu atau lebih collections dari documents. Documents pada MongoDB dapat berisi nilai yang nilai tersebut dapat berisi sebuah document lain, kumpulan document, atau tipe data dasar seperti Double, String, dan Date. MongoDB menyiapkan tipe pengindeksan geospasial yang berguna mendukung keperluan kueri geospasial seperti 2D dan 2DSphere. Indeks 2D digunakan untuk menyimpan data sebagai titik pada bidang datar dua dimensi. Sedangkan apabila titik tersebut disimpan pada bidang lengkung maka indeks 2DSphere dapat digunakan. Secara default, sistem referensi koordinat yang digunakan MongoDB pada objek lengkung seperti bumi yaitu WGS84. MongoDB mendukung tipe data geospasial seperti Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, Feature, FeatureCollection, dan GeometryCollection (de Souza etal. 2014).
+	MongoDB merupakan sebuah DBMS non relasional yang berorientasi dokumen dan bersifat open source yang ditulis dalam C++. MongoDB dikembangkan oleh perusahaan 10gen. Sebuah basis data pada MongoDB berisi satu atau lebih collections dari documents. Documents pada MongoDB dapat berisi nilai yang nilai tersebut dapat berisi sebuah document lain, kumpulan document, atau tipe data dasar seperti Double, String, dan Date. MongoDB menyiapkan tipe pengindeksan geospasial yang berguna mendukung keperluan kueri geospasial seperti 2D dan 2DSphere. Indeks 2D digunakan untuk menyimpan data sebagai titik pada bidang datar dua dimensi. Sedangkan apabila titik tersebut disimpan pada bidang lengkung maka indeks 2DSphere dapat digunakan. Secara default, sistem referensi koordinat yang digunakan MongoDB pada objek lengkung seperti bumi yaitu WGS84. MongoDB mendukung tipe data geospasial seperti Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, Feature, FeatureCollection, dan GeometryCollection (de Souza etal. 2014).
 
 Membuat Data Geospasial
 Import shapefile
@@ -73,12 +73,15 @@ a.poly [(x,y),(v,w)]
 .dbf => a.field (‘name.field’,’c’,’40’)
 a.record (‘bdg’)
 Data geospasial tersebut disimpan menggunakan method a.save(‘file.shp’).
+
 Arti dari method pada writer :
-Point (x,y)                   : memasukkan data berbentuk paint ke dalam .shp dan seluruh data harus berformat ESRI.1
-Poly [(a,b),(c,d)]          : memasukkan data geospasial berbentuk polygon (kembali ke titik awal) atau polyline (tidak kembali ketitik awal).
-Field (‘nama’,’c’,’40’)             : artinya membuat atribut polygon dengan table ‘nama’ dengan tipe data varchar dengan panjang 40. Method ini dapat diulang dan dapat dilakukan untuk krbuthan field baru lagi.
-Record(‘Bandung’)                 : Mengisi table dimana yang hanya 1 field dengan value atau nilai ‘Bandung’.
-Save (‘file name’)                    : menyimpan file dengan save file
+Point (x,y)	: memasukkan data berbentuk paint ke dalam .shp dan seluruh data harus  berformat ESRI.1
+Poly [(a,b),(c,d)]	: memasukkan data geospasial berbentuk polygon (kembali ke titik    awal) atau polyline (tidak kembali ketitik awal).
+Field (‘nama’,’c’,’40’)	: artinya membuat atribut polygon dengan table ‘nama’ dengan tipe data varchar dengan panjang 40. Method ini dapat diulang dan dapat dilakukan untuk krbuthan field baru lagi.
+Record(‘Bandung’)	: Mengisi table dimana yang hanya 1 field dengan value atau nilai    ‘Bandung’.
+Save (‘file name’)	: menyimpan file dengan save file
 
 	Titik(dimensi nol - point) adalah representasi grafis atau geometri yang paling sederhana bagi objek spasial. Representasi ini tidak mempunyai dimensi, namun di atas peta dapat di identifikasikan lalu dapat di tampilkan pada layar monitor dengan menggunakan simbol-simbol tertentu. Perlu dipahami juga bahwa skala peta akan menentukan apakah suatu objek akan ditampilkan sebagai titik atau polygon. Pada peta yang berskala besar, unsur unsur bangunan akan di tampilkan sebagai polygon, sedangkan pada skala kecil akan ditampilkan sebagai unsur-unsur titik.
+Format titik : koordinat tunggal, tanpa panjang, tanpa luasan.
+Contoh : lokasi kecelakaan, letak pohon
 
