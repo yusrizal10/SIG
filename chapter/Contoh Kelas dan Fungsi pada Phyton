@@ -1,4 +1,5 @@
-\section Pengertian Phyton
+\section Phyton
+\subsection Pengertian Phyton
 Python merupakan bahasa pemrograman yang
 berorientasi obyek dinamis, dapat digunakan
 untuk bermacam-macam pengembangan perangkat
@@ -23,6 +24,18 @@ OpenSource yang disetujui OSI (OpenSource
 Initiatives), sehingga Python bebas digunakan,
 gratis digunakan, bahkan untuk produk-produk
 komersil.
+
+\subsection Contoh Script Phyton
+Seringkali pengguna harus menuliskan ekspresi yang cukup kompleks dan akan digunakan secara berulang di kemudian hari. 
+Untuk keperluan penulisan ekspresi kompleks, kita dapat membuatnya dalam sebuah script yang dibantu dengan adanya teks editor. 
+Penulis menggunakan vi teks editor default yang terdapat pada distro GNU/Linux. Pada contoh berikut ini, 
+kita dapat melihat contoh script Python yang sederhana : 
+$ vi contoh-script-01.py #! /usr/bin/python a = 1 print 
+‘Nilai a adalah : ‘ , a simpan script Anda dengan : :wq! Secara default, script Python yang Anda buat akan disimpan dengan ekstensi .py . 
+Anda dapat melakukan eksekusi script yang telah Anda buat tersebut dengan cara : 
+$ python contoh-script-01.py 
+Atau : Memberikan permission x (executable) sehingga script tersebut dapat dijalankan, 
+dengan perintah : $ chmod +x contoh-script-01.py $ ./contoh-script-01.py
 \section Class
 Class adalah sebuah spesifikasi yang jika diinstansiasi akan menghasilkan sebuah
 objek dan merupakan inti dari pengembangan dan desain berorientasi objek. Class
