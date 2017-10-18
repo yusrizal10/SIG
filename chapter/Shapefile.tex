@@ -196,7 +196,7 @@ Bahasa (AML ™ ) (ARC / INFO), atau Simple Macro Language (SML ™ )
 Menulis langsung ke spesifikasi shapefile dengan membuat sebuah program. 
 
 \subsection{Pengertian Shapefile}
-	Shapefile adalah format non topologi yang secara efisien dan sederhana serta berfungsi sebagai wadah untuk penyimpan lokasi geometric dan juga atribut informasi dari data geografis. Dan untuk melakukan suatu penambahan shapefile, maka kita dapat menggunakan python dan plugin pyshp. Shapefile merupakan file yang dapat menyimpan data vector dalam arcview. Yang mana, Shapefile inilah yang kemudian diolah serta dianalisis dalam berbagai pekerjaan spasial dengan sebuah arcview. Maka saat ditampilkan dalam suatu lembar view, maka shapefile  akan menjadi sebagai sebuah theme. 
+	Shapefile adalah format non topologi yang secara efisien dan sederhana serta berfungsi sebagai wadah untuk penyimpan lokasi geometric dan juga atribut informasi dari data geografis. Dan untuk melakukan suatu penambahan shapefile, maka kita dapat menggunakan python dan plugin pyshp. Shapefile merupakan file yang dapat menyimpan data vector dalam arcview. Yang mana, Shapefile inilah yang kemudian diolah serta dianalisis dalam berbagai pekerjaan spasial dengan sebuah arcview. Maka saat ditampilkan dalam suatu lembar view, maka shapefile  akan menjadi sebagai sebuah theme. (Eko Budiyanto :2010 : 1).
 
 \subsubsection{Cara Mengcreate Shapefile Menggunakan Python}
 \begin{enumerate}
@@ -207,10 +207,10 @@ Projection Utility (optional).
 
 \subsubsection{Format yang Digunakan Dalam Mengcreate Data}
 \begin{enumerate}
-\item 1.  SHP => dalam sebuah format SHP, terdapat 3 tipe shape file yaitu Point, Polyline dan Polygon.
+\item 1. SHP => dalam sebuah format SHP, terdapat 3 tipe shape file yaitu Point, Polyline dan Polygon.
                  Contoh :     .shp => a.point(x,y)
                  a.poly [(x,y),(v,w)]
-\item 2.  DBF => dalam sebuah format DBF, ada 3 field yang digunakan. Yang mana, Field pertama  berisikan   atribut    tabel, dan field                  kedua yang berisikan method yang dapat digunakan, serta field yang ketiga berfungsi untuk dapat menyimpan nama sebuah                     shapefile yang sebelumnya telah diinputkan.
+\item 2. DBF => dalam sebuah format DBF, ada 3 field yang digunakan. Yang mana, Field pertama  berisikan   atribut    tabel, dan field                   kedua yang berisikan method yang dapat digunakan, serta field yang ketiga berfungsi untuk dapat menyimpan nama sebuah                   shapefile yang sebelumnya telah diinputkan.
                   Contoh :  .dbf => a.field (‘name.field’,’c’,’40’)
                                      a.record (‘bdg’)
                   Dan data geospasial tersebut kemudian disimpan dengan menggunakan method a.save(‘file.shp’).
@@ -226,11 +226,11 @@ Projection Utility (optional).
 \subsubsection{Tipe Field Pada Atribut Shapefile}
      Berikut ini merupakan tipe-tipe FIELD yang dapat disematkan atau digunakan pada Shapefile, diantaranya yaitu:
 \begin{enumerate}
-\item 1.  TEXT — Field ini dapat digunakan pada semua karakter dan berfungis sebagai teks dengan rentang jumlah karakter yaitu 1 s.d.             255. Dan tipe field ini juga digunakan untuk sebuah nilai teks, contohnya seperti nama tempat/anotasi ataupun label. Selain             itu, text dapat juga berisi angka, namun angka tersebut harus tetap dianggap sebagai teks yang tidak bisa dilakukan operasi             aritmatika (tambah, kurang, bagi, kali, dsb).
-\item 2.  FLOAT — 4 bytes; Angka pecahan dengan sebuah rentang luas antara +/-3,438. Float merupakan tipe data angka dengan presisi               tunggal yang juga memiliki pecahan. Yang mana, jumlah presisi atau biasa disebut jumlah angka, dapat juga ditentukan dengan             konstan.
-\item 3.  DOUBLE — 8 bytes; Double yaitu tipe data angka yaitu dengan presisi ganda yang memiliki pecahan. Tipe Double mempunyai                   kesamaan  dengan tipe float, yaitu hanya memiliki presisi yang lebih tinggi. Dan untuk data yang berisi angka-angka desimal             sangat penting, misalnya angka luasan ataupun rupiah, dengan tipe double yang paling sesuai.
-\item 4.  SHORT — 2 bytes; Short integer dapat digunakan untuk angka tanpa pecahan. Dan Short integer juga biasa digunakan untuk sebuah           data berupa ID, nomor, urutan, dan kode.
-\item 5.  LONG — 4 bytes; Long integer juga mempunyai kesamaan dengan short integer, yang mana dapat digunakan untuk angka tanpa pecahan           namun juga  dengan kemungkinan digit yang lebih panjang lagi.
-\item 6.  DATE — 8 bytes; Date berfungsi untuk dapat menyimpan tanggal, waktu ataupun tanggal-waktu dengan contoh format mm/dd/yyy                 hh:mm:ss
+\item 1. TEXT — Field ini dapat digunakan pada semua karakter dan berfungis sebagai teks dengan rentang jumlah karakter yaitu 1 s.d.              255. Dan tipe field ini juga digunakan untuk sebuah nilai teks, contohnya seperti nama tempat/anotasi ataupun label. Selain              itu, text dapat juga berisi angka, namun angka tersebut harus tetap dianggap sebagai teks yang tidak bisa dilakukan operasi              aritmatika (tambah, kurang, bagi, kali, dsb).
+\item 2. FLOAT — 4 bytes; Angka pecahan dengan sebuah rentang luas antara +/-3,438. Float merupakan tipe data angka dengan presisi                tunggal yang juga memiliki pecahan. Yang mana, jumlah presisi atau biasa disebut jumlah angka, dapat juga ditentukan dengan              konstan.
+\item 3. DOUBLE — 8 bytes; Double yaitu tipe data angka yaitu dengan presisi ganda yang memiliki pecahan. Tipe Double mempunyai                  kesamaan  dengan tipe float, yaitu hanya memiliki presisi yang lebih tinggi. Dan untuk data yang berisi angka-angka desimal              sangat penting, misalnya angka luasan ataupun rupiah, dengan tipe double yang paling sesuai.
+\item 4. SHORT — 2 bytes; Short integer dapat digunakan untuk angka tanpa pecahan. Dan Short integer juga biasa digunakan untuk sebuah            data berupa ID, nomor, urutan, dan kode.
+\item 5. LONG — 4 bytes; Long integer juga mempunyai kesamaan dengan short integer, yang mana dapat digunakan untuk angka tanpa pecahan          namun juga  dengan kemungkinan digit yang lebih panjang lagi.
+\item 6. DATE — 8 bytes; Date berfungsi untuk dapat menyimpan tanggal, waktu ataupun tanggal-waktu dengan contoh format mm/dd/yyy                hh:mm:ss
 \end{enumerate}
 
