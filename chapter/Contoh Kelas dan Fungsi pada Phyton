@@ -205,7 +205,8 @@ Digunakan untuk mengirimkan e-mail ke alamat e-mail tertentu.
 Sintaks:
 mail(string tujuan , string subject , string isi [, string
 
-\subsection Contoh Class
+\section{Contoh Class dan Fungsi pada Phyton}
+\subsection{Contoh Class}
 Untuk membuat sebuah class ini, harus kita awali dengan sebuah kata kunci. Yaitu “class” yang kemudian di ikuti dengan 
 “nama class nya”.. Dan yang terakhir adalah tanda kurung buka dan tutup serta tanda titik dua “()” dan ‘:’.  untuk lebih
 mudahnya kita bisa lihat atau simak contohnya di bawah ini..
@@ -232,7 +233,7 @@ tersedia di dalam class tersebut dengan di pisahkan oleh tanda titik. Seperti di
 namaClass().namaMetode()
 \end{equation}
 
-\subsection Contoh Fungsi
+\subsection{Contoh Fungsi}
 Fungsi adalah bagian dari program yang dapat digunakan ulang. Hal ini bisa dicapai dengan memberi nama pada blok statemen,
 kemudian nama ini dapat dipanggil di manapun dalam program. Kita telah menggunakan beberapa fungsi builtin seperti range.
 Fungsi dalam Python didefinisikan menggunakan kata kunci def. Setelah def ada nama pengenal fungsi diikut dengan parameter
