@@ -16,6 +16,13 @@ sel grid yang disebut dengan pixel (picture element). Pada data raster. Resolusi
 pada ukuran pixelnya. Dengan kata lain. Resolusi pixel menggambarkan ukuran sebenarnya dipermukaan bumi 
 yang diwakili oleh setiap pixel pada citra. Pada data raster, Obyek geografis direpresentaskan sebagai struktur sel grid yang disebut sebagi pixel (picture element). Resolusi (definisi visual) tergantung pada ukuran pixel-nya, semakin kecil ukuran permukaan bumi yang direpresentasikan oleh sel, semakin tinggi resolusinya. Data Raster dihasilkan dari sistem penginderaan jauh dan sangat baik untuk merepresentasikan batas-batas yang berubah secara gradual seperti jenis tanah, kelembaban tanah, suhu, dan lain-lain. Peta raster adalah peta yang diperoleh dari fotografi suatu areal. foto satelit atau foto permukaan bumi yang diperoleh dari komputer. Contoh peta raster yang diambil dari satelit cuaca.\cite{puntodewo2003sistem}
 
+\subsection{karakteristik data raster}
+Resolusi suatu data raster akan merujuk pada ukunan permukaan bumi yang direpresentasikan oleh setiap piksel. 
+Makin kecil ukuran atau luas permukaan bumi yang dapat direpresentasikan oleh setiap pikselnya, 
+makin tinggi resolusi spasialnya.
+Piksel-piksel di dalam zone atau area yang sejenis memiliki nilai (isi piksel atau ID number) yang sama. 
+Pada umumnya, lokasi di dalam model data raster, diidentifikasi dengan menggunakan pasangan koordinat kolom dan baris (x,y).
+
 \subsection{Akses ikonik ke repositori format data raster data monokrom elektronik jarak jauh}
 Dalam Akses ikonik ke repositori format data raster data monokrom elektronik jarak jauh, 
 Dokumen disimpan dalam sistem menggunakan monokrom, format raster. 
@@ -31,7 +38,8 @@ beberapa repositori virtual yang mendukung beragam kelompok pengguna.
 
 \subsection{Pengertian PostGIS}
 Sistem Informasi Geografis (SIG) adalah sistem informasi khusus yang mengelola data yang memiliki informasi spasial (bereferensi keruangan). 
-Atau dalam arti sempit, adalah sistem komputer yang memiliki kemampuan untuk membangun, menyimpan, mengelola dan menampilkan informasi bereferensi geografis, misalnya data yang diidentifikasi menurut lokasinya, dalam sebuah database.
+Atau dalam arti sempit, adalah sistem komputer yang memiliki kemampuan untuk membangun,
+menyimpan, mengelola dan menampilkan informasi bereferensi geografis, misalnya data yang diidentifikasi menurut lokasinya, dalam sebuah database.
 SIG juga merupakan sejenis perangkat lunak, perangkat keras (manusia, prosedur, basis data) yang berguna untuk proses pemasukan, penyimpanan, menampilkan data geografis serta atribut-atribut yang terkait.
 PostGIS adalah extender database spasial gratis untuk PostgreSQL, 
 setiap bit sebaik perangkat lunak berpemilik. Dengan itu, 
@@ -44,7 +52,11 @@ raster, dan topologi berbasis GIS dan kemudian dengan cepat bergerak
 untuk menganalisis, melihat, dan memetakan data.
 
 \subsection{Uraian EMBODIMEN Yang Dimiliki}
-Saat ini, cara terbaik untuk mempraktikkan penemuan ini adalah menerapkan sistem yang menggunakan Internet sebagai General Purpose Data Network, 101, dalam gambar. 
+Saat ini, cara terbaik untuk mempraktikkan penemuan ini adalah menerapkan sistem yang
+menggunakan Internet sebagai General Purpose Data Network, 101, dalam gambar. 
 Internet adalah Wide Area Network (WAN) yang terkenal dan mudah diakses. 
 Sub-sistem Dokumen Repositori, 102, terdiri dari satu atau lebih sistem komputer fisik yang terhubung ke Internet. Sub-sistem Remote Access, 104, adalah sistem komputer individual dengan koneksi dedicated atau dial-up ke Internet.
-Rincian Sub-dokumen Document Repository akan dibahas dengan mengacu pada Gbr. 2, kecuali Gambar lain secara khusus dirujuk. Document Repository secara logis tersegmentasi menjadi beberapa repositori virtual. Setiap repositori virtual khusus untuk pengguna atau kumpulan pengguna. Jelas, mekanisme keamanan lainnya juga berlaku. Pendekatan ini memberi pengguna tampilan repositori yang berdiri sendiri dan berdiri sendiri sambil menghindari biaya komputer dan perangkat keras dan pendukung yang berdedikasi. Setiap repositori virtual mendukung beberapa sesi bersamaan dengan Remote Access Sub-systems. Jumlah sesi tidak dibatasi oleh sejumlah port dial-in fisik di repositori. Dua tingkat keamanan disediakan untuk repositori. Yang pertama mencegah akses tidak sah ke repositori itu sendiri. Kontrol kedua mengakses repositori virtual tertentu.
+Rincian Sub-dokumen Document Repository akan dibahas dengan mengacu pada Gbr. 2, 
+kecuali Gambar lain secara khusus dirujuk. Document Repository secara logis tersegmentasi menjadi beberapa repositori virtual. 
+Setiap repositori virtual khusus untuk pengguna atau kumpulan pengguna. Jelas, mekanisme keamanan lainnya juga berlaku. Pendekatan ini memberi pengguna tampilan repositori yang berdiri sendiri dan berdiri sendiri sambil menghindari biaya komputer dan perangkat keras dan pendukung yang berdedikasi. Setiap repositori virtual mendukung beberapa sesi bersamaan dengan Remote Access Sub-systems. 
+Jumlah sesi tidak dibatasi oleh sejumlah port dial-in fisik di repositori. Dua tingkat keamanan disediakan untuk repositori. Yang pertama mencegah akses tidak sah ke repositori itu sendiri. Kontrol kedua mengakses repositori virtual tertentu.
