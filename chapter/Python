@@ -169,7 +169,15 @@
 	Benda yang diberikan bukan tipe yang sesuai. Meski dengan ketahasiaan mengetik, Python sangat kuat diketik, melarang operasi yang tidak didefinisikan dengan baik (misalnya, menambahkan nomor ke a
 	string) daripada diam-diam mencoba untuk memahami mereka. Python memungkinkan pemrogram untuk menentukan jenis mereka sendiri menggunakan kelas, yang paling sering
 	digunakan untuk pemrograman berorientasi objek. Contoh kelas baru dibuat dengan menelepon kelas (misalnya, SpamClass () atau EggsClass ()), dan kelasnya sendiri
-	contoh tipe metaclass (sendiri merupakan contoh dari dirinya sendiri), memungkinkan metaprogramming andreflection. Sebelum versi 3.0, Python memiliki dua jenis kelas: & quot; old-style & quot; dan & quot; gaya baru & quot;. [42] Gaya lama
+	contoh tipe metaclass (sendiri merupakan contoh dari dirinya sendiri), memungkinkan metaprogramming andreflection. Sebelum versi 3.0, Python memiliki dua jenis kelas: old-style dan gaya baru. Gaya lama
 	kelas dieliminasi dengan Python 3.0, membuat semua kelas bergaya baru. Dalam versi antara 2.2 dan 3.0, kedua jenis kelas bisa digunakan. Sintaks dari kedua gaya adalah sama, yaitu
 	Perbedaannya adalah apakah objek kelas diwarisi dari, secara langsung atau tidak langsung (semua gaya baru kelas mewarisi dari objek dan merupakan contoh tipe).
       
+      	\section {mathematics}
+	Berbeda dengan beberapa bahasa pemrograman lainnya, pembagian bilangan bulat didefinisikan sebagai istilah bulat (round) menuju minus tak terhingga. 
+	Oleh karena itu 7 // 3 adalah 2, tapi (-7) // 3 adalah -3. Ini seragam dan tetap: misalnya, ini berarti bahwa persamaan (a + b) // b == a // b + 1 selalu benar, 
+	sedangkan dalam bahasa seperti C, (-6 + 7) / 7 = = -6 / 7. Ini juga berarti bahwa persamaan b * (a // b) + a% b == a berlaku untuk nilai positif dan negatif dari a. 
+	Namun, menjaga keabsahan persamaan ini berarti bahwa sementara hasil dari% b seperti yang diharapkan, pada interval setengah terbuka [0, b), di mana b adalah bilangan bulat positif, 
+	ia harus berbaring dalam interval (b , 0] ketika b negatif.
+	Python menyediakan fungsi bulat untuk pembulatan pelampung ke bilangan bulat. Versi sebelum 3 digunakan round-away-from-zero: round (0.5) adalah 1.0, round (-0.5) adalah -1.0. [45] Python 3 menggunakan round-to-even: round (1,5) adalah 2.0, round (2.5) adalah 2.0. [46] Desimaltype / class dalam module decimal (sejak versi 2.4) memberikan representasi numerik yang tepat dan beberapa mode pembulatan.
+	Python memungkinkan ekspresi boolean dengan beberapa hubungan kesetaraan dengan cara yang konsisten dengan penggunaan umum dalam matematika. Misalnya, ekspresi a <b <c menguji apakah a kurang dari b dan b kurang dari c. Bahasa yang diturunkan dari C menafsirkan ungkapan ini secara berbeda: di C, ungkapan pertama akan mengevaluasi sebuah <b, menghasilkan 0 atau 1, dan hasilnya kemudian akan dibandingkan dengan c.
