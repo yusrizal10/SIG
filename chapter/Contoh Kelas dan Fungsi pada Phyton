@@ -205,7 +205,48 @@ Digunakan untuk mengirimkan e-mail ke alamat e-mail tertentu.
 Sintaks:
 mail(string tujuan , string subject , string isi [, string
 
+\subsection Contoh Class
+Untuk membuat sebuah class ini, harus kita awali dengan sebuah kata kunci. Yaitu “class” yang kemudian di ikuti dengan 
+“nama class nya”.. Dan yang terakhir adalah tanda kurung buka dan tutup serta tanda titik dua “()” dan ‘:’.  untuk lebih
+mudahnya kita bisa lihat atau simak contohnya di bawah ini..
 
+\begin{equation}
+class namaClass () :
+    def metode 1 (self) :
+        Isi metode
+    def metode 2 (self) :
+        Isi metode
+\end{equation}
+
+Jadi, untuk memanggil sebuah class, sama saja seperti layak nya memanggil metode.. Kita cukup menyebutkan nama classnya 
+dengan di akhiri dengan tanda kurung buka dan tutup seperti di bawah ini..
+
+\begin{equation}
+namaClass()
+\end{equation}
+
+untuk memanggil metodenya, kita cukup menggunakan memanggil class yang kemudian di ikuti dengan pemanggilan nama metode yang 
+tersedia di dalam class tersebut dengan di pisahkan oleh tanda titik. Seperti di bawah ini..
+
+\begin{equation}
+namaClass().namaMetode()
+\end{equation}
+
+\subsection Contoh Fungsi
+Fungsi adalah bagian dari program yang dapat digunakan ulang. Hal ini bisa dicapai dengan memberi nama pada blok statemen,
+kemudian nama ini dapat dipanggil di manapun dalam program. Kita telah menggunakan beberapa fungsi builtin seperti range.
+Fungsi dalam Python didefinisikan menggunakan kata kunci def. Setelah def ada nama pengenal fungsi diikut dengan parameter
+yang diapit oleh tanda kurung dan diakhir dingan tanda titik dua :. Baris berikutnya berupa blok fungsi yang akan dijalankan 
+jika fungsi dipanggil.
+
+\begin{equation}
+# lat15.py
+
+def halo_dunia():
+    print 'Halo Dunia!'
+halo_dunia()  # memanggil fungsi halo_dunia
+halo_dunia()  # fungsi halo_dunia dipanggil lagi
+\end{equation}
 
 
 
