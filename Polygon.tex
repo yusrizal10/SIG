@@ -1,4 +1,5 @@
-\section{Data Geospasial}
+\section{Data Polygon}
+\subsection{Data Geospasial}
 Istilah ini digunakan karena GIS dibangun berdasarkan pada ‘geografi’ atau ‘spasial’. Object ini mengarah pada spesifikasi lokasi dalam suatu space. Objek bisa berupa fisik, budaya atau ekonomi alamiah. Penampakan tersebut ditampilkan pada suatu peta untuk memberikan gambaran yang representatif dari spasial suatu objek.
 Terdapat dua model data geospasial, yaitu model data raster dan model data vektor. 
 Pada gambar \ref{datageospasial} dijelaskan tentang Klasifikasi model data geospasial.
@@ -8,17 +9,17 @@ Pada gambar \ref{datageospasial} dijelaskan tentang Klasifikasi model data geosp
 	\label{datageospasial}
 	\end{figure}
 
-\subsection{Data Vektor}
+\subsubsection{Data Vektor}
 Model data vektor merupakan model data yang paling banyak digunakan dan dikenal pula sebagai model data spaghetti. Lembaran kertas peta ditranslasikan garis demi garis ke dalam list koordinat (x,y) dalam format digital. Sebuah titik dikodekan sebagai pasangan koordinat (x,y) tunggal. Sebuah garis dikodekan sebagai list atau string pasangan koordinat (x,y). Sementara area atau luasan dikodekan sebagai polygon. Data vektor juga merupakan data yang direkam dalam bentuk koordinat titik yang menampilkan, menempatkan dan menyimpan data spesial dengan menggunakan titik, garis atau area (poligon). Ada tiga tipe data vektor (titik, garis, dan poligon) yang bisa digunakan untuk menampilkan informasi pada peta. Titik bisa digunakan sebagai lokasi sebuah kota atau posisi tower radio. Garis bisa digunakan untuk menunjukan route suatu perjalanan atau menggambarkan boundary. Poligon bisa digunakan untuk menggambarkan sebuah danau atau sebuah negara pada peta dunia. Dalam format vektor, bumi direpresentasikan sebagai suatu mosaik dari garis (arc/line), poligon (daerah yang dibatasi oleh garis yang berawal dan berakhir pada titik yang sama), titik/ point (node yang mempunyai lebel), nodes (merupakan titik perpotongan antara dua baris). Setiap bagian dari data vektor dapat saja mempunyai informasi – indormasi yang berasosiasi satu dengan lainnya seperti penggunaan sebuah label untuk menggambarkan informasi pada suatu lokasi. Peta vektor terdiri dari titik, garis, dan area poligon. Bentuknya dapat berupa peta lokal jalan. Kelebihan data vektor yaitu struktur datanya lebih rumit, efisiensi untuk analisis, sebagai sarana representasi yang baik, transformasi proyeksi lebih efisien, ketelitian, akurat dan lebih presisi serta relasi atribut langsung dengan DBMS (database). Adapun kekurangan data vektor adalah sulit dalam melakukan proses overlay, idak bisa menampilkan data image/foto udara, struktur data yang terlalu banyak tidak efektif dalam menampilkan banyak spasial, memerlukan algoritma dan proses yang sangat kompleks, kualitas (output) sangat bergantung dengan printer dan kartografi dan sulit dilakukan simulasi.
 Model ini berbasiskan pada titik dengan nilai koordinat (x,y) untuk membangun objek spasialnya. Objek yang dibangun terbagi menjadi tiga bagian lagi yaitu berupa titik (point), garis (line), dan area (polygon).
 
 
-\subsubsection{Polygon}
+\subsubsubsection{Polygon}
 Dalam artikel Mahendra menjelaskan Polygon merupakan representasi objek dalam dua dimensi. Contoh : danau,
 persil tanah, dan lain-lain. Entity polygon dapat direpresentasikan dengan berbagai cara di dalam model data vektor. 
 Polygon berasal dari kata Poly yaitu banyak dan gon(gone) yaitu titik. Yang dimaksud adalah polygon yang digunakan sebagai kerangka dasar pemetaan yang memliki titik-titik dimana titik tersebut mempunyai sebuah koordinat X dan Y. 
 
-\subsubsection{Jenis - jenis Polygon}
+\subsubsubsection{Jenis - jenis Polygon}
 \begin{enumerate}
 \item Polygon tertutup
   Polygon Tertutup adalah suatu polygon dimana titik awal dan titik akhir mempunyai posisi yang sama atau berhimpit, sehingga polygon ini adalah suatu rangkain tertutup.
@@ -34,7 +35,7 @@ Polygon berasal dari kata Poly yaitu banyak dan gon(gone) yaitu titik. Yang dima
 
 Serangkaian titik-titik yang dihubungkan dengan garis lurus sehingga titik-titik tersebut membentuk sebuh rngkaian(jaringan) ttitkk atau polygon. Pada pekerjaan pembuatan peta, rangkaian titik polygon digunakan sebagai  kerangka peta, yaitu merupakan jaringan titik-titik yang telah tertentu letaknya di tanah yang sudah ditandai dengan patok, dimana semua benda buatan manusia seperti jembatan, jalan raya, gedung maupun benda-benda alam seperti danau, bukit, dan sungai akan berorientasikan. Kedudukan benda pada pekerjaan pemetaan biasanya dinyatakan dengan sistem koordinat  kartesius tegak lurus (X,Y) dibidang datar(peta), dengan sumbu X menyataakan arah timur-barat dan sumbu Y menyatakan arah utara - selatan. Koordinat titik-titik polygon harus cukup teliti mengingat ketelitian letak dan ukuran benda - benda yang akan dipetakan sangat tergantung pada ketelitian dan kerangka peta.
 
-\subsubsection{Bentuk-bentuk Polygon}
+\subsubsubsection{Bentuk-bentuk Polygon}
 Menurut bentuknya, polygon dibedakan menjadi dua bentuk :
 \begin{enumerate}
 \item Polygon Terbuka
@@ -51,7 +52,7 @@ Berdasarkan fungsinya, polygon dibedakan menjadi :
 Kelememahan polygon tertutup yaitu, bila ada kesalahan yang profesional dengan jarak (salah  satu sistematis) tidak akan ketahuan. Dengan kata lain, walaupun ada esalahan, namun polygon tertutup kelihatan baik juga. Jarak - jarak yang diukur secara elektronis sangat mudah dhinggapi kesalahan seperti kesalahan frekuensi gelombang.
 \end{enumerate}
 
-\subsubsection{Karakteristik Polygon}
+\subsubsubsection{Karakteristik Polygon}
 \begin{enumerate}
 \item Titik distrukturisasi dan disimpan (direcord) sebagai satu pasang koordinat(x,y).
 \item Garis distrukturisasi dan disimpan sebagai suatu susunan pasangan koordinat(x,y) yang beraturan.
