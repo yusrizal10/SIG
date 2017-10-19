@@ -8,6 +8,12 @@
 %Copyright (c) 2017 Copyright Holder All Rights Reserved.
 
 \section{pengenlan qgis}
+	\ref{qgis_logo}
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=1\textwidth]{figures/qgis_logo.JPG}}
+	\caption{Logo qgis / quantum GIS.}
+	\label{qgis_logo}
+	\end{figure}
 	  qgis(dulu dikenal dengan nama quantum GIS) adalah salah satu perangkat lunak open source untuk keperulan GIS(Geographic information systems) yang paling populer, dengan basis penggunanya yang terus meningkat dan berkembang.
 	 aplikasi ini dapat melakukan banyak hal yaitu pembuatan data spasial,editing, dan juga analisis pemetaan.Selain berbasis dekstop aplikasi ini juga menyediakan server digunakan dalam web dan bahkan qgis siap digunakan dalam hp.
 
@@ -28,7 +34,7 @@
 	 qgis banyak digunakan oleh orang yang menggunakan platform linux dan unix , disusul oleh windows dan mac os x dan telah di publikasikan dibawah lisensi GNU(kumpulan software gratis).core qgis dikembangkan dengan toolkit qt dan c++.selain itu qgis juga menyediakan api(application program interface)python, yang diunakan untuk memperluas jangakuan fungsinya.Sebuah api Python yang powerful dapat membantu memanfaatkan kemampuan secara efisien GIS dan mengintegrasikan berbagai alat dan bahasa pemrograman untuk mengembangkannya.
 	 effeknya, semakin meningkatan jumlah kontribusi yang telah sangat terlihat sejak diperkenalkannya API Python QGIS di QGIS 0.9 pada tahun 2007 ketika pengembang baru mulai menambahkan fungsionalitas menggunakan plugin Python.
 
-	 \subsection{pengembagan qgis}
+	 \subsection{pengembangan qgis}
 		Melakukan proses penulisan ulang dari proyek Sistema Extremeño de Análisis Territorial (SEXTANTE),dimana proyek ini diluncurkan pada tahun 2004. awalnya, SEXTANTE ditulis dengan menggunakan bahasa java dan berjalan pada GIS desktop.namun akhirnya, SEXTANTE menjadi sebuah library terpisah dengan framework analisis,seperangkat algoritma, alat grafis untuk menggunakan algortimanya dan menjelaskannya melalu analisis workflow.
 	 Sebenarnya algoritma yang ada pada SEXTANTE pada versi java merupakan adaptasi dari proyek System for Automated Geoscientific Analyses (SAGA),yang dimana merupakan GIS berbasis desktop dengan analisi tingkat lanjut.Keputusan untuk mengubah SEXTANTE menjadi library terpisah memungkinkannya menggabungkannya ke GIS berbasis Java lainnya, seperti OpenJUMP, uDig, Kosmo dan OrbisGIS.
 	 Kemajuan paling pesat dalam kerangka desain diperlihatkan pada saat migrasi ke qgis ketika kerangka/inti SEXTANTE di buat ulang sebagai plugin pada pyhton.bukan melakukan porting algortima ke dalam python melainkan pendekatan baru yang dilakukan yaitu membiarkan SEXTANTE untuk terhubung ke dalam aplikasi. Dengan demikian, binari dari SAGA yang asli dapa meningkatan kemampuan analisis.
@@ -51,21 +57,33 @@
 	Skala adalah perbandingan antara jarak pada model (peta) dan jarak sebenarnya dilapangan. Mengatur skala adalah salah satu cara yang dapat digunakan mengatur zoom karena skala dapat berperan sebagai zoom level. Skala pada peta tersebut ditampilkan pada toolbar dibagian bawah jendela utama QGIS.
 	\subsection{layout peta}
 	Untuk membuat layout peta yang baik perlu dipahami bahwa fungsi pembuatan peta adalah:
-	1. Menunjukkan posisi atau lokasi suatu tempat dipermukaan bumi.
-	2. Memperlihatkan ukuran dan arah suatu tempat dipermukaan bumi.
-	3. Menggambar bentuk-bentuk permukaan bumi.
-	4. Membantu mengetahui kondisi suatu daerah.
-	5. Menyajikan data potensi suatu wilayah.
-	6. Sebagai alat analisis.
-	7. Alat untuk mempelajari fenomena geografi dipermukaan bumi.
-	
+	\begin{enumerate}
+		\item Menunjukkan posisi atau lokasi suatu tempat dipermukaan bumi.
+		\item Memperlihatkan ukuran dan arah suatu tempat dipermukaan bumi.
+		\item Menggambar bentuk-bentuk permukaan bumi.
+		\item Membantu mengetahui kondisi suatu daerah.
+		\item Menyajikan data potensi suatu wilayah.
+		\item Sebagai alat analisis.
+		\item Alat untuk mempelajari fenomena geografi dipermukaan bumi.
+	\end{enumerate}
 	Sedangkan tujuan pembuatan peta antara lain adalah:
-	1. Untuk komunikasi informasi ruang.
-	2. Untuk menyimpan informasi.
-	3. Digunakan untuk membantu pekerjaan tertentu.
-	4. Untuk analisis data spasial.
-	
-
+	\begin{enumerate}
+		\item Untuk komunikasi informasi ruang.
+		\item Untuk menyimpan informasi.
+		\item Digunakan untuk membantu pekerjaan tertentu.
+		\item Untuk analisis data spasial.
+	\end{enumerate}
+	Beberapa elemen peta yang utama adalah sebagai berikut:
+	\begin{enumerate}
+		\item Isi peta, bagian utama pada layout peta yang berisi informasi yang berisi informasi yang ingin disampikan/ditampilkan.
+		\item Judul peta, merupakan deskripsi singkat mengenai isi peta, harus menggambarkan isi/informasi peta.
+		\item Skala, perbandingan jarak pada peta terhadap jarak sesungguhnya dilapangan.
+		\item Legenda, keterangan dari simbol-simbol yang digunakan pada peta.
+		\item Orientasi, menunjukkan arah utara.
+		\item Garis koordinat, memudahkan untuk melihat posisi/lokasi daerah pemetaan dipermukaan bumi.
+		\item Inzet, menunjukkan lokasi yang dipetakan pada konteks yang lebih yang lebih luas, sangat penting terutama apabila peta ditunjukkan apabila  peta ditunjukkan kepada orang belum familiar dengan daerah yang dipetakan.
+		\item Sumber peta, merupakan referensi, bahan-bahan yang diacu dalam menyusun/membuat peta.
+	\end{enumerate}
 
 	\subsection{tools pada qgis}
 	Pengenalan tools:
