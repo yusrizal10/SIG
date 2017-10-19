@@ -46,13 +46,16 @@ Bentuk-bentuk data atribut:
 -	Data kualitatif (kualitas/mutu), contoh: tingkat kesuburan tanah
 
 \subsubsection{Kelebihan dan Kekurangan Data Atribut}
-Kelebihan
-a. Data dapat dimanipulasi 
-b. Dapat mengetahui jenis lokasi peta
-
-Kekurangan
-a. Sulit membedakan gambar dan warna pada peta
-b. Sulit menentukan lokasi
+Kelebihan :
+\begin{enumerate}
+   \item a. Data dapat dimanipulasi 
+   \item b. Dapat mengetahui jenis lokasi peta
+\end{enumerate}
+Kekurangan :
+\begin{enumerate}
+   \item a. Sulit membedakan gambar dan warna pada peta
+   \item b. Sulit menentukan lokasi
+\end{enumerate}
 
 \section{Data Vektor Line}
 \subsection{Pengertian}
@@ -102,27 +105,31 @@ b. Sulit menentukan lokasi
   wilayah administrasi, danau, guna lahan, jenis tanah, dan sebagainya
  
  \subsubsection{Kelebihan dan Kekurangan Data Vektor Line}
- Kelebihan
- a. Memerlukan ruang atau tempat menyimpan yang lebih sedikit di computer.
- b. Satu layer dapat dikaitkan dengan atau mengunakan atribut sehingga dapat menghemat ruang penyimpanan secara keseluruhan.
- c. Dengan banyak atribut yang banyak dikandung oleh satu layer, banyak peta tematik lain yang dapat dihasilkan sebagai peta turunannya.
- d. Hubungan topologi dan network dapat dilakukan dengan mudah.
- e. Memiliki resolusi spasial yang tinggi.
- f. Representasi grafis data spasialnya sangat mirip dengan peta garis buatan tangan manusia.
- g. Memiliki batas-batas yang teliti, tegas dan jelas sehingga sangat baik untuk 
+ Kelebihan:
+ \begin{enumerate}
+    \item a. Memerlukan ruang atau tempat menyimpan yang lebih sedikit di computer.
+    \item b. Satu layer dapat dikaitkan dengan atau mengunakan atribut sehingga dapat menghemat ruang penyimpanan secara keseluruhan.
+    \item c. Dengan banyak atribut yang banyak dikandung oleh satu layer, 
+             banyak peta tematik lain yang dapat dihasilkan sebagai peta turunannya.
+    \item d. Hubungan topologi dan network dapat dilakukan dengan mudah.
+    \item e. Memiliki resolusi spasial yang tinggi.
+    \item f. Representasi grafis data spasialnya sangat mirip dengan peta garis buatan tangan manusia.
+    \item g. Memiliki batas-batas yang teliti, tegas dan jelas sehingga sangat baik untuk 
     pembuatan peta-peta administrasi dan persil tanah milik.
- h. Transformasi koordinat dan proyeksi tidak sulit dilakukan. 
- 
- Kekurangan
- a. Memiliki struktur data yang kompleks.
- b. Datanya tidak mudah untuk dimanipulasi.
- c. Pengguna tidak mudah berkreasi untuk membuat programnya sendiri untuk memenuhi kebutuhan aplikasinya. 
-    Hal ini disebabkan oleh struktur data vector yang lebih kompleks dan prosedur fungsi dan analisisnya 
-    memerlukan kemampuan tinggi karena lebih sulit. 
-    Pengguna harus membeli system perangkat lunaknya karena teknologinya masih mahal. Prosedurnyapun terkadang lebih sulit.
- d. Karena proses keseluruhan untuk mendapatkannya lebih lama, peta vector seringkali mengalami out of date atau kadaluarsa.
- e. Memerlukan perangkat keras dan perangkat lunak yang lebih mahal.
- f. Overlay beberapa layers vector secara simultan memerlukan waktu yang relative lama.
+    \item h. Transformasi koordinat dan proyeksi tidak sulit dilakukan. 
+ \end{enumerate}
+ Kekurangan:
+ \begin{enumerate}
+    \item a. Memiliki struktur data yang kompleks.
+    \item b. Datanya tidak mudah untuk dimanipulasi.
+    \item c. Pengguna tidak mudah berkreasi untuk membuat programnya sendiri untuk memenuhi kebutuhan aplikasinya. 
+             Hal ini disebabkan oleh struktur data vector yang lebih kompleks dan prosedur fungsi dan analisisnya 
+             memerlukan kemampuan tinggi karena lebih sulit. 
+            Pengguna harus membeli system perangkat lunaknya karena teknologinya masih mahal. Prosedurnyapun terkadang lebih sulit.
+    \item d. Karena proses keseluruhan untuk mendapatkannya lebih lama, peta vector seringkali mengalami out of date atau kadaluarsa.
+    \item e. Memerlukan perangkat keras dan perangkat lunak yang lebih mahal.
+    \item f. Overlay beberapa layers vector secara simultan memerlukan waktu yang relative lama.
+ \end{enumerate}
  
  \section{Raster}
  \subsection{Pengertian}
@@ -147,31 +154,35 @@ v  Nilai suatu piksel adatah nilai sampling yang berposisi di pusat (atau di ten
 v  Nilai suatu pikset adatah nilai sample yang tertetak di sudut-sudut grid.
 
 \subsubsection{Kelebihan dan Kekurangan Raster}
- Kelebihan
- a. Memiliki struktur data yang sederhana
- b. Mudah dimanipulasi dengan menggunakan fungsi-fungsi matematis sederhana
- c. Teknologi yang digunakan cukup murah dan tidak begitu kompleks sehingga pengguna dapat 
-    membuat sendiri program aplikasi yang mengunakan citra raster.
- d. Compatible dengan citra-citra satelit penginderaan jauh dan semua image hasil scanning data spasial.
- e. Overlay dan kombinasi data raster dengan data inderaja mudah dilakukan
- f. Memiliki kemampuan-kemampuan permodelan dan analisis spasial tingkat lanjut
- g. Metode untuk mendapatkan citra raster lebih mudah
- h. Gambarab permukaan bumi dalam bentuk citra raster yang didapat dari radar atau satelit penginderaan jauh selalu lebih actual dari       pada bentuk vektornya
- i. Prosedur untuk memperoleh data dalam bentuk raster lebih mudah, sederhana dan murah.
- j. Harga system perangkat lunak aplikasinya cenderung lebih murah.
- 
- Kekurangan
- a. Secara umum memerlukan ruang atau tempat menyimpan (disk) yang besar dalam computer, 
-    banyak terjadi redudacy data baik untuk setiap layer-nya maupun secara keseluruhan.
- b. Penggunaan sel atau ukuran grid yang lebiih besar untuk menghemat ruang penyimpanan akan 
-    menyebabkan kehilangan informasi dan ketelitian.
- c. Sebuah citra raster hanya mengandung satu tematik saja sehingga sulit digabungkan 
-    dengan atribut-atribut lainnya dalam satu layer.
- d. Tampilan atau representasi dan akurasi posisi sangat bergantung pada ukuran pikselnya (resolusi spasial).
- e. Sering mengalami kesalahan dalam menggambarkan bentuk dan garis batas suatu objek, 
-    sangat bergantung pada resolusi spasial dan toleransi yang diberikan.
- f. Transformasi koordinat dan proyeksi lebih sulit dilakukan
- g. Sangat sulit untuk merepresentasikan hubungan topologi (juga network).
- h. Metode untuk mendapatkan format data vector melalui proses yang lama, cukup melelahkan dan relative mahal.
+ Kelebihan :
+ \begin{enumerate}
+    \item a. Memiliki struktur data yang sederhana
+    \item b. Mudah dimanipulasi dengan menggunakan fungsi-fungsi matematis sederhana
+    \item c. Teknologi yang digunakan cukup murah dan tidak begitu kompleks sehingga pengguna dapat 
+             membuat sendiri program aplikasi yang mengunakan citra raster.
+    \item d. Compatible dengan citra-citra satelit penginderaan jauh dan semua image hasil scanning data spasial.
+    \item e. Overlay dan kombinasi data raster dengan data inderaja mudah dilakukan
+    \item f. Memiliki kemampuan-kemampuan permodelan dan analisis spasial tingkat lanjut
+    \item g. Metode untuk mendapatkan citra raster lebih mudah
+    \item h. Gambarab permukaan bumi dalam bentuk citra raster yang didapat dari radar atau satelit 
+             penginderaan jauh selalu lebih actual dari pada bentuk vektornya
+    \item i. Prosedur untuk memperoleh data dalam bentuk raster lebih mudah, sederhana dan murah.
+    \item j. Harga system perangkat lunak aplikasinya cenderung lebih murah.
+ \end{enumerate}
+ Kekurangan:
+ \begin{enumerate}
+    \item a. Secara umum memerlukan ruang atau tempat menyimpan (disk) yang besar dalam computer, 
+             banyak terjadi redudacy data baik untuk setiap layer-nya maupun secara keseluruhan.
+    \item b. Penggunaan sel atau ukuran grid yang lebiih besar untuk menghemat ruang penyimpanan akan 
+             menyebabkan kehilangan informasi dan ketelitian.
+    \item c. Sebuah citra raster hanya mengandung satu tematik saja sehingga sulit digabungkan 
+             dengan atribut-atribut lainnya dalam satu layer.
+    \item d. Tampilan atau representasi dan akurasi posisi sangat bergantung pada ukuran pikselnya (resolusi spasial).
+    \item e. Sering mengalami kesalahan dalam menggambarkan bentuk dan garis batas suatu objek, 
+             sangat bergantung pada resolusi spasial dan toleransi yang diberikan.
+    \item f. Transformasi koordinat dan proyeksi lebih sulit dilakukan
+    \item g. Sangat sulit untuk merepresentasikan hubungan topologi (juga network).
+    \item h. Metode untuk mendapatkan format data vector melalui proses yang lama, cukup melelahkan dan relative mahal.
+  \end{enumerate}
  
  
