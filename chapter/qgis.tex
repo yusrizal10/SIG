@@ -46,12 +46,16 @@
 	Anda dapat membuat, mengedit, mengelola dan mengekspor lapisan vektor dan raster dalam beberapa format. QGIS menawarkan yang berikut ini: Alat digitalisasi untuk format yang didukung oleh OGR dan lapisan vektor GRASS, Kemampuan untuk membuat dan mengedit shapefiles dan layer vektor GRASS, Plugin Georeferencer ke gambar geocode, Alat GPS untuk mengimpor dan mengekspor format GPX, dan mengonversi format GPS lainnya ke GPX atau turun / mengunggah langsung ke unit GPS (Di Linux, usb: telah ditambahkan ke daftar perangkat GPS.), Dukungan untuk memvisualisasikan dan mengedit data OpenStreetMap, Kemampuan untuk membuat tabel database spasial dari shapefiles dengan plugin DB Manager, Perbaikan penanganan tabel database spasial, Alat untuk mengelola tabel atribut vektor, Opsi untuk menyimpan tangkapan layar sebagai gambar georeferensi, Alat DXF-Export dengan kemampuan yang disempurnakan untuk mengekspor gaya dan plugin untuk melakukan fungsi seperti CAD.
 	\subsubsection{Analyze Data}
 Anda bisa melakukan analisis data spasial pada database spasial dan format pendukung OGR lainnya. QGIS saat ini menawarkan analisis vektor, sampling, geoprocessing, geometri dan alat manajemen basis data. Anda juga dapat menggunakan alat GRASS terpadu, yang mencakup fungsionalitas GRASS lengkap lebih dari 400 modul. Atau, Anda dapat bekerja dengan Plugin Pemrosesan, yang menyediakan kerangka analisis geospasial yang kuat untuk memanggil algoritma asli dan pihak ketiga dari QGIS, seperti GDAL, SAGA, GRASS, fTools dan lainnya.
+	\subsubsection{skala}
+	Skala adalah perbandingan antara jarak pada model (peta) dan jarak sebenarnya dilapangan. Mengatur skala adalah salah satu cara yang dapat digunakan mengatur zoom karena skala dapat berperan sebagai zoom level. Skala pada peta tersebut ditampilkan pada toolbar dibagian bawah jendela utama QGIS.
+	
 
 	Pengenalan tools:
 	1.	Menu Bar, menyediakan berbagai macam fitur/fungsi pada Quantum GIS yang akan digunakan untuk pengoperasian lebih lanjut. Sebagaian besar fungsi yang ada pada menu bar juga terdapat pada tool bar.
 	2.	Tool bar, terdiri dari deretan gambar(icon) yang menyediakan akses cepat (shortcut_ pada fungsi-fungsi yang sebagaian besar sama seperti yang ada pada menu bar.
 	3. Map legend, menampilkan daftar layer yang sedang dibuka pada project, baik layer yang aktif maupun tidak aktif akan ditampilkan semua. Dapat juga diatur urutan kenampakan layer dengan cara drag dan drop pada layer.
 	4. Map view, merupakan area dimana layer-layer ditampilkan. Tampilan pada map view tergantung dari layer yang aktif
+	5. status bar, menunjukkan posisi koordinar cursor berada, dengan catatan yang ada pada jendela map view sudah memiliki Georeference. Selain menunjukkan posisi, status bar juga menunjukkan skala tampilan pada mapview.
 
 	Tool bar pada baris paling atas qgis :
 	- file : toolbar ini berisi alat untuk membuat, membuka, menyimpan, dan mencetak proyek
