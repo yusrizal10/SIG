@@ -67,7 +67,7 @@ hasil = math.log (x)
  print "Hasil log dari", x, "adalah", hasil 
  \end{verbatim}
  
-Fungsi print_log() mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
+Fungsi print\_log() mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
 
  \subsubsection{Rekursif}
 
@@ -216,7 +216,7 @@ Kegunaan
 \item Ketika ingin pergi ke item urutan tertentu seperti pada list atau string
 \item Ketika ingin melakukan perulangan kode beberapa kali
 \end{enumerate}
-For interaksi_var in ururan
+For interaksi\_var in ururan
 Statements
 Print(“bukan bagian perulangan”) 
 
@@ -324,12 +324,12 @@ kondisi for atau while.
 Perintah continue sama  seperti dalam bahasa C, fungsinya untuk melanjutkan statement
 berikutnya dalam kondisi perulangan.
 Pada kondisi perulangan juga diperbolehkan untuk menggunakan kalimat perintah else, yang dijalankan saat kondisi perulangan for tidak memenuhi suatu kondisi atau jika kondisi tersebut mengalami error/false, tetapi bukan pada saat kondisi perulangan dihentikan dengan perintah break. Berikut adalah contohnya:
-\ref{2_bce}
+\ref{2bce}
 
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=1\textwidth]{figures/2_bce.JPG}}
+    \centerline{\includegraphics[width=1\textwidth]{figures/2bce.JPG}}
     \caption{}
-    \label{2_bce}
+    \label{2bce}
     \end{figure}
 
 Penjelasannya adalah jika kondisi dalam perulangan for x in range\(2, n\) tidak terpenuhi maka alur perulangannya akan pindah ke ruang lingkup perintah else. 
@@ -357,12 +357,12 @@ for i in range(1, 101, 1) :
     print(i, end=' ')
 \end{verbatim}
 Lalu, setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seperti berikut ini :
-\ref{2_range}
+\ref{2range}
 
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=1\textwidth]{figures/2_range.JPG}}
+    \centerline{\includegraphics[width=1\textwidth]{figures/2range.JPG}}
     \caption{hasil penggunaan range}
-    \label{2_range}
+    \label{2range}
     \end{figure}
     
 \subsubsection{Contoh penggunaan range\(nilai_awal,nilai_akhir\)}
@@ -386,12 +386,12 @@ print('Jumlah semua bilangan adalah \%d' \%summ)
 \end{verbatim}
 
 Setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seperti ini :
-\ref{2_range2}
+\ref{2range2}
 
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=1\textwidth]{figures/2_range2.JPG}}
+    \centerline{\includegraphics[width=1\textwidth]{figures/2range2.JPG}}
     \caption{hasil penggunaan range}
-    \label{2_range2}
+    \label{2range2}
     \end{figure}
     
 \subsubsection{Contoh penggunaan range\(nilai_akhir\)}
@@ -401,12 +401,12 @@ for i in range(101):
 	print(i,end=' ')
 \end{verbatim}
 Disini nilai akhir menggunakan operator < bukan ≤ jadi untuk menampilkan sampai angka 100 nilai akhir harus dibuat menjadi 101. Dan setelah perintah diatas dijalankan \(run\) maka akan tampil hasil seperti berikut ini :
-\ref{2_range3}
+\ref{2range3}
 
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=1\textwidth]{figures/2_range3.JPG}}
+    \centerline{\includegraphics[width=1\textwidth]{figures/2range3.JPG}}
     \caption{hasil penggunaan range}
-    \label{2_range3}
+    \label{2range3}
     \end{figure}
 
 \subsection{for loop with else}
