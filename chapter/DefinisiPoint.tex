@@ -14,10 +14,11 @@ Data Spasial Sistem Informasi Geografis (SIG) model data yang akan digunakan dar
 \subsection{ABSTRAK}
 Diagram  Voronoi merupakan konsep interdisipliner yang telah diterapkan pada berbagai bidang. Dalam sistem informasi geografis (GIS), kemampuan yang ada untuk menghasilkan diagram Voronoi biasanya fokus pada hal biasa (tidak berbobot) titik fitur/point (tidak linear atau area). Untuk integrasi yang lebih baik dari model diagram Voronoi dan GIS, pendekatan berbasis raster dikembangkan, dan dilaksanakan mulus sebagai perpanjangan ArcGIS menggunakan ArcObjects. Dalam tulisan ini, metodologi dan pelaksanaan ekstensi dijelaskan, dan contoh yang disediakan untuk fitur titik(point), line, dan poligon. Keuntungan dan keterbatasan ekstensi juga dibahas. Ekstensi memiliki beberapa fitur berikut: 
 \begin{enumerate}
-\(1) bekerja untuk titik, garis, dan fitur vektor poligon; 
-\(2) dapat menghasilkan kedua diagram Voronoi biasa dan multiplicatively tertimbang dalam format vektor; 
-\(3) dapat menetapkan atribut non-spasial fitur input ke Voronoi sel melalui bergabung spasial;
-\(4) dapat menghasilkan biasa atau Euclidean dataset raster jarak tertimbang untuk aplikasi pemodelan spasial. Hasil dapat dengan mudah dikombinasikan dengan GIS dataset lain untuk mendukung analisis spasial berbasis vektor dan pemodelan spasial berbasis raster.
+\item bekerja untuk titik, garis, dan fitur vektor poligon; 
+\item dapat menghasilkan kedua diagram Voronoi biasa dan multiplicatively tertimbang dalam format vektor; 
+\item dapat menetapkan atribut non-spasial fitur input ke Voronoi sel melalui bergabung spasial;
+\item dapat menghasilkan biasa atau Euclidean dataset raster jarak tertimbang untuk aplikasi pemodelan spasial. Hasil dapat dengan mudah dikombinasikan dengan GIS dataset lain untuk mendukung analisis spasial berbasis vektor dan pemodelan spasial berbasis raster.
+\end{enumerate}
 
 \subsection{Diagram Voronoi untuk Point, Line dan Poligon dalam fitur GIS}
 	Mengingat satu set jumlah terbatas titik berbeda di ruang 2-D Euclidean, diagram Voronoi titik set adalah kumpulan dari daerah yang membagi pesawat, dan semua lokasi di satu wilayah (kecuali pada batas wilayah) lebih dekat ke titik sponding corre- daripada titik lain (Gbr. 1). Diagram Voronoi dinamai matematikawan Rusia Georgy Fedoseevich Voronoi yang didefinisikan dan mempelajari kasus n-dimensi umum pada tahun 1908. Diskusi tentang konsep diagram Voronoi dari titik pandangan-sejarah dan geometris dapat ditemukan di Okabe et al. (1992, 2000).
@@ -59,6 +60,7 @@ Dimana didalam kelas terdapat artibut berupa :
 \item X bertipe double, adalah titik koordinat dalam garis X dari sebuah point.
 \item Y bertipe double, adalah titik koordinat dalam garis Y dari sebuah point.
 \end{enumerate}
+
 \subsection{Layer objek/point}
 Dimana Layer dari sebuah point dapat dilihat dari gambar \ref{layerpoint}
  \begin{figure}[ht]
@@ -76,7 +78,7 @@ tipe data yang digunakan merupaka tipe data point yang terdapat koordinat real, 
 			    = E{Z(s)-z(s+h)}-{{E(z(s))-E(Z(s+h))}]
 
 
-\subsection{MongoDB}
+\subsection{Point dalam MongoDB}
 	MongoDB merupakan sebuah DBMS non relasional yang berorientasi dokumen dan bersifat open source yang ditulis dalam C++. MongoDB dikembangkan oleh perusahaan 10gen. Sebuah basis data pada MongoDB berisi satu atau lebih collections dari documents. Documents pada MongoDB dapat berisi nilai yang nilai tersebut dapat berisi sebuah document lain, kumpulan document, atau tipe data dasar seperti Double, String, dan Date. MongoDB menyiapkan tipe pengindeksan geospasial yang berguna mendukung keperluan kueri geospasial seperti 2D dan 2DSphere. Indeks 2D digunakan untuk menyimpan data sebagai titik pada bidang datar dua dimensi. Sedangkan apabila titik tersebut disimpan pada bidang lengkung maka indeks 2DSphere dapat digunakan. Secara default, sistem referensi koordinat yang digunakan MongoDB pada objek lengkung seperti bumi yaitu WGS84. MongoDB mendukung tipe data geospasial seperti Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, Feature, FeatureCollection, dan GeometryCollection (de Souza etal. 2014).
 
 Membuat Data Geospasial
