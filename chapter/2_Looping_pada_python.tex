@@ -15,7 +15,7 @@ Perulangan while disebut dengan uncounted loop (perulangan yang tak terhitung), 
 Perintah break dipakai untuk menghentikan proses berjalannya iterasi atau perulangan pada statement for atau while\cite{arfian2012rekayasa}.Dan semua kode setelah pernyataan break akan segera diabaikan. Pernyataan break ini dapat kita gunakan pada pengulangan while dan for.
 Statement yang berada di bawah break tidak akan di eksekusi dan program akan keluar dari proses looping.  
 Contoh break : 
-\begin{equation}
+\begin{verbatim}
 >>> x = 1     
 >>> while x < 5:     
 ...    if x == 3:     
@@ -27,45 +27,45 @@ print "Loop sdh selesai dikrjkn"
  ...     
 1    
 2 
-\end{equation}
+\end{verbatim}
 
 \subsubsection{Perintah Continue}
 Perintah continue dapat dipakai untuk meloncati sebuah perulangan, maksudnya adalah intruksi yang seharusnya dapat dilewati, hal ini berarti instruksi tidak akan dijalankan\cite{arfian2012rekayasa}. pernyataan continue akan dilakukan pengulangan mulai dari awal lagi. Dan mengabaikan semua kode yang tersisa pada loop untuk menuju keawal loop lagi.
 Misal:
-\begin{equation}
+\begin{verbatim}
 for(int i = l; i <= 100; i++){
     if(i % 2 == 0){
         continue;
     }
     System.out.println(i);
     }
-\end{equation}
+\end{verbatim}
 
 Jika program tersebut dijalankan, maka hasilnya akan menampilkan angka-angka ganjil saja, hal ini disebabkan karena saat nilai i merupakan angka genap, maka statement continue akan membuat program tidak menampilkan angka genap.
 
 \subsubsection{Perintah Pass}
 Sebenarnya perintah pass tidak memiliki fungsi yang sangat penting. Dan bahkan sangat jarang digunakan oleh programmer. Jadi perintah pass ini sebenarnya hanya mengisi kekosongan saja, agar program tidak eror nantinya.perintah pass akan Menyebabkan program tidak melakukan tindakan. Digunakan untuk mengabaikan sesuatu statement perulangan, pengkodisian, class dan fungsi yang belum di definisikan badan programnya agar tidak terjadi error.
-\begin{equation}
+\begin{verbatim}
 for i in range (5) :
     if i == 5 :
         pass
     print(i)
-    \end{equation}
+    \end{verbatim}
 
 Jadi seperti yang sudah dikatakan sebelumnya, perintah pass ini memiliki fungsi untuk mengisi kekosongan dari sebuah penyeleksian ataupun perulangan.
 
  \subsubsection{Perintah return}
 Perintah return dapat menghentikan suatu proses dari fungsi sebelum mengakhiri fungsi tersebut. Alasan menggunakan perintah return adalah jika menemui sebuah kesalahan kondisi, yang berarti nilai suatu fungsi tersebut mengembalikan nilai null (kosong) : 
 import math
-\begin{equation}
+\begin{verbatim}
 def print_log (x):
   if x <= 0 :
     print x, 
-\"Bilangan lebih sama dengan 0\"  
+"Bilangan lebih sama dengan 0"  
   return  
 hasil = math.log (x) 
- print \"Hasil log dari\", x, \"adalah\", hasil 
- \end{equation}
+ print "Hasil log dari", x, "adalah", hasil 
+ \end{verbatim}
  
  Fungsi print_log() mengambil sebuah parameter x. Hal yang dilakukan pertama kali adalah memeriksa apakah nilai x lebih kecil atau sama dengan 0, yang dapat menghasilkan pesan kesalahan jika di proses dalam instruksi perintah selanjutnya maka diberi perintah return untuk keluar dari fungsi tersebut. Alur jalannya program segera dikembalikan ke pemanggil dari fungsi tersebut, dan instruksi - instruksi berikutnya tidak akan dijalankan. Perhatikan! untuk memanggil fungsi dari modul math harus menggunakan perintah import <nama-modul> .
 
@@ -74,7 +74,7 @@ hasil = math.log (x)
 Telah disebutkan sebelumnya, bahwa kita dapat memanggil suatu fungsi di dalam fungsi lainnya, dan Anda telah melihat beberapa contoh - contohnya. Kita juga dapat memanggil fungsi itu sendiri yang kemudian di kenal dengan istilah rekursif. Mungkin sekilas hal itu tidak memberi alasan mengapa rekursif ini adalah hal yang baik, tetapi akan berubah menjadi program yang menarik.Sebagai contohnya, lihat 
 fungsi berikut :
 
-\begin{equation}
+\begin{verbatim}
 def hitung_mundur (x):
 
 if x == 0 :
@@ -86,7 +86,7 @@ else :
 print x
 
 hitung_mundur (x-1)
- \end{equation}
+ \end{verbatim}
  
 fungsi diatas menampilkan program hitung mundur dari nilai parameter x yang diberikan, parameter tersebut seharusnya sebuah bilangan integer yang positif, dan jika nilai x sama dengan 0 akan menampilkan string yang memberitahu bahwa nilai x adalah 0.Kalau tidak nol(0) maka akan memanggil fungsi itu sendiri dan memberi nilai x-1 sebagai parameternya.
 
@@ -103,7 +103,7 @@ Jadi tampilan hasilnya akan seperti berikut.
 Sudah nol koq!
 
 Hal ini akan berbeda jika perintah print diletakkan setelah pemanggilan fungsi rekursif itu sendiri. Misalnya :
-\begin{equation}
+\begin{verbatim}
 def hitung_maju(x):
 
 if x == 0 :
@@ -112,14 +112,16 @@ print "Sudah nol, Mulai!"
 
 else :
 
- \end{equation}
- \begin{equation}
+ \end{verbatim}
+ 
+ 
+ \begin{verbatim}
 hitung_maju (x-1)
 
 print x
 
 maka tampilannya akan menjadi :
- \end{equation}
+ \end{verbatim}
 Sudah nol, Mulai!
 
 1
@@ -132,9 +134,10 @@ Sudah nol, Mulai!
 
 \subsection{Nested Loop}
 Nested Loop (Perulangan Bertingkat) adalah semua tipe perulangan yang dapat dipakai di dalam perulangan yang lain. Jadi Perulangan for bisa dipakai di dalam for yang lain, perulangan for bisa berada didalam perulangan while, perulangan while bisa dipakai di dalam perulangan while yang lain, dan perulangan while bisa di dalam perulangan for.
+
 \subsubsection{Contoh Penggunaan Nested Loop}
 Format nested loop \(for di dalam for\)
-\begin{equation}
+\begin{verbatim}
 For iterasi_var_1 in urutan_1:
 	Statements_untuk_perulangan_for_yang_di_luar
 ...
@@ -143,25 +146,25 @@ For iterasi_var_1 in urutan_2:
 ...
 Statements_untuk_perulangan_for_yang_di_luar
 ...
-\end{equation}
+\end{verbatim}
 
 Format nested loop \(while di dalam while\)
-\begin{equation}
+\begin{verbatim}
 While expressions:
 	Statements_untuk_perulangan_while_yang_di_dalam
 ...
 Statements_untuk_perulangan_whle_yang_di_luar
 ...
-\end{equation}
+\end{verbatim}
 
 Contoh :
-\begin{equation}
+\begin{verbatim}
 X = int(input(“Masukkan jumlah bariss: “))
 For i in range (x) :
 	For j in range(i+1):
 		Print(“*”, end=””)
 	Print()
-\end{equation}
+\end{verbatim}
 Saat di Run Module maka :
 Masukkan jumlah bariss: 5 \(inputkan 5\)
 *
@@ -173,7 +176,7 @@ Muncul 5 baris isi bintang
 
 \subsubsection{Nested Loop for Nested Data}
 Disini kita memiliki list data dari murid-murid. Jadi, setiap murid memiliki nama yang dipasangkan dengan list subyek(mata pelajaran) yang mereka ambil. Dan akan mencetak setiap nama murid, dan jumlah dari subyek (mata pelajaran) yang mereka ambil
-\begin{equation}
+\begin{verbatim}
 students = [
     ("John", ["TIK", "IPS"]),
     ("Vusi", ["Matematika", "TIK", "IPA"]),
@@ -183,7 +186,7 @@ students = [
 
 for (name, subjects) in students:
     print(name, "takes", len(subjects), "courses")
-\end{equation}
+\end{verbatim}
 Lalu, setelah dijalankan (run) maka akan tampil seperti ini:
 John takes 2 courses
 Vusi takes 3 courses
@@ -196,13 +199,13 @@ Perintah While pada pyton biasanya memiliki ciri berupa pengecekan kondisi dan p
 
 \subsection{Perulangan do-while}
 Perulangan do-while merupakan perulangan yang  mirip dengan perulangan while namun perbedaannya\cite{arfian2012rekayasa}, pada perulangan do-whiile, maka minimal instruksi akan dijalnkan sekali. Contoh statement do-while:
-\begin{equation}
+\begin{verbatim}
 int jumlah = 100;
 do{
     System.out.println(jumlah);
     jumlah++; // naikkan jumlah
 }while(jumlah <= 10);
-\end{equation}
+\end{verbatim}
 Jika program itu dijalankan, maka akan menghasilkan keluaran 100,  yang artinya walaupun kondisinya salah, namun minimal isi instruksi akan dijalankan sekali, hal ini disebabkan karena proses do-while berbeda dengan while,  yang dimana do-while pertama melakukan instruksi setelah itu baru mengecek kondisi, sedangkan while pertama mengecek kondisi baru melakukan instruksi. 
 
 \subsection{Perulangan \(for loop\)}
@@ -222,12 +225,12 @@ Perulangan for disebut juga counted loop \(perulangan yang terhitung\)
 Pengulangan for digunakan untuk pengulangan dengan muatan yang banyak\cite{van2007python}.
 keistimewaan perulanga pada for adalah , perulangan dapat di hentikan pada saat kondisi tertentu. pada python, statemen for bekerja mengulang berbagai macam tipe data sekuensial seperti pada list, string dan tuple
 Contohnya Seperti :
-\begin{equation}
+\begin{verbatim}
 for a in range(0, 10):
 	print a
-\end{equation}
+\end{verbatim}
 Hasil Outputnya :
-\begin{equation}
+\begin{verbatim}
 python for.py
 0
 1
@@ -239,14 +242,14 @@ python for.py
 7
 8
 9
-\end{equation}
+\end{verbatim}
 
 
 \subsection{While Loop}
 perulangan while disebut juga uncounted loop \(perulangan yang tak terhitung\)
 Pengulangan while biasanya digunakan untuk sesuatu yang ga pasti.
 Contohnya Seperti :
-\begin{equation}
+\begin{verbatim}
 a = 0
 while true:
 	if a < 10:
@@ -254,37 +257,37 @@ while true:
 		a = a + 1
 	else a >= 5:
 		break
-\end{equation}
+\end{verbatim}
 Hasil Outputnya :
-\begin{equation}
+\begin{verbatim}
 python while.py
 saat ini a bernilai: 0
 saat ini a bernilai: 1
 saat ini a bernilai: 2
 saat ini a bernilai: 3
-\end{equation}
+\end{verbatim}
 
 \subsection{For looping with list}
 Contohnya Seperti :
-\begin{equation}
+\begin{verbatim}
 hero_dota2_character = ["Mirana", "Axe", "Tusk"]
 for character in hero_dota2_character:
 	print character
-\end{equation}
+\end{verbatim}
 Hasil Outputnya :
-\begin{equation}
+\begin{verbatim}
 python for-list.py
 Mirana
 Axe
 Tusk
-\end{equation}
+\end{verbatim}
 
 \subsection{Infinite Loop}
 
 Infine Loop adalah kondisi dimana program atau statement akan terus  mengeksekusi tanpa berhenti. Kondisi tersebut dapat dihentikan dengan menekan tombol CTRL+C.
 
 Di bawah ini merupakan contoh program Infinite Loop :
-\begin{equation}
+\begin{verbatim}
 # Nama file: inifinite_loop.py
 # Program menampilkan tulisan Python tanpa henti
 
@@ -292,28 +295,28 @@ flag = 1
 
 while (flag): print ("Python")
 print ("Good bye!")
-\end{equation}
+\end{verbatim}
 
 \subsection{break and continue statements}
 Jeda digunakan untuk for loop atau while loop, sedangkan terus digunakan untuk melewati blok saat ini, dan kembali ke pertanyaan for atau while.
 Contoh pertama seperti :
-\begin{equation}
+\begin{verbatim}
 count = 0
 while True:
     print(count)
     count += 1
     if count >= 5:
         break
-		\end{equation}
+		\end{verbatim}
 Output pertama :
-\begin{equation}
+\begin{verbatim}
 python while.py
 0
 1
 2
 3
 4
-\end{equation}
+\end{verbatim}
 
 \subsection{Perintah break, continue dan else}
  Perintah break sama seperti dalam bahasa C, yaitu keluar dari ruang lingkup yang paling kecil dari
@@ -335,7 +338,7 @@ Penjelasannya adalah jika kondisi dalam perulangan for x in range\(2, n\) tidak 
 \subsubsection{Fungsi range\(\)}
 Jika ingin melakukan perulangan dengan sejumlah yang diinginkan, fungsi built-in range sangat membantu. Fungsi tersebut menghasilkan sejumlah indeks dari nilai yang telah ditentukan. 
 Contohnya :
-\begin{equation}
+\begin{verbatim}
 >>> range(15)
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 Ataupun sebagian angka yang diinginkan. Contohnya :
@@ -345,14 +348,14 @@ Ataupun sebagian angka yang diinginkan. Contohnya :
 [0, 3, 6]
 >>> range(0, 20, 3)
 [0, 3, 6, 9, 12, 15, 18]
-\end{equation}
+\end{verbatim}
  Contoh tersebut menunjukan kelipatan dari suatu interval bilangan yang mempunyai sintaks range\(<nilai-awal>, <nilai-akhir>, <kelipatan-angka>\).
 \subsubsection{Contoh penggunaan range\(nilai_awal,nilai_akhir,pencacah\)}
 Berikut ini contoh penggunaan range untuk menampilkan bilangan dari 1 – 100 dengan penambahan/pencacah 1 dengan menambahkan end=’ ’ agar bilangan tampil secara horizontal tidak pindah baris ke bawah
-\begin{equation}
+\begin{verbatim}
 for i in range(1, 101, 1) :
     print(i, end=' ')
-\end{equation}
+\end{verbatim}
 Lalu, setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seperti berikut ini :
 \ref{2_range}
 
@@ -364,7 +367,7 @@ Lalu, setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seper
     
 \subsubsection{Contoh penggunaan range\(nilai_awal,nilai_akhir\)}
 Berikut ini adalah contoh penggunaan range untuk menampilkan dari bilangan tertentu sampai bilangan tertentu dan menghitung banyaknya bilangan serta menghitung jumlah seluruh bilangan yang ada.
-\begin{equation}
+\begin{verbatim}
 awal=int(input('Set Nilai Awal = '))
 akhir=int(input('Set Nilai Akhir = '))
 
@@ -380,7 +383,7 @@ for i in range(awal,akhir+1) :
 
 print('Bilangan di atas ada \%d bilangan' \%count)
 print('Jumlah semua bilangan adalah \%d' \%summ)
-\end{equation}
+\end{verbatim}
 
 Setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seperti ini :
 \ref{2_range2}
@@ -393,10 +396,10 @@ Setelah perintah diatas dijalankan \(run\) maka akan tampil bilangan seperti ini
     
 \subsubsection{Contoh penggunaan range\(nilai_akhir\)}
 Ini adalah contoh penggunaan range untuk menampilkan bilangan dari 0 – 100 dengan menambahkan end=’ ’ agar bilangan tampil secara horizontal tidak pindah baris ke bawah
-\begin{equation}
+\begin{verbatim}
 for i in range(101):
 	print(i,end=' ')
-\end{equation}
+\end{verbatim}
 Disini nilai akhir menggunakan operator < bukan ≤ jadi untuk menampilkan sampai angka 100 nilai akhir harus dibuat menjadi 101. Dan setelah perintah diatas dijalankan \(run\) maka akan tampil hasil seperti berikut ini :
 \ref{2_range3}
 
@@ -413,7 +416,7 @@ Pernyataan break bisa digunakan untuk menghentikan sebuah loop. Dalam kasus sepe
 Oleh karena itu, bagian loop yang lain berjalan jika tidak terjadi pemutusan.
 
 Berikut adalah contoh untuk menggambarkan hal ini.
-\begin{equation}
+\begin{verbatim}
 script.py 
 digits = [0, 1, 5]
 
@@ -426,7 +429,7 @@ Output :
 1
 5
 No items left.
-\end{equation}
+\end{verbatim}
 
 \subsection{Penggunaan loop dengan else statement}
 Python mendukung untuk memiliki pernyataan lain yang terkait dengan pernyataan lingkaran
