@@ -1,3 +1,7 @@
+% Kelompok Class dan Fungsi pada Phyton
+% Rahmi Nurdin (1154109)
+% Mustari Muammar (1154108)
+% Fadillah Firdaus (1154103)
 \section{Phyton} 
 \subsection{Pengertian Phyton}
 Python merupakan bahasa pemrograman yang
@@ -21,7 +25,7 @@ Nokia. Saat ini Python juga telah diporting ke dalam
 mesin virtual Java dan .NET.
 Python didistribusikan dibawah lisensi
 OpenSource yang disetujui OSI (OpenSource
-\begin{verbatim}Initiatives), sehingga Python bebas digunakan,
+Initiatives), sehingga Python bebas digunakan,
 gratis digunakan, bahkan untuk produk-produk
 komersil.
 
@@ -43,24 +47,25 @@ Bahasa pemrograman Python dilengkapi dengan suatu fasilitas seperti shell di Lin
 penggunaan Python secara interaktif. Lokasi instalasi Python secara default pada distribusi Linux terletak di /usr/ bin/python.
 
 Untuk menjalankannya, dapat kita tuliskan python pada konsole Linux pengguna. $ python Apabila Python telah terinstalasi, 
-
-maka pengguna akan mendapatkan tampilan : Python 2.4.3 (#1, May 24 2008, 13:47:28) [GCC 4.1.2 20070626 (Red Hat 4.1.2-14)] on Type “help”, “copyright”, “credits” or “license” for more information.
+maka pengguna akan mendapatkan tampilan : Python 2.4.3 (#1, May 24 2008, 13:47:28) [GCC 4.1.2 20070626 (Red Hat 4.1.2-14)] on 
+Type “help”, “copyright”, “credits” or “license” for more information.
 
 Tanda >>> tersebut menandakan bahwa interpreter Python telah siap menerima perintah pengguna. Kita dapat langsung mengetikkan 
 ekspresi Python pada prompt >>> yang telah tersedia. Ekspresi Python dapat berupa ekspresi sederhana berupa assignment hingga 
 perintah yang lebih kompleks seperti deklarasi fungsi maupun class. Contoh-contoh dasar ekspresi yang dapat kita tuliskan pada 
 prompt Python adalah sebagai berikut : 
+
 \begin{verbatim}
 >>> a = 1 
 >>> a 
 1 
-\>>> b = 2 
+>>> b = 2 
 >>> b 
 2 
 >>> c = a + b 
 >>> c 
 3 
-n>>> d = a - b 
+>>> d = a - b 
 >>> d -1
 >>> print ‘Nilai d adalah : ‘, d
 Nilai d adalah : -1
@@ -87,9 +92,10 @@ fac(10)
 3628800 
 >>>
 \end{verbatim}
+
 Pada contoh diatas, tanda . . . merupakan secondary prompt, biasanya digunakan untuk kondisi atau kelanjutan dari ekspresi 
 sebelumnya. Apabila pengguna telah selesai menggunakan interpreter Python, dapat keluar dengan menekan Ctrl – D.
-
+	
 
 \section{Class}
 \subsection{Pengertian Class}
@@ -100,9 +106,14 @@ untuk memanipulasi keadaan tersebut (metoda/fungsi).
 
 \subsection{Area Pokok Class}
 Class memiliki tiga area pokok :
-1. Nama (dan stereotype)
-2. Atribut
-3. Method (operasi)
+\begin{enumerate}
+\item
+Nama (dan stereotype)
+\item
+Atribut
+\item
+Method (operasi)
+\end{enumerate}
 Atribut dan metoda dapat memiliki salah satu sifat berikut :
 • Private(-), tidak dapat dipanggil dari luar class yang bersangkutan
 • Protected(#), hanya dapat dipanggil oleh class yang bersangkutan dan anak-anak yang
@@ -110,24 +121,31 @@ mewarisinya
 • Public(+), dapat dipanggil oleh siapa saja
 
 \subsection{Hubungan Antar Class}
-1. Asosiasi, yaitu hubungan statis antar class. Umumnya menggambarkan class yang
+\begin{enumerate}
+\item
+Asosiasi, yaitu hubungan statis antar class. Umumnya menggambarkan class yang
 memiliki atribut berupa class lain, atau class yang harus mengetahui eksistensi
 class lain. Panah navigability menunjukkan arah query antar class.
 Lambang :
-2. Agregasi, yaitu hubungan yang menyatakan bagian (“terdiri atas..”) atau biasa
+\item
+Agregasi, yaitu hubungan yang menyatakan bagian (“terdiri atas..”) atau biasa
 disebut relasi mempunyai sebuah.
 Lambang :
-3. Composition, yaitu sebuah kelas tidak bisa berdiri sendiri dan harus merupakan
+\item
+Composition, yaitu sebuah kelas tidak bisa berdiri sendiri dan harus merupakan
 bagian dari class yang lain, maka class tersebut memiliki relasi composition.
 Lambang :
-4. Dependency, yaitu hubungan yang menunjukan operasi pada suatu kelas yang
+\item
+Dependency, yaitu hubungan yang menunjukan operasi pada suatu kelas yang
 menggunakan class yang lain.
 Lambang :
-5. Generalisasi / Pewarisan, yaitu hubungan hirarkis antar class. Class dapat
+\item
+Generalisasi / Pewarisan, yaitu hubungan hirarkis antar class. Class dapat
 diturunkan dari class lain dan mewarisi semua atribut dan metoda class asalnya
 dan menambahkan fungsionalitas baru, sehingga ia disebut anak dari class yang
 diwarisinya.
 Lambang
+\end{enumerate}
 
 
 
@@ -139,11 +157,15 @@ Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam
 Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain, 
 biasanya digunakan istilah function. 
 Beberapa hal yang perlu diperhatikan terkait dengan penggunaan fungsi : 
-1. deklarasi fungsi, dikatakan kata kunci def, berguna untuk membuat obyek fungsi dan selanjutnya melakukan assignment obyek fungsi
+\begin{enumerate}
+\item
+deklarasi fungsi, dikatakan kata kunci def, berguna untuk membuat obyek fungsi dan selanjutnya melakukan assignment obyek fungsi
 tersebut dengan sebuah nama.
-2. Pada istilah parameter y preferences dan passing parameter by value, maka bahasa pemrograman Python melakukan passing parameter
+\item
+Pada istilah parameter y preferences dan passing parameter by value, maka bahasa pemrograman Python melakukan passing parameter
 by assignment.
-3. Seperti pada variabel kita tidak perlu mendeklarasikan tipenya terlebih dahulu sehingga parameter pada fungsi bisa digunakan untuk 
+\item
+Seperti pada variabel kita tidak perlu mendeklarasikan tipenya terlebih dahulu sehingga parameter pada fungsi bisa digunakan untuk 
 berbagai tipe obyek yang sesuai.
 Bentuk umum :
 def fungsi(argumen1, argumen2, ..., argumen n):
@@ -155,6 +177,7 @@ Keterangan :
 Fungsi diawali dengan kata kunci def, diikuti
 nama fungsi, boleh diikuti parameter formal yang
 ditulis dalam tanda kurung, dan deklarasi fungsi ditutup dengan tanda titik dua (:).
+\end{enumerate}
  
 
 \subsection{FUNGSI-FUNGSI UMUM}
