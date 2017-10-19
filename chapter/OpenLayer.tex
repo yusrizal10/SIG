@@ -12,8 +12,8 @@
 \maketitle
 
 \section{deskripsi openlayer}
-OpenLayers adalah library Javascript murni yang digunakan untuk menampilkan data peta di berbagai web browser, tanpa server side dependencies.
-OpenLayer mengimplementasikan JavaScript API untuk membangun sebuah rich web-based geographic apllications yang menyerupai Google maps dan MSN Virtual Earth APIS.
+OpenLayers adalah library Javascript murni yang dipakai untuk menampilkan sebuah data peta di setiap web browser, tanpa server side dependencies.
+OpenLayer mengimplementasikan JavaScript API untuk membangun sebuah rich web-based geographic apllications yang hampir sama seperti Google maps dan MSN Virtual Earth APIS.
 Open Layer adalah Software, yang dibangun oleh komunitas Open Source.
   
 OpenLayers Syntax
@@ -31,8 +31,8 @@ Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers.
   Fungsi diatas adalah fungsi prototype dar openlayer. Property yang akan diset dan diakses telah terdukumentasi di bagian API   Dokumentation.
 
 \subsection{Base Layers}
- Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang dapat diaktifkan setiap saat.
- Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang ada dalam peta. 
+ Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang bisa diaktifkan setiap saat.
+ Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang terdapat dalam peta. 
  Base Layer atau bukan, hal ini ditentukan oleh property isBaseLayer pada layer. Kebanyakan Layer raster memiliki Properti isBaseLayer yang diset dengan true secara default. 
  Ini bisa diganti pada layer option. Base layers selalu ditampilkan dibawah overlay layers.
 
@@ -59,9 +59,9 @@ Sebagai informasi API selengkapnya lihat pada KaMapCache Layer API Docs.\\
 \textbf{MapGuide} \\
 Sebagai informasi API selengkapnya lihat pada MapGuide Layer API Docs.\\
 \textbf{MapServer} \\
-Ini tidak diperlukan untuk berinteraksi dengan Map Server. Secara umum, lebih disukai daripada Layer MapServer, karena MapServer mengekspos sebagian besar fungsi CGI dala modus WMS.
-Lapisan MapServer seing dapat menyebankan peta yang tampaknya bekerja, tetapi masih bermasalah pada proyeksi atau misconfigurasi seruma lainnya.
-Dalam menggunakan WMS kita harus memilika alas an yang kuat dibandingkan dengan menggunakan MapServer.
+Ini tidak diperlukan untuk berinteraksi dengan Map Server. Secara umum, lebih diminati daripada Layer MapServer, sebab MapServer mengekspos sebagian besar fungsi CGI dala modus WMS.
+Lapisan MapServer sering dapat menyebabkan peta yang tampaknya bekerja, tetapi masih bermasalah pada proyeksi atau misconfigurasi seruma lainnya.
+Dalam menggunakan WMS kita harus memiliki alasan yang kuat dibandingkan dengan menggunakan MapServer.
 Jika kita menggunakan layer MapServer, dan peta sedang diulang beberapa kali, ini menunjukkan bahwa kita belum melakukan konfigurasi dengan peda dan masih dalam proyeksi yang berbda.
 openLayer tidak dapat membaca informasi dari MAPFILE, dan harus dikonfigurasi secara explicit.\\
 
@@ -81,16 +81,16 @@ map.addLayer(layer);
 GeoRSS akan  lebih baik menggunakan layer GML dengan SelectFeature Control dibandingkan dengan Layer GeoRSS yang tidak menggunakan layer GML.
 
 \subsection {Markers}
-Markers base layer sangat mudah diaplikasikan dan pemakaian fungsi addMarkers untuk menambah marker pada layer. Makaers hanya mendukung point/ titik.
+Markers base layer sangat mudah diaplikasikan dan penggunaan fungsi addMarkers untuk menambah marker pada layer. Makaers hanya mendukung point/ titik.
 
 \subsection {Text}
-Text layer merupakan data-data dengan format Teks dan menampilkan hasilnya sebagai marker yang dapat diklik. Layer teks merupakan subclass dari Marker layer, dan tidak mendukung format garis atau polygon.
+Text layer merupakan data-data dengan format Teks dan menampilkan hasilnya sebagai marker yang dapat diklik. Layer teks adalah subclass dari Marker layer, dan tidak mendukung format garis atau polygon.
 
 \subsection {Vector}
 Vector layer adalah basis dari geometry lanjutan pada class open layer seperti (GML dan subclass WFS). Ketika membuat feature pada pengkodean javaScript, menggunakan vector layer secara langsung adalah cara yang benar.
 Untuk informasi API selengkapnya lihat pada Vector Layer API Docs.
 \subsection {WFS}
-Untuk informasi API selengkapnya lihat pada WFS Layer API Docs.
+Untuk informasi API selengkapnya dapat di lihat pada WFS Layer API Docs.
 Generic Subclasses
 EventPane
 FixedZoomLevels
@@ -99,7 +99,7 @@ HTTPRequest
 SphericalMercator
 
 \subsubsection {Controls}
-Controls adalah OpenLayers classes yang mempengaruhi kondisi dari peta atau menampilakan informasi tambahan kepada user. Control sebagai antar mukan utama dengan peta.
+Controls adalah OpenLayers classes yang mempengaruhi kondisi dari peta atau menampilakan informasi tambahan kepada user. Control sebagai antar muka utama dengan peta.
 
 
 \end{document}
