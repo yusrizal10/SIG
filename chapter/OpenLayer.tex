@@ -139,9 +139,8 @@ background-repeat: no-repeat;
 }
 
 \subsubsection {Customizing an Existing Panel}
-Panel ada beberapa – seperti EditingToolbar atau PanPanel – memiliki beberapa kontrol yang digabungkan, tetapi tidak selalu keharusan untuk menggunakan semua kontrol. Namun, relatif sederhana untuk membuat kontrol yang meniru perilaku kontrol ini. Misalnya, jika Anda ingin membuat kontrol toolbar editing yang hanya memiliki kemampuan untuk menggambar garis, Anda bisa melakukannya dengan kode berikut:
-
-var layer = new OpenLayers.Layer.Vector();
+Beberapa panel  memiliki beberapa kontrol yang digabungkan, tapi tidak semua panel memiliki kontrol. Namun, untuk membuat kontrol relatif sederhana. Misalnya, untuk membuat kontrol toolbar editing yang mempunyai fungsi menggambar garis, Anda bisa melakukannya dengan kode berikut:
+var layer = new OpenLayers.Layer.Vector();
 
 var panelControls = [
 
@@ -155,7 +154,7 @@ OpenLayers.Handler.Path,
 
 ];
 
-var toolbar = new OpenLayers.Control.Panel({
+var toolbar = new OpenLayers.Control.Panel({
 
 displayClass: ‘olControlEditingToolbar’,
 
@@ -166,6 +165,29 @@ defaultControl: panelControls[0]
 toolbar.addControls(panelControls);
 
 map.addControl(toolbar);
+
+
+\section{Map Controls}
+\subsection{ArgParser}
+ 
+Membawa argumen URL, dan update peta.
+Dalam kontrol ArgParser pada sistemharus terdapat ‘getCenter ()’ supaya dapat mengembalikan nilai null sebelum mengacu pada peta untuk pertama kalinya. 
+Berikut sintaxnya :
+var map = new OpenLayers.Map(‘map’);
+
+var layer = new OpenLayers.Layer();
+
+map.addLayer(layer);
+
+// Ensure that center is not set
+
+if (!map.getCenter()) {
+
+map.setCenter(new OpenLayers.LonLat(-71, 42), 4);
+
+}
+
+kontrol ArgParser secara default = enabled.
 
 
 
