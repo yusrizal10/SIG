@@ -139,6 +139,33 @@ background-repeat: no-repeat;
 }
 
 \subsubsection {Customizing an Existing Panel}
+Panel ada beberapa – seperti EditingToolbar atau PanPanel – memiliki beberapa kontrol yang digabungkan, tetapi tidak selalu keharusan untuk menggunakan semua kontrol. Namun, relatif sederhana untuk membuat kontrol yang meniru perilaku kontrol ini. Misalnya, jika Anda ingin membuat kontrol toolbar editing yang hanya memiliki kemampuan untuk menggambar garis, Anda bisa melakukannya dengan kode berikut:
+
+var layer = new OpenLayers.Layer.Vector();
+
+var panelControls = [
+
+new OpenLayers.Control.Navigation(),
+
+new OpenLayers.Control.DrawFeature(layer,
+
+OpenLayers.Handler.Path,
+
+{‘displayClass’: ‘olControlDrawFeaturePath’})
+
+];
+
+var toolbar = new OpenLayers.Control.Panel({
+
+displayClass: ‘olControlEditingToolbar’,
+
+defaultControl: panelControls[0]
+
+});
+
+toolbar.addControls(panelControls);
+
+map.addControl(toolbar);
 
 
 
