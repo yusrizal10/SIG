@@ -219,15 +219,15 @@ Projection Utility (optional).
 
 \subsubsection{Format yang Digunakan Dalam Mengcreate Data}
 \begin{enumerate}
-     \item SHP => dalam sebuah format SHP, terdapat 3 tipe shape file yaitu Point, Polyline dan Polygon.
-     \item DBF => dalam sebuah format DBF, ada 3 field yang digunakan. Yang mana, Field pertama  berisikan   atribut    tabel, dan                        field kedua yang berisikan method yang dapat digunakan, serta field yang ketiga berfungsi untuk dapat menyimpan                          nama sebuah shapefile yang sebelumnya telah diinputkan.Dan data geospasial tersebut kemudian disimpan dengan menggunakan method a.save \‘file.shp\’.
+     \item SHP = dalam sebuah format SHP, terdapat 3 tipe shape file yaitu Point, Polyline dan Polygon.
+     \item DBF = dalam sebuah format DBF, ada 3 field yang digunakan. Yang mana, Field pertama  berisikan   atribut    tabel, dan                        field kedua yang berisikan method yang dapat digunakan, serta field yang ketiga berfungsi untuk dapat menyimpan                          nama sebuah shapefile yang sebelumnya telah diinputkan.Dan data geospasial tersebut kemudian disimpan dengan menggunakan method a.save ‘file.shp’.
 \end{enumerate}
 
 \subsubsection{Cara Menambahkan Record}
 \begin{itemize}
-    \item Pada Point = \‘a.point(x,y)\’ ataupun \‘a.point(x,y,0,0)\’ dan dengan domain x dan y merupakan koordinat.
-    \item Pada Polyline = \‘a.poly(shapefile=3,parts=[[[x1,y1,z1,w1],[ x2,y2,z2,w2],[……]]])\’
-    \item Pada Polygon = \‘a.poly)shapefile=5,parts=[[[…….],[…….]]])\’
+    \item Pada Point = $‘a.point(x,y)$ ataupun $a.point(x,y,0,0)$ dan dengan domain x dan y merupakan koordinat.
+    \item Pada Polyline = $a.poly(shapefile=3,parts=[[[x1,y1,z1,w1],[ x2,y2,z2,w2],[……]]])$
+    \item Pada Polygon = $a.poly)shapefile=5,parts=[[[…….],[…….]]])$
 \end{itemize}
 
 \subsubsection{Tipe Field Pada Atribut Shapefile}
