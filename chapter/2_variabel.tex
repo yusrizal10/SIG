@@ -29,50 +29,52 @@ Variab membutuhkan pengenal atau bisa disebut dengan identifier yg didefinisikan
 6. panjanh maksimal yaitu 32 karakter
 
 Variabel merupakan nama yang menunjukkan nilaitertentu. Dalam Pyton, untuk membentuk variabel cukup memberi nama pada nlai yang kita inginkan. Statement yang melakukan hal tersebut disebut assignment.
-\begin{equation}
+\begin{verbatim}
 >>> pesan = “Hi, Apa kabar D43A”
 >>> n = 20
 >>> pi = 3.14159
-\end{equation}
+\end{verbatim}
 Contoh diatas menunjukkan tiga buah assigment. Contoh pertama memberi nilai “Hi, Apa kabar D43A” pada variabel pesan, kedua memberi nilai 20 pada variabel n, dan ketiga memberi sebuah nilai 3.14159 pada variabel pi.\cite{utami2004logika}
 
 Variabel akan memiliki tipe  sesuai dengan nilainya.
-\begin{equation}
+\begin{verbatim}
 >>>type(mesg)
 <Type ‘string’>
 >>> type (n)
 <type ‘int’>
 >>> type (pi)
 <type ‘float>
-\end{equation}
+\end{verbatim}
 
 Contoh lainnya:
+\begin{verbatim}
 >>>menit=59
 >>>menit/60
 0
+\end{verbatim}
 Nilai yang telah diberikan oleh si variabel menit itu adalah 59, jika kita hitung, maka pembagiannya 59 oleh 60 akan menghasilkan angka 0,9833333. Tapi, dalam Python memberi nilai 0. Hal ini terjadi karena bahasa pemrograman Python menggunakan pembagian integer. Jika kedua operan adalah integer, makan hasilnya itu harus berupa integer juga, dan pembagian integer itu selalu dibulatkan ke bawah
 
 Nilai variabel dapat tampil dengan perintah print:
-\begin{equation}
+\begin{verbatim}
 >>> print pesan
 Hi, Apa kabar D43A
 >>> print n
 20
 >>>print pi
 3.14159
-\end{equation}
+\end{verbatim}
 
 Akan tetapi, jika pada command-line, maka dapat langsung dipanggil nama variabel tersebut :
-\begin{equation}
+\begin{verbatim}
 >>> pesan
 Hi, Apa kabar D43A
-\end{equation}
+\end{verbatim}
 
 Perintah dari print juga dapat memberi lebih dari satu nilai dalam satu baris:
-\begin{equation}
+\begin{verbatim}
 >>> print “Nilai dari pi adalah “,pi
 Nilai dari pi adalah 3.14159
-\end{equation}
+\end{verbatim}
 
 koma untuk memisahkan nilai dan variabel.\cite{utami2004logika}
 
@@ -98,22 +100,24 @@ Variabel pada Python memiliki beberapa aturan seperti :
 
 Variabel adalah sebuah nama yang selalu menunjukkan nilai tertentu. Dalam bahasa pemrograman Python, untuk membentuk sebuah variabel itu cukup hanya memberi nama pada nilai yang akan dibuat. Ini disebut dengan Assignment.
 Contoh : 
+\begin{verbatim}
 >>>pesan="Halo, Semuanya"
-Contoh di atas membuktikan bahwa itu adalah sebuah assignment, yang memberi kan sebuah nilai "Halo, Semuanya".\cite{Utami2004logika}
+\end{verbatim}
+Contoh di atas membuktikan bahwa itu adalah sebuah assignment, yang memberi kan sebuah nilai \"Halo, Semuanya".\cite{Utami2004logika}
 
 contoh lainnya:
-\begin{equation}
+\begin{verbatim}
 >>> c = 2 # c bilangan bertipe integer
 >>> print c
 2
 >>> c = c * 2.0 # Sekarang c bilangan bertipe float
 >>> print c
 4.0
-\end{equation}
+\end{verbatim}
 
 ke suatu object dalam memory. Untuk lebih jelasnya
 dapat kita lihat contoh berikut ini :
-\begin{equation}
+\begin{verbatim}
 >>> a = 2
 >>> b = 3
 >>> a,b = b,a
@@ -122,10 +126,10 @@ dapat kita lihat contoh berikut ini :
 >>> b
 2
 >>>
-\end{equation}
+\end{verbatim}
 
 Beberapa bentuk if adalah sebagai berikut :
-\begin{equation}
+\begin{verbatim}
 a. if tunggal
 if x == 1:
 print ‘x bernilai 1’
@@ -145,7 +149,7 @@ d. if didalam if
 if x == 1:
 if y == 1:
 print ‘x dan y bernilai 1’
-\end{equation}
+\end{verbatim}
 
 Tulisan a = 2 artinya kita memberi nilai pada variabel a dengan angka 2 yang bertipe integer
 (bilangan bulat). Statemen berikutnya adalah melakukan operasi perkalian a ∗ 2.0 lalu hasilnya
@@ -156,7 +160,7 @@ sekarang variabel a memiliki tipe data float,
 suatu tipe dapat berkaitan dengan bilangan pecahan atau desimal. 
 Nilai variabel b menghasilkan nilai 4.0 atau empat\ref{pythonvariable}.
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=0.25\textwidth]{figures/pythonvariable.png}
+    \centerline{\includegraphics[width=0.25\textwidth]{figures/pythonvariable.png}}
     \caption{gambar yang menggambarkan keadaan variabel pada python}
     \label{pythonvariable}
     \end{figure}
@@ -198,50 +202,52 @@ Variabel atau peubah memiliki suatu symbol yang dapat dimuati oleh sembarang him
 Nama variabel atau disebut juga dengan identifier dalam bahasa pemrograman Python juga dapat berupa kumpulan dari huru (letter) maupun angka (digit) yang dengan cara membedakan huruf kecil dan juga huruf besar, Karakter pertama pada identifier harus berupa huruf dan juga perlu diketahui bahwa penggunaan karakter garis bwah itu juga dapat digunakan.
 Kesalahan sintax akan muncul apabila dalam penamaan sebuah variabel itu tidak sesuai dengan aturan yang ada.
 Contoh :
+\begin{verbatim}
 >>>876swafm="Radio Swa"
 SyntaxError: invalid syntax
 >>>more$=1000000
+\end{verbatim}
 SyntaxError: invalid syntax
 Baris pertama itu salah, karena pada 876swafm karakter pertamanya itu bukanlah huruf. Pada baris ketiga juga salah karena pada more$ berisi karakter dolar.
 
 Tidak seperti pemrograman pada lainnya, variabel pada Python tidak harus dideklarasikan secara eksplisit. Pendeklarasian variabel terjadi secara otomatis ketika kita memberikan sebuah nilai pada suatu variabel. Tanda sama dengan (=) dapat digunakan untuk memberikan value/nilai pada suatu variabel. Operan di sebelah kiri dari tanda (=) adalah nama variabel, sedangkan operan yang sebelah kanan dari tanda (=) adalah nilai yang diberikan pada variabel.\cite{utamipemrograman}
 
-\begin{equation}
+\begin{verbatim}
 >>>harga = 100
 >>>diskon = 30
 >>>harga - diskon
 70
-\end{equation}
+\end{verbatim}
 
 Pada contoh di atas tersebut, 100 dan 30 adalah suatu nilai yang diberikan untuk variabel harga dan variabel diskon itu. Sedangkan pernyataan dari harga-diskon akan menghitung selisih antara harga dengan diskon. Variabel juga dapat menyimpan suatu nilai berupa teks (dibaca string).
 
-\begin{equation}
+\begin{verbatim}
 >>>a = 'sekolah'
 >>>b = 'dasar'
 >>>a + b
 'sekolahdasar'
-\end{equation}
+\end{verbatim}
 
 Variabel juga bisa menyimpan dua nilai string atau lebih dengan menggunakan operator (+).
 
-\begin{equation}
+\begin{verbatim}
 >>>c = 'Py' + 'thon'
 >>>c
 'Python'
-\end{equation}
+\end{verbatim}
 
 Jika kita telah melakukan penilaian pada variabel, kita dapat menggunakan variabel tersebut pada yang lainnya.
 
-\begin{equation}
+\begin{verbatim}
 >>>a = 2
 >>>a = a + 3
 >>>a
 5
-\end{equation}
+\end{verbatim}
 
 Selain itu, juga dapat memberikan sebuah nilai untuk beberapa variabel.
 
-\begin{equation}
+\begin{verbatim}
 >>>p=q=r=1
 >>>p
 1
@@ -249,11 +255,11 @@ Selain itu, juga dapat memberikan sebuah nilai untuk beberapa variabel.
 1
 >>>r
 1
-\end{equation}
+\end{verbatim}
 
 Selain itu, kita dapat memberikan beberapa nilai untuk beberapa variabel (disebut multiple assignment).
 
-\begin{equation}
+\begin{verbatim}
 >>>x, y, z = 1, 2, 'belajar Python'
 >>>x
 1
@@ -261,11 +267,11 @@ Selain itu, kita dapat memberikan beberapa nilai untuk beberapa variabel (disebu
 2
 >>>z
 'belajar Python'
-\end{equation}
+\end{verbatim}
 
 Bentuk lain dari sebuah contoh di atas, kita juga dapat menggunakan tanda kurung-buka atau kurung-tutup.
 
-\begin{equation}
+\begin{verbatim}
 >>>(x, y, z) = (1, 2, 'Belajar Sebuah Python')
 Cara di atas, dapat juga kita gunakan untuk pertukaran nilai variabel.
 >>>(x, y) = (10, 20)
@@ -278,11 +284,11 @@ Cara di atas, dapat juga kita gunakan untuk pertukaran nilai variabel.
 20
 >>>y
 10
-\end{equation}
+\end{verbatim}
 
 Contoh-contoh  pada prompt Python adalah sebagai berikut 
 
-\begin{equation}
+\begin{verbatim}
 >>> a = 1
 >>> a
 1
@@ -302,9 +308,9 @@ Nilai c adalah : 3
 >>> e
 Traceback (most recent call last):
 File “<stdin>”, line 1, in ?
-\end{equation}
+\end{verbatim}
 
-\begin{equation}
+\begin{verbatim}
 Python yang sederhana : 
 $ vi contoh-script-01.py
 #! /usr/bin/python
@@ -312,7 +318,7 @@ a = 1
 print ‘Nilai a adalah : ‘ , a
 simpan script Anda dengan : 
 :wq
-\end{equation}
+\end{verbatim}
 
 Secara default, script Python isimpan dengan ekstensi .py
 
@@ -326,7 +332,7 @@ Secara default, script Python isimpan dengan ekstensi .py
 Ketika sebuah atau suatu variabel tidak dibutuhkan lagi, maka kita bisa menghapusnya dengan fungsi del().
 Contoh:
 
-\begin{equation}
+\begin{verbatim}
 >>> nama = "petanikode"
 >>> print nama
 petanikode
@@ -336,7 +342,7 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'nama' is not defined
 >>>
-\end{equation}
+\end{verbatim}
 
 Pada perintah terakhir, kita akan mandapatkan NameError. Artinya variabel tidak terdapat di dalam memori alias sudah dihapus.
 
@@ -373,7 +379,7 @@ jum_brg merupakan tipe data integer harga_satuan, harga_beli, total_hrg_brg bert
 
 Langkah 3 : Kode program
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=0.50\textwidth]{figures/code.png}
+    \centerline{\includegraphics[width=0.50\textwidth]{figures/code.png}}
     \caption{kode program}
     \label{code}
     \end{figure}
@@ -382,7 +388,7 @@ Langkah 3 : Kode program
 Mencetak nilai dari sebuah variabel menggunakan pernyataan print, perhatikan 
 contoh berikut ini. 
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=0.25\textwidth]{figures/konversi.png}
+    \centerline{\includegraphics[width=0.25\textwidth]{figures/konversi.png}}
     \caption{Tampilan Contoh Konversi Tipe Data String dan Integer}
     \label{Tipe Data String dan Integer}
     \end{figure}
@@ -390,17 +396,17 @@ contoh berikut ini.
 \subsection{Bilangan integer dan float}
 Perbedaan tipe bilangan ini bisa dapat jadi potensi menimbulkan masalah. 
 Ini contohnya
-\begin{equation}
+\begin{verbatim}
 >>> 1/2 # bilangan integer dibagi bilangan integer
 0 # tentu saja kita ini keliru, mestinya 0.5
 >>> 1/2.0 # bilangan integer dibagi bilangan float
 0.5 # kali ini hasilnya tepat
-\end{equation}
+\end{verbatim}
 
 \subsection{List}
 List adalah sejumlah atau suatu object yang dipisahkan oleh tanda koma (,) dan diapit oleh kurung siku
 ([ ]). Begini contohnya:
-\begin{equation}
+\begin{verbatim}
 >>> a = [1.0, 2.0, 3.0] # membuat list
 >>> a.append(4.0) # tambahkan 4.0 kedalam list
 >>> print a
@@ -410,7 +416,7 @@ List adalah sejumlah atau suatu object yang dipisahkan oleh tanda koma (,) dan d
 [0.0, 1.0, 2.0, 3.0, 4.0]
 >>> print len(a) # menentukan panjang list
 5
-\end{equation}
+\end{verbatim}
 Jika kita memberikan suatu statemen c = b, maka itu tidak berarti bahwa variabel c terpisah dengan
 variabel a. Di python, statemen tersebut dapat diartikan hanya sebagai pemberian nama lain
 (alias) kepada variabel a. Artinya, perubahan yang terjadi baik itu di a ataupun di b, maka hasil
@@ -419,7 +425,7 @@ Untuk meng-copy a secara independen, gunakan statemen d = a[:].
 Berikut adalah beberapa contoh lambang atau tanda untuk melengkapi setiap statement pada
 variabel yang ada\ref{operate}.
 \begin{figure}[ht]
-    \centerline{\includegraphics[width=0.25\textwidth]{figures/operate.png}
+    \centerline{\includegraphics[width=0.25\textwidth]{figures/operate.png}}
     \caption{gambar tanda operasi pada python}
     \label{operate}
     \end{figure}
