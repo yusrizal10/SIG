@@ -34,20 +34,20 @@ Seringkali pengguna harus menuliskan ekspresi yang cukup kompleks dan akan digun
 Untuk keperluan penulisan ekspresi kompleks, kita dapat membuatnya dalam sebuah script yang dibantu dengan adanya teks editor. 
 Penulis menggunakan vi teks editor default yang terdapat pada distro GNU/Linux. Pada contoh berikut ini, 
 kita dapat melihat contoh script Python yang sederhana : 
-$ vi contoh-script-01.py #! /usr/bin/python a = 1 print 
+\$ vi contoh-script-01.py \#! /usr/bin/python a = 1 print 
 ‘Nilai a adalah : ‘ , a simpan script Anda dengan : :wq! Secara default, script Python yang Anda buat akan disimpan dengan ekstensi .py . 
 Anda dapat melakukan eksekusi script yang telah Anda buat tersebut dengan cara : 
-$ python contoh-script-01.py 
+\$ python contoh-script-01.py 
 Atau : Memberikan permission x (executable) sehingga script tersebut dapat dijalankan, 
-dengan perintah : $ chmod +x contoh-script-01.py $ ./contoh-script-01.py
+dengan perintah : \$ chmod +x contoh-script-01.py \$ ./contoh-script-01.py
 
 
 \subsection{INTERPRETER PYTHON}
 Bahasa pemrograman Python dilengkapi dengan suatu fasilitas seperti shell di Linux, sehingga memungkinkan kita untuk mencoba 
 penggunaan Python secara interaktif. Lokasi instalasi Python secara default pada distribusi Linux terletak di /usr/ bin/python.
 
-Untuk menjalankannya, dapat kita tuliskan python pada konsole Linux pengguna. $ python Apabila Python telah terinstalasi, 
-maka pengguna akan mendapatkan tampilan : Python 2.4.3 (#1, May 24 2008, 13:47:28) [GCC 4.1.2 20070626 (Red Hat 4.1.2-14)] on 
+Untuk menjalankannya, dapat kita tuliskan python pada konsole Linux pengguna. \$ python Apabila Python telah terinstalasi, 
+maka pengguna akan mendapatkan tampilan : Python 2.4.3 (\#1, May 24 2008, 13:47:28) [GCC 4.1.2 20070626 (Red Hat 4.1.2-14)] on 
 Type “help”, “copyright”, “credits” or “license” for more information.
 
 Tanda >>> tersebut menandakan bahwa interpreter Python telah siap menerima perintah pengguna. Kita dapat langsung mengetikkan 
@@ -77,7 +77,6 @@ File “<stdin>”, line 1, in ?
 NameError: name 'e' is not defined
 >>>
 Sedangkan untuk ekspresi Python yang lebih kompleks adalah sebagai berikut : 
-
 >>> a = 1 
 >>> if a == 1:
 ... print “Nilai a adalah 1” ...
@@ -87,12 +86,10 @@ Nilai a adalah 1
 ... return 1 
 ... else: 
 ... return n * fac(n-1) 
-
 ... >>> fac(8) 
 40320 >>> 
 fac(10) 
 3628800 
-
 >>>
 \end{verbatim}
 
@@ -118,15 +115,11 @@ Atribut
 Method (operasi)
 \end{enumerate}
 Atribut dan metoda dapat memiliki salah satu sifat berikut :
-\begin{itemize}
-\item
-Private(-), tidak dapat dipanggil dari luar class yang bersangkutan
-\item
-Protected(#), hanya dapat dipanggil oleh class yang bersangkutan dan anak-anak yang
+• Private(-), tidak dapat dipanggil dari luar class yang bersangkutan
+• Protected(\#), hanya dapat dipanggil oleh class yang bersangkutan dan anak-anak yang
 mewarisinya
-\item
-Public(+), dapat dipanggil oleh siapa saja
-\end{itemize}
+• Public(+), dapat dipanggil oleh siapa saja
+
 \subsection{Hubungan Antar Class}
 \begin{enumerate}
 \item
@@ -158,7 +151,7 @@ Lambang
 
 
 \section{Fungsi}
-Dalam menulis program, tentunya kita akan /& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali, dengan beberapa
+Dalam menulis program, tentunya kita akan \& code yang pernah kita tulis sebelumnya, pastilah akan kita gunakan kembali, dengan beberapa
 nilai yang berbeda. Tentu saja kita tidak mungkin menuliskan kembali kode yang ingin dipanggil ulang tersebut. 
 Solusinya, kita dapat mengelompokkan kode-kode yang sering dipanggil ulang dalam suatu kelompok kode yang disebut fungsi. 
 Selain itu juga Anda dapat memecah masalah besar menjadi masalah-masalah yang lebih kecil. Dalam C atau bahasa pemrograman lain, 
@@ -271,12 +264,12 @@ yang diapit oleh tanda kurung dan diakhir dingan tanda titik dua :. Baris beriku
 jika fungsi dipanggil.
 
 \begin{equation}
-# lat15.py
+\# lat15.py
 
 def halo_dunia():
     print 'Halo Dunia!'
-halo_dunia()  # memanggil fungsi halo_dunia
-halo_dunia()  # fungsi halo_dunia dipanggil lagi
+halo_dunia()  \# memanggil fungsi halo_dunia
+halo_dunia()  \# fungsi halo_dunia dipanggil lagi
 \end{equation}
 
 
