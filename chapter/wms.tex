@@ -6,10 +6,10 @@
 %Dini Islamiani Lestari-1154039
 %Nur Rahmawati-115124
 
-/section{deskripsi wms}
-  Web Map Service adalah salah satu jenis penggambarakn OGC Layanan model layanan web dan ia menyedian platfrom
+/section{Deskripsi WMS}
+  Web Map Service adalah salah satu jenis penggambarakn OGC Layanan model layanan web dan ia menyediakan platfrom
 multi-interoperability.Karya ini menghadirkan sebuah metode untuk menerapkan layanan peta web OGC berdasarkan teknik
-Layanan Wen dan memperkenalkan proses terperinci.
+Layanan Web dan memperkenalkan proses terperinci.
   
     Web Map Service (wms) memberikan informasi kepada pengguna internet oleh tata ruang peta gambar.Umumnya,yang tersimpan
 di dalam tata ruang data tersebut data vektor itu adalah panjang untuk menciptakan data vektor peta gambar.
@@ -31,6 +31,7 @@ kunci masalah permintaan .Pertama , kami menghadirkan metode untuk menghitung ti
 Kedua , node beban kemampuan yang dievaluasi .Kemudian , penulis hadirmetode menurut untuk membelah seluruh.
 Kertas ini juga membahas algoritma kinerja pelaksanaan .
 
+\subsection{Pengenalan peta map service}
    Pengenalan Peta map Service (WM)s menghasilkan peta secara spasial direferensikan data dari informasi geografis secara dinamis. 
 Standar internasional ini mendefinisikan sebuah "peta" untuk menjadi penggambaran tentang informasi geografis 
 sebagai file gambar digital cocok untuk ditampilkan pada layar komputer. Peta tidak data itu sendiri. 
@@ -42,7 +43,7 @@ elemen-elemen grafis berbasis vektor dalam Scalable Vector Grafis (SVG) atau Kom
 Data WMS biasanya digunakan untuk membandingkan data yang sudah kita buat dengan data yang dibuat oleh pihak lain, atau juga sering kali
 digunakan sebagai pelengkap dalam pembuatan peta.
 
-Interoperability antara WM dan grid data lingkungan
+\subection{Interoperability antara WM dan grid data lingkungan}
 
 Dalam WMS, unit penting informasi merupakan lapisan. Setiap lapisan dapat ditampilkan dalam jumlah Gaya, setiap dikaitkan dengan sebuah
 legenda. Lapisan mungkin yang dapat ditampilkan atau non-yang dapat ditampilkan dan bisa diatur hierarchically. Tiga operasi utama dapat
@@ -57,6 +58,11 @@ dan perkiraan - kemudian secara efisien menghasilkan citra peta dalam ribuan sis
 
 Tujuan ncWMS ia adalah untuk dapat menghasilkan beberapa jenis visualisasi berbeda (maps, transects bagian vertikal, dsb.) secara
 efisien data dari diselenggarakan dalam format file yang berbeda dan mengkoordinir sistem referensi (CRSs).
+\begin{figure}[ht]
+\centerline{\includegraphics[width=1\textwidth]{figure/wmsimage.jpg}}
+\caption{Menjeleskan tentang Interoperability antara WMS dan grid data lingkungan}	
+\label{Web Map Service}
+\end{figure}
 
 NcWMS diimplementasikan sebagai aplikasi web Java, dikemas sebagai arsip web (WAR) untuk file yang standar penempatan wadah servlet
 seperti Apache Tomcat. Java telah dipilih sebagai bahasa menerapkan karena banyak penyedia data lingkungan sudah menggunakan teknologi
