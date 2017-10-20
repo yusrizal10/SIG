@@ -27,15 +27,18 @@ pull request
 
 
 3D
-1. openlayer
-2. leafletjs
-3. wms
-4. qgis
+1. Modules 1 2
+2. Files I/O 1 2 
+3. Exceptions 1 2 
+4. Clasess/Object 3 4 
+5. Reg Expression 3 4 
+6. Networking 3 4
 
 
 
 
-a. Menggunakan Aturan : (50)
+
+a. Menggunakan Aturan : 
 
 		1. file disimpan dalam format namatugas.tex (5)
 
@@ -94,24 +97,15 @@ a. Menggunakan Aturan : (50)
 
 
 
-b. commit sehari(min 50 kata) per anggota kelompok selama 6 hari (30) proofreading dan perbaiki format(jenis huruf margin dsb) dan tambahkan contoh2nya dengan menggunakan tag algorithm 1 orang 1 algorithm.
+b. commit sehari(min 50 kata) per anggota kelompok selama 6 hari (30) proofreading dan perbaiki format(jenis huruf margin dsb) dan tambahkan contoh2nya dengan menggunakan tag verbatim 1 orang 1 verbatim.
 
 
-\begin{algorithm}
-{\bf state\_transition algorithm} $\{$
-\        for each neuron $j\in\{0,1,\ldots,M-1\}$
-\        $\{$   
-\            calculate the weighted sum $S_j$ using Eq. (6);
-\            if ($S_j>t_j$)
-\                    $\{$turn ON neuron; $Y_1=+1\}$   
-\            else if ($S_j<t_j$)
-\                    $\{$turn OFF neuron; $Y_1=-1\}$   
-\            else
-\                    $\{$no change in neuron state; $y_j$ remains %
-unchanged;$\}$ .
-\        $\}$   
-$\}$   
-\end{algorithm}
+\begin{verbatim}
+a = "anu"
+b = "itu"
+c = a + b
+print(c) 
+\end{verbatim}
 
 
 
@@ -129,7 +123,8 @@ Format Tambahan :
 2. spesial karakter menggunakan tanda \ didepannya
 	contoh :
 	\&
-	\"dalam kurung\"
+	\_
+	\"dalam petik\"
 	jika spesial karakter menjadi banyak atau satu baris gunakan verb
 	contoh :
 	\verb|%$'%&$&'%'%'%&'%|
