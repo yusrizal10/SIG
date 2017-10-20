@@ -90,3 +90,11 @@ Namun sampai tahun 2002, ketika standar pertukaran (format eXchange GPS atau GPX
 merupakan tugas yang rumit diperlukan komputasi dan manipulasi data pengetahuan. Untungnya, kebanyakan penerima GPS pengembang dengan
 cepat mengadopsi standar GPX,dan, pada tahun 2004, sudah menjadi hal biasa ketersediaan lokasi berkualitas tinggi informasi telah
 memungkinkan pemetaan mass market berdasarkan penerima GPS terjangkau, komputer rumah,dan internet.\cite{haklay2008openstreetmap}. 
+
+
+\subsection{Desain Ekstraksi Data WMTS}
+Mengekstraksi data deret waktu dari WMTS terdiri dari empat langkah utama:
+(1) membangun alamat pengenal sumber daya seragam (URL) dari gambar ubin yang tumpang tindih pada titik waktu tertentu, 
+(2) mendownload gambar ubin, 
+(3) temukan koordinat piksel yang sesuai dengan titik kepentingan di dalam gambar yang didownload,
+(4) ubah warna piksel atau indeks warna piksel ke unit variabel yang teramati.
