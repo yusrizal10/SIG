@@ -64,6 +64,7 @@ efisien data dari diselenggarakan dalam format file yang berbeda dan mengkoordin
 \label{Web Map Service}
 \end{figure}
 
+\section{mengimplementasikan NcWMS sebagai aplikasi Web Java}
 NcWMS diimplementasikan sebagai aplikasi web Java, dikemas sebagai arsip web (WAR) untuk file yang standar penempatan wadah servlet
 seperti Apache Tomcat. Java telah dipilih sebagai bahasa menerapkan karena banyak penyedia data lingkungan sudah menggunakan teknologi
 server-side Java dan karena ketersediaan berkualitas tinggi dan perpustakaan yang kuat seperti Java-NetCDF.
@@ -76,19 +77,22 @@ akhir: ini memungkinkan pengguna untuk mengubah parameter penata dari suatu gamb
 dari file sumber, mempercepat visualisasi interaktif. Banyak administrator sistem memilih juga untuk menerapkan cache ubin di atas
 ncWMS, yang lebih jauh dapat meningkatkan performa dan skalabilitas.
 
-wms biasanya menyajikan data spasial peta atau citra, yang akan menjadi layer saat visualisasi di browser.
+ncwms biasanya menyajikan data spasial peta atau citra, yang akan menjadi layer saat visualisasi di browser.
 biasanya dengan melakukan request getmap, Getmap merupakan salah satu operasi wms, akan dihasilkan tampilan peta berupa layer yang
 melapisi (overlay) peta pada dasar google maps. peta yang berferensi geografis dihasilkan dari sebuah web map service, dan peta ini
 biasanya disajikan dalam format gambar seperi PNG, GIF dll.
 
+\subsection{Menjelaskan tentang layanan WMS}
 Layanan web map service  meningkatkan dengan  adanya fisheye pandangan metode untuk cartographic data .Sementara banyak studi difokuskan
 pada pandangan fisheye,masalah yang banyak besar distorsi yang memetakan mereka semuanya memiliki lebih dari wilayah dan / atau high
 density jalan di perbatasan peta belum diatasi .Untuk sepenuhnya menghapus distorsi di kedua fokus dan konteks daerah.
 
+\section{Beberapa operasi wms pada tahap implementasi}
 WMS memiliki tiga buah operasi wms pada saat tahap implementasi yaitu : GetCapabilities merupakan deskripsi informasi yang dimiliki wms
 dan parameter perimintaan yang dapat diterima, Getmap yaitu peta dengan paramametrer dimensi, Getfeaure info yaitu meminta informasi 
 mengenai fitur tertentu yang ditampilkan pada peta,Web Map Service (WMS) memberikan informasi kepada pengguna internet oleh tata ruang peta gambar.
 
+\subsection{WMS}
 WMS (Web Map Services) tidak hanya dapat menghasilkan gambar raster tetapi juga gambar vektor. Contohnya  adalah SVGT (Scalable Vector
 Graphics Tiny) yang merupakan bagian dari SVG (Scalable Vector Graphics) yang digunakan pada piranti mobile device. Mahalnya biaya
 komunikasi antara handheld device dengan jaringan internet melalui GPRS (Global Pocket Radio System) menimbulkan sebuah masalah dalam
