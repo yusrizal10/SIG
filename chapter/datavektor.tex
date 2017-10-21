@@ -8,6 +8,10 @@
 \section{data vektor}
   Data vektor dalam Sistem Informasi Geografis. dalam  data vektor bumi direpresentasikan sebegai suatu  mosaic yang terdiri dari garis (arclline), polygon (dareah yang dibatasi oleh garis yang berawal dan berakhir pada titik yang sama), titik/point (node yang memiliki label),  dan nodes (titik perpotongan antara dua buah garis).
   
+ \section{data raster}
+ Data raster merupakan data yang disimpan dalam bentuk kotak segi empat (grid)
+atau sel sehingga terbentuk suatu ruang yang teratur.Pada data raster,objek geografis dipresentasikan sebagai struktur sel grid yang disebut sebagai pixel (picture element).Definisi gambar tergantung pada ukuran pixel-nya,semakin kecil ukuran permukaan bumi yang dipresentasikan oleh sel,semakin tinggi ukuran permukaannya.
+
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth] {figures/vektor01.JPG}}
 \caption{tampilan dari data vektor dan data raster}
@@ -17,9 +21,9 @@ Pada gambar \ref{vektor01} ditampilkan gambar data vector dan juga data raster y
 
 \subsection
   Model data vektor sendiri merupakan model yang banyak digunakan, model ini berbasis pada titik (points) dengan nilai koordinat (x,y) untuk membangun objek spasialnya. 
-
-\subsubsection {Objek pada datavektor}
-
+\subsection {Perbedaan Data Vektor dan Raster}
+Sistem Informasi Geografis : Prinsip Dasar dan Pengembangan Aplikasi
+\subsection {Objek pada datavektor}
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth] {figures/vektor02.JPG}}
 \caption{tampilan dari data vektor dan data raster}
@@ -38,6 +42,7 @@ Objek yang dibangun terbagi menjadi tiga bagian lagi, yaitu berupa titik (point)
 \item
 Kelebihan data vektor di bandingkan data raster
 data vektor relatif lebih ekonomis dalam hal ukuran file dan presisi dalam lokasi, tetapi sangat sulit untuk digunakan dalam komputasi matematik. 
+
 \item
 kekurangan data vector dibandingkan data raster
 terdapat keterbatasan masalah akurasi dan presisi data terutama dalam menentukan ukuran piksel. Data vector memiliki keterbatasan dalam ukuran penyimpanan atau kapasitas hasil.
