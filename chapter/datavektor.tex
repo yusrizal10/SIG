@@ -6,7 +6,7 @@
 
 
 \section{data vektor}
-  Data vektor dalam Sistem Informasi Geografis. dalam  data vektor bumi direpresentasikan sebegai suatu  mosaic yang terdiri dari garis (arclline), polygon (dareah yang dibatasi oleh garis yang berawal dan berakhir pada titik yang sama), titik/point (node yang memiliki label),  dan nodes (titik perpotongan antara dua buah garis).
+  Data vektor dalam Sistem Informasi Geografis. dalam  data vektor bumi direpresentasikan sebegai suatu  mosaic yang terdiri dari garis (arclline), polygon (dareah yang dibatasi oleh garis yang berawal dan berakhir pada titik yang sama), titik/point (node yang memiliki label),  dan nodes (titik perpotongan antara dua buah garis).Titik disimpan sebagai sepasang angka koordinat dan poligon sebagai rangkaian koordinat yang membentuk garis tertutup.Resolusi dari data vektor tergantung dari jumlah titik yang membentuk garis.
   
  \section{data raster}
  Data raster merupakan data yang disimpan dalam bentuk kotak segi empat (grid)
@@ -20,7 +20,12 @@ atau sel sehingga terbentuk suatu ruang yang teratur.Pada data raster,objek geog
 Pada gambar \ref{vektor01} ditampilkan gambar data vector dan juga data raster yang memiliki perbedaan dalam segi tampilan.
 
 \subsection
-  Model data vektor sendiri merupakan model yang banyak digunakan, model ini berbasis pada titik (points) dengan nilai koordinat (x,y) untuk membangun objek spasialnya. 
+  Model data vektor sendiri merupakan model yang banyak digunakan, model ini berbasis pada titik (points) dengan nilai koordinat (x,y) untuk membangun objek spasialnya.Objek yang dibangun terbagi menjadi tiga bagian yaitu berupa titik (point),garis (line) dan area (polygon).
+1. Titik (point) merupakan representasi grafis yang paling sederhana pada suatu objek.Titik tidak mempunyai dimensi tetapi dapat     ditampilkan dalam bentuk simbol baik pada peta maupun dalam layar monitor.Contoh : lokasi fasilitas kesehatan.
+2. Garis (Line) merupakan bentuk linear yang menghubungkan dua atau lebih titik dan merepresentasikan objek dalam satu dimensi.Contoh :Jalan dan Sungai.
+3.Area (Polygon) merupakan representasi objek dalam dua dimensi.Contoh : Danau.
+  Setiap bagian dari data vektor dapat saja mempunyai informasi-informasi yang berasosiasi satu dengan lainnya seperti penggunaan sebuah label untuk menggambarkan informasi pada suatu lokasi.
+  
 \subsection {Perbedaan Data Vektor dan Raster}
 Sistem Informasi Geografis : Prinsip Dasar dan Pengembangan Aplikasi
 \subsection {Objek pada datavektor}
@@ -37,6 +42,15 @@ Objek yang dibangun terbagi menjadi tiga bagian lagi, yaitu berupa titik (point)
 \item Area (polygon) merupakan representasi objek dalam dua dimensi.
 \end{enumerate}
 
+\subsection { Cara Menggunaan Data Vektor}
+Adapun cara menggunakan data vektor ke dalam SIG dapat dilakukan melalui tiga cara yaitu 
+1.Penyiaman (scanning) adalah proses mengubah data grafis kontinu menjadi data grafis diskrit yang terdiri atas sel-sel penyusun gambar.
+2.Digital merupakan proses pengubahan data grafis analog menjadi data grafis digital dalam struktur vektor.
+3.Tabulasi adalah proses memasukkan data atribut SIG dengan pembuatan tabel.
+
+\subsection { Aplikasi Yang Memudahkan Pembuatan Data Vektor}
+Microsoft Visio (atau sering disebut Visio) adalah sebuah program aplikasi komputer yang sering digunakan untuk membuat diagram,diagram aliran(flowchart),brainstorm, dan skema jaringan yang dirilis oleh Microsoft Corporation.Aplikasi ini menggunakan grafik vektor untuk membuat diagram-diagramnya.
+
 \subsection{kelebihan dan kekurangan data vektor}
 \begin{enumerate}
 \item
@@ -49,10 +63,13 @@ data vektor relatif lebih ekonomis dalam hal ukuran file dan presisi dalam lokas
 \item Compatible dengan citra-citra satelit penginderaan jauh dan semua image hasil scanning data spasial.
 \item Overlay dan kombinasi data raster dengan data inderaja mudah dilakukan
 \item Memiliki kemampuan-kemampuan permodelan dan analisis spasial tingkat lanjut.
-\item Metode untuk mendapatkan citra raster lebih mudah
+\item Metode untuk mendapatkan citra raster lebih mudah.
 \item Gambaran permukaan bumi dalam bentuk citra raster yang didapat dari radar atau satelit penginderaan jauh selalu lebih actual dari pada bentuk vektornya
 \item Prosedur untuk memperoleh data dalam bentuk raster lebih mudah, sederhana dan murah.
 \item Harga system perangkat lunak aplikasinya cenderung lebih murah.
+\item Memiliki resolusi spasial yang tinggi.
+\item Transformasi koordinat dan proyeksi tidak sulit dilakukan.
+\item Hubungan topologi dan network dapat dilakukan dengan mudah.
 
 \item
 kekurangan data vector dibandingkan data raster
@@ -63,6 +80,7 @@ terdapat keterbatasan masalah akurasi dan presisi data terutama dalam menentukan
 \item Prosedurnya pun terkadang lebih sulit. Karena proses keseluruhan untuk mendapatkannya lebih lama, peta vector seringkali mengalami out of date atau kadaluarsa.
 \item Memerlukan perangkat keras dan perangkat lunak yang lebih mahal.
 \item Overlay beberapa layers vector secara simultan memerlukan waktu yang relative lama.
+\item Karena proses keseluruhan untuk mendapatkannya lebih lama,peta vektor seringkali mengalami out of date atau kadaluarsa.
 \end{enumerate}
 
 
