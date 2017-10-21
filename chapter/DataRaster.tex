@@ -39,7 +39,11 @@ Adapun Kekurangan yang dimiliki oleh data raster adalah :
 		\item 2. Pengunaan sel atau ukuran grid yang lebih besar untuk menghemat ruang penyimpaanan akan menyebabkan kehilanagn informasi dan ketelitian.
 		\item 3. sebuah citra raster hanya mengandung satu tematik saja sehingga sulit digabungkan dengan atribut-atribut lainnya dalam satu layer.
 		\item 4. tampilan atau reprsentasi dan akurasi posisi sangat bergantung pada ukuran pikselnya (resolusi spasial)
-
+		\item 5. sering mengalami kesalahan dalam menggambarkan bentuk dan garis batas suatu obyek. sangat bergantung pada resolusi spasial dan toleransi yang diberikan
+		\item 6. transformasi koordinat dan proyeksi lebih sult dilakukan
+		\item 7. sangant sulit untuk mepresentasikan hubungan topologi (juga network)
+		\item 8. metode untuk medapatakan format data vektor melalui proses yang lama, cukup melelahkan dan relative mahal.\cite{irwansyah2013sistem}
+	\end{enumerate}
 
 \subsection{perbedaan data raster dan data vektor}
 Masing-masing format data mempunyai kelebihan dan kekurangan.
@@ -53,8 +57,6 @@ Tetapi lebih mudah digunakan secara matematis.
 Model data raster mempunyai struktur data yang tersusun dalam bentuk matriks atau pixel dan membentuk grid. 
 Setiap pixel memiliki nilai tertentu dan memiliki atribut tersendiri, termasuk nilai kordinat yang unik.
 
-
-
 \subsection{karakteristik data raster}
 Resolusi suatu data raster akan merujuk pada ukunan permukaan bumi yang direpresentasikan oleh setiap piksel. 
 Makin kecil ukuran atau luas permukaan bumi yang dapat direpresentasikan oleh setiap pikselnya, 
@@ -62,6 +64,18 @@ makin tinggi resolusi spasialnya.
 Piksel-piksel di dalam zone atau area yang sejenis memiliki nilai (isi piksel atau ID number) yang sama. 
 Pada umumnya, lokasi di dalam model data raster, diidentifikasi dengan menggunakan pasangan koordinat kolom dan baris (x,y).
 
+\subsection{Metode Penyimpanan Data Raster}
+Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding, block encoding, chain encoding dan quadtree data structure.
+	\begin{itemize}
+		\item  Run Length Encoding
+				mengurangi jumlah data pada setiap baris.
+				\begin{figure} [ht]
+					\centerline{\includegraphics[width=1\textwidth]{figures/runlengthencoding.JPG}}
+					\caption{Gambar Run Length Encoding}
+					\label{runlengthencoding}
+					\ref{runlengthencoding}
+				\end{figure}
+				
 \subsection{Akses ikonik ke repositori format data raster data monokrom elektronik jarak jauh}
 Dalam Akses ikonik ke repositori format data raster data monokrom elektronik jarak jauh, 
 Dokumen disimpan dalam sistem menggunakan monokrom, format raster. 
