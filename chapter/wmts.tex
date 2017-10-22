@@ -10,7 +10,7 @@ Web Map Tile Service merupakan peta ubin yang dikembangkan pertama kali oleh Ope
 Terdapat potensi di dalam Web Map Tile Services yaitu gambar peta ubin dapat di cache pada lokasi antara klien dan server, 
 mengurangi latensi yang terkait dengan proses pembuatan gambar. Lapisan ubin biasanya di pasang di sisi server, menyajikan 
 ubin gambar peta secara bersamaan ke beberapa pengguna. Selain itu, banyak pemetaan klien, seperti Google Earth atau Nasa 
-World Wind, telah menyematkan cache, yang juga dapat mengurangi kemacetan jaringan dan penundaan jaringan. \cite{Garc{\'\i}a2002Webmap}
+World Wind, telah menyematkan cache, yang juga dapat mengurangi kemacetan jaringan dan penundaan jaringan. \cite{Garc{\'\i}a2002Web}
 
 WMTS telah menjadi populer untuk visualisasi data geografis multi-dimensi di Internet. Dalam sistem tile, data disusun pada sejumlah 
 skala yang telah ditentukan. Untuk setiap skala, area yang dipetakan dibagi menjadi banyak ubin persegi dengan ukuran 256 x 256 piksel.
@@ -66,7 +66,7 @@ terjadi saat ini. Dengan melihat fakta-fakta di atas, Penelitian ini ingin menga
 metode inimempertimbangkan tile static dan dynamic map. Untuk menganalisa digunakan metode matematika, data hasil testing, statistik 
 hasil pengujian dan membandingkan beberapa metode yang telah berkembang untuk meningkatkan performa web gis. Penulis berharap analisis 
 ini dapat meminimalkan waktu respon dan meningkatkan pelayanan E-Government Sistem Pemantauan Bumi Nasional (SPBN). Oleh karena itu 
-penulis melakukan studi “Analisis Optimalisasi Web Gis Dengan Metode Tiling”. Penelitian ini diharapkan dapat membantu memecahkan 
+penulis melakukan studi \“Analisis Optimalisasi Web Gis Dengan Metode Tiling\”. Penelitian ini diharapkan dapat membantu memecahkan 
 masalah diatas. \cite{dewioptimalisasi}
 
 \subsection{Peta Jalan}
@@ -98,3 +98,12 @@ Mengekstraksi data deret waktu dari WMTS terdiri dari empat langkah utama:
 (2) mendownload gambar ubin, 
 (3) temukan koordinat piksel yang sesuai dengan titik kepentingan di dalam gambar yang didownload,
 (4) ubah warna piksel atau indeks warna piksel ke unit variabel yang teramati.
+
+Keempat langkah ini diulang untuk setiap langkah waktu dalam deret waktu (Gambar 1).
+
+Spesifikasi WMTS, yang juga dikenal dengan nama \"TMS\" (layanan peta ubin), adalah protokol layanan web untuk mengambil gambar peta ubin yang telah
+didefinisikan oleh OGC (Maso et al., 2010). Permintaan WMTS ada dalam format:
+
+½server=½layer=½time=½x=½y=½zoom:png
+
+
