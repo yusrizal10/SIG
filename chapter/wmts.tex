@@ -108,5 +108,21 @@ didefinisikan oleh OGC (Maso et al., 2010). Permintaan WMTS ada dalam format:
 	    [server]=[layer]=[time]=[x]=[y]=[zoom].png
 \end{equation}
 
+dimana x adalah indeks x (horizontal) ubin dan y adalah indeks genteng (vertikal).
+
+Zoom adalah angka (biasanya antara 1 dan 20) yang menunjukkan skala peta. Nomor ini tidak boleh lebih tinggi dari tingkat zoom yang 
+didukung maksimum dari layanan web WMTS. Mengingat garis lintang, bujur, dan zoom, indeks x ubin dan genteng
+Indeks y dapat dihitung sebagai:
+
+\begin{figure}[ht]
+
+\centerline{\includegraphics[width=1\textwidth]{figures/figure1_wmts.png}}
+
+\caption{Snow Retrieval Function Loop for Point Location}
+
+\label{figure1_wmts}
+
+\end{figure}
+
 
 
