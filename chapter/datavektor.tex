@@ -31,7 +31,7 @@ Sistem Informasi Geografis : Prinsip Dasar dan Pengembangan Aplikasi
 \subsection {Objek pada datavektor}
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth] {figures/vektor02.JPG}}
-\caption{tampilan dari data vektor dan data raster}
+\caption{tampilan skala data vektor}
 \label{vektor02}
 \end{figure}
 Sesuai pada gambar \ref{vektor02} 
@@ -81,6 +81,24 @@ terdapat keterbatasan masalah akurasi dan presisi data terutama dalam menentukan
 \item Memerlukan perangkat keras dan perangkat lunak yang lebih mahal.
 \item Overlay beberapa layers vector secara simultan memerlukan waktu yang relative lama.
 \item Karena proses keseluruhan untuk mendapatkannya lebih lama,peta vektor seringkali mengalami out of date atau kadaluarsa.
+\end{enumerate}
+
+\subsection
+\begin{figure}[ht]
+\centerline{\includegraphics[width=1\textwidth] {figures/vektor03.JPG}}
+\caption{representasi data vektor dan atributnya}
+\label{vektor03}
+\end{figure}
+Sesuai dengan gambar \ref{vektor03} model data vector terbagi menjadi beberapa bagian
+\begin{enumerate} 
+\item 
+Topologi, biasa digunakan dalam analisis spasial dalam SIG. topologi adalah model data vector yang menunjukan hubungan spasial di antara objek spasial. Topologi sangat berguna pada saat melakukan seteksi kesalahan ketika proses digitasi, dan berguna pula dalam melakukan proses analisis spsial.
+\item
+Non Topologi, adalah model data yang mempunyai sifat yang lebih cepat dalam menampilkan dn dpat digunakan secara langsung dalam perangkat lunak (software) SIG yang berbeda-beda.
+\item
+Region, adalah sekumpulan polygon, dimana masing-masing polygon dapat atau tidak mempunyai kaitan di antaranya akan tetapi saling bertampalan dalam satu data set.
+\item
+Dynamis Segmentation, merupakan model data yang dibangun dengan menggunakan garis dalam rangka membangun model jaringan (network).
 \end{enumerate}
 
 
