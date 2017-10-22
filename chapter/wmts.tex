@@ -137,5 +137,20 @@ dimana lon mewakili bujur dalam derajat desimal, lat_rad mewakili garis lintang 
 indeks x column (x), dan ytile adalah indeks baris ubin (y). Bagian bilangan bulat dari bilangan xtile atau ytile adalah indeks x ubin 
 atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng. \cite{Kadlec2016Extracting} 
 
+\subsection{KerangkaTethys}
+
+Untuk membuat fungsi ekstraksi data Python tersedia bagi pengguna akhir, kami merancang aplikasi web interaktif dalam kerangka kerja 
+Tethys. Tethys (Jones et al., 2014) adalah platform yang dapat digunakan untuk mengembangkan dan meng-host aplikasi web sumber daya air. 
+Ini mencakup perangkat lunak open source dan open source: PostgreSQL, GeoServer, dan Web Processing Service. Salah satu keuntungan dari 
+Tethys atas aplikasi web kustom adalah menyediakan arsitektur plug-in (Heineman dan Councill, 2001) untuk penerapan aplikasi baru yang 
+relatif mudah. Gaya grafis, tata letak, panel navigasi, pengelolaan pengguna, dan pengelolaan penyimpanan data web semuanya ditangani 
+oleh Tethys. Tethys plugin dikenal sebagai "app" dan memiliki empat komponen: Persistent Storage, Controller, Template, dan Gizmo. 
+Penyimpanan persisten digunakan untuk menyimpan pengaturan pengguna, misalnya lokasi favorit. Pengendali menangani perhitungan dan 
+logika bisnis aplikasi. Tethys menyediakan pengendali dasar dengan fungsi built-in untuk menghubungkan ke model. Template mendefinisikan 
+posisi teks, tombol, grafik, tabel, dan peta di antarmuka pengguna. Gizmo adalah komponen antarmuka pengguna yang dapat disesuaikan. 
+Bisa berupa button, date time picker, daftar drop-down, chart, table, atau map. Peta dan bagan template bertanggung jawab untuk 
+menampilkan peta dan bagan interaktif di halaman arahan aplikasi.
+
+\cite{Kadlec2016Extracting}
 
 
