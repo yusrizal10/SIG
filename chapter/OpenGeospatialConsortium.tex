@@ -25,6 +25,37 @@ Standar untuk interoperabilitas geospasial memberikan kerangka bagi pengembang u
 
 • "dalam lingkungan teknologi informasi yang terbuka" berarti bahwa standar memungkinkan proses geoprocessing berlangsung di luar lingkungan monolog GIS, penginderaan jarak jauh, dan AM / FM yang tertutup yang mengendalikan dan membatasi basis data, antarmuka pengguna, jaringan, dan fungsi manipulasi data.
 
+\subsection(Dasar-dasar Ilmiah)
+\cite{lupp2008open}Prinsip dasar arsitektur OGC Web Services (OWS), meliputi:
+
+a) Komponen layanan disusun dalam beberapa tingkatan.
+1. Semua komponen memberikan layanan, kepada klien dan / atau komponen lainnya, dan setiap komponen biasanya disebut layanan (dengan beberapa implementasi) atau server (masing-masing implementasi).
+2. Layanan (atau komponen) diatur secara longgar dalam empat tingkatan, dari Klien sampai Layanan Aplikasi hingga Jasa Pemrosesan ke Layanan Manajemen Informasi, namun tingkat yang tidak diperlukan dapat dilewati.
+3. Layanan dapat menggunakan layanan lain dalam tingkat yang sama, dan ini biasa terjadi pada tingkat Jasa Pengolahan.
+4. Server dapat beroperasi pada (terikat ketat) data yang tersimpan dalam server dan / atau data (longgar terikat) yang diambil dari server lain.
+
+b) Kolaborasi layanan menghasilkan hasil yang lebih baik.
+1. Semua layanan menggambarkan diri sendiri, mendukung pengikatan layanan dinamis yang mendukung (just-in-time) yang mendukung publikasi.
+2. Layanan dapat dirantai dengan layanan lain dan sering dirantai, transparan (didefinisikan dan dikendalikan oleh klien), tembus pandang (dideklarasikan tapi terlihat oleh klien), dan tidak jelas (dideklarasikan dan tidak terlihat oleh klien), lihat Sub ayat 7.3. 5 dari [ISO 19119]
+3. Layanan disediakan untuk memudahkan mendefinisikan dan melaksanakan rantai layanan.
+
+c) Komunikasi layanan menggunakan standar Internet terbuka.
+1. Komunikasi antar komponen menggunakan protokol World Wide Web (WWW) standar, yaitu HTTP GET, HTTP POST, dan SOAP.
+2. Operasi server khusus ditangani dengan menggunakan Uniform Resource Locators (URL).
+3. Multiguna Internet Mail Extensions (MIME) jenis digunakan untuk mengidentifikasi format transfer data.
+4. Data yang ditransfer sering dikodekan menggunakan Extensible Markup Language (XML), dengan isi dan format yang ditentukan menggunakan Skema XML.
+
+d) Antarmuka layanan menggunakan standar terbuka dan relatif sederhana.
+1. Antarmuka webserver OGC digabungkan, hanya memberikan beberapa operasi statis per layanan.
+2. Operasi layanan biasanya tanpa kewarganegaraan, tidak memerlukan server untuk mempertahankan status antarmuka di antara operasi.
+3. Satu server dapat mengimplementasikan beberapa antarmuka layanan kapanpun bermanfaat.
+4. Standar pengkodean data berbasis XML XML ditentukan untuk digunakan dalam transfer data.
+
+e) Implementasi server dan client tidak dibatasi.
+1. Layanan diimplementasikan oleh perangkat lunak yang dijalankan pada komputer tujuan umum yang terhubung ke Internet. Arsitekturnya adalah perangkat keras dan vendor perangkat lunak yang netral.
+2. Layanan yang sama dan bekerja sama dapat dilakukan oleh server yang dimiliki dan dioperasikan oleh organisasi independen. 
+3. Banyak layanan diimplementasikan dengan software Commercial Off The Shelf (COTS) berbasis standar.
+
 \subsection(Pengertian Geospasial) Informasi Geospasial, yang lazim dikenal dengan peta, adalah informasi
 obyek permukaan bumi yang mencakup aspek waktu dan keruangan. Pengertian
 geo dalam geospasial, berarti geosfer yang mencakup atmosferlapisan udara
