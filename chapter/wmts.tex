@@ -105,7 +105,7 @@ Spesifikasi WMTS, yang juga dikenal dengan nama \"TMS\" (layanan peta ubin), ada
 didefinisikan oleh OGC (Maso et al., 2010). Permintaan WMTS ada dalam format:
 
 \begin{equation}
-	    [server]=[layer]=[time]=[x]=[y]=[zoom].png
+	    [server]=[layer]=[time]=[x]=[y]=[zoom].png (1)
 \end{equation}
 
 dimana x adalah indeks x (horizontal) ubin dan y adalah indeks genteng (vertikal).
@@ -124,5 +124,15 @@ Indeks y dapat dihitung sebagai:
 
 \end{figure}
 
+\begin{equation}
+	    xtile = (lon + 180)/360 * 2zoom (2)
+\end{equation}
+\begin{equation}
+	    ytile =1-log (tan(lat_rad) + 1/cos(lat_rad)) / 2p * 2zoom (3)
+\end{equation}
+
+dimana lon mewakili bujur dalam derajat desimal, lat_rad mewakili garis lintang dalam radian, zoom adalah nomor zoom, xtile adalah 
+indeks x column (x), dan ytile adalah indeks baris ubin (y). Bagian bilangan bulat dari bilangan xtile atau ytile adalah indeks x ubin 
+atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng.
 
 
