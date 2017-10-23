@@ -64,7 +64,7 @@ terjadi saat ini. Dengan melihat fakta-fakta di atas, Penelitian ini ingin menga
 metode inimempertimbangkan tile static dan dynamic map. Untuk menganalisa digunakan metode matematika, data hasil testing, statistik 
 hasil pengujian dan membandingkan beberapa metode yang telah berkembang untuk meningkatkan performa web gis. Penulis berharap analisis 
 ini dapat meminimalkan waktu respon dan meningkatkan pelayanan E-Government Sistem Pemantauan Bumi Nasional (SPBN). Oleh karena itu 
-penulis melakukan studi \“Analisis Optimalisasi Web Gis Dengan Metode Tiling\”. Penelitian ini diharapkan dapat membantu memecahkan 
+penulis melakukan studi ``Analisis Optimalisasi Web Gis Dengan Metode Tiling''. Penelitian ini diharapkan dapat membantu memecahkan 
 masalah diatas \cite{dewioptimalisasi} .
 
 \subsection{Peta Jalan}
@@ -81,7 +81,7 @@ mendapatkan posisi penerima dengan akurasi 6 sampai 10 meter dalam kondisi norma
 untuk mengembangkan lokasi berbasis layanan mendahului pemberitahuan dan berdasarkan informasi dari mobile tiang telepon atau beacon
 lainnya. Namun, metode ini tidak mendapatkan banyak pangsa pasar karena untuk kompleksitas teknis dan ketidakmampuan mereka untuk
 memberikan cakupan universal. Sebaliknya, GPS memungkinkan pengembangan receiver murah dengan akurasi posisi yang baik, dan, pada
-pertengahan-2001, adalah mungkin untuk membeli unit penerimasekitar US $ 100,3 penerima ini membantu lebih banyak orang daripada
+pertengahan-2001, adalah mungkin untuk membeli unit penerimasekitar US \$ 100,3 penerima ini membantu lebih banyak orang daripada
 sebelumnya mengumpulkan informasi tentang lokasi yang berbeda dan upload ke komputer mereka.
 
 Namun sampai tahun 2002, ketika standar pertukaran (format eXchange GPS atau GPX) diterbitkan, dimanipulasi dan berbagi Informasi ini
@@ -101,7 +101,7 @@ Mengekstraksi data deret waktu dari WMTS terdiri dari empat langkah utama:
 \end{enumerate}
 Keempat langkah ini diulang untuk setiap langkah waktu dalam deret waktu (Gambar 1).
 
-Spesifikasi WMTS, yang juga dikenal dengan nama \"TMS\" (layanan peta ubin), adalah protokol layanan web untuk mengambil gambar peta ubin yang telah
+Spesifikasi WMTS, yang juga dikenal dengan nama ``TMS'' (layanan peta ubin), adalah protokol layanan web untuk mengambil gambar peta ubin yang telah
 didefinisikan oleh OGC (Maso et al., 2010). Permintaan WMTS ada dalam format:
 
 \begin{equation}
@@ -128,11 +128,11 @@ Indeks y dapat dihitung sebagai:
 \begin{equation}
 	    xtile = \frac{lon + 180}{360} \ 2^zoom 
 \end{equation}
-(2)
+\item (2)
 \begin{equation}
 	    ytile =\frac{1-log (tan(lat_rad) + \frac{1}{cos(lat_rad)})}{2pi} \ 2^zoom 
 \end{equation}
-(3)
+\item (3)
 dimana lon mewakili bujur dalam derajat desimal, lat_rad mewakili garis lintang dalam radian, zoom adalah nomor zoom, xtile adalah 
 indeks x column (x), dan ytile adalah indeks baris ubin (y). Bagian bilangan bulat dari bilangan xtile atau ytile adalah indeks x ubin 
 atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng \cite{Kadlec2016Extracting} .
@@ -161,7 +161,7 @@ menampilkan peta dan bagan interaktif di halaman arahan aplikasi .
 
 \subsection{SaljuInspekturDataApplicationProgrammerInterfaceDesign}
 
-\cite{Kadlec2016Extracting}. Template lainnya digunakan untuk menampilkan rangkaian waktu hasil dalam empat format yang berbeda: comma-separated values ​​(CSV), JavaScript Object Notification System (JSON), WaterML 1.1, dan WaterML 2.0. WaterML adalah standar OGC yang disetujui secara internasional untuk pertukaran data rangkaian waktu hidrologi (OGC, 2012a). Ini tidak hanya berisi data nilai tetapi juga metadata terkait termasuk lokasi situs, organisasi sumber data, dan unit pengukuran. Keseluruhan desain aplikasi web Snow Inspector termasuk pengontrol dan template. API time series dapat diakses dengan menggunakan parameter string.
+\cite{Kadlec2016Extracting}. Template lainnya digunakan untuk menampilkan rangkaian waktu hasil dalam empat format yang berbeda: comma-separated values (CSV), JavaScript Object Notification System (JSON), WaterML 1.1, dan WaterML 2.0. WaterML adalah standar OGC yang disetujui secara internasional untuk pertukaran data rangkaian waktu hidrologi (OGC, 2012a). Ini tidak hanya berisi data nilai tetapi juga metadata terkait termasuk lokasi situs, organisasi sumber data, dan unit pengukuran. Keseluruhan desain aplikasi web Snow Inspector termasuk pengontrol dan template. API time series dapat diakses dengan menggunakan parameter string.
 
 
 
