@@ -7,14 +7,14 @@
 
 \section{Data Raster}
 \subsection{Pengertian Data Raster}
-Data raster adalah data yang disimpan dalam bentuk kotak segi empat (grid) sel sehingga terbentuk suatu ruang yang 
+Data raster \cite{puntodewo2003sistem} adalah data yang disimpan dalam bentuk kotak segi empat (grid) sel sehingga terbentuk suatu ruang yang 
 teratur. Foto digital seperti areal fotografi atau satelit merupakan bagian dari data raster pada peta. 
 Raster memiliki data grid continue. Nilainya menggunakan gambar berwarna seperti fotografi, yang ditampilkan dengan 
 level merah, hijau, dan biru pada sel. Data Raster (atau disebut juga dengan sel grid) merupakan data yang 
 dihasilkan dari sistem penginderaan jauh. Pada data raster. Obyek geografis direpresentasikan sebagai struktur
 sel grid yang disebut dengan pixel (picture element). Pada data raster. Resolusi (definisi visual) tergantung
 pada ukuran pixelnya. Dengan kata lain. Resolusi pixel menggambarkan ukuran sebenarnya dipermukaan bumi 
-yang diwakili oleh setiap pixel pada citra. Pada data raster, Obyek geografis direpresentaskan sebagai struktur sel grid yang disebut sebagi pixel (picture element). Resolusi (definisi visual) tergantung pada ukuran pixel-nya, semakin kecil ukuran permukaan bumi yang direpresentasikan oleh sel, semakin tinggi resolusinya. Data Raster dihasilkan dari sistem penginderaan jauh dan sangat baik untuk merepresentasikan batas-batas yang berubah secara gradual seperti jenis tanah, kelembaban tanah, suhu, dan lain-lain. Peta raster adalah peta yang diperoleh dari fotografi suatu areal. foto satelit atau foto permukaan bumi yang diperoleh dari komputer. Contoh peta raster yang diambil dari satelit cuaca. Di dalam Sig, data raster dan analisis data raster banyak digunakan untuk pemetaan obyek yang bersifat kontinu (batasnya tidak terlihat jelas di lapangan/gradual) dan pemodelan spasial, baik statis maupun dinamis. Analisis data raster banyak menggunakan peta-peta hasil analisa digital citra satelit karena peta raster dan citra satelit mempunyai struktur data yang sama, yaitu grid cell, sehingga kompatibel satu degan yang lain. Hal ini berbeda dengan data vector, dimana agar bisa dianalisis secara bersama, Data raster hasil analisis harus dikonversi dulu ke struktur data vektor. \cite{puntodewo2003sistem}
+yang diwakili oleh setiap pixel pada citra. Pada data raster, Obyek geografis direpresentaskan sebagai struktur sel grid yang disebut sebagi pixel (picture element). Resolusi (definisi visual) tergantung pada ukuran pixel-nya, semakin kecil ukuran permukaan bumi yang direpresentasikan oleh sel, semakin tinggi resolusinya. Data Raster dihasilkan dari sistem penginderaan jauh dan sangat baik untuk merepresentasikan batas-batas yang berubah secara gradual seperti jenis tanah, kelembaban tanah, suhu, dan lain-lain. Peta raster adalah peta yang diperoleh dari fotografi suatu areal. foto satelit atau foto permukaan bumi yang diperoleh dari komputer. Contoh peta raster yang diambil dari satelit cuaca. Di dalam Sig, data raster dan analisis data raster banyak digunakan untuk pemetaan obyek yang bersifat kontinu (batasnya tidak terlihat jelas di lapangan/gradual) dan pemodelan spasial, baik statis maupun dinamis. Analisis data raster banyak menggunakan peta-peta hasil analisa digital citra satelit karena peta raster dan citra satelit mempunyai struktur data yang sama, yaitu grid cell, sehingga kompatibel satu degan yang lain. Hal ini berbeda dengan data vector, dimana agar bisa dianalisis secara bersama, Data raster hasil analisis harus dikonversi dulu ke struktur data vektor \cite{puntodewo2003sistem}.
 
 \subsection{Pengertian Data Vektor}
 Data vektor adalah data yang direkam dalam bentuk koordinat titik yang menampilkan, 
@@ -27,7 +27,7 @@ Poligon bisa digunakan untuk menggambarkan sebuah danau atau sebuah Negara pada 
 
 \subsection{Kelebihan dan kekurangan Data Raster}
 \subsubsection{Kelebihan Data Raster}
-Adapun kelebihan yang dimiliki oleh data raster adalah :
+Adapun kelebihan yang dimiliki oleh data raster menurut \cite{irwansyah2013sistem} adalah: 
 	\begin{enumerate}
 		\item memiliki struktur data yang sederhana
 		\item mudah dimanipulasi dengan menggunakan fungsi-fungsi matematis sederhana
@@ -39,10 +39,10 @@ Adapun kelebihan yang dimiliki oleh data raster adalah :
 		\item Gambar permukaan bui dalam bentuk citra raster yang didapat dari radar atau satelit penginderaan jauh selalu aktual dari pada bentuk vektornya
 		\item prosedur untuk emperoleh data dalam bentuk raster lebh mudah, sederhana dan murah.
 		\item Harga sistem perangkat lunak aplikasinya cenderung lebih murah.
-	\end{enumerate}\cite{irwansyah2013sistem}
+	\end{enumerate}
 
 \subsubsection{Kekurangan Data Raster}
-Adapun Kekurangan yang dimiliki oleh data raster adalah :
+Adapun Kekurangan yang dimiliki oleh data raster menurut \cite{irwansyah2013sistem} adalah :
 	\begin{enumerate}
 		\item secara umum memerlukan ruang atau tempat penyimpanan (disk) yang besar dalam komputer, banyak terjadi redudancy data baik untuk setiap layer-nya maupun secara keselururhan.
 		\item Pengunaan sel atau ukuran grid yang lebih besar untuk menghemat ruang penyimpaanan akan menyebabkan kehilanagn informasi dan ketelitian.
@@ -51,7 +51,7 @@ Adapun Kekurangan yang dimiliki oleh data raster adalah :
 		\item sering mengalami kesalahan dalam menggambarkan bentuk dan garis batas suatu obyek. sangat bergantung pada resolusi spasial dan toleransi yang diberikan
 		\item transformasi koordinat dan proyeksi lebih sult dilakukan
 		\item sangant sulit untuk mepresentasikan hubungan topologi (juga network)
-		\item metode untuk medapatakan format data vektor melalui proses yang lama, cukup melelahkan dan relative mahal.\cite{irwansyah2013sistem}
+		\item metode untuk medapatakan format data vektor melalui proses yang lama, cukup melelahkan dan relative mahal.
 	\end{enumerate}
 
 \subsection{perbedaan data raster dan data vektor}
@@ -90,7 +90,7 @@ Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding
 					\centerline{\includegraphics[width=1\textwidth]{figures/runlengthencoding.JPG}}
 					\caption{Gambar Run Length Encoding}
 					\label{runlengthencoding}
-					Gambar \ref{runlengthencoding} ini adalah contoh gambar pada Run Length Encoding
+					Gambar \ref{runlengthencoding} adalah contoh gambar pada Run Length Encoding
 				\end{figure}
 
 		\item  Block Encoding
@@ -99,7 +99,7 @@ Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding
 					\centerline{\includegraphics[width=1\textwidth]{figures/blockencoding.JPG}}
 					\caption{Gambar Block Encoding}
 					\label{blockencoding}
-					Gambar \ref{blockencoding} ini adalah contoh gambar Block Encoding
+					Gambar \ref{blockencoding} adalah contoh gambar Block Encoding
 				\end{figure}
 
 		\item  Chain Encoding
@@ -117,7 +117,7 @@ Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding
 					\centerline{\includegraphics[width=1\textwidth]{figures/quadtreedatastructure.JPG}}
 					\caption{Gambar Quadtree Data Structure}
 					\label{quadtreedatastructure}
-					Gambar \ref{quadtreedatastructure} ini adalah contoh gambar Quadtree Data Structure
+					Gambar \ref{quadtreedatastructure} adalah contoh gambar Quadtree Data Structure
 				\end{figure}
 	\end{itemize}
 
