@@ -82,7 +82,7 @@ Piksel-piksel di dalam zone atau area yang sejenis memiliki nilai (isi piksel at
 Pada umumnya, lokasi di dalam model data raster, diidentifikasi dengan menggunakan pasangan koordinat kolom dan baris (x,y).
 
 \subsection{Metode Penyimpanan Data Raster}
-Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding, block encoding, chain encoding dan quadtree data structure.
+Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding, block encoding, chain encoding dan quadtree data structure. Dibawah ini terdapat beberapa contoh gambar metode penyimpanan data raster diantaranya :
 	\begin{itemize}
 		\item  Run Length Encoding
 				mengurangi jumlah data pada setiap baris.
@@ -90,7 +90,7 @@ Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding
 					\centerline{\includegraphics[width=1\textwidth]{figures/runlengthencoding.JPG}}
 					\caption{Gambar Run Length Encoding}
 					\label{runlengthencoding}
-					Gambar \ref{runlengthencoding} adalah contoh gambar pada Run Length Encoding
+					Gambar \ref{runlengthencoding} Format RLE, memberikan kelebihan berupa jumlah byte citra yang dapat dimanfaatkan tanpa mengurangi kandungan informasinya. Prinsip penyimpananya ialah dengan mengekspresikan kembali jumlah piksel yang berurutan dengan nilai yang sama sebagai satu pasangan nilai.
 				\end{figure}
 
 		\item  Block Encoding
@@ -99,7 +99,7 @@ Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding
 					\centerline{\includegraphics[width=1\textwidth]{figures/blockencoding.JPG}}
 					\caption{Gambar Block Encoding}
 					\label{blockencoding}
-					Gambar \ref{blockencoding} adalah contoh gambar Block Encoding
+					Gambar \ref{blockencoding} Hampir menyerupai RLE, namun perbedaanya terletak pada dimensionalnya. untuk RLE hanya sepanjang baris saja tetapi block encoding secara dua dimensional (Baris juga Kolom) .
 				\end{figure}
 
 		\item  Chain Encoding
@@ -108,7 +108,7 @@ Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding
 					\centerline{\includegraphics[width=1\textwidth]{figures/chainencoding.JPG}}
 					\caption{Gambar Chain Encoding}
 					\label{chainencoding}
-					Gambar \ref{chainencoding} adalah contoh gambar pada Chain Encoding
+					Gambar \ref{chainencoding} Metode ini mempresentasikan batas (Boundary) suatu region dengan menggunakan rangkaian arah kardinal dan cell-cell, misal N1 berarti berarah ke utara sejauh 1 cell dan S5 berari berarah keselatan sejauh 5 cell.
 				\end{figure}
 
 		\item  Quadtree Data Structure
@@ -117,7 +117,7 @@ Data raster mempunyai beberapa metode penyimpanan data yaitu run length encoding
 					\centerline{\includegraphics[width=1\textwidth]{figures/quadtreedatastructure.JPG}}
 					\caption{Gambar Quadtree Data Structure}
 					\label{quadtreedatastructure}
-					Gambar \ref{quadtreedatastructure} adalah contoh gambar Quadtree Data Structure
+					Gambar \ref{quadtreedatastructure} Metode ini menggunakan dekomposisi rekursif dengan membagi grid menjadi hirarki kuadran. Sebuah kuadran yang memiliki nilai yang sama tidak akan dibagi lagi dan disimpan sebagai leaf node.
 				\end{figure}
 	\end{itemize}
 
