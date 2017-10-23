@@ -128,14 +128,14 @@ Indeks y dapat dihitung sebagai:
 \begin{equation}
 	    xtile = \frac{lon + 180}{360} \ 2^zoom 
 \end{equation}
-\item (2)
+
 \begin{equation}
 	    ytile =\frac{1-log (tan(lat_rad) + \frac{1}{cos(lat_rad)})}{2pi} \ 2^zoom 
 \end{equation}
-\item (3)
+
 dimana lon mewakili bujur dalam derajat desimal, lat_rad mewakili garis lintang dalam radian, zoom adalah nomor zoom, xtile adalah 
 indeks x column (x), dan ytile adalah indeks baris ubin (y). Bagian bilangan bulat dari bilangan xtile atau ytile adalah indeks x ubin 
-atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng \cite{Kadlec2016Extracting} .
+atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng.
 
 \subsection{KerangkaTethys}
 
@@ -144,7 +144,7 @@ Tethys. Tethys (Jones et al., 2014) adalah platform yang dapat digunakan untuk m
 Ini mencakup perangkat lunak open source dan open source: PostgreSQL, GeoServer, dan Web Processing Service. Salah satu keuntungan dari 
 Tethys atas aplikasi web kustom adalah menyediakan arsitektur plug-in (Heineman dan Councill, 2001) untuk penerapan aplikasi baru yang 
 relatif mudah. Gaya grafis, tata letak, panel navigasi, pengelolaan pengguna, dan pengelolaan penyimpanan data web semuanya ditangani 
-oleh Tethys. Tethys plugin dikenal sebagai "app" dan memiliki empat komponen: Persistent Storage, Controller, Template, dan Gizmo. 
+oleh Tethys. Tethys plugin dikenal sebagai ``app'' dan memiliki empat komponen: Persistent Storage, Controller, Template, dan Gizmo. 
 Penyimpanan persisten digunakan untuk menyimpan pengaturan pengguna, misalnya lokasi favorit. Pengendali menangani perhitungan dan 
 logika bisnis aplikasi. Tethys menyediakan pengendali dasar dengan fungsi built-in untuk menghubungkan ke model. Template mendefinisikan 
 posisi teks, tombol, grafik, tabel, dan peta di antarmuka pengguna. Gizmo adalah komponen antarmuka pengguna yang dapat disesuaikan. 
@@ -155,7 +155,7 @@ menampilkan peta dan bagan interaktif di halaman arahan aplikasi \cite{Kadlec201
 
 \subsection{DesainAntarmukaPenggunaInspekturSalju}
 
- Antarmuka pengguna web Snow Inspector terdiri dari dua tampilan: \"peta salju\" dan \"grafik salju.\" Peta menggunakan kontrol peta interaktif OpenLayers versi 3 (openlayers.org). Pengguna dapat menambahkan titik di manapun pada peta dengan klik mouse. Saat pengguna selesai bekerja dengan peta, koordinat bentuk yang ditentukan pengguna dilewatkan ke pengontrol peta. Pengontrol peta melewati koordinat dan parameter masukan lainnya (rentang waktu, layanan WMTS) ke pengendali salju. Pengontrol salju meluncurkan skrip pengambilan data. Saat skrip pengambilan data berfungsi, ia memiliki opsi untuk menyimpan data yang diunduh dalam cache waktu penyimpanan yang terus-menerus. Dengan menggunakan metode Asynchronous JavaScript (AJAX), peta dan bagan template secara berkala memeriksa pengendali salju untuk status kemajuan dan memperbarui diagram dan bilah kemajuan di halaman web. Setelah pemrosesan selesai, pengendali mengambil rangkaian waktu dan meneruskannya ke bagan bagan tempat grafik interaktif diperbarui \cite{Kadlec2016Extracting}.
+ Antarmuka pengguna web Snow Inspector terdiri dari dua tampilan: ``peta salju'' dan ``grafik salju'' . Peta menggunakan kontrol peta interaktif OpenLayers versi 3 (openlayers.org). Pengguna dapat menambahkan titik di manapun pada peta dengan klik mouse. Saat pengguna selesai bekerja dengan peta, koordinat bentuk yang ditentukan pengguna dilewatkan ke pengontrol peta. Pengontrol peta melewati koordinat dan parameter masukan lainnya (rentang waktu, layanan WMTS) ke pengendali salju. Pengontrol salju meluncurkan skrip pengambilan data. Saat skrip pengambilan data berfungsi, ia memiliki opsi untuk menyimpan data yang diunduh dalam cache waktu penyimpanan yang terus-menerus. Dengan menggunakan metode Asynchronous JavaScript (AJAX), peta dan bagan template secara berkala memeriksa pengendali salju untuk status kemajuan dan memperbarui diagram dan bilah kemajuan di halaman web. Setelah pemrosesan selesai, pengendali mengambil rangkaian waktu dan meneruskannya ke bagan bagan tempat grafik interaktif diperbarui \cite{Kadlec2016Extracting}.
 
 
 
