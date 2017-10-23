@@ -8,7 +8,7 @@ Web Map Tile Service merupakan peta ubin yang dikembangkan pertama kali oleh Ope
 Terdapat potensi di dalam Web Map Tile Services yaitu gambar peta ubin dapat di cache pada lokasi antara klien dan server, 
 mengurangi latensi yang terkait dengan proses pembuatan gambar. Lapisan ubin biasanya di pasang di sisi server, menyajikan 
 ubin gambar peta secara bersamaan ke beberapa pengguna. Selain itu, banyak pemetaan klien, seperti Google Earth atau Nasa 
-World Wind, telah menyematkan cache, yang juga dapat mengurangi kemacetan jaringan dan penundaan jaringan. \cite{garcia2012web}
+World Wind, telah menyematkan cache, yang juga dapat mengurangi kemacetan jaringan dan penundaan jaringan \cite{garcia2012web}.
 
 WMTS telah menjadi populer untuk visualisasi data geografis multi-dimensi di Internet. Dalam sistem tile, data disusun pada sejumlah 
 skala yang telah ditentukan. Untuk setiap skala, area yang dipetakan dibagi menjadi banyak ubin persegi dengan ukuran 256 x 256 piksel.
@@ -36,7 +36,7 @@ gambar \ref{TilePyramid}
 
 \begin{figure}[ht]
 
-\centerline{\includegraphics[width=1\textwidth]{figures/TilePyramid.JPG}}
+\centerline{\includegraphics[width=1\textwidth]{figures/TilePyramid.jpg}}
 
 \caption{Representasi piramida ubin}
 
@@ -64,7 +64,7 @@ terjadi saat ini. Dengan melihat fakta-fakta di atas, Penelitian ini ingin menga
 metode inimempertimbangkan tile static dan dynamic map. Untuk menganalisa digunakan metode matematika, data hasil testing, statistik 
 hasil pengujian dan membandingkan beberapa metode yang telah berkembang untuk meningkatkan performa web gis. Penulis berharap analisis 
 ini dapat meminimalkan waktu respon dan meningkatkan pelayanan E-Government Sistem Pemantauan Bumi Nasional (SPBN). Oleh karena itu 
-penulis melakukan studi \“Analisis Optimalisasi Web Gis Dengan Metode Tiling\”. Penelitian ini diharapkan dapat membantu memecahkan 
+penulis melakukan studi ``Analisis Optimalisasi Web Gis Dengan Metode Tiling''. Penelitian ini diharapkan dapat membantu memecahkan 
 masalah diatas \cite{dewioptimalisasi} .
 
 \subsection{Peta Jalan}
@@ -81,7 +81,7 @@ mendapatkan posisi penerima dengan akurasi 6 sampai 10 meter dalam kondisi norma
 untuk mengembangkan lokasi berbasis layanan mendahului pemberitahuan dan berdasarkan informasi dari mobile tiang telepon atau beacon
 lainnya. Namun, metode ini tidak mendapatkan banyak pangsa pasar karena untuk kompleksitas teknis dan ketidakmampuan mereka untuk
 memberikan cakupan universal. Sebaliknya, GPS memungkinkan pengembangan receiver murah dengan akurasi posisi yang baik, dan, pada
-pertengahan-2001, adalah mungkin untuk membeli unit penerimasekitar US $ 100,3 penerima ini membantu lebih banyak orang daripada
+pertengahan-2001, adalah mungkin untuk membeli unit penerimasekitar US \$ 100,3 penerima ini membantu lebih banyak orang daripada
 sebelumnya mengumpulkan informasi tentang lokasi yang berbeda dan upload ke komputer mereka.
 
 Namun sampai tahun 2002, ketika standar pertukaran (format eXchange GPS atau GPX) diterbitkan, dimanipulasi dan berbagi Informasi ini
@@ -101,7 +101,7 @@ Mengekstraksi data deret waktu dari WMTS terdiri dari empat langkah utama:
 \end{enumerate}
 Keempat langkah ini diulang untuk setiap langkah waktu dalam deret waktu (Gambar 1).
 
-Spesifikasi WMTS, yang juga dikenal dengan nama \"TMS\" (layanan peta ubin), adalah protokol layanan web untuk mengambil gambar peta ubin yang telah
+Spesifikasi WMTS, yang juga dikenal dengan nama ``TMS'' (layanan peta ubin), adalah protokol layanan web untuk mengambil gambar peta ubin yang telah
 didefinisikan oleh OGC (Maso et al., 2010). Permintaan WMTS ada dalam format:
 
 \begin{equation}
@@ -128,18 +128,18 @@ Indeks y dapat dihitung sebagai:
 \begin{equation}
 	    xtile = \frac{lon + 180}{360} \ 2^zoom 
 \end{equation}
-(2)
+\item (2)
 \begin{equation}
 	    ytile =\frac{1-log (tan(lat_rad) + \frac{1}{cos(lat_rad)})}{2pi} \ 2^zoom 
 \end{equation}
-(3)
+\item (3)
 dimana lon mewakili bujur dalam derajat desimal, lat_rad mewakili garis lintang dalam radian, zoom adalah nomor zoom, xtile adalah 
 indeks x column (x), dan ytile adalah indeks baris ubin (y). Bagian bilangan bulat dari bilangan xtile atau ytile adalah indeks x ubin 
 atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng \cite{Kadlec2016Extracting} .
 
 \subsection{KerangkaTethys}
 
-\cite{Kadlec2016Extracting}. Untuk membuat fungsi ekstraksi data Python tersedia bagi pengguna akhir, kami merancang aplikasi web interaktif dalam kerangka kerja 
+Untuk membuat fungsi ekstraksi data Python tersedia bagi pengguna akhir, kami merancang aplikasi web interaktif dalam kerangka kerja 
 Tethys. Tethys (Jones et al., 2014) adalah platform yang dapat digunakan untuk mengembangkan dan meng-host aplikasi web sumber daya air. 
 Ini mencakup perangkat lunak open source dan open source: PostgreSQL, GeoServer, dan Web Processing Service. Salah satu keuntungan dari 
 Tethys atas aplikasi web kustom adalah menyediakan arsitektur plug-in (Heineman dan Councill, 2001) untuk penerapan aplikasi baru yang 
@@ -149,19 +149,19 @@ Penyimpanan persisten digunakan untuk menyimpan pengaturan pengguna, misalnya lo
 logika bisnis aplikasi. Tethys menyediakan pengendali dasar dengan fungsi built-in untuk menghubungkan ke model. Template mendefinisikan 
 posisi teks, tombol, grafik, tabel, dan peta di antarmuka pengguna. Gizmo adalah komponen antarmuka pengguna yang dapat disesuaikan. 
 Bisa berupa button, date time picker, daftar drop-down, chart, table, atau map. Peta dan bagan template bertanggung jawab untuk 
-menampilkan peta dan bagan interaktif di halaman arahan aplikasi .
+menampilkan peta dan bagan interaktif di halaman arahan aplikasi \cite{Kadlec2016Extracting}. 
 
 
 
 \subsection{DesainAntarmukaPenggunaInspekturSalju}
 
-\cite{Kadlec2016Extracting}. Antarmuka pengguna web Snow Inspector terdiri dari dua tampilan: \"peta salju\" dan \"grafik salju.\" Peta menggunakan kontrol peta interaktif OpenLayers versi 3 (openlayers.org). Pengguna dapat menambahkan titik di manapun pada peta dengan klik mouse. Saat pengguna selesai bekerja dengan peta, koordinat bentuk yang ditentukan pengguna dilewatkan ke pengontrol peta. Pengontrol peta melewati koordinat dan parameter masukan lainnya (rentang waktu, layanan WMTS) ke pengendali salju. Pengontrol salju meluncurkan skrip pengambilan data. Saat skrip pengambilan data berfungsi, ia memiliki opsi untuk menyimpan data yang diunduh dalam cache waktu penyimpanan yang terus-menerus. Dengan menggunakan metode Asynchronous JavaScript (AJAX), peta dan bagan template secara berkala memeriksa pengendali salju untuk status kemajuan dan memperbarui diagram dan bilah kemajuan di halaman web. Setelah pemrosesan selesai, pengendali mengambil rangkaian waktu dan meneruskannya ke bagan bagan tempat grafik interaktif diperbarui.
+ Antarmuka pengguna web Snow Inspector terdiri dari dua tampilan: \"peta salju\" dan \"grafik salju.\" Peta menggunakan kontrol peta interaktif OpenLayers versi 3 (openlayers.org). Pengguna dapat menambahkan titik di manapun pada peta dengan klik mouse. Saat pengguna selesai bekerja dengan peta, koordinat bentuk yang ditentukan pengguna dilewatkan ke pengontrol peta. Pengontrol peta melewati koordinat dan parameter masukan lainnya (rentang waktu, layanan WMTS) ke pengendali salju. Pengontrol salju meluncurkan skrip pengambilan data. Saat skrip pengambilan data berfungsi, ia memiliki opsi untuk menyimpan data yang diunduh dalam cache waktu penyimpanan yang terus-menerus. Dengan menggunakan metode Asynchronous JavaScript (AJAX), peta dan bagan template secara berkala memeriksa pengendali salju untuk status kemajuan dan memperbarui diagram dan bilah kemajuan di halaman web. Setelah pemrosesan selesai, pengendali mengambil rangkaian waktu dan meneruskannya ke bagan bagan tempat grafik interaktif diperbarui \cite{Kadlec2016Extracting}.
 
 
 
 \subsection{SaljuInspekturDataApplicationProgrammerInterfaceDesign}
 
-\cite{Kadlec2016Extracting}. Template lainnya digunakan untuk menampilkan rangkaian waktu hasil dalam empat format yang berbeda: comma-separated values ​​(CSV), JavaScript Object Notification System (JSON), WaterML 1.1, dan WaterML 2.0. WaterML adalah standar OGC yang disetujui secara internasional untuk pertukaran data rangkaian waktu hidrologi (OGC, 2012a). Ini tidak hanya berisi data nilai tetapi juga metadata terkait termasuk lokasi situs, organisasi sumber data, dan unit pengukuran. Keseluruhan desain aplikasi web Snow Inspector termasuk pengontrol dan template. API time series dapat diakses dengan menggunakan parameter string.
+Template lainnya digunakan untuk menampilkan rangkaian waktu hasil dalam empat format yang berbeda: comma-separated values (CSV), JavaScript Object Notification System (JSON), WaterML 1.1, dan WaterML 2.0. WaterML adalah standar OGC yang disetujui secara internasional untuk pertukaran data rangkaian waktu hidrologi (OGC, 2012a). Ini tidak hanya berisi data nilai tetapi juga metadata terkait termasuk lokasi situs, organisasi sumber data, dan unit pengukuran. Keseluruhan desain aplikasi web Snow Inspector termasuk pengontrol dan template. API time series dapat diakses dengan menggunakan parameter string \cite{Kadlec2016Extracting}. 
 
 
 
