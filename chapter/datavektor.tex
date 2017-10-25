@@ -6,50 +6,43 @@
 
 
 
-\section{data vektor}
-  Data vektor dalam Sistem Informasi Geografis. dalam  data vektor bumi direpresentasikan sebegai suatu  mosaic yang terdiri dari garis (arclline), polygon (dareah yang dibatasi oleh garis yang berawal dan berakhir pada titik yang sama), titik/point (node yang memiliki label),  dan nodes (titik perpotongan antara dua buah garis).Titik disimpan sebagai sepasang angka koordinat dan poligon sebagai rangkaian koordinat yang membentuk garis tertutup.Resolusi dari data vektor tergantung dari jumlah titik yang membentuk garis.
-  Fungsi dari vektor telah berkembang dengan pesatnya sehingga tidak hanya berfungsi sebagai sekedar outline akan tetapi telah menjadi sarana menggambarkan artistik yang sangat powerfull.Kalian juga dapat menggunakan fasilitas artistic media,yang mengolah kurva menjadi pen-style yang sangat variatif.
-
-  
- \section{data raster}
- Data raster merupakan data yang disimpan dalam bentuk kotak segi empat (grid)
+\section{Data Vektor}
+Data vektor dalam Sistem Informasi Geografis. dalam  data vektor bumi direpresentasikan sebegai suatu  mosaic yang terdiri dari garis (arclline), polygon (dareah yang dibatasi oleh garis yang berawal dan berakhir pada titik yang sama), titik/point (node yang memiliki label),  dan nodes (titik perpotongan antara dua buah garis).Titik disimpan sebagai sepasang angka koordinat dan poligon sebagai rangkaian koordinat yang membentuk garis tertutup.Resolusi dari data vektor tergantung dari jumlah titik yang membentuk garis.
+Fungsi dari vektor telah berkembang dengan pesatnya sehingga tidak hanya berfungsi sebagai sekedar outline akan tetapi telah menjadi sarana menggambarkan artistik yang sangat powerfull.Kalian juga dapat menggunakan fasilitas artistic media,yang mengolah kurva menjadi pen-style yang sangat variatif. 
+\subsection{Data Raster}
+Data raster merupakan data yang disimpan dalam bentuk kotak segi empat (grid)
 atau sel sehingga terbentuk suatu ruang yang teratur.Pada data raster,objek geografis dipresentasikan sebagai struktur sel grid yang disebut sebagai pixel (picture element).Definisi gambar tergantung pada ukuran pixel-nya,semakin kecil ukuran permukaan bumi yang dipresentasikan oleh sel,semakin tinggi ukuran permukaannya.
-
-
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth] {figures/vektor01.JPG}}
 \caption{tampilan dari data vektor dan data raster}
 \label{vektor01}
 \end{figure}
-Pada gambar \ref{vektor01} ditampilkan gambar data vector dan juga data raster yang memiliki perbedaan dalam segi tampilan. Pada data raster gambar akan membentuk seperti potongan bitmap yang apabila kita melihat peta akan tidak begitu jelas di pandang, akan tetapi dalam perhitungan bisa memudahkan kita. Pada data vector gambar yang dihasilkan lebih jelas dan lebih nyata, dan dalam segi perhitungan lebih rumit karena gambar yang di hasilkan lebih jelas dan lebihnyata.
-
+Pada gambar \ref{vektor01} ditampilkan gambar data vector dan juga data raster yang memiliki perbedaan dalam segi tampilan. Pada data raster gambar akan membentuk seperti potongan bitmap yang apabila kita melihat peta akan tidak begitu jelas di pandang, akan tetapi dalam perhitungan bisa memudahkan kita. Pada data vector gambar yang dihasilkan lebih jelas dan lebih nyata, dan dalam segi perhitungan lebih rumit karena gambar yang di hasilkan lebih jelas dan lebih nyata.
 
 \subsection
 \begin{enumerate}
- Model data vektor sendiri merupakan model yang banyak digunakan, model ini berbasis pada titik (points) dengan nilai koordinat (x,y) untuk membangun objek spasialnya.Objek yang dibangun terbagi menjadi tiga bagian yaitu berupa titik (point),garis (line) dan area (polygon).
+Model data vektor sendiri merupakan model yang banyak digunakan, model ini berbasis pada titik (points) dengan nilai koordinat (x,y) untuk membangun objek spasialnya.Objek yang dibangun terbagi menjadi tiga bagian yaitu berupa titik (point),garis (line) dan area (polygon).
 \item Titik (point) merupakan representasi grafis yang paling sederhana pada suatu objek.Titik tidak mempunyai dimensi tetapi dapat     ditampilkan dalam bentuk simbol baik pada peta maupun dalam layar monitor.Contoh : lokasi fasilitas kesehatan.
-\item Garis (Line) merupakan bentuk linear yang menghubungkan dua atau lebih titik dan merepresentasikan objek dalam satu dimensi.Contoh : Jalan dan Sungai.
-\item Area (Polygon) merupakan representasi objek dalam dua dimensi.Contoh : Danau.
-  Setiap bagian dari data vektor dapat saja mempunyai informasi-informasi yang berasosiasi satu dengan lainnya seperti penggunaan sebuah label untuk menggambarkan informasi pada suatu lokasi.
+\item Garis (Line) merupakan bentuk linear yang menghubungkan dua atau lebih titik dan merepresentasikan objek dalam satu dimensi. contoh : Jalan dan Sungai.
+\item Area (Polygon) merupakan representasi objek dalam dua dimensi. contoh : Danau.
+Setiap bagian dari data vektor dapat saja mempunyai informasi-informasi yang berasosiasi satu dengan lainnya seperti penggunaan sebuah label untuk menggambarkan informasi pada suatu lokasi.
 \end{enumerate} 
- 
- 
 \subsection {Perbedaan Data Vektor dan Raster}
 Sistem Informasi Geografis : Prinsip Dasar dan Pengembangan Aplikasi
+
 \subsection {Objek pada datavektor}
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth] {figures/vektor02.JPG}}
 \caption{tampilan skala data vektor}
 \label{vektor02}
 \end{figure}
-Sesuai pada gambar \ref{vektor02} 
+Sesuai pada gambar \ref{vektor02} tergambar jelas bahwa pada penggunaan data vektor yang digunakan adalah model yang berbasis titik (point) dengan nilai koordinat (x, y).
 \begin{enumerate}
 Objek yang dibangun terbagi menjadi tiga bagian lagi, yaitu berupa titik (point), garis (line), dan area (polygon). 
 \item titik (point) merupakan representasi grafis yang paling sederhana pada suatu objek. Titik tidak mempunyai dimensi tetapi dapat ditampilkan dalam bentuk symbol baik pada peta maupun dalam layar monitor.
 \item garis (line) merupakan bentuk linear yang menghubungkan dua ataui lebih titik dan merepresentasikan objek dalam satu dimensi. 
 \item Area (polygon) merupakan representasi objek dalam dua dimensi.
 \end{enumerate}
-
 
 \subsection { Cara Menggunaan Data Vektor}
 \begin{enumerate}
@@ -58,17 +51,14 @@ Adapun cara menggunakan data vektor ke dalam SIG dapat dilakukan melalui tiga ca
 \item Digital merupakan proses pengubahan data grafis analog menjadi data grafis digital dalam struktur vektor.
 \item Tabulasi adalah proses memasukkan data atribut SIG dengan pembuatan tabel.
 
-
 \subsection {Aplikasi Yang Memudahkan Pembuatan Data Vektor}
 \subsubsection {Microsoft Visio}
-Microsoft Visio atau yang sering kita sebut visio merupakan suatu program aplikasi perangkat komputer yang memang sering digunakan atau dipakai untuk membuat sebuah diagram, misalnya seperti diagram aliran(flowchart), brainstorm, dan juga skema pada jaringan yang dikeluarkan atau dirilis oleh Microsoft Corporation. biasanya aplikasi ini memakai grafik vektor untuk menciptakan atau membuat diagram-diagramnya. 
-
+Microsoft Visio atau yang sering kita sebut visio merupakan suatu program aplikasi perangkat komputer yang memang sering digunakan atau dipakai untuk membuat sebuah diagram, misalnya seperti diagram aliran(flowchart), brainstorm, dan juga skema pada jaringan yang dikeluarkan atau dirilis oleh Microsoft Corporation. biasanya aplikasi ini memakai grafik vektor untuk menciptakan atau membuat diagram-diagramnya.
 \subsubsection {Corel Draw}
 CorelDraw merupakan aplikasi perangkat komputer yang juga sering digunakan sebagai pengolahan vektor. coreldraw ini juga merupakan fasilitas yang cukup sangat lengkap di bandung aplikasi yang lainnya, coreldraw juga bisa digunakan sebagai pengelolaan kurva bezier. kurva bezier (bezier curve) merupakan garing lengkung yang terbentuk dari rumusan matematis. 
 kurva bezier memiliki sebuah titik pusat (anchor point) dengan garis pengendali arah atau handle. dan dari handle ini dapat kita atur seluruh kelengkungan objek melalui dua titik yang bisa di sebut sebagai titik tangen dari kurva bezier ini.
 
-
-\subsection{kelebihan dan kekurangan data vektor}
+\subsection{Kekurangan dan Kelebihan Data Vektor}
 \subsubsection{Kelebihan Data Vektor}
 \begin{enumerate}
 Kelebihan data vektor di bandingkan data raster
@@ -88,7 +78,6 @@ data vektor relatif lebih ekonomis dalam hal ukuran file dan presisi dalam lokas
 \item Transformasi koordinat dan proyeksi tidak sulit dilakukan.
 \item Hubungan topologi dan network dapat dilakukan dengan mudah.
 \end{enumerate}
-
 \subsubsection{Kekurangan data Vektor}
 \begin{enumerate}
 kekurangan data vector dibandingkan data raster
@@ -103,8 +92,7 @@ terdapat keterbatasan masalah akurasi dan presisi data terutama dalam menentukan
 \item data ini adalah ketidakmampuannya dalam mengakomodasi perubahan fenomena yang bersifat gradual.
 \end{enumerate}
 
-
-\subsection
+\subsection{Model Data Vektor}
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth] {figures/vektor03.JPG}}
 \caption{representasi data vektor dan atributnya}
@@ -121,7 +109,6 @@ Model data vektor dalam topologi dikembangkan dalam dua kategori,yaitu Data Sede
 ke dalam list koordinat (x,y) dalam format digital.Sebuah titik dikodekan sebagai pasangan koordinat (x,y) tunggal.Sementara area atau ulasan dikodekan sebagai poligon dan direkam sebagai pasangan koordinat closed-loop yang didefinisikan batas-batasannya.
 \end{enumerate}
 
-
 \subsection
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1\textwidth] {figures/vektor04.JPG}}
@@ -132,7 +119,6 @@ Sesuai dengan gambar \ref{vektor04} klasifikasi model data spasial dibagi menjad
 
 \subsection 
 pada data vektor ini, kita dapat simpulkan bahwa penggunaan suatu aplikasi dapat di sesuaikan dengan apa saja hal-hal yang kita perlukan dan kita inginkan agar dapat sesuai pada proses dan juga hasilnya yang kita harapkan. Sehingga data data yang telah di kumpulkan dapat digunakan untuk keperluan sistem informasi geografis yang sangat lengkap.
-
 
 \subsection
 pada data vektor yang dijelaskan bahwa data berikut merupakan data yang valid dengan menggunakan model data spasial dengan menggunakan titik, dan meyimpan dat asapsial menggunakan garis-garis atau kurva atau pologion beserta atribut-atributnya. bentuk- bentuk dasar sepsertasi data yang ada data spasial ini, didalam sistem dalam ini dalam ssistem kordinat data vektor. jarak antara rumah didesa sistem perhubungannya dan kondisi geografis.
