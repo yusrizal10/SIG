@@ -1,0 +1,160 @@
+tugas python :
+fork bukuinformatika/python
+
+pull request
+
+3A
+1 Desicion Making 1 2
+2 Loop  1 2
+3 Lists 1 2 
+4 Tuples 3 4 
+5 Dictionary 3 4 
+6 Functions 3 4
+
+3B 
+1. CGI Programming 1 2
+2. Databases Access 1 2 
+3. Sending Email 1 2
+4. Multithreading 3 4
+5. XML Processing 3 4
+6. GUI Programming 3 4
+
+3C
+1 Home 1 2
+2 Overview 1 2
+3 Environtment Setup 1 2
+4 Basic Syntax 3 4
+5 Variabel Type 3 4
+6 Basic Operator 3 4
+
+
+3D
+1. Modules 1 2
+2. Files I/O 1 2 
+3. Exceptions 1 2 
+4. Clasess/Object 3 4 
+5. Reg Expression 3 4 
+6. Networking 3 4
+
+
+
+
+
+a. Menggunakan Aturan : 
+
+		1. file disimpan dalam format namatugas.tex (5)
+
+		2. gambar disimpan dalam folder figures dengan namagambar (5)
+
+		3. referensi wajib dari google scholar,scholar.google.com (5)
+
+		4. Setiap referensi yang diambil, maka tuliskan ke dalam 
+			file bernama reference.bib
+		   yang berisi kumpulan bibTex dari referensi nomor 3 (5)
+
+		5. fork buku gis https://github.com/BukuInformatika/python ke orgz (5)
+
+		6. Gambar disebutkan di dalam artikel dengan format \ref{namagambar}
+		   dan gambar diselipkan dengan menambahkan blok sintaks(5) :
+			\begin{figure}[ht]
+			\centerline{\includegraphics[width=1\textwidth]{figures/namagambar.JPG}}
+			\caption{penjelasan keterangan gambar.}
+			\label{namagambar}
+			\end{figure}
+			Contoh :
+			Pada gambar \ref{namagambar} dijelaskan bahwa sistem operasi memiliki 
+			3 versi.
+	
+		7. Referensi disebutkan dengan menyebutkan nama di dalam file bibtex No.4
+		   contoh (5) :
+			Jika Bibtex :
+			@inproceedings{ganapathi2006windows,
+			  title={Windows XP Kernel Crash Analysis.},
+			  author={Ganapathi, Archana and Ganapathi, Viji and Patterson, David A},
+			  booktitle={LISA},
+			  volume={6},
+			  pages={49--159},
+			  year={2006}
+			}
+			Maka artikel :
+			Dalam sebuah artikel dari Ganapathi yang menyebutkan bahwa komputasi 
+			adalah keniscayan \cite{ganapathi2006windows}.
+	
+	
+		8. Penyebutan subbab dan subsubbab diatur dengan cara (5)
+			judul sub bab \section{nama sub bab}
+			judul sub sub bab ditulis dengan \subsection{judul sub sub bab}
+			judul sub sub sub bab ditulis dengan \subsubsection{Judul sub sub sub bab}
+			contoh :
+			\section{Sejarah Peta}
+			Perkembangan peta dunia tidak luput dari para ahli geografi dan kartografi. Peta dunia yang populer pada saat ini merupkan kontribusi dari para 
+			pembuat peta sebelumnya
+
+			\subsection{Ptolemy's}
+			Ptolemy's diduga membuat peta pada abad ke 2
+	
+		9. Satu kelompok minimal 1500 kata, waktu maksimal 6*24 jam (5)
+
+		10. Harus di scan plagiat setiap kelompok dari portal kampus keren, minimal uniqe 80% (25)
+
+
+
+b. commit sehari(min 50 kata) per anggota kelompok selama 6 hari (30) proofreading dan perbaiki format(jenis huruf margin dsb) dan tambahkan contoh2nya dengan menggunakan tag verbatim 1 orang 1 verbatim.
+
+
+untuk kode
+\begin{verbatim}
+a = "anu"
+b = "itu"
+c = a + b
+print(c) 
+\end{verbatim}
+
+
+
+
+Format Tambahan :
+1. untuk list nomor gunakan
+	contoh :
+	berikut nama anggota kelompok
+\begin{enumerate}
+	\item darso
+	\item karyo
+	\item doyok
+\end{enumerate}
+
+2. spesial karakter menggunakan tanda \ didepannya
+	contoh :
+	\&
+	\_
+	\"dalam petik\"
+	jika spesial karakter menjadi banyak atau satu baris gunakan verb
+	contoh :
+	\verb|%$'%&$&'%'%'%&'%|
+	
+3. untuk tabel gunakan table , contoh
+
+\begin{table}[h]
+\caption{Small Table}
+\centering
+\begin{tabular}{ccc}
+\hline
+one&two&three\\
+\hline
+C&D&E\\
+\hline
+\end{tabular}
+\end{table}
+
+4. untuk rumus gunakan tag equation
+	contoh:
+	Rumus bola:
+
+	a) Luas permukaan
+	 \begin{equation}
+	     L = 4 \pi r^2 \,
+	\end{equation}
+	b) Volume
+	 \begin{equation}
+	     V = \frac{4}{3}\pi r^3
+	\end{equation}
