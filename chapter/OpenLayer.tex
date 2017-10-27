@@ -1,0 +1,195 @@
+%OPENLAYER
+%Kelompok 1 D4 TI 3D
+%Wahyu Maruti Adjie_1154034
+%Muhammad Nur Ikhsan_1154087
+%Emy Safitri_1154102
+%Andi Ikram Maulana_1154065
+%Ilman Mubarik Sidiq_1154114
+
+\documentclass{article}
+\title{OPENLAYER}
+\begin{document}
+\maketitle
+
+\section{deskripsi openlayer}
+OpenLayers adalah library Javascript murni yang dipakai untuk menampilkan sebuah data peta di setiap web browser, tanpa server side dependencies.
+OpenLayer mengimplementasikan JavaScript API untuk membangun sebuah rich web-based geographic apllications yang hampir sama seperti Google maps dan MSN Virtual Earth APIS.
+Open Layer adalah Software, yang dibangun oleh komunitas Open Source.
+  
+OpenLayers Syntax
+OpenLayers “Classes”
+Ditulis menggunakan gaya klasik yang fungsi-fungsinya ditulis dengan dengan huruf besar pada awal syntax.
+contohnya : var map = new OpenLayers.Map(“map”, options);
+Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers. 
+  
+
+  OpenLayers Syntax
+  OpenLayers “Classes”
+  Ditulis menggunakan gaya klasik yang fungsi-fungsinya ditulis dengan dengan huruf besar pada awal syntax.
+  contoh : var map = new OpenLayers.Map(“map”, options);
+  Syntax diatas menjelaskan sebuah map dengan semua property dari Open Layers.
+  Fungsi diatas adalah fungsi prototype dar openlayer. Property yang akan diset dan diakses telah terdukumentasi di bagian API   Dokumentation.
+
+\subsection{Base Layers}
+ Base Layers adalah layer yang bersifat mutually Exclusive yang berarti hanya satu yang bisa diaktifkan setiap saat.
+ Base layer yang aktif akan menentukan proyeksi sistem koordinat yang ada dan memperbesar level yang terdapat dalam peta. 
+ Base Layer atau bukan, hal ini ditentukan oleh property isBaseLayer pada layer. Kebanyakan Layer raster memiliki Properti isBaseLayer yang diset dengan true secara default. 
+ Ini bisa diganti pada layer option. Base layers selalu ditampilkan dibawah overlay layers.
+
+\subsection{Non Base Layers}
+Non base layers, terkadang disebut juga sebagaioverlay, adalah merupakan Base Layers alternative. Non-base layer yang banyak dapat diaktifkan setiap saat.
+Layer ini tidak memegang control untuk zoom level dari peta, tapi dapat diaktifkan atau di nonaktifkan pada skala yang tepat dengan min/max scale/parameter resolusi, sehingga hanya dapat diaktifkan pada level tertentu.
+
+\subsection {Raster Layers}
+Raster layer adalah layer bayangan. Layer ini merupakan fixed projection yang tidak dapat dirubah pada client side.
+
+\subsection {Google}
+Layer yang digunakan untuk data Google Maps PAA OpenLayer. Untuk informasi API, dapat dilihan pada Google Layer Api Docs. 
+Contoh penggunaanya dapat dilihat pada contoh penggunaan Spherical Mercator.
+Jika kita ingin untuk menumpang tindihkan (overlay) layer dasar Google Maps dengan data lain, kita harus berinteraksi dengan layer Google Maps pada koordinat proyeksi.
+Kita dapat baca selengkapnya pada proyeksi Spherical Mercator dan berbagai layer komersial yang dipergunakan di dalam dokumentasi Spherical Mercator.
+Class Google Layer di design hanya sebagai base layer.
+
+\textbf{Image} \\
+Sebagai informasi API selengkapnya lihat pada Image Layer API Docs.\\
+\textbf{KaMap} \\
+Sebagai informasi API selengkapnya lihat pada KaMap Layer API Docs.\\
+\textbf{KaMapCache} \\
+Sebagai informasi API selengkapnya lihat pada KaMapCache Layer API Docs.\\
+\textbf{MapGuide} \\
+Sebagai informasi API selengkapnya lihat pada MapGuide Layer API Docs.\\
+\textbf{MapServer} \\
+Ini tidak diperlukan untuk berinteraksi dengan Map Server. Secara umum, lebih diminati daripada Layer MapServer, sebab MapServer mengekspos sebagian besar fungsi CGI dala modus WMS.
+Lapisan MapServer sering dapat menyebabkan peta yang tampaknya bekerja, tetapi masih bermasalah pada proyeksi atau misconfigurasi seruma lainnya.
+Dalam menggunakan WMS kita harus memiliki alasan yang kuat dibandingkan dengan menggunakan MapServer.
+Jika kita menggunakan layer MapServer, dan peta sedang diulang beberapa kali, ini menunjukkan bahwa kita belum melakukan konfigurasi dengan peda dan masih dalam proyeksi yang berbda.
+openLayer tidak dapat membaca informasi dari MAPFILE, dan harus dikonfigurasi secara explicit.\\
+
+\subsection {Overlay layer}
+Merupakan lapisan yang memiliki sumberdata dalam format selain citra. Ini termasuk subclass dari kedua layer Marker dan layer Vector.
+
+\subsection {Boxes}
+boxes lebih baik untuk mengimplementasikan fungsi dengan vector layer dan polygon geometric dengan mempertahankan untuk kompatibilitas mundur.
+
+\subsection {GML}
+GML layer merupakam subclass dari vector layer yang berguna untuk membaca data dan menampilkannya. 
+Contoh :
+var layer = new OpenLayers.Layer.GML(“GML”, “gml/polygon.xml”)
+map.addLayer(layer);
+
+\subsection {GeoRSS}
+GeoRSS akan  lebih baik menggunakan layer GML dengan SelectFeature Control dibandingkan dengan Layer GeoRSS yang tidak menggunakan layer GML.
+
+\subsection {Markers}
+Markers base layer sangat mudah diaplikasikan dan penggunaan fungsi addMarkers untuk menambah marker pada layer. Makaers hanya mendukung point/ titik.
+
+\subsection {Text}
+Text layer merupakan data-data dengan format Teks dan menampilkan hasilnya sebagai marker yang dapat diklik. Layer teks adalah subclass dari Marker layer, dan tidak mendukung format garis atau polygon.
+
+\subsection {Vector}
+Vector layer adalah basis dari geometry lanjutan pada class open layer seperti (GML dan subclass WFS). Ketika membuat feature pada pengkodean javaScript, menggunakan vector layer secara langsung adalah cara yang benar.
+Untuk informasi API selengkapnya lihat pada Vector Layer API Docs.
+\subsection {WFS}
+Untuk informasi API selengkapnya dapat di lihat pada WFS Layer API Docs.
+Generic Subclasses
+EventPane
+FixedZoomLevels
+Grid
+HTTPRequest
+SphericalMercator
+
+\subsubsection {Controls}
+Controls adalah OpenLayers classes yang mempengaruhi kondisi dari peta atau menampilakan informasi tambahan kepada user. Control sebagai antar muka utama dengan peta.
+
+\subsubsection {panels}
+Control panel terdiri dari kumpulan control yang dapat diakses di aplikasi Styling Panels
+Panels telah dikonfigurasi dengan CSS. ItemActive dan ItemInactive telah ditambahkan pada control displayClass
+Semua controls mempunyai displayClass yang dapat dioverride propertinya kedalam CSS. Panel items sudah desetting dengan menggabungkan stype dari Panel dengan sytle control. berikut adalah contoh nya :
+
+olControlNavToolbar div {
+
+display:block;
+
+width: 28px;
+
+height: 28px;
+
+top: 300px;
+
+left: 6px;
+
+position: relative;
+
+}
+
+.olControlNavToolbar .olControlNavigationItemActive {
+
+background-image: url(“img/panning-hand-on.png”);
+
+background-repeat: no-repeat;
+
+}
+
+.olControlNavToolbar .olControlNavigationItemInactive {
+
+background-image: url(“img/panning-hand-off.png”);
+
+background-repeat: no-repeat;
+
+}
+
+\subsubsection {Customizing an Existing Panel}
+Beberapa panel  memiliki beberapa kontrol yang digabungkan, tapi tidak semua panel memiliki kontrol. Namun, untuk membuat kontrol relatif sederhana. Misalnya, untuk membuat kontrol toolbar editing yang mempunyai fungsi menggambar garis, Anda bisa melakukannya dengan kode berikut:
+var layer = new OpenLayers.Layer.Vector();
+
+var panelControls = [
+
+new OpenLayers.Control.Navigation(),
+
+new OpenLayers.Control.DrawFeature(layer,
+
+OpenLayers.Handler.Path,
+
+{‘displayClass’: ‘olControlDrawFeaturePath’})
+
+];
+
+var toolbar = new OpenLayers.Control.Panel({
+
+displayClass: ‘olControlEditingToolbar’,
+
+defaultControl: panelControls[0]
+
+});
+
+toolbar.addControls(panelControls);
+
+map.addControl(toolbar);
+
+
+\section{Map Controls}
+\subsection{ArgParser}
+ 
+Membawa argumen URL, dan update peta.
+Dalam kontrol ArgParser pada sistemharus terdapat ‘getCenter ()’ supaya dapat mengembalikan nilai null sebelum mengacu pada peta untuk pertama kalinya. 
+Berikut sintaxnya :
+var map = new OpenLayers.Map(‘map’);
+
+var layer = new OpenLayers.Layer();
+
+map.addLayer(layer);
+
+// Ensure that center is not set
+
+if (!map.getCenter()) {
+
+map.setCenter(new OpenLayers.LonLat(-71, 42), 4);
+
+}
+
+kontrol ArgParser secara default = enabled.
+
+
+
+\end{document}
+
