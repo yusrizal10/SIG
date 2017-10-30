@@ -128,14 +128,16 @@ Indeks y dapat dihitung sebagai:
 \begin{equation}
 	    xtile = \frac{lon + 180}{360} \ 2^zoom 
 \end{equation}
-\item (2)
+
 \begin{equation}
 	    ytile =\frac{1-log (tan(lat_rad) + \frac{1}{cos(lat_rad)})}{2pi} \ 2^zoom 
 \end{equation}
-\item (3)
+
 dimana lon mewakili bujur dalam derajat desimal, lat_rad mewakili garis lintang dalam radian, zoom adalah nomor zoom, xtile adalah 
 indeks x column (x), dan ytile adalah indeks baris ubin (y). Bagian bilangan bulat dari bilangan xtile atau ytile adalah indeks x ubin 
-atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng\cite{Kadlec2016Extracting} .
+
+atau genteng. Bagian pecahan adalah posisi pixel di dalam genteng.
+
 
 \subsection{KerangkaTethys}
 
@@ -155,7 +157,7 @@ menampilkan peta dan bagan interaktif di halaman arahan aplikasi \cite{Kadlec201
 
 \subsection{DesainAntarmukaPenggunaInspekturSalju}
 
- Antarmuka pengguna web Snow Inspector terdiri dari dua tampilan: \"peta salju\" dan \"grafik salju.\" Peta menggunakan kontrol peta interaktif OpenLayers versi 3 (openlayers.org). Pengguna dapat menambahkan titik di manapun pada peta dengan klik mouse. Saat pengguna selesai bekerja dengan peta, koordinat bentuk yang ditentukan pengguna dilewatkan ke pengontrol peta. Pengontrol peta melewati koordinat dan parameter masukan lainnya (rentang waktu, layanan WMTS) ke pengendali salju. Pengontrol salju meluncurkan skrip pengambilan data. Saat skrip pengambilan data berfungsi, ia memiliki opsi untuk menyimpan data yang diunduh dalam cache waktu penyimpanan yang terus-menerus. Dengan menggunakan metode Asynchronous JavaScript (AJAX), peta dan bagan template secara berkala memeriksa pengendali salju untuk status kemajuan dan memperbarui diagram dan bilah kemajuan di halaman web. Setelah pemrosesan selesai, pengendali mengambil rangkaian waktu dan meneruskannya ke bagan bagan tempat grafik interaktif diperbarui \cite{Kadlec2016Extracting}.
+ Antarmuka pengguna web Snow Inspector terdiri dari dua tampilan: ``peta salju'' dan ``grafik salju'' . Peta menggunakan kontrol peta interaktif OpenLayers versi 3 (openlayers.org). Pengguna dapat menambahkan titik di manapun pada peta dengan klik mouse. Saat pengguna selesai bekerja dengan peta, koordinat bentuk yang ditentukan pengguna dilewatkan ke pengontrol peta. Pengontrol peta melewati koordinat dan parameter masukan lainnya (rentang waktu, layanan WMTS) ke pengendali salju. Pengontrol salju meluncurkan skrip pengambilan data. Saat skrip pengambilan data berfungsi, ia memiliki opsi untuk menyimpan data yang diunduh dalam cache waktu penyimpanan yang terus-menerus. Dengan menggunakan metode Asynchronous JavaScript (AJAX), peta dan bagan template secara berkala memeriksa pengendali salju untuk status kemajuan dan memperbarui diagram dan bilah kemajuan di halaman web. Setelah pemrosesan selesai, pengendali mengambil rangkaian waktu dan meneruskannya ke bagan bagan tempat grafik interaktif diperbarui \cite{Kadlec2016Extracting}.
 
 
 
