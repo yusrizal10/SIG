@@ -41,38 +41,38 @@ Prinsip dasar arsitektur OGC Web Services (OWS), meliputi:
 
 \begin{itemize} 
 \item Komponen layanan disusun dalam beberapa tingkatan.
-\begin{numerize}
+\begin{enumerate}
 \item Semua komponen memberikan layanan, kepada klien dan / atau komponen lainnya, dan setiap komponen biasanya disebut layanan (dengan beberapa implementasi) atau server (masing-masing implementasi).
 \item Layanan (atau komponen) diatur secara longgar dalam empat tingkatan, dari Klien sampai Layanan Aplikasi hingga Jasa Pemrosesan ke Layanan Manajemen Informasi, namun tingkat yang tidak diperlukan dapat dilewati.
 \item Layanan dapat menggunakan layanan lain dalam tingkat yang sama, dan ini biasa terjadi pada tingkat Jasa Pengolahan.
 \item Server dapat beroperasi pada (terikat ketat) data yang tersimpan dalam server dan / atau data (longgar terikat) yang diambil dari server lain.
-\end{itemize}
+\end{enumerate}
 \item Kolaborasi layanan menghasilkan hasil yang lebih baik.
-\begin{numerize}
+\begin{enumerate}
 \item Semua layanan menggambarkan diri sendiri, mendukung pengikatan layanan dinamis yang mendukung (just-in-time) yang mendukung publikasi.
 \item Layanan dapat dirantai dengan layanan lain dan sering dirantai, transparan (didefinisikan dan dikendalikan oleh klien), tembus pandang (dideklarasikan tapi terlihat oleh klien), dan tidak jelas (dideklarasikan dan tidak terlihat oleh klien), lihat Sub ayat 7.3. 5 dari [ISO 19119]
 \item Layanan disediakan untuk memudahkan mendefinisikan dan melaksanakan rantai layanan.
-\end{numerize}
+\end{enumerate}
 \item Komunikasi layanan menggunakan standar Internet terbuka.
-\begin{numerize}
+\begin{enumerate}
 \item Komunikasi antar komponen menggunakan protokol World Wide Web (WWW) standar, yaitu HTTP GET, HTTP POST, dan SOAP.
 \item Operasi server khusus ditangani dengan menggunakan Uniform Resource Locators (URL).
 \item Multiguna Internet Mail Extensions (MIME) jenis digunakan untuk mengidentifikasi format transfer data.
 \item Data yang ditransfer sering dikodekan menggunakan Extensible Markup Language (XML), dengan isi dan format yang ditentukan menggunakan Skema XML.
-\end{numerize}
+\end{enumerate}
 \item Antarmuka layanan menggunakan standar terbuka dan relatif sederhana.
-\begin{numerize}
+\begin{enumerate}
 \item Antarmuka webserver OGC digabungkan, hanya memberikan beberapa operasi statis per layanan.
 \item Operasi layanan biasanya tanpa kewarganegaraan, tidak memerlukan server untuk mempertahankan status antarmuka di antara operasi.
 \item Satu server dapat mengimplementasikan beberapa antarmuka layanan kapanpun bermanfaat.
 \item Standar pengkodean data berbasis XML XML ditentukan untuk digunakan dalam transfer data.
-\end{numerize}
+\end{enumerate}
 \item Implementasi server dan client tidak dibatasi.
-\begin{enumerize}
+\begin{enumerate}
 \item Layanan diimplementasikan oleh perangkat lunak yang dijalankan pada komputer tujuan umum yang terhubung ke Internet. Arsitekturnya adalah perangkat keras dan vendor perangkat lunak yang netral.
 \item Layanan yang sama dan bekerja sama dapat dilakukan oleh server yang dimiliki dan dioperasikan oleh organisasi independen. 
 \item Banyak layanan diimplementasikan dengan software Commercial Off The Shelf (COTS) berbasis standar. \cite{lupp2008open}
-\end{numerize}
+\end{enumerate}
 \end{itemize}
 \subsection{Pengertian Geospasial} Informasi Geospasial, yang lazim dikenal dengan peta, adalah informasi
 obyek permukaan bumi yang mencakup aspek waktu dan keruangan. Pengertian
