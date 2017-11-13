@@ -1,41 +1,40 @@
-%%%%%%% Demo of section head containing sample macro:
-%% To get a macro to expand correctly in a section head, with upper and
-%% lower case math, put the definition and set the box 
-%% before \begin{document}, so that when it appears in the 
-%% table of contents it will also work:
-
-\newcommand{\VT}[1]{\ensuremath{{V_{T#1}}}}
-
-%% use a box to expand the macro before we put it into the section head:
-
-\newbox\sectsavebox
-\setbox\sectsavebox=\hbox{\boldmath\VT{xyz}}
-
-%%%%%%%%%%%%%%%%% End Demo
-
-
-Other commands, and notes on usage:
-
-untuk kode
-\begin{verbatim}
-a = "anu"
-b = "itu"
-c = a + b
-print(c) 
-\end{verbatim}
-
-
-
-
-Format Tambahan :
-1. untuk list nomor gunakan
+Format standar :
+1. untuk list dan nomor gunakan enumerate atau itemize
 	contoh :
 	berikut nama anggota kelompok
-\begin{enumerate}
+	\begin{enumerate}
 	\item darso
 	\item karyo
 	\item doyok
-\end{enumerate}
+	\end{enumerate}
+	
+	\begin{enumerate}
+	\item
+	This is the first item in the numbered list.
+
+	\item
+	This is the second item in the numbered list.
+	\end{enumerate}
+
+	\begin{itemize}
+	\item
+	This is the first item in the itemized list.
+
+	\item
+	This is the first item in the itemized list.
+	This is the first item in the itemized list.
+	This is the first item in the itemized list.
+	\end{itemize}
+
+	\begin{itemize}
+	\item[]
+	This is the first item in the itemized list.
+
+	\item[]
+	This is the first item in the itemized list.
+	This is the first item in the itemized list.
+	This is the first item in the itemized list.
+	\end{itemize}
 
 2. spesial karakter menggunakan tanda \ didepannya
 	contoh :
@@ -73,14 +72,20 @@ C&D&E\\
 	     V = \frac{4}{3}\pi r^3
 	\end{equation}
 	
-	
------
-Possible section head levels:
-\section{Introduction}
-\subsection{This is subsection}
-\subsubsection{This is subsubsection}
-\paragraph{This is the paragraph}
+5. 	untuk kode program menggunakan verbatim
+	\begin{verbatim}
+	a = "anu"
+	b = "itu"
+	c = a + b
+	print(c) 
+	\end{verbatim}	
+6. bab subbab subsubbab :
+	\section{Bab}
+	\subsection{Sub Bab}
+	\subsubsection{Sub Sub Bab}
+	\paragraph{paragraph}
 
+7. Tabel 
 -----
 Tables:
  Remember to use \centering for a small table and to start the table
@@ -114,7 +119,13 @@ $^b\kappa, \lambda>1$.
 \end{tablenotes}
 \end{table}
 
------
+
+8. untuk quote, Sample quote:
+\begin{quote}
+quotation...
+\end{quote}
+
+9 Untuk algoritma
 Algorithm.
 Maintains same fonts as text (as opposed to verbatim which uses fixed
 width fonts). Space at beginning of line will be maintained if you
@@ -137,49 +148,7 @@ $\}$
 \end{algorithm}
 
 -----
-Sample quote:
-\begin{quote}
-quotation...
-\end{quote}
-
------
-algoritma samples
 
 
-\begin{Verbatim}
-tulis
-disiin
-kodenya
-\end{Verbatim}
 
------
-Listing samples
-
-\begin{enumerate}
-\item
-This is the first item in the numbered list.
-
-\item
-This is the second item in the numbered list.
-\end{enumerate}
-
-\begin{itemize}
-\item
-This is the first item in the itemized list.
-
-\item
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-\end{itemize}
-
-\begin{itemize}
-\item[]
-This is the first item in the itemized list.
-
-\item[]
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-This is the first item in the itemized list.
-\end{itemize}
 
