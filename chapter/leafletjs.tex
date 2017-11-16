@@ -1,0 +1,58 @@
+%leafletjs
+%kelompok 2 D4 TI-2D
+%Cahya Kurniawan 1154038      
+%Doni Saputra 11540030   
+%Ika Syam Setiawati 1154053     
+%Silvy Dharma Febryana 1154112
+%Widi damayanti 1154062
+ 
+ 
+ 
+ \section{sejarah leafletjs}
+        Leaflet adalah JavaScript Library terkemuka yang berifat opensource untuk membangun peta interaktif yang Mobile friendly. Dengan ukuran hanya sekitar 38 KB, ia memiliki semua fitur pemetaan yang dibutuhkan sebagian besar pengembang.
+    Kelebihannya karena opensource lebih mudah dikembangkan oleh peneliti selanjutnya dan mudah untuk mengadaptasi teknologi baru pada GIS. Pada penerapannya SIG memerlukan data spasial yaitu data yang merujuk kepada posisi sebuah objek dalam bentuk koordinat dalam ruang bumi. GIS adalah sistem yang dirancang untuk memperoleh, menyimpan, mengupdate, memanipulasi, menganalisis dan menampilkan semua bentuk informasi yang berefensi geografis.
+Dengan penggunaan leaflet, data-data spasial seperti gedung dan ruangan yang berupa format geoJson dapat disimpan didalam server, tanpa harus terhubung ke internet hanya dengan menggunakan intranet.Untuk mengakses data-data tersebut digunakan plugin jQuery dan bootstrap untuk menampilkan peta ke halaman browser. Kelebihan menggunakan leaflet adalah leaflet menyediakan fungsionalitas untuk menambahkan penanda, pop up, garis overlay, dan bentuk menggunakan lapisan, zoom, pan, tapi ini hanya fitur ini leaflet.
+
+\section{pengertian leafletjs}
+LeafletJs merupakan  library  atau  kumpulan  fungsi  berbasis  javascript yang  digunakan  untuk  menampilkan  peta  interaktif  pada  halaman  web. Leaflet menyediakan  Map  API  (Application  Programming  Interface)  yang  memudahkan web   developer   untuk   menampilkan   peta   berbasis   Tile   pada   halaman   web. Pengguna   peta   juga   dapat   berinteraksi   dengan   menggunkana   fungsi   telah disediakan oleh Leaflet.Sebagaimana juga webmap API lainnya, Leaflet memiliki beberapa komponen dasar sebagai berikut :
+1. Map  adalah  komponen  induk  yang  memuat  berbagai komponen  lainnya.Bayangkan komponen Map sebagai muka peta kosong yang nantinya akan dapat  diisi  dengan  komponen  lain  (seperti  tilelayer, marker  dan  lain sebagainya). Pada   komponen   inilah   didefinisikan   ukuran   peta   pada halaman   web   (melalui   fungsi   CSS, width   dan   height),  koordinat pusat(center)  peta  (dalam  latitude  dan  longitude)  ,serta  level  zoom  awal II-13(antara 0-20,level  20  menunjukkan  perbesaran  paling  tinggi). Komponen dapat ditambahkan pada Map melalui method .addTo(Map)
+2. Tilelayer   (seringkali   disebut  dengan  “slippy  map” ),   merupakan komponen    yang    menyediakan    latar    belakang    peta    pada    sebuah webmap/petaonline.Peta  latar  yang  disediakan  ditampilkan  dalam  bentuk kotak-kotak (‘tile’) yang memiliki tampilan berbeda pada level zoom yang berbeda.
+3. Marker,  simbologi  sederhana  untuk  menyatakan  titik.Default  simbologi untuk  marker  pada  leaflet,  meskipun  leafletJS  dan  Map  API  lainnya memungkinkan developer peta untuk mengganti simbologi dengan bebas
+4. Popup, adalah jendela kecil berisi informasi terkait dengan marker tertentu.Popup  biasanya  digunakan  untuk  menunjukkan  informasi  terkait  titik tersebut, misalnya berupa rangkaian teks, gambar atau grafik
+5. Event, merupakan kejadian yang dapat diamati oleh leaflet pada muka peta. Fungsi    event    digunakan    untuk    menyediakan    interaktifitas    dengan pengguna.
+6. Control,  kontrol  pada  leaflet  merupakan  pelengkap  muka  peta  dalam leaflet   merupakan   tombol   zoom   pada   peta, menu   pencarian, menu pemilihan layer.
+7. Vector  layer,  layer  pada  leaflet  merupakan  data  spasial  jenis  vector  yang dapat ditambahkan pada komponen map Leaflet .
+8. Plugin, komponen plugin memperkaya fungsi-fungsi yang sudah ada pada leaflet dengan berbagai fungsi tambahan yang dapat digunakan apabila dibutuhkan.
+
+\section{penggunaan leafletjs}
+Leaflet merupakan alternative baru bagi para perintis peta web, seperti open layers ataupun google maps api. Ini juga dapat meringankan open source dan bertujuan untuk membentuk dan membantu mengembangkan dalam proses pembuatan peta yang indah yang compatible di seluruh pc (desktop) dan juga ponsel tanpa harus mengorbankan performa dari apa yang terjadi ketika selesai pembuatan
+sebelum menampilkan peta web dengan leaflet, kita diharuskan mengunduh paket leafletjs dan menyimpannya di pc yang akan digunakan. 
+sebagai contoh, kita akan menampilkan peta web dengan adanya pilihan basemap. Untuk menambahkan fungsi pilihan basemap, download plugin leaflet providers master. lalu langkah selanjutnya adalah :
+1. apabila file unduhan di atas di simpan di xampp > htdocs > webgis > latihan-Leaflet
+2. copy syntax di atas ke dalam text-editor yang digunakan (bisa pakai notepad++, sublime-text, atau software sejenis lainnya)
+3. simpan dalam format html di xampp > htdocs > webgis > Latihan-leaflet, dengan nama index.html. atau apabila file di atas di simpan di      dalam folder biasa, pastikan folder plugin leaflet yang sebelumnya telah di unduh di simpan di folder yang sama juga.jalankan file          index.html dengan browser yang digunakan (wajib ada koneksi internet)
+
+\section{fungsi leafletjs}
+leaflet yang interaktif dapat menampilkan peta dan mampu menghitung nilai zona tanah untuk kebutuhan jual beli pada suatu system informasi geografi. Selain itu penggunaan leaflet dengan di barengi menggunakan bootstrap dapat memberikan system informasi yang lebih terperinci mengenai suatu letak geografis. Dengan penggunaan leaflet, data-data spasial seperti gedung dan ruangan yang berupa format geoJson dapat disimpan didalam server. 
+*Bootstrap adalah sebuah alat bantu untuk membuat sebuah tampilan halaman  website yang dapat mempercepat pekerjaan seorang pengembang website ataupun pendesain halaman website. Selain itu penggunaan bootstrap juga untuk mempercantik desain sistem. Peta ditampilkan menggunakan leaflet javascript yang mendukung file berformat geoJSON. Geojson merupakan format data yang berbasis JSON (Javascript Object Notation) dan dapat menampung unsur-unsur geografis. Kelebihannya adalah kompatibel dengan banyak model pemrograman pada peta, dapat digunakan pada leaflet.js dan google maps. Pada penelitian ini membatasi permasalahan, yaitu sistem yang dikembangkan merupakan sistem informasi geografis yang menampilkan ruangan atau lokasi.
+
+\section{permulaan leafletjs}
+Untuk permulaan Leaflet akan menunjukan pada anda para pengguna untuk menunjukan bagaimana mengatur atau mengsetup lingkungan dalam pengembangan Leaflet dan membuat anda untuk menggunakan basis kode yang disediakan, yang selanjutnya akan dapat melihat secara mendalam mengenai peta dan belajar tentang bagaimana untuk membangun leaflet dari ubin sumber dan yang akan menampilkannya dari penyedia yang berbeda.
+
+
+\section{Kelebihan dan Kekurangan Leaflets}
+a.    Kelebihan
+  Dapat disimpan lama
+  Sebagai reverensi
+  Jangkauan dapat jauh
+  Membantu media lain
+  Isi dapat dicetak kembali
+  Dapat sebagai bahan diskusi
+
+b.     Kekurangan
+  Bila cetakan kurang menarik orang enggan menyimpannya
+  Pada umumnya orang tidak mau membaca karena hurufnya terlalu kecil
+  Tidak bisa digunakan oleh sasaran yangf buta huruf
+
+\section{TWEAK BASIS KODE Leaflets}
+Untuk penggunaan leaflet di ponsel akan menjelaskan tentang cara men tweak basis kode agar sesuai dengan perambaan seluler yang ada  dan memanfaatkan fitur lokasi pada leaflet. Pilihan lokasi probing, akurasi tinggi serta sebagainya dan juga tentang update lokasi kejadian maupun kesalahan terperinci ada untuk mengetahui perbaikan yang terbaik demi kenyamanan penggunanya.
