@@ -398,8 +398,8 @@ This version is dated \currversion^^J^^J}
 \vss}\global\everypar={\hskip-\parindent\everypar={}}\vskip1in}
 
 % used
-% \introauthor{Catherine Clark, PhD.}{Harvard School of Public Health\\
-% Boston, MA, USA}
+%\introauthor{Rolly Maulana Awangga.}{D4 Teknik Informatika\\
+% Politeknik Pos Indonesia}
 
 \def\l@ichapter#1#2{%
   \ifnum \c@tocdepth >1
@@ -491,9 +491,9 @@ This version is dated \currversion^^J^^J}
 {\frenchspacing\baselineskip=12pt
 \authorfont \theauthor\vskip1sp}
 \vfill
-\noindent{\includegraphics[width=1.7in]{figures/wileylogo}}
+\noindent{\includegraphics[width=1.7in]{figures/kreatif}}
 \vskip-8pt
-{\wileyfont A JOHN WILEY \& SONS, INC., PUBLICATION}
+{\wileyfont CV. Kreatif Industri Nusantara}
 \vskip24pt}\newpage}
 
 \def\affil#1{{\affilfont #1}\vskip18pt}
