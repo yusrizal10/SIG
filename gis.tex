@@ -58,6 +58,11 @@
 % for answers to problems
 % \usepackage{answers}
 
+%\usepackage[utf8]{inputenc} % Required for inputting international characters
+%\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+%\usepackage[osf]{libertine} % Use the Libertine font
+%\usepackage{microtype} % Improves character and word spacing
 
 
 
@@ -139,19 +144,19 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 
 % Note, you must use \ to start indented lines, ie,
 % 
-% \begin{copyrightpage}{2004}
-% Survey Methodology / Robert M. Groves . . . [et al.].
-% \       p. cm.---(Wiley series in survey methodology)
-% \    ``Wiley-Interscience."
-% \    Includes bibliographical references and index.
-% \    ISBN 0-471-48348-6 (pbk.)
-% \    1. Surveys---Methodology.  2. Social 
-% \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
-% Series.\\
+ \begin{copyrightpage}{2004}
+ Survey Methodology / Robert M. Groves . . . [et al.].
+ \       p. cm.---(Wiley series in survey methodology)
+ \    ``Wiley-Interscience."
+ \    Includes bibliographical references and index.
+ \    ISBN 0-471-48348-6 (pbk.)
+ \    1. Surveys---Methodology.  2. Social 
+ \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
+ Series.\\
 
-% HA31.2.S873 2004
-% 001.4'33---dc22                                             2004044064
-% \end{copyrightpage}
+ HA31.2.S873 2004
+ 001.4'33---dc22                                             2004044064
+ \end{copyrightpage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Frontmatter >>>>>>>>>>>>>>>>
@@ -162,6 +167,7 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 %% before \tableofcontents
 
 \dedication{For my family}
+
 
 % ie,
 %\dedication{To my parents}
@@ -266,6 +272,23 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 {Pendahuluan\\ Pengantar Geospasial}
 
 
+\chapter[Sejarah Ptolemy]
+{Pendahuluan\\ Ptolemy}
+\input{chapter/ptolemy.tex}
+
+\chapter[Sejarah eratosthenes]
+{Pendahuluan\\ eratosthenes}
+\input{chapter/eratosthenes.tex}
+
+
+%\chapter[Sejarah aliddrissi]
+%{Pendahuluan\\ aliddrissi}
+%\input{chapter/aliddrissi.tex}
+
+\chapter[Sejarah Peta Dinding]
+{Pendahuluan\\ Peta Dinding}
+\input{chapter/willemblaeu.tex}
+
 
 \chapter[Pendahuluan]
 {Pendahuluan\\ definisi}
@@ -279,9 +302,9 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 {Pengantar\\ Antartika}
 \input{chapter/Antartika.tex}
 
-%\chapter[Sejarah Penentuan Waktu]
-%{Pengantar\\ Sejarah Penentuan Waktu}
-%\input{chapter/sejarahwaktu.tex}
+\chapter[Sejarah Penentuan Waktu]
+{Pengantar\\ Sejarah Penentuan Waktu}
+\input{chapter/sejarahwaktu.tex}
 
 \chapter[Sejarah Penanggalan]
 {Pengantar\\ Sejarah  Penanggalan}
@@ -302,9 +325,9 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 \input{chapter/benua.tex}
 
 
-\chapter[Sejarah Bumi]
-{Pengantar\\ Sejarah Bumi}
-\input{chapter/SejarahBumi.tex}
+%\chapter[Sejarah Bumi]
+%{Pengantar\\ Sejarah Bumi}
+%\input{chapter/SejarahBumi.tex}
 
 
 
@@ -322,10 +345,90 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 \input{chapter/longlat.tex}
 
 
+\part[Data Geospasial]
+{Data Geospasial\\ Tipe Data}
+
+
+\chapter[Data Raster]
+{Data Geospasial\\ Data Raster}
+\input{chapter/DataRaster.tex}
+
+
+%\chapter[Data Vektor]
+%{Data Geospasial\\ Data Vektor}
+%\input{chapter/datavektor.tex}
+
+\chapter[Open Geospatial Consortium]
+{Data Geospasial\\ Web Map Tile Service}
+\input{chapter/OpenGeospatialConsortium.tex}
+
+\chapter[Web Map Tile Service]
+{Data Geospasial\\ Web Map Tile Service}
+\input{chapter/wmts.tex}
+
+\chapter[Web Map Service]
+{Data Geospasial\\ Web Map Service}
+\input{chapter/wms.tex}
+
+%\chapter[Data Vektor]
+%{Data Geospasial\\ Vektor}
+%\input{chapter/datavektor.tex}
+
+\chapter[Shapefile]
+{Data Geospasial\\ ShapeFile}
+\input{chapter/Shapefile.tex}
+
+\chapter[Shapefile Point]
+{Data Geospasial\\ Point}
+\input{chapter/DefinisiPoint.tex}
+
+\chapter[Data Vektor Line]
+{Data Geospasial\\ Vektor Line}
+\input{chapter/Tugas2GISKel2D43C.tex}
+
+\chapter[Shapefile Poligon]
+{Data Geospasial\\ Poligon}
+\input{chapter/Polygon.tex}
+
+
+\part[Pemrograman Python]
+{Pemrograman Python\\ Pengenalan}
+
+\chapter[Python]
+{Pemrograman Python\\ Python}
+\input{chapter/Python.tex}
+
+\chapter[Variabel]
+{Pemrograman Python\\ Variabel}
+\input{chapter/2_variabel.tex}
+
+
+\chapter[Looping]
+{Pemrograman Python\\ Looping}
+\input{chapter/2_Looping_pada_python.tex}
+
+\chapter[Kelas dan Fungsi]
+{Pemrograman Python\\ Kelas dan Fungsi}
+\input{chapter/2_ContohKelasdanFungsipadaPhyton.tex}
+
+
+\chapter[QGIS]
+{Aplikasi GIS\\ Desktop QGIS}
+\input{chapter/qgis.tex}
+
+\chapter[OpenLayer]
+{Aplikasi GIS\\ OpenLayer}
+\input{chapter/OpenLayer.tex}
+
+\chapter[LeafletJS]
+{Aplikasi GIS\\ LeafletJS}
+\input{chapter/leafletjs.tex}
+
+
 
 
 \bibliographystyle{IEEEtran}
-\bibliography{aku,SejarahBumi,koordinatindo,definisi,longlat,BangunRuang,kartesius,benua,khatulistiwa,kutubutara,sejarahwaktu,Antartika,penanggalan}
+\bibliography{koordinatindo,definisi,longlat,BangunRuang,kartesius,benua,khatulistiwa,kutubutara,sejarahwaktu,Antartika,penanggalan,ptolemy,aliddrissi,willemblaeu,Shapefile,referensikel2,reference,references,python,qgis,DataRaster,datavektor,wmts}
 
 
 \printindex

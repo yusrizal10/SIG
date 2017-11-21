@@ -1,0 +1,165 @@
+% Kelompok 4 Tugas GIS (WMTS)
+% Hanna Tasya (1154091)
+% Dhea Amelia (1154123)
+% Yusri Rizal (1154072)
+
+\section{Web Map Tile Service}
+Web Map Tile Service merupakan peta ubin yang dikembangkan pertama kali oleh Open Geospatial Constortium (OGC). 
+Terdapat potensi di dalam Web Map Tile Services yaitu gambar peta ubin dapat di cache pada lokasi antara klien dan server, 
+mengurangi latensi yang terkait dengan proses pembuatan gambar. Lapisan ubin biasanya di pasang di sisi server, menyajikan 
+ubin gambar peta secara bersamaan ke beberapa pengguna. Selain itu, banyak pemetaan klien, seperti Google Earth atau Nasa 
+World Wind, telah menyematkan cache, yang juga dapat mengurangi kemacetan jaringan dan penundaan jaringan \cite{garcia2012web}.
+
+WMTS telah menjadi populer untuk visualisasi data geografis multi-dimensi di Internet. Dalam sistem tile, data disusun pada sejumlah 
+skala yang telah ditentukan. Untuk setiap skala, area yang dipetakan dibagi menjadi banyak ubin persegi dengan ukuran 256 x 256 piksel.
+Setiap ubin disimpan sebagai gambar di server Internet. Menggunakan ubin untuk memungkinkan visualisasi yang cepat di peta interaktif 
+pada banyak skala ditunjukkan oleh Badan Penelusuran Angkasa dan Angkutan Udara Nasional (NASA) Global Cycle (Browse) 2013 di
+http://earthdata.nasa.gov /labs / worldview / yang memberikan akses yang sangat responsif dan terukur terhadap citra real-time (Cechini
+et al., 2013). Adopsi standar WMTS yang luas untuk penerbitan data salju diilustrasikan oleh katalog penelusuran ArcGIS Online 
+(http://arcgis.com), di mana lebih dari 50 kumpulan data WMTS yang terkait salju dapat ditemukan. WMTS dapat diakses menggunakan browser 
+web dan sistem informasi geografis (SIG) \cite{Kadlec2016Extracting} .
+
+
+\subsection{Skema Ubin}
+Peta sudah lama dikenal hanya seperti yang tercetak di atas kertas. Peta kartografi tercetak tersebut merupakan representasi 
+statis yang terbatas pada skala visualisasi tetap dengan Tingkat Detil tertentu (LOD). Namun, dengan perkembangan peta digital, 
+pengguna dapat memperbesar atau mengurangi area yang divisualisasikan dengan melakukan pembesaran operasi, dan LOD diharapkan 
+dapat diperbarui sesuai dengan itu. 
+
+Adaptasi konten peta sangat bergantung pada skala: Peta skala kecil berisi informasi yang kurang rinci daripada peta skala besar 
+di wilayah yang sama. Proses mengurangi jumlah data dan menyesuaikan informasi dengan skala yang diberikan disebut generalisasi 
+kartografi, dan biasanya dilakukan oleh server peta web.
+
+Untuk menawarkan layanan peta web ubin, server peta web membuat peta melintasi serangkaian skala tetap melalui generalisasi yang 
+progresif. Gambar peta yang dirender kemudian dibagi menjadi ubin, menggambarkan piramida ubin seperti yang digambarkan pada
+gambar \ref{TilePyramid} 
+
+\begin{figure}[ht]
+
+\centerline{\includegraphics[width=1\textwidth]{figures/TilePyramid.jpg}}
+
+\caption{Representasi piramida ubin}
+
+\label{TilePyramid}
+
+\end{figure}
+
+gambar \ref{TilePyramid} merupakan contoh skema ubin dari Microsoft Bing Maps dimana tingkat pertama memungkinkan mewakili 
+seluruh dunia dalam 4 ubin (2x2) dari  256x256 piksel. Tingkat berikutnya mewakili seluruh dunia dalam 16 ubin (4x4) dari 256x256 
+piksel dan seterusnya sampai tingkat 4. 
+
+\subsection{Metode Pemotongan Web Map Tiles Service}
+Web GIS standar dibangun menggunakan WMS (Web Map Services). Ciri khas Web Gis dalam menampilkan data spasial atau mapadalah menarik 
+langsung dari server dengan tidak memperhitungkan banyaknya lapisan yang diminta. Padahal proses menampilkan data spasial atau map ini 
+tidak bisa dipaksakan menarik dalam jumlah besar karena akan memperlambat waktu respon web. Hal ini berbanding terbalik dengan harapan 
+pengguna akan Web GIS yang mudahdioperasikan, memiliki tampilan yang ramah, pengaksesan yang halus dan data cukup update atau mendekati 
+near real time[7] (Yang, 2011). 
+
+Pendekatan umum untuk meningkatkan waktu respon saat permintaan data spasial adalah dengan memotong map 
+menjadi beberapa bagian kecil atau tiles.Metode pemotongan ini secara standar bisa dibuat dengan WMTS (Web Map Tile Service) atau di 
+kenal dengan tiles tradisional.Pemotongan standar cukup bisa mengurangi beban server namun waktu respon web masih lambat. Hal itu 
+menjadi masalah yang saat ini dihadapi oleh Web Gis E-Government Sistem Pemantauan Bumi Nasional (SPBN). Pengguna harus menunggu lama 
+waktu respon web.Padahal banyak informasi penting yang disampaikan khususnya terkait tanggap bencana titik panas kebakaran hutan yang 
+terjadi saat ini. Dengan melihat fakta-fakta di atas, Penelitian ini ingin menganalisis penggunaan tiling pada open source web GIS, 
+metode inimempertimbangkan tile static dan dynamic map. Untuk menganalisa digunakan metode matematika, data hasil testing, statistik 
+hasil pengujian dan membandingkan beberapa metode yang telah berkembang untuk meningkatkan performa web gis. Penulis berharap analisis 
+ini dapat meminimalkan waktu respon dan meningkatkan pelayanan E-Government Sistem Pemantauan Bumi Nasional (SPBN). Oleh karena itu 
+penulis melakukan studi ``Analisis Optimalisasi Web Gis Dengan Metode Tiling''. Penelitian ini diharapkan dapat membantu memecahkan 
+masalah diatas \cite{dewioptimalisasi} .
+
+\subsection{Peta Jalan}
+proses pemetaan bumi secara akurat sampai saat ini, melestarikan yang sangat terampil, wellequipped,dan individu terorganisir
+perkelompok. Bertahun-tahun biasanya peran surveyor, kartografer, dan ahli geografi untuk memetakan dunia dengan tulisan di atas kertas
+atau, sejak tahun 1960an, masuk komputer. Ekspedisi Lewis dan Clark ke peta Amerika Utara Barat, dan Lambton dan Ekspedisi Everest's
+Great Arc untuk India,hanya dua episode terkenal dalam sejarah peta dan pembuatan peta. Setiap negara memiliki lembaga pemetaan nasional
+yang didirikan bermuatan dengan menjaga agar peta nasional tetap akurat saat ini (misalnya, Survei Geologi AS dan Survei Ordnance
+Inggris).
+
+Pada tanggal 1 Mei 2000. Presiden AS Bill Clinton,mengumumkan penghapusan ketersediaan selektif dari sinyal GPS1 dan dengan demikian,
+disediakan akurasi yang jauh lebih baik untuk biaya sederhana dan murah.yaitu penerima GPS Secara praktis, ini berhasil mungkin untuk
+mendapatkan posisi penerima dengan akurasi 6 sampai 10 meter dalam kondisi normal,berbeda dengan kira-kira 100 meter sebelumnya. Upaya
+untuk mengembangkan lokasi berbasis layanan mendahului pemberitahuan dan berdasarkan informasi dari mobile tiang telepon atau beacon
+lainnya. Namun, metode ini tidak mendapatkan banyak pangsa pasar karena untuk kompleksitas teknis dan ketidakmampuan mereka untuk
+memberikan cakupan universal. Sebaliknya, GPS memungkinkan pengembangan receiver murah dengan akurasi posisi yang baik, dan, pada
+pertengahan-2001, adalah mungkin untuk membeli unit penerimasekitar US \$ 100,3 penerima ini membantu lebih banyak orang daripada
+sebelumnya mengumpulkan informasi tentang lokasi yang berbeda dan upload ke komputer mereka.
+
+Namun sampai tahun 2002, ketika standar pertukaran (format eXchange GPS atau GPX) diterbitkan, dimanipulasi dan berbagi Informasi ini
+merupakan tugas yang rumit diperlukan komputasi dan manipulasi data pengetahuan. Untungnya, kebanyakan penerima GPS pengembang dengan
+cepat mengadopsi standar GPX,dan, pada tahun 2004, sudah menjadi hal biasa ketersediaan lokasi berkualitas tinggi informasi telah
+memungkinkan pemetaan mass market berdasarkan penerima GPS terjangkau, komputer rumah,dan internet \cite{haklay2008openstreetmap}. 
+
+
+\subsection{Desain Ekstraksi Data WMTS}
+Mengekstraksi data deret waktu dari WMTS terdiri dari empat langkah utama:
+\subsubsection{langkah-langkah}
+\begin{enumerate}
+	\item (1) membangun alamat pengenal sumber daya seragam (URL) dari gambar ubin yang tumpang tindih pada titik waktu tertentu, 
+	\item (2) mendownload gambar ubin, 
+	\item (3) temukan koordinat piksel yang sesuai dengan titik kepentingan di dalam gambar yang didownload,
+	\item (4) ubah warna piksel atau indeks warna piksel ke unit variabel yang teramati.
+\end{enumerate}
+Keempat langkah ini diulang untuk setiap langkah waktu dalam deret waktu (Gambar 1).
+
+Spesifikasi WMTS, yang juga dikenal dengan nama ``TMS'' (layanan peta ubin), adalah protokol layanan web untuk mengambil gambar peta ubin yang telah
+didefinisikan oleh OGC (Maso et al., 2010). Permintaan WMTS ada dalam format:
+
+\begin{equation}
+	    [server]=[layer]=[time]=[x]=[y]=[zoom].png 
+\end{equation}
+(1)
+
+dimana x adalah indeks x (horizontal) ubin dan y adalah indeks genteng (vertikal).
+
+Zoom adalah angka (biasanya antara 1 dan 20) yang menunjukkan skala peta. Nomor ini tidak boleh lebih tinggi dari tingkat zoom yang 
+didukung maksimum dari layanan web WMTS. Mengingat garis lintang, bujur, dan zoom, indeks x ubin dan genteng
+Indeks y dapat dihitung sebagai:
+
+\begin{figure}[ht]
+
+\centerline{\includegraphics[width=1\textwidth]{figures/figures1_wmts.png}}
+
+\caption{Snow Retrieval Function Loop for Point Location}
+
+\label{figures1_wmts}
+
+\end{figure}
+
+\begin{equation}
+	    xtile = \frac{lon + 180}{360} \ 2^zoom 
+\end{equation}
+
+\begin{equation}
+	    ytile =\frac{1-log (tan(lat_rad) + \frac{1}{cos(lat_rad)})}{2pi} \ 2^zoom 
+\end{equation}
+
+
+
+\subsection{KerangkaTethys}
+
+Untuk membuat fungsi ekstraksi data Python tersedia bagi pengguna akhir, kami merancang aplikasi web interaktif dalam kerangka kerja 
+Tethys. Tethys (Jones et al., 2014) adalah platform yang dapat digunakan untuk mengembangkan dan meng-host aplikasi web sumber daya air. 
+Ini mencakup perangkat lunak open source dan open source: PostgreSQL, GeoServer, dan Web Processing Service. Salah satu keuntungan dari 
+Tethys atas aplikasi web kustom adalah menyediakan arsitektur plug-in (Heineman dan Councill, 2001) untuk penerapan aplikasi baru yang 
+relatif mudah. Gaya grafis, tata letak, panel navigasi, pengelolaan pengguna, dan pengelolaan penyimpanan data web semuanya ditangani 
+oleh Tethys. Tethys plugin dikenal sebagai ``app'' dan memiliki empat komponen: Persistent Storage, Controller, Template, dan Gizmo. 
+Penyimpanan persisten digunakan untuk menyimpan pengaturan pengguna, misalnya lokasi favorit. Pengendali menangani perhitungan dan 
+logika bisnis aplikasi. Tethys menyediakan pengendali dasar dengan fungsi built-in untuk menghubungkan ke model. Template mendefinisikan 
+posisi teks, tombol, grafik, tabel, dan peta di antarmuka pengguna. Gizmo adalah komponen antarmuka pengguna yang dapat disesuaikan. 
+Bisa berupa button, date time picker, daftar drop-down, chart, table, atau map. Peta dan bagan template bertanggung jawab untuk 
+menampilkan peta dan bagan interaktif di halaman arahan aplikasi \cite{Kadlec2016Extracting}. 
+
+
+
+\subsection{DesainAntarmukaPenggunaInspekturSalju}
+
+ Antarmuka pengguna web Snow Inspector terdiri dari dua tampilan: ``peta salju'' dan ``grafik salju'' . Peta menggunakan kontrol peta interaktif OpenLayers versi 3 (openlayers.org). Pengguna dapat menambahkan titik di manapun pada peta dengan klik mouse. Saat pengguna selesai bekerja dengan peta, koordinat bentuk yang ditentukan pengguna dilewatkan ke pengontrol peta. Pengontrol peta melewati koordinat dan parameter masukan lainnya (rentang waktu, layanan WMTS) ke pengendali salju. Pengontrol salju meluncurkan skrip pengambilan data. Saat skrip pengambilan data berfungsi, ia memiliki opsi untuk menyimpan data yang diunduh dalam cache waktu penyimpanan yang terus-menerus. Dengan menggunakan metode Asynchronous JavaScript (AJAX), peta dan bagan template secara berkala memeriksa pengendali salju untuk status kemajuan dan memperbarui diagram dan bilah kemajuan di halaman web. Setelah pemrosesan selesai, pengendali mengambil rangkaian waktu dan meneruskannya ke bagan bagan tempat grafik interaktif diperbarui \cite{Kadlec2016Extracting}.
+
+
+
+\subsection{SaljuInspekturDataApplicationProgrammerInterfaceDesign}
+
+Template lainnya digunakan untuk menampilkan rangkaian waktu hasil dalam empat format yang berbeda: comma-separated values (CSV), JavaScript Object Notification System (JSON), WaterML 1.1, dan WaterML 2.0. WaterML adalah standar OGC yang disetujui secara internasional untuk pertukaran data rangkaian waktu hidrologi (OGC, 2012a). Ini tidak hanya berisi data nilai tetapi juga metadata terkait termasuk lokasi situs, organisasi sumber data, dan unit pengukuran. Keseluruhan desain aplikasi web Snow Inspector termasuk pengontrol dan template. API time series dapat diakses dengan menggunakan parameter string \cite{Kadlec2016Extracting}. 
+
+
+
