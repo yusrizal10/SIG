@@ -491,9 +491,9 @@ This version is dated \currversion^^J^^J}
 {\frenchspacing\baselineskip=12pt
 \authorfont \theauthor\vskip1sp}
 \vfill
-\noindent{\includegraphics[width=1.7in]{figures/kreatif}}
+\noindent{\includegraphics[width=1.7in]{figures/rollyawangga}}
 \vskip-8pt
-{\wileyfont CV. Kreatif Industri Nusantara}
+{\wileyfont Rolly Maulana Awangga}
 \vskip24pt}\newpage}
 
 \def\affil#1{{\affilfont #1}\vskip18pt}
@@ -1835,26 +1835,24 @@ D R A F T\hfill\today, \realtime\hfill D R A F T\global\titlefalse\vss}}
 \vbox to\textheight\bgroup\vfill\obeylines\obeyspaces\xcopyrightpage}
 
 \def\xcopyrightpage#1#2\end#3{\scriptsize\parindent=0pt
-Copyright \copyright{#1} by John Wiley \& Sons, Inc. All rights reserved.
+Copyright \copyright{#1} by Rolly Maulana Awangga. All rights reserved.
 \vskip6.5pt
-Published by John Wiley \& Sons, Inc., Hoboken, New Jersey.\\
-Published simultaneously in Canada.
+Unpublished Version, Bandung, Jawa Barat.\\
+For Review of Publisher Only.
 \vskip6.5pt
 
 No part of this publication may be reproduced, stored in a retrieval
 system, or transmitted in any form\\ or by any means, electronic,
 mechanical, photocopying, recording, scanning, or otherwise, except
-as\\ permitted under Section 107 or 108 of the 1976 United States
+as\\ permitted under Indonesia
 Copyright Act, without either the prior\\ written permission of the
-Publisher, or authorization through payment of the appropriate
-per-copy fee to\\ the Copyright Clearance Center, Inc., 222 Rosewood
-Drive, Danvers, MA 01923, (978) 750-8400,\\ fax (978) 646-8600, or on
-the web at www.copyright.com. Requests to the Publisher for
-permission should\\ be addressed to the Permissions Department, John
-Wiley \& Sons, Inc., 111 River Street, Hoboken, NJ\\ 07030, (201)
-748-6011, fax (201) 748-6008.  \vskip10pt
+Author, or authorization through payment of the appropriate
+per-copy fee to\\ Author, Jl. Ligar Nyawang No. 2 RT. 04/06 Cibeunying Cimenyan Bandung,\\ Phone 081312000300, or on
+the web at www.awangga.net. Requests to the Author for
+permission should\\ be addressed to the email address or Whatsapp , rolly@awang.ga\\ Phone (022)
+2045-8529.  \vskip10pt
 
-Limit of Liability/Disclaimer of Warranty: While the publisher and
+Limit of Liability/Disclaimer of Warranty: While the 
 author have used their best efforts in\\ preparing this book, they
 make no representations or warranties with respect to the accuracy
 or\\ completeness of the contents of this book and specifically
@@ -1866,16 +1864,16 @@ where appropriate.  Neither the\\
 publisher nor author shall be liable for any loss of profit or any other commercial damages, including\\
 but not limited to special, incidental, consequential, or other damages.
 \vskip10pt
-For general information on our other products and services please contact our Customer Care\\ Department with the U.S. at 877-762-2974, outside the U.S. at
-317-572-3993 or fax 317-572-4002.
+For general information on our other products and services please contact Author\\ 
+at 081312000300.
 \vskip10pt
-Wiley also publishes its books in a variety of electronic formats. Some content that appears in print,\\
-however, may not be available in electronic format.
+This book for review purpose, for Publisher Only,\\
+Do not Copy without Author Permission.
 \vskip10pt
 {\locfont Library of Congress Cataloging-in-Publication Data:}
 \vskip8pt
 #2
-Printed in the United States of America.\\
+Printed in the Bandung of Indonesia.\\
 
 10\ \ 9\ \ 8\ \ 7\ \ 6\ \ 5\ \  4\ \ 3\ \ 2\ \ 1 
 \vskip24pt
@@ -1910,8 +1908,7 @@ volume.} \vskip24pt\egroup
 \advance\hsize -10pt \raggedright
 \footnotesize{\it #1. }\\{By #2}
 \noindent\hbox{\footnotesize
-Copyright \copyright\ \thecopyrightyear\ John Wiley \&
-Sons, Inc.}}}
+Copyright \copyright\ \thecopyrightyear\ Rolly Maulana Awangga.}}}
 
 
 \def\offprintinfo#1#2{

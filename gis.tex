@@ -1,238 +1,70 @@
-%%%%%%%%%%%%%%
-%% Run LaTeX on this file several times to get Table of Contents,
-%% cross-references, and citations.
-
-%% w-bktmpl.tex. Current Version: Feb 16, 2012
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%  Template file for
-%  Wiley Book Style, Design No.: SD 001B, 7x10
-%  Wiley Book Style, Design No.: SD 004B, 6x9
-%
-%  Prepared by Amy Hendrickson, TeXnology Inc.
-%  http://www.texnology.com
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Class File
-
-%% For default 7 x 10 trim size:
-%\documentclass{WileySev}
-
-%% Or, for 6 x 9 trim size
 \documentclass{WileySix}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Post Script Font File
-
-% For PostScript text
-% If you have font problems, you may edit the w-bookps.sty file
-% to customize the font names to match those on your system.
-
 \usepackage{w-bookps}
-
-%%%%%%%
-%% For times math: However, this package disables bold math (!)
-%% \mathbf{x} will still work, but you will not have bold math
-%% in section heads or chapter titles. If you don't use math
-%% in those environments, mathptmx might be a good choice.
-
-% \usepackage{mathptmx}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Graphicx.sty for Including PostScript .eps files
-
 \usepackage{graphicx}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Other packages you might want to use:
-
-% for chapter bibliography made with BibTeX
-% \usepackage{chapterbib}
-
-% for multiple indices
-% \usepackage{multind}
-
-% for answers to problems
-% \usepackage{answers}
-
-%\usepackage[utf8]{inputenc} % Required for inputting international characters
-%\usepackage[T1]{fontenc} % Output font encoding for international characters
-
-%\usepackage[osf]{libertine} % Use the Libertine font
-%\usepackage{microtype} % Improves character and word spacing
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Change options here if you want:
-%%
-%% How many levels of section head would you like numbered?
-%% 0= no section numbers, 1= section, 2= subsection, 3= subsubsection
-%%==>>
 \setcounter{secnumdepth}{3}
-
-%% How many levels of section head would you like to appear in the
-%% Table of Contents?
-%% 0= chapter titles, 1= section titles, 2= subsection titles, 
-%% 3= subsubsection titles.
-%%==>>
 \setcounter{tocdepth}{2}
-
-%% Cropmarks? good for final page makeup
-%% \docropmarks %% turn cropmarks on
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% DRAFT
-%
-% Uncomment to get double spacing between lines, current date and time
-% printed at bottom of page.
-% \draft
-% (If you want to keep tables from becoming double spaced also uncomment
-% this):
-% \renewcommand{\arraystretch}{0.6}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Title Pages
-%%
-%% Wiley will provide title and copyright page, but you can make
-%% your own titlepages if you'd like anyway
 
-%% Setting up title pages, type in the appropriate names here:
-\booktitle{Sistem Informasi Geografis}
-\subtitle{Mengenal dan Membangun SIG}
+\booktitle{Pengantar Sistem Informasi Geografis}
+\subtitle{Konsep Dasar dan Aplikasi Pembangun SIG}
 
 \author{Rolly Maulana Awangga}
-%\affil{Program Studi Sarjana Terapan Teknik Informatika Politeknik Pos Indonesia}
-%or
-%\authors{}
 
-%% \\ will start a new line.
-%% You may add \affil{} for affiliation, ie,
-%\authors{Robert M. Groves\\
-%\affil{Universitat de les Illes Balears}
-%Floyd J. Fowler, Jr.\\
-%\affil{University of New Mexico}
-%}
-
-%% Print Half Title and Title Page:
 \halftitlepage
 \titlepage
 
+\offprintinfo{Pengantar Sistem Informasi Geografis, pre-release}{Rolly Maulana Awangga}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Off Print Info
-
-%% Add your info here:
-\offprintinfo{Sistem Informasi Geografis, pre-release}{Rolly Maulana Awangga}
-
-%% Can use \\ if title, and edition are too wide, ie,
-%% \offprintinfo{Survey Methodology,\\ Second Edition}{Robert M. Groves}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Copyright Page
 
 \begin{copyrightpage}{2017}
-Sistem Informasi Geografis / Rolly Maulana Awangga
+Pengantar Sistem Informasi Geografis / Rolly Maulana Awangga
 \end{copyrightpage}
 
-% Note, you must use \ to start indented lines, ie,
-% 
- \begin{copyrightpage}{2004}
- Survey Methodology / Robert M. Groves . . . [et al.].
- \       p. cm.---(Wiley series in survey methodology)
- \    ``Wiley-Interscience."
+
+ \begin{copyrightpage}{2017}
+ Pengantar Sistem Informasi Geografis / Rolly Maulana Awangga . . . [et al.].
+ \       p. cm.---(Rolly Book series in Geospatial Intellegence)
+ \    ``Unpublished work."
  \    Includes bibliographical references and index.
- \    ISBN 0-471-48348-6 (pbk.)
- \    1. Surveys---Methodology.  2. Social 
- \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
+ \    ISBN --- (pbk.)
+ \    1. Pengantar---Sistem Informasi Geografis.  2. Sistem 
+ \  Informasi---Geografis---Berbasiskan Open Source.  Rolly Maulana Awangga. %
  Series.\\
 
- HA31.2.S873 2004
- 001.4'33---dc22                                             2004044064
+ xxxxxxxx 2017
+ xxx.x'xx---xxxx                                             XXXXXXXXXX
  \end{copyrightpage}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Frontmatter >>>>>>>>>>>>>>>>
+\dedication{For my family Bunda, Kafa dan Jabang}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Only Dedication (optional) 
-%% or Contributor Page for edited books
-%% before \tableofcontents
-
-\dedication{For my family}
+%\dedication{To my parents, Mamah Umiyatin dan Papah Waryo}
 
 
-% ie,
-%\dedication{To my parents}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Contributors Page for Edited Book
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% If your book has chapters written by different authors,
-% you'll need a Contributors page.
-
-% Use \begin{contributors}...\end{contributors} and
-% then enter each author with the \name{} command, followed
-% by the affiliation information.
-
-% \begin{contributors}
-% \name{Masayki Abe,} Fujitsu Laboratories Ltd., Fujitsu Limited, Atsugi,
-% Japan
-
-% \name{L. A. Akers,} Center for Solid State Electronics Research, Arizona
-% State University, Tempe, Arizona
-
-% \name{G. H. Bernstein,} Department of Electrical and
-% Computer Engineering, University of Notre Dame, Notre Dame, South Bend, 
-% Indiana; formerly of
-% Center for Solid State Electronics Research, Arizona
-% State University, Tempe, Arizona 
-% \end{contributors}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \contentsinbrief %optional
 \tableofcontents
-% \listoffigures %optional
-% \listoftables  %optional
+\listoffigures %optional
+\listoftables  %optional
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Optional Foreword:
 
-%\begin{foreword}
-%text
-%\end{foreword}
+\begin{foreword}
+Terima Kasih Atas semua dukungannya
+\end{foreword}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Optional Preface:
 
-%\begin{preface}
-% text
-%\prefaceauthor{}
-%\where{place\\
-% date}
-%\end{preface}
+\begin{preface}
+Saya sangat bangga atas buku ini
+\prefaceauthor{Rolly Maulana Awangga}
+\where{Bandung\\
+ November, 2017}
+\end{preface}
 
-% ie,
-% \begin{preface}
-% This is an example preface.
-% \prefaceauthor{R. K. Watts}
-% \where{Durham, North Carolina\\
-% September, 2004}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Optional Acknowledgments:
-
-% \acknowledgments
-% acknowledgment text
-% \authorinitials{} % ie, I. R. S.
+\acknowledgments
+acknowledgment buat semuaya
+\authorinitials{RMA} % ie, I. R. S.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -257,27 +89,25 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 % \end{symbols}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{introduction}
-%\introauthor{<name>}{<affil>}
-% Introduction text...
-% \end{introduction}
+\begin{introduction}
+\introauthor{Rolly Maulana Awangga}{Program Studi Sarjana Terapan Teknik Informatika, Politeknik Pos Indonesia}
+ Perkenalkan saya Rolly Maulana Awangga Dosen Politeknik Pos Indonesia dengan mata kuliah
+Sistem Informasi Geografis, Kecerdasan Buatan dan Sistem Multimedia
+\end{introduction}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% End for Front Matter, Beginning of text of book  >>>>>>>>>>>
-
-%% Short version of title without \\ may be written in sq. brackets:
-
-%% Optional Part :
 \part[Pendahuluan]
 {Pendahuluan\\ Pengantar Geospasial}
 
+\chapter[Definisi]
+{Pendahuluan\\ definisi}
+\input{chapter/definisi.tex}
 
 \chapter[Sejarah Ptolemy]
-{Pendahuluan\\ Ptolemy}
+{Pendahuluan\\ Sejarah Ptolemy}
 \input{chapter/ptolemy.tex}
 
 \chapter[Sejarah eratosthenes]
-{Pendahuluan\\ eratosthenes}
+{Pendahuluan\\ Sejarah eratosthenes}
 \input{chapter/eratosthenes.tex}
 
 
@@ -286,62 +116,54 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 %\input{chapter/aliddrissi.tex}
 
 \chapter[Sejarah Peta Dinding]
-{Pendahuluan\\ Peta Dinding}
+{Pendahuluan\\ Sejarah Peta Dinding}
 \input{chapter/willemblaeu.tex}
-
-
-\chapter[Pendahuluan]
-{Pendahuluan\\ definisi}
-\input{chapter/definisi.tex}
-
-\chapter[Sejarah Kutub Utara]
-{Pengantar\\ Kutub Utara}
-\input{chapter/kutubutara.tex}
-
-\chapter[Tentang Kutub Selatan]
-{Pengantar\\ Antartika}
-\input{chapter/Antartika.tex}
-
-\chapter[Sejarah Penentuan Waktu]
-{Pengantar\\ Sejarah Penentuan Waktu}
-\input{chapter/sejarahwaktu.tex}
-
-\chapter[Sejarah Penanggalan]
-{Pengantar\\ Sejarah  Penanggalan}
-\input{chapter/penanggalan.tex}
-
-
-
-\chapter[Bangun Ruang]
-{Pengantar\\ Bangun Ruang}
-\input{chapter/BangunRuang.tex}
-
-\chapter[Diagram Kartesius]
-{Pengantar\\ Kartesius}
-\input{chapter/kartesius.tex}
-
-\chapter[Benua]
-{Pengantar\\ benua}
-\input{chapter/benua.tex}
-
 
 %\chapter[Sejarah Bumi]
 %{Pengantar\\ Sejarah Bumi}
 %\input{chapter/SejarahBumi.tex}
 
+\chapter[Sejarah Kutub Utara]
+{Pendahuluan\\ Sejarah Kutub Utara}
+\input{chapter/kutubutara.tex}
 
+\chapter[Tentang Kutub Selatan]
+{Pendahuluan\\ Sejarah Antartika}
+\input{chapter/Antartika.tex}
+
+\chapter[Sejarah Benua]
+{Pendahuluan\\ Sejarah benua}
+\input{chapter/benua.tex}
+
+\chapter[Sejarah Penentuan Waktu]
+{Pendahuluan\\ Sejarah Penentuan Waktu}
+\input{chapter/sejarahwaktu.tex}
+
+\chapter[Sejarah Penanggalan]
+{Pendahuluan\\ Sejarah  Penanggalan}
+\input{chapter/penanggalan.tex}
+
+\part[Dasar Pemetaan]
+{Dasar Dasar\\ Pemetaan}
+
+\chapter[Mengenal Bangun Ruang]
+{Dasar Pemetaan\\ Mengenal Bangun Ruang}
+\input{chapter/BangunRuang.tex}
+
+\chapter[Mengenal Diagram Kartesius]
+{Dasar Pemetaan\\ Kartesius}
+\input{chapter/kartesius.tex}
 
 \chapter[Garis Khatulistiwa]
-{Pengantar\\ Garis Khatulistiwa}
+{Dasar Pemetaan\\ Garis Khatulistiwa}
 \input{chapter/khatulistiwa.tex}
 
-
 \chapter[Kordinat Indonesia]
-{Pengantar\\ Kordinat Indonesia}
+{Dasar Pemetaan\\ Kordinat Indonesia}
 \input{chapter/koordinatindo.tex}
 
 \chapter[Kordinat Internasional]
-{Pengantar\\ Kordinat Internasional}
+{Dasar Pemetaan\\ Kordinat Internasional}
 \input{chapter/longlat.tex}
 
 
@@ -374,56 +196,58 @@ Sistem Informasi Geografis / Rolly Maulana Awangga
 %{Data Geospasial\\ Vektor}
 %\input{chapter/datavektor.tex}
 
+\chapter[Data Vektor Line]
+{Data Geospasial\\ Vektor Line}
+\input{chapter/Tugas2GISKel2D43C.tex}
+
 \chapter[Shapefile]
 {Data Geospasial\\ ShapeFile}
 \input{chapter/Shapefile.tex}
 
+
 \chapter[Shapefile Point]
 {Data Geospasial\\ Point}
 \input{chapter/DefinisiPoint.tex}
-
-\chapter[Data Vektor Line]
-{Data Geospasial\\ Vektor Line}
-\input{chapter/Tugas2GISKel2D43C.tex}
 
 \chapter[Shapefile Poligon]
 {Data Geospasial\\ Poligon}
 \input{chapter/Polygon.tex}
 
 
-\part[Pemrograman Python]
-{Pemrograman Python\\ Pengenalan}
+\part[Pemrograman SIG]
+{Pemrograman SIG\\ Python}
 
 \chapter[Python]
-{Pemrograman Python\\ Python}
+{Pemrograman SIG\\ Python}
 \input{chapter/Python.tex}
 
 \chapter[Variabel]
-{Pemrograman Python\\ Variabel}
+{Pemrograman SIG\\ Variabel Python}
 \input{chapter/2_variabel.tex}
 
 
 \chapter[Looping]
-{Pemrograman Python\\ Looping}
+{Pemrograman SIG\\ Looping Python}
 \input{chapter/2_Looping_pada_python.tex}
 
-\chapter[Kelas dan Fungsi]
-{Pemrograman Python\\ Kelas dan Fungsi}
+\chapter[Kelas dan Fungsi di Python]
+{Pemrograman SIG\\ Kelas dan Fungsi di Python}
 \input{chapter/2_ContohKelasdanFungsipadaPhyton.tex}
 
+\chapter[OpenLayer]
+{Pemrograman SIG\\ OpenLayer}
+\input{chapter/OpenLayer.tex}
+
+\chapter[LeafletJS]
+{Pemrograman SIG\\ LeafletJS}
+\input{chapter/leafletjs.tex}
+
+\part[Aplikasi SIG]
+{Pemrograman SIG\\ Python}
 
 \chapter[QGIS]
 {Aplikasi GIS\\ Desktop QGIS}
 \input{chapter/qgis.tex}
-
-\chapter[OpenLayer]
-{Aplikasi GIS\\ OpenLayer}
-\input{chapter/OpenLayer.tex}
-
-\chapter[LeafletJS]
-{Aplikasi GIS\\ LeafletJS}
-\input{chapter/leafletjs.tex}
-
 
 
 
