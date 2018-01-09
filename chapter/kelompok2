@@ -1,0 +1,8 @@
+\section{Raster Layer dan Vektor Layer}
+
+\subsection{Raster Layer}
+Dalam raster layer  setiap lokasi direpresentasikan sebagai suatu posisi sel. 
+Sel ini diorganisasikan dalam bentuk kolom dan baris sel-sel dan biasa disebut sebagai grid. 
+Dengan kata lain,  layer raster menampilkan, menempatkan, 
+dan menyimpan data spasial dengan menggunakan struktur matriks atau piksel-piksel yang membentuk grid. 
+Setiap piksel atau sel ini memiliki atribut tersendiri, termasuk koordinatnya yang unik.
